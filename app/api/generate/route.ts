@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import OpenAI from "openai";
+import { promises as fs } from "fs";
+import path from "path";
 import { z } from "zod";
 import { GeneratedQuestion } from "@/types/qcm";
 import { loadSessions, saveSessions } from "@/lib/storage";
