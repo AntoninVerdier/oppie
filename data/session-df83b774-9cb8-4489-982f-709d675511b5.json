@@ -1,0 +1,267 @@
+{
+  "id": "df83b774-9cb8-4489-982f-709d675511b5",
+  "filename": "18_Santé_et_numérique.pdf",
+  "createdAt": "2025-08-08T17:21:15.453Z",
+  "numQuestions": 8,
+  "tone": "concis",
+  "status": "completed",
+  "contextSnippet": "30/07/2025, 16:35Fiche LiSA:Santé et numérique — LiSA Page 1 of 22https://livret.uness.fr/lisa/2025/Fiche_LiSA:Santé_et_numérique Santé et numérique IC-18 Connaître les supports numériques de la pratique clinique (sites généralistes et certification la Santé sur Internet (Health on the Net, HON), bases de données, recommandations de bonnes pratiques, systèmes d'aide à la décision, entrepôts de données, techniques d'intelligence artificielle (IA), . . .), Expliquer les principes de l'intégration du numérique (traçabilité, dossier informatisé, prescription connectée, m-santé, aide à la décision, objets connectés, IA, . . .) dans le parcours de soins, de la coordination des professionnels ainsi que de la gradation des soins Connaître les enjeux éthiques liés à la santé numérique Connaître l'impact potentiel de la santé numérique sur l'organisation des soins, de la recherche, ainsi que sur les métiers, les fonctions, les responsabilités des acteurs de santé Connaître les réglementations en matière de protection des données de santé et les enjeux juridiques liés à la santé numérique Connaître les bases du traitement de l'information en santé (codage, gestion, publication, évaluation) Connaître les applications possibles des méthodes de traitements algorithmiques de données de santé (par ex, big data, intelligence artificielle/apprentissage automatique) en santé sur le plan individuel et collectif Comprendre la place et les implications de l'auto-mesure numérique dans le suivi de la santé des personnes Comprendre la place et les implications de la m-santé (applications mobiles) et des médias sociaux dans la communication interprofessionnelle et la santé des personnes Savoir intégrer les outils d'aide à la décision en médecine dans sa pratique en étant capable d'en évaluer de façon critique l'apport, les risques et les contraintes (par exemple, de type service médical rendu (SMR), amélioration du service médical rendu (ASMR)) Identifier les éléments clés nécessaires à l'usage des nouveaux outils du numérique (aspects juridiques, aspects organisationnels, aspects techniques, aspects pédagogiques patient et professionnel) Connaître les supports numériques de la pratique clinique (sites généralistes et certification la Santé sur Internet (Health on the Net, HON), bases de données, recommandations de bonnes pratiques, systèmes d'aide à la décision, entrepôts de données, techniques d'intelligence artificielle (IA), . . .), OIC-018-01-B Version Novembre 2024 Supports numériques de la pratique clinique Un nombre croissant de supports numériques variés sont à disposition des professionnels de santé et des usagers. Ils peuvent constituer une aide décisionnelle en pratique clinique. 1. Sites internet contenant des informations de santé Les sites internet contenant des informations de santé peuvent constituer des sources d’information à la fois pour les professionnels de santé et pour les usagers. La certification HONcode, qui existait jusqu’en décembre 2022, attestait de la volonté d’un site internet à publier de l'information de santé de qualité, objective, transparente et adaptée à la mission et à l'audience du site. En adhérant aux principes HONcode, le propriétaire du site s'engageait à respecter les huit principes de bonne conduite élaborés par la fondation Health On the Net. Un des principes concernait la transparence relative au financement du site. En revanche, il ne garantissait pas la qualité du contenu du site. Le Net Scoring a pour objectif de fournir un ensemble de critères permettant d’évaluer régulièrement la qualité de l’information disponible sur Internet dans le domaine de la santé. Il est établi sur 49 critères répartis en huit catégories : crédibilité, contenu, hyperliens, design, interactivité, aspects quantitatifs, aspects déontologiques, accessibilité. Les professionnels de santé et les usagers doivent être vigilants aux sources de financement des sites internet, et notamment face aux informations disponibles sur les sites financés par les laboratoires pharmaceutiques, considérées comme de la publicité. 30/07/2025, 16:35Fiche LiSA:Santé et numérique — LiSA Page 2 of 22https://livret.uness.fr/lisa/2025/Fiche_LiSA:Santé_et_numérique Certains sites internet proposent des forums publics correspondant à des espaces de discussion sur lesquels les usagers peuvent s’exprimer, pour raconter leur expérience de la maladie ou chercher de l’information (information scientifique plus ou moins vulgarisée ou expériences d’autres individus par témoignages). Ces forums ne sont pas obligatoirement modérés par des professionnels de santé qualifiés. 2. Bases de données Des bases de données documentaires en sciences médicales et biomédicales sont disponibles via internet. Elles référencent des articles scientifiques issus de journaux à comité de lecture, thèses universitaires, livres scientifiques, ... utiles aux professionnels de santé dans leur pratique clinique (exemples : PubMed, Embase, Cochrane Library, Google Scholar, Web of Science, Cairn, LiSSa pour les revues médicales en langue française...). Il existe également des Bases de données sur les Médicaments (BdM) qui peuvent fournir des informations sur les médicaments utiles pour la pratique clinique. Conformément à l’article L. 161-38 du Code de la sécurité sociale, la Haute Autorité de Santé (HAS) est chargée de l'agrément des bases de données sur les médicaments (BdM), sur la base d'une charte de qualité qu'elle élabore. L’ANSM met en œuvre une « base de données administratives et scientifiques sur les traitements » qui s’intitule base de données publique des médicaments (https://base-donnees- publique.medicaments.gouv.fr/) et qui est conforme à la charte de qualité des BdM établie par la HAS. Cette base permet au grand public et aux professionnels de santé d'accéder à des données (composition, posologie, indications, contre- indications...) et documents de référence sur les médicaments commercialisés ou ayant été commercialisés durant les trois dernières années en France. Par ailleurs, cinq autres BdM ont été agréées en novembre 2017 selon la version n°2 de la charte de qualité des BdM (Clickadoc (SOLUSOFT), Banque Claude Bernard (RESIP), Thériaque (CNHIM), Thesorimed (GIE SIPS), VIDAL (Groupe VIDAL)), et le renouvellement de l’agrément version 3 est en cours. 3. Recommandations officielles Des recommandations officielles élaborées par la HAS, l’ANSM et des sociétés savantes sont disponibles sur leurs sites internet respectifs : https://www.has-sante.fr/jcms/fc_2875208/fr/rechercher-une-recommandation-un-avis https://ansm.sante.fr/documents/reference/ Fiches « Bon Usage des Médicaments » (BUM) : Les fiches BUM sont des documents d’information élaborés par la HAS, à destination des professionnels de santé et/ou des patients ou usagers, sur les bonnes règles d’utilisation et sur le risque de mésusage de médicaments remboursables. Elles permettent de préciser et synthétiser de façon simple, claire et lisible les messages-clés issus des évaluations des médicaments et de la stratégie thérapeutique recommandée en particulier dans les avis de la Commission de la Transparence (CT). Recommandations de bonne pratique (RBP) : Les RBP sont des synthèses « fondées sur les preuves » (ou « evidence- based »), rigoureuses de l’état de l’art et des données de la science à un temps donné, pour aider le professionnel et le patient à rechercher les soins les plus appropriés dans des circonstances cliniques données. Les recommandations émises peuvent être de grade A, B ou C en fonction du niveau de preuve des études sur lesquelles elles reposent. Le moteur de recherche CISMeF Bonnes pratiques, maintenu par le CHU de Rouen, recense l’ensemble des recommandations professionnelles et guides de bonnes pratiques en libre accès et en Français dans le domaine de la Santé, en utilisant la terminologie MeSH : https://doccismef.chu-rouen.fr/dc/#env=bp. 4. Systèmes d’information Voir fiche Architectures des systèmes d'information 2C-003-PC-B06 5. Te c h n i q u e s d ’ i n t e l l i g e n c e a r t i f i c i e l l e e t s y s t è m e s d ’a i d e à l a d é c i s i o n m é d i c a l e Voir fiches : Systèmes d'aide à la décision 2C-003-PC-B05 Connaitre les applications possibles des méthodes de traitements algorithmiques de données de santé (par ex, big data, intelligence artificielle/apprentissage automatique) en santé sur le plan individuel et collectif 2C-018-PC-B01 6. Entrepôts de données Voir fiche Connaître les bases du traitement de l'information en santé (codage, gestion, publication, évaluation) 2C-018-DE- A03 7. Applications mobiles et objets connectés Voir fiches 30/07/2025, 16:35Fiche LiSA:Santé et numérique — LiSA Page 3 of 22https://livret.uness.fr/lisa/2025/Fiche_LiSA:Santé_et_numérique Comprendre la place et les implications de l'auto-mesure numérique dans le suivi de la santé des personnes 2C-018-PC- A01 Comprendre la place et les implications de la m-santé (applications mobiles) et des médias sociaux dans la communication interprofessionnelle et la santé des personnes 2C-018-PC-A02 Expliquer les principes de l'intégration du numérique (traçabilité, dossier informatisé, prescription connectée, m-santé, aide à la décision, objets connectés, IA, . . .) dans le parcours de soins, de la coordination des professionnels ainsi que de la gradation des soins OIC-018-02-A Version Novembre 2024 La transformation numérique du système de santé représente l'un des défis majeurs du XXIème siècle, constituant une révolution comparable à l'avènement de l'asepsie ou à la découverte des antibiotiques. Cette mutation profonde, qui s'opère à l'échelle mondiale, redéfinit fondamentalement les paradigmes traditionnels de la pratique médicale et de l'organisation des soins. Dans un contexte marqué par le vieillissement démographique, l'augmentation des maladies chroniques et la nécessité d'optimiser les ressources de santé, l'intégration du numérique émerge comme une réponse stratégique aux enjeux contemporains. Les technologies numériques offrent des perspectives inédites pour améliorer l'accès aux soins, renforcer leur qualité et accroître l'efficience des systèmes de santé. Le processus de numérisation de la santé s'articule autour de plusieurs axes fondamentaux. La dématérialisation des données médicales permet une circulation optimisée de l'information entre les différents acteurs du parcours de soins. L' a u to m a t i s a t i o n d e s p ro c e ss u s a d m i n i st r a t i fs l i b è re d u te m p s m é d i c a l p ré c i e u x . Le s o u t i l s d ' a i d e à l a d é c i s i o n , e n r i c h i s p a r l'intelligence artificielle, augmentent la précision diagnostique et thérapeutique. Cette transformation numérique impose une réflexion approfondie sur les aspects techniques, organisationnels et éthiques. La protection des données sensibles, l'interopérabilité des systèmes, l'accompagnement au changement des professionnels et l'inclusion numérique des patients constituent des enjeux critiques qui nécessitent une approche globale et coordonnée. Le présent travail propose une analyse structurée des principes fondamentaux qui régissent l'intégration du numérique en santé. À travers cinq chapitres complémentaires, nous explorerons les différentes dimensions de cette transformation : les fondements techniques et réglementaires, l'architecture des systèmes d'information, les solutions numériques innovantes, la gestion des données de santé, et les impacts organisationnels et humains. Cette approche systémique permettra de comprendre les mécanismes, les enjeux et les perspectives de cette révolution numérique qui façonne l'avenir de notre système de santé. 1. Fondements de la transformation numérique en santé 1.1 Restructuration et cadre réglementaire La transformation numérique du secteur de la santé s'inscrit dans une dynamique globale de modernisation des systèmes de soins à l'échelle internationale. Les établissements de santé procèdent à une restructuration fo",
+  "questions": [
+    {
+      "id": "1",
+      "topic": "Supports numériques en santé",
+      "rationale": "Les supports numériques en santé jouent un rôle crucial dans la pratique clinique. Ils incluent des sites internet, des bases de données et des recommandations officielles. La certification HONcode et les systèmes d'aide à la décision sont des outils importants pour garantir la qualité des informations. Il est essentiel de comprendre les enjeux éthiques et juridiques liés à leur utilisation.",
+      "propositions": [
+        {
+          "statement": "Les sites internet de santé doivent être certifiés pour garantir leur qualité.",
+          "isTrue": false,
+          "explanation": "La certification HONcode n'assure pas la qualité du contenu, mais indique une volonté de transparence."
+        },
+        {
+          "statement": "Les bases de données médicales sont uniquement accessibles aux professionnels de santé.",
+          "isTrue": false,
+          "explanation": "Ces bases de données sont également accessibles au grand public pour des informations sur les médicaments."
+        },
+        {
+          "statement": "Les recommandations de bonne pratique sont basées sur des preuves scientifiques.",
+          "isTrue": true,
+          "explanation": "Les recommandations de bonne pratique sont des synthèses rigoureuses fondées sur des données probantes."
+        },
+        {
+          "statement": "L'auto-mesure numérique n'a pas d'impact sur le suivi de la santé des personnes.",
+          "isTrue": false,
+          "explanation": "L'auto-mesure numérique joue un rôle important dans le suivi de la santé des individus."
+        },
+        {
+          "statement": "Les systèmes d'aide à la décision médicale intègrent des techniques d'intelligence artificielle.",
+          "isTrue": true,
+          "explanation": "Ces systèmes utilisent l'IA pour améliorer la précision diagnostique et thérapeutique."
+        }
+      ]
+    },
+    {
+      "id": "e092d6a3-05b4-4c63-b8e4-f00c7695201d",
+      "topic": "Supports numériques en santé",
+      "rationale": "Ces propositions permettent de comprendre les différents aspects des supports numériques en santé, leur utilité et les enjeux associés.",
+      "propositions": [
+        {
+          "statement": "La certification HONcode garantit la qualité du contenu des sites de santé.",
+          "isTrue": false,
+          "explanation": "La certification HONcode atteste de la volonté d'un site de publier des informations de santé de qualité, mais ne garantit pas la qualité du contenu."
+        },
+        {
+          "statement": "Les forums publics sur les sites de santé sont toujours modérés par des professionnels de santé.",
+          "isTrue": false,
+          "explanation": "Ces forums ne sont pas obligatoirement modérés par des professionnels de santé qualifiés."
+        },
+        {
+          "statement": "Les bases de données comme PubMed et Cochrane Library sont utiles pour les professionnels de santé.",
+          "isTrue": true,
+          "explanation": "Ces bases de données référencent des articles scientifiques utiles pour la pratique clinique."
+        },
+        {
+          "statement": "Les recommandations de bonne pratique sont basées sur des preuves scientifiques.",
+          "isTrue": true,
+          "explanation": "Les recommandations de bonne pratique sont des synthèses rigoureuses basées sur des données scientifiques."
+        },
+        {
+          "statement": "La Haute Autorité de Santé (HAS) est responsable de l'agrément des bases de données sur les médicaments.",
+          "isTrue": true,
+          "explanation": "La HAS est chargée de l'agrément des bases de données sur les médicaments selon une charte de qualité."
+        }
+      ]
+    },
+    {
+      "id": "f189c8a0-ce57-4c92-bd17-715de979510e",
+      "topic": "Transformation numérique en santé",
+      "rationale": "Ces propositions soulignent l'importance de la transformation numérique dans le secteur de la santé et ses implications sur l'organisation et la qualité des soins.",
+      "propositions": [
+        {
+          "statement": "La transformation numérique en santé est comparable à l'avènement de l'asepsie.",
+          "isTrue": true,
+          "explanation": "La transformation numérique est considérée comme une révolution majeure dans le domaine de la santé."
+        },
+        {
+          "statement": "L'intégration du numérique n'a pas d'impact sur l'organisation des soins.",
+          "isTrue": false,
+          "explanation": "L'intégration du numérique redéfinit fondamentalement les paradigmes de l'organisation des soins."
+        },
+        {
+          "statement": "La dématérialisation des données médicales améliore la circulation de l'information.",
+          "isTrue": true,
+          "explanation": "La dématérialisation permet une circulation optimisée de l'information entre les acteurs de soins."
+        },
+        {
+          "statement": "La protection des données sensibles n'est pas un enjeu critique dans la transformation numérique.",
+          "isTrue": false,
+          "explanation": "La protection des données sensibles est un enjeu critique nécessitant une approche globale."
+        },
+        {
+          "statement": "Les outils d'aide à la décision enrichis par l'IA augmentent la précision diagnostique.",
+          "isTrue": true,
+          "explanation": "Ces outils augmentent la précision diagnostique et thérapeutique dans la pratique médicale."
+        }
+      ]
+    },
+    {
+      "id": "2020b83b-0079-4336-ad31-353ea159ba5a",
+      "topic": "Supports numériques en santé",
+      "rationale": "La compréhension des supports numériques en santé est essentielle pour garantir l'accès à des informations fiables et de qualité, tant pour les professionnels que pour les usagers.",
+      "propositions": [
+        {
+          "statement": "Les sites internet de santé doivent obligatoirement être modérés par des professionnels de santé.",
+          "isTrue": false,
+          "explanation": "Les forums publics sur les sites internet ne sont pas obligatoirement modérés par des professionnels de santé qualifiés."
+        },
+        {
+          "statement": "La certification HONcode garantit la qualité du contenu des sites de santé.",
+          "isTrue": false,
+          "explanation": "La certification HONcode atteste de la volonté d'un site à publier de l'information de santé de qualité, mais ne garantit pas la qualité du contenu."
+        },
+        {
+          "statement": "Les bases de données documentaires en santé référencent uniquement des articles scientifiques.",
+          "isTrue": false,
+          "explanation": "Les bases de données peuvent également inclure thèses, livres scientifiques et autres documents utiles aux professionnels de santé."
+        },
+        {
+          "statement": "Les recommandations de bonne pratique sont basées sur des preuves scientifiques.",
+          "isTrue": true,
+          "explanation": "Les recommandations de bonne pratique sont des synthèses fondées sur les preuves pour aider à rechercher les soins appropriés."
+        },
+        {
+          "statement": "Le Net Scoring évalue la qualité de l'information disponible sur Internet dans le domaine de la santé.",
+          "isTrue": true,
+          "explanation": "Le Net Scoring fournit des critères pour évaluer régulièrement la qualité de l'information de santé en ligne."
+        }
+      ]
+    },
+    {
+      "id": "c57f5ac4-848f-4603-988b-d3ec89f8a3d3",
+      "topic": "Transformation numérique en santé",
+      "rationale": "La transformation numérique en santé est cruciale pour moderniser les systèmes de soins et répondre aux défis contemporains, tout en nécessitant une attention particulière aux enjeux éthiques et organisationnels.",
+      "propositions": [
+        {
+          "statement": "La transformation numérique du système de santé est un défi majeur du XXIème siècle.",
+          "isTrue": true,
+          "explanation": "Cette transformation est comparée à des révolutions majeures comme l'avènement de l'asepsie ou la découverte des antibiotiques."
+        },
+        {
+          "statement": "L'intégration du numérique dans la santé ne nécessite pas de réflexion sur les aspects éthiques.",
+          "isTrue": false,
+          "explanation": "La transformation numérique impose une réflexion approfondie sur les aspects techniques, organisationnels et éthiques."
+        },
+        {
+          "statement": "Les technologies numériques n'améliorent pas l'accès aux soins.",
+          "isTrue": false,
+          "explanation": "Les technologies numériques offrent des perspectives pour améliorer l'accès aux soins et renforcer leur qualité."
+        },
+        {
+          "statement": "La dématérialisation des données médicales optimise la circulation de l'information.",
+          "isTrue": true,
+          "explanation": "La dématérialisation permet une circulation optimisée de l'information entre les acteurs du parcours de soins."
+        },
+        {
+          "statement": "L'automatisation des processus administratifs libère du temps médical précieux.",
+          "isTrue": true,
+          "explanation": "L'automatisation permet de réduire la charge administrative et de consacrer plus de temps aux soins."
+        }
+      ]
+    },
+    {
+      "id": "5e54b8cd-82bb-405d-9e9e-0f186cae6227",
+      "topic": "Supports numériques en santé",
+      "rationale": "La connaissance des supports numériques et de leur certification est essentielle pour garantir l'accès à des informations de santé fiables.",
+      "propositions": [
+        {
+          "statement": "Les sites internet contenant des informations de santé doivent toujours être certifiés par HONcode.",
+          "isTrue": false,
+          "explanation": "La certification HONcode n'est pas obligatoire et ne garantit pas la qualité du contenu."
+        },
+        {
+          "statement": "Les forums publics sur les sites de santé sont toujours modérés par des professionnels de santé qualifiés.",
+          "isTrue": false,
+          "explanation": "Ces forums ne sont pas nécessairement modérés par des professionnels de santé."
+        },
+        {
+          "statement": "Les bases de données documentaires en sciences médicales sont accessibles via internet.",
+          "isTrue": true,
+          "explanation": "Des bases de données comme PubMed et Cochrane Library sont disponibles en ligne pour les professionnels de santé."
+        },
+        {
+          "statement": "Les recommandations de bonne pratique sont fondées sur des preuves scientifiques.",
+          "isTrue": true,
+          "explanation": "Les recommandations émises par la HAS sont basées sur des données scientifiques rigoureuses."
+        },
+        {
+          "statement": "La certification HONcode garantit la qualité du contenu des sites internet.",
+          "isTrue": false,
+          "explanation": "La certification HONcode atteste de la volonté de publier des informations de qualité, mais ne garantit pas leur contenu."
+        }
+      ]
+    },
+    {
+      "id": "0a19b215-1700-42a4-bcd1-4c2dccb920fd",
+      "topic": "Transformation numérique en santé",
+      "rationale": "Comprendre les enjeux de la transformation numérique est crucial pour s'adapter aux évolutions du système de santé.",
+      "propositions": [
+        {
+          "statement": "La transformation numérique du système de santé est comparable à l'avènement de l'asepsie.",
+          "isTrue": true,
+          "explanation": "Cette transformation est considérée comme une révolution majeure dans le domaine de la santé."
+        },
+        {
+          "statement": "L'intégration du numérique dans le parcours de soins n'a pas d'impact sur la qualité des soins.",
+          "isTrue": false,
+          "explanation": "L'intégration du numérique vise à améliorer l'accès et la qualité des soins."
+        },
+        {
+          "statement": "La dématérialisation des données médicales optimise la circulation de l'information.",
+          "isTrue": true,
+          "explanation": "Elle permet une meilleure circulation de l'information entre les acteurs de santé."
+        },
+        {
+          "statement": "La protection des données sensibles n'est pas un enjeu dans la transformation numérique.",
+          "isTrue": false,
+          "explanation": "La protection des données sensibles est un enjeu critique dans la transformation numérique."
+        },
+        {
+          "statement": "L'automatisation des processus administratifs libère du temps médical précieux.",
+          "isTrue": true,
+          "explanation": "Cela permet aux professionnels de santé de se concentrer davantage sur les soins aux patients."
+        }
+      ]
+    },
+    {
+      "id": "5be078d4-7eaa-4dea-9116-515902953f52",
+      "topic": "Supports numériques en santé",
+      "rationale": "Ce QCM aborde les différents aspects des supports numériques en santé, leur certification, les recommandations de bonnes pratiques, et l'importance de la réflexion éthique dans l'intégration du numérique.",
+      "propositions": [
+        {
+          "statement": "Les sites internet contenant des informations de santé doivent toujours être certifiés par HONcode.",
+          "isTrue": false,
+          "explanation": "Bien que la certification HONcode ait existé pour attester de la qualité des informations, elle n'est plus en vigueur depuis décembre 2022."
+        },
+        {
+          "statement": "Les bases de données documentaires en sciences médicales sont uniquement accessibles aux professionnels de santé.",
+          "isTrue": false,
+          "explanation": "Ces bases de données sont également accessibles au grand public, bien que leur utilisation soit souvent plus bénéfique pour les professionnels."
+        },
+        {
+          "statement": "Les recommandations de bonne pratique sont basées sur des preuves scientifiques.",
+          "isTrue": true,
+          "explanation": "Les recommandations de bonne pratique (RBP) sont des synthèses fondées sur des preuves pour aider à la prise de décision clinique."
+        },
+        {
+          "statement": "La m-santé se réfère uniquement aux applications mobiles utilisées par les professionnels de santé.",
+          "isTrue": false,
+          "explanation": "La m-santé inclut également les applications destinées aux usagers pour le suivi de leur santé."
+        },
+        {
+          "statement": "L'intégration du numérique dans le parcours de soins nécessite une réflexion sur les aspects éthiques et organisationnels.",
+          "isTrue": true,
+          "explanation": "La transformation numérique impose des enjeux critiques tels que la protection des données et l'interopérabilité des systèmes."
+        }
+      ]
+    }
+  ]
+}

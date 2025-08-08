@@ -1,0 +1,267 @@
+{
+  "id": "e8ba00d0-cd3a-459b-a2a4-bd51dd5e3380",
+  "filename": "352_Crise_d'angoisse_aiguë_et_attaque_de_panique.pdf",
+  "createdAt": "2025-08-08T17:25:27.214Z",
+  "numQuestions": 8,
+  "tone": "concis",
+  "status": "completed",
+  "contextSnippet": "Crise d'angoisse aiguë et attaque de panique IC-352 Connaître la définition de la crise d'angoisse et de l'attaque de panique Connaître la prévalence et les âges concernés Connaître les facteurs de risque et mécanismes psychophysiologiques Connaître les modalités de diagnostic d'une attaque de panique Connaître les diagnostics différentiels psychiatriques et non psychiatriques Connaître la prise en charge de l'attaque de panique en aigu Connaître la prise en charge à distance de l'attaque de panique Connaître la définition de la crise d'angoisse et de l'attaque de panique OIC-352- 01-A La crise dʼangoisse aiguë ou attaque de panique (AP) est un épisode aigu dʼanxiété. LʼAP peut être isolée ou répétée (trouble panique) ou associée à un trouble psychiatrique. Connaître la prévalence et les âges concernés OIC-352-02-B Situation fréquente, 5% sur la vie entière, rencontrée notamment dans les services dʼurgence, chez lʼadulte jeune, sex-ratio est 2 femmes pour 1 homme. Rares chez lʼenfant (<1%) augmente à lʼadolescence (2-2,5%). Connaître les facteurs de risque et mécanismes psychophysiologiques OIC-352- 03-B Facteurs de risques génétiques, environnementaux (stress, usage de substances), tempéramentaux (affectivité négative, sensibilité au stress). LʼAP implique des éléments biologiques de dysfonctionnement de certains neurotransmetteurs (cholécystokinine, lactate de sodium), psychologiques (cognitions catastrophistes) et environnementaux (inquiétude de lʼentourage). Certaines symptômes sont liés à lʼhypocapnie secondaire à lʼhyperventilation (vertiges, paresthésies). Connaître les modalités de diagnostic d'une attaque de panique OIC-352-04-A LʼAP a un début brutal, des symptômes intenses rapidement, de durée limitée (20-30 min), avec diminution graduelle jusquʼau soulagement ou fatigue post-crise. LʼAP sʼaccompagne de symptômes variables : - Physiques : respiratoires (dyspnée, étouffement, blocage respiratoire, hyperventilation), cardiovasculaires (tachycardie, palpitations, poids thoracique), neurovégétatifs (sueurs, tremblements, pâleur, étourdissement, vertige), digestifs (douleurs, nausées, vomissements, diarrhée), génito-urinaires (pollakiurie) ou neurologiques (tremblements, pseudo-paralysie). - Psychiques : pensées de catastrophe imminente (peur de mourir ou de devenir fou), peur intense sans objet, impression de perdre contrôle, dépersonnalisation (étrangeté de soi-même, détachement de soi / son corps, spectateur de la scène), et déréalisation (impression dʼirréalité étrangeté). - Comportementaux : comportement variable, agitation, inhibition, sidération, risque de passage à lʼacte auto-agressif. Connaître les diagnostics différentiels psychiatriques et non psychiatriques OIC- 352-05-A Il sʼagit essentiellement des pathologies non psychiatriques et des intoxications par des substances psychoactives quʼil faut impérativement éliminer avant de poser le diagnostic dʼAP. - Pathologies non-psychiatriques : cardiovasculaires (épisode coronarien aigu, insuffisance cardiaque, dissection aortique, hypertension artérielle, troubles du rythme), respiratoires (asthme, embolie pulmonaire, pneumopathie), neurologiques (épilepsie, migraine, accident ischémique), endocriniennes (hypoglycémie, phéochromocytome, hyperthyroïdie, syndrome de Cushing, hypoparathyroïdie). - Intoxications par une substance psychoactive et sevrages peuvent déclencher une AP (alcool, cannabis, cocaïne, ecstasy, benzodiazépines, corticoïdes, hormones thyroïdiennes). Connaître la prise en charge de l'attaque de panique en aigu OIC-352-06-A Examen clinique complet et si besoin des examens complémentaires (électrocardiogramme, radiographie thoracique, hémogramme, glycémie, ionogramme sanguin, troponine) sans renforcer les pensées catastrophistes. - Mesures non pharmacologiques de mise en condition (au calme, empathie), réassurance (reconnaissance de la souffrance, annonce du diagnostic dʼAP, informer sur lʼabsence de risque de mort, évolution favorable), et aide au contrôle respiratoire (expiration lente pour stimuler le tonus vagal, focaliser lʼattention, limiter lʼhyperventilation). - Traitement médicamenteux anxiolytique dʼune benzodiazépine per os, prescription uniquement ponctuelle en urgence (Item 74). Connaître la prise en charge à distance de l'attaque de panique OIC-352-07-B Si AP isolée : psychoéducation pour reconnaître une AP si récidive, prévenir dʼune récidive, règles hygiéno-diététiques (diminution psychostimulants, sommeil régulier). Si répétition des AP, traitement spécifique du trouble panique (Item 66c). Si AP associée à un trouble psychiatrique : traitement du trouble psychiatrique. UNESS.fr / CNCEM - https://livret.uness.fr/lisa - Tous droits réservés.",
+  "questions": [
+    {
+      "id": "1",
+      "topic": "Caractéristiques de l'attaque de panique",
+      "rationale": "L'attaque de panique est un épisode d'anxiété aiguë avec des symptômes physiques et psychiques intenses. Sa prévalence est notable chez les jeunes adultes, et elle peut être isolée ou répétée. La reconnaissance des symptômes et des diagnostics différentiels est cruciale pour une prise en charge adéquate.",
+      "propositions": [
+        {
+          "statement": "L'attaque de panique dure généralement plus de 30 minutes.",
+          "isTrue": false,
+          "explanation": "L'attaque de panique a une durée limitée, généralement entre 20 et 30 minutes."
+        },
+        {
+          "statement": "Les femmes sont plus touchées par l'attaque de panique que les hommes.",
+          "isTrue": true,
+          "explanation": "Le sex-ratio est de 2 femmes pour 1 homme, indiquant une prévalence plus élevée chez les femmes."
+        },
+        {
+          "statement": "Les symptômes d'une attaque de panique peuvent inclure des palpitations et des vertiges.",
+          "isTrue": true,
+          "explanation": "Les symptômes physiques d'une attaque de panique incluent des palpitations, des vertiges et d'autres manifestations neurovégétatives."
+        },
+        {
+          "statement": "L'attaque de panique est rare chez les adolescents.",
+          "isTrue": false,
+          "explanation": "L'attaque de panique est rare chez les enfants mais augmente à l'adolescence, atteignant 2-2,5%."
+        },
+        {
+          "statement": "Les traitements médicamenteux pour l'attaque de panique incluent les antidépresseurs.",
+          "isTrue": false,
+          "explanation": "Le traitement médicamenteux en urgence inclut des anxiolytiques, comme les benzodiazépines, et non des antidépresseurs."
+        }
+      ]
+    },
+    {
+      "id": "a3b71985-5686-4a09-b755-49940d533c36",
+      "topic": "Définition de l'attaque de panique",
+      "rationale": "La compréhension de la définition et des caractéristiques des attaques de panique est essentielle pour leur diagnostic et leur prise en charge.",
+      "propositions": [
+        {
+          "statement": "L'attaque de panique est un épisode aigu d'anxiété.",
+          "isTrue": true,
+          "explanation": "La crise d'angoisse aiguë, ou attaque de panique, est définie comme un épisode aigu d'anxiété."
+        },
+        {
+          "statement": "L'attaque de panique ne peut jamais être isolée.",
+          "isTrue": false,
+          "explanation": "L'attaque de panique peut être isolée ou répétée, ce qui constitue un trouble panique."
+        },
+        {
+          "statement": "Les attaques de panique sont fréquentes chez les enfants.",
+          "isTrue": false,
+          "explanation": "Les attaques de panique sont rares chez les enfants, représentant moins de 1% des cas."
+        },
+        {
+          "statement": "Le sex-ratio des attaques de panique est de 2 hommes pour 1 femme.",
+          "isTrue": false,
+          "explanation": "Le sex-ratio est de 2 femmes pour 1 homme."
+        },
+        {
+          "statement": "Les attaques de panique peuvent être associées à des troubles psychiatriques.",
+          "isTrue": true,
+          "explanation": "Les attaques de panique peuvent être isolées ou associées à un trouble psychiatrique."
+        }
+      ]
+    },
+    {
+      "id": "d776ebe6-c238-4322-be74-530707357654",
+      "topic": "Prise en charge de l'attaque de panique",
+      "rationale": "La prise en charge des attaques de panique doit être holistique, combinant des approches cliniques et psychologiques.",
+      "propositions": [
+        {
+          "statement": "La prise en charge en aigu nécessite un examen clinique complet.",
+          "isTrue": true,
+          "explanation": "Un examen clinique complet est nécessaire pour évaluer l'attaque de panique en aigu."
+        },
+        {
+          "statement": "Les benzodiazépines doivent être prescrites de manière régulière pour traiter l'attaque de panique.",
+          "isTrue": false,
+          "explanation": "Les benzodiazépines doivent être prescrites uniquement ponctuellement en urgence."
+        },
+        {
+          "statement": "Il est important de renforcer les pensées catastrophistes lors de la prise en charge.",
+          "isTrue": false,
+          "explanation": "Il ne faut pas renforcer les pensées catastrophistes lors de la prise en charge."
+        },
+        {
+          "statement": "La réassurance est une mesure non pharmacologique importante.",
+          "isTrue": true,
+          "explanation": "La réassurance aide à reconnaître la souffrance et à informer sur l'absence de risque de mort."
+        },
+        {
+          "statement": "Le traitement médicamenteux est la seule option pour la prise en charge de l'attaque de panique.",
+          "isTrue": false,
+          "explanation": "La prise en charge inclut des mesures non pharmacologiques ainsi que des traitements médicamenteux."
+        }
+      ]
+    },
+    {
+      "id": "63d33c88-6d19-4d5c-8845-331284dafa8a",
+      "topic": "Définition de l'attaque de panique",
+      "rationale": "L'attaque de panique est un phénomène courant avec des caractéristiques bien définies, et il est important de comprendre sa nature et ses symptômes.",
+      "propositions": [
+        {
+          "statement": "L'attaque de panique est un épisode aigu d'anxiété.",
+          "isTrue": true,
+          "explanation": "C'est une définition précise de l'attaque de panique."
+        },
+        {
+          "statement": "L'attaque de panique est toujours associée à un trouble psychiatrique.",
+          "isTrue": false,
+          "explanation": "Elle peut être isolée ou répétée sans être associée à un trouble psychiatrique."
+        },
+        {
+          "statement": "L'attaque de panique dure généralement plus d'une heure.",
+          "isTrue": false,
+          "explanation": "Elle a une durée limitée de 20 à 30 minutes."
+        },
+        {
+          "statement": "Les symptômes de l'attaque de panique incluent des pensées de catastrophe imminente.",
+          "isTrue": true,
+          "explanation": "C'est un des symptômes psychiques associés à l'AP."
+        },
+        {
+          "statement": "L'attaque de panique est rare chez les adultes jeunes.",
+          "isTrue": false,
+          "explanation": "Elle est fréquente, notamment chez les adultes jeunes."
+        }
+      ]
+    },
+    {
+      "id": "30a7c87f-31ff-4378-99c7-93273c99add5",
+      "topic": "Prise en charge de l'attaque de panique",
+      "rationale": "La prise en charge de l'attaque de panique nécessite une approche intégrée, combinant mesures non pharmacologiques et, si nécessaire, un traitement médicamenteux approprié.",
+      "propositions": [
+        {
+          "statement": "La prise en charge en aigu inclut des mesures non pharmacologiques.",
+          "isTrue": true,
+          "explanation": "Des mesures comme la réassurance et le contrôle respiratoire sont essentielles."
+        },
+        {
+          "statement": "Le traitement médicamenteux en urgence peut inclure des antidépresseurs.",
+          "isTrue": false,
+          "explanation": "Les benzodiazépines sont les médicaments utilisés en urgence, pas les antidépresseurs."
+        },
+        {
+          "statement": "La psychoéducation est recommandée pour prévenir les récidives.",
+          "isTrue": true,
+          "explanation": "Elle aide à reconnaître une AP et à prévenir les récidives."
+        },
+        {
+          "statement": "Il n'est pas nécessaire d'examiner le patient lors d'une attaque de panique.",
+          "isTrue": false,
+          "explanation": "Un examen clinique complet est crucial pour exclure d'autres pathologies."
+        },
+        {
+          "statement": "Les règles hygiéno-diététiques ne sont pas utiles dans la prise en charge.",
+          "isTrue": false,
+          "explanation": "Elles sont importantes, surtout en cas de récidive."
+        }
+      ]
+    },
+    {
+      "id": "ad026861-b6b5-4387-8667-fee942aefd1c",
+      "topic": "Définition de l'attaque de panique",
+      "rationale": "L'attaque de panique est un phénomène complexe qui peut survenir sans lien avec un trouble psychiatrique, et ses symptômes sont généralement de courte durée.",
+      "propositions": [
+        {
+          "statement": "L'attaque de panique est un épisode aigu d'anxiété.",
+          "isTrue": true,
+          "explanation": "La crise d'angoisse aiguë ou attaque de panique est définie comme un épisode aigu d'anxiété."
+        },
+        {
+          "statement": "L'attaque de panique est toujours associée à un trouble psychiatrique.",
+          "isTrue": false,
+          "explanation": "L'attaque de panique peut être isolée ou répétée, et n'est pas toujours associée à un trouble psychiatrique."
+        },
+        {
+          "statement": "Les symptômes de l'attaque de panique durent généralement plus de 30 minutes.",
+          "isTrue": false,
+          "explanation": "Les symptômes de l'attaque de panique sont de durée limitée, généralement entre 20 et 30 minutes."
+        },
+        {
+          "statement": "L'attaque de panique peut être déclenchée par des substances psychoactives.",
+          "isTrue": true,
+          "explanation": "Les intoxications par des substances psychoactives peuvent déclencher une attaque de panique."
+        },
+        {
+          "statement": "Le sex-ratio des attaques de panique est de 1 homme pour 2 femmes.",
+          "isTrue": true,
+          "explanation": "Le sex-ratio des attaques de panique est de 2 femmes pour 1 homme."
+        }
+      ]
+    },
+    {
+      "id": "5684de11-f384-43e4-809b-5597428c7d60",
+      "topic": "Prise en charge de l'attaque de panique",
+      "rationale": "La prise en charge de l'attaque de panique nécessite une approche intégrée, combinant mesures non pharmacologiques et, si nécessaire, un traitement médicamenteux.",
+      "propositions": [
+        {
+          "statement": "La prise en charge en aigu inclut des mesures non pharmacologiques.",
+          "isTrue": true,
+          "explanation": "La prise en charge en aigu inclut des mesures non pharmacologiques comme la réassurance et l'aide au contrôle respiratoire."
+        },
+        {
+          "statement": "Un traitement médicamenteux est toujours nécessaire lors d'une attaque de panique.",
+          "isTrue": false,
+          "explanation": "Le traitement médicamenteux n'est pas toujours nécessaire et est prescrit uniquement en urgence."
+        },
+        {
+          "statement": "La psychoéducation est recommandée pour prévenir les récidives d'attaques de panique isolées.",
+          "isTrue": true,
+          "explanation": "La psychoéducation est conseillée pour reconnaître une attaque de panique et prévenir les récidives."
+        },
+        {
+          "statement": "Les examens complémentaires ne sont jamais nécessaires lors d'une attaque de panique.",
+          "isTrue": false,
+          "explanation": "Des examens complémentaires peuvent être nécessaires pour évaluer d'autres causes possibles."
+        },
+        {
+          "statement": "Les règles hygiéno-diététiques peuvent aider à la prise en charge à distance.",
+          "isTrue": true,
+          "explanation": "Les règles hygiéno-diététiques, comme la diminution des psychostimulants, sont recommandées pour la prise en charge à distance."
+        }
+      ]
+    },
+    {
+      "id": "8d4b4201-ea99-480d-aba0-d8e37014bc74",
+      "topic": "Crise d'angoisse aiguë",
+      "rationale": "Ce QCM aborde les aspects essentiels de la crise d'angoisse aiguë, y compris sa définition, sa prévalence, les facteurs de risque, les symptômes et la prise en charge.",
+      "propositions": [
+        {
+          "statement": "La crise d'angoisse aiguë est un épisode d'anxiété qui peut être isolé ou répétitif.",
+          "isTrue": true,
+          "explanation": "La crise d'angoisse aiguë, ou attaque de panique, peut survenir de manière isolée ou se répéter, formant un trouble panique."
+        },
+        {
+          "statement": "La prévalence de l'attaque de panique est de 10% dans la population générale.",
+          "isTrue": false,
+          "explanation": "La prévalence de l'attaque de panique est d'environ 5% sur la vie entière."
+        },
+        {
+          "statement": "Les facteurs de risque incluent des éléments génétiques et environnementaux.",
+          "isTrue": true,
+          "explanation": "Les facteurs de risque pour l'attaque de panique comprennent des éléments génétiques, environnementaux et tempéramentaux."
+        },
+        {
+          "statement": "Les symptômes de l'attaque de panique durent généralement plus de 30 minutes.",
+          "isTrue": false,
+          "explanation": "Les symptômes de l'attaque de panique sont intenses mais de durée limitée, généralement entre 20 et 30 minutes."
+        },
+        {
+          "statement": "Le traitement médicamenteux en cas d'attaque de panique doit être prescrit de manière régulière.",
+          "isTrue": false,
+          "explanation": "Le traitement médicamenteux, comme les benzodiazépines, doit être prescrit uniquement ponctuellement en urgence."
+        }
+      ]
+    }
+  ]
+}

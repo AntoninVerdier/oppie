@@ -1,0 +1,29 @@
+# Logs
+logs
+*.log
+
+# Dependencies
+node_modules/
+
+# Builds
+.next/
+out/
+.cache/
+coverage/
+
+# Env
+.env.local
+.env*
+!.env.example
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Misc
+yarn.lock
+pnpm-lock.yaml
