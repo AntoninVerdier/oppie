@@ -43,8 +43,10 @@ function normalizeResponse(parsed: any, sessionId: string, questionIndex: number
 }
 
 export async function POST(request: NextRequest) {
+  let sessionId: string;
   try {
-    const { sessionId } = await request.json();
+    const body = await request.json();
+    sessionId = body.sessionId;
     if (!sessionId) {
       return NextResponse.json({ error: "Session ID required" }, { status: 400 });
     }
