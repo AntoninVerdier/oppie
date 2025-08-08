@@ -1,4 +1,25 @@
 {
-  "scores": [],
-  "lastUpdated": null
+  "scores": [
+    {
+      "domain": "neurology",
+      "sessionId": "session_1754685441411_7f7v7hsum",
+      "filename": "299_Tumeurs_intracrâniennes.pdf",
+      "score": 0.7,
+      "totalQuestions": 3,
+      "answeredQuestions": 3,
+      "averageScore": 0.2333333333333333,
+      "timestamp": "2025-08-08T20:38:51.415Z"
+    },
+    {
+      "domain": "oncology",
+      "sessionId": "session_1754685441411_7f7v7hsum",
+      "filename": "299_Tumeurs_intracrâniennes.pdf",
+      "score": 0.7,
+      "totalQuestions": 3,
+      "answeredQuestions": 3,
+      "averageScore": 0.2333333333333333,
+      "timestamp": "2025-08-08T20:38:51.416Z"
+    }
+  ],
+  "lastUpdated": "2025-08-08T20:38:51.416Z"
 }

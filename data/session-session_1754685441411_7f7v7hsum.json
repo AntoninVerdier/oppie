@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754685441411_7f7v7hsum",
+  "questions": [
+    {
+      "id": "qcm_session_1754685441411_7f7v7hsum_0",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM couvre différents aspects des tumeurs intracrâniennes, en abordant la classification, les types histologiques, les localisations et les caractéristiques générales des tumeurs cérébrales.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs intracrâniennes peuvent être classées en tumeurs primitives et tumeurs secondaires",
+          "isTrue": true,
+          "explanation": "Les tumeurs primitives proviennent du tissu intracrânien tandis que les tumeurs secondaires sont des métastases."
+        },
+        {
+          "statement": "Les tumeurs intra parenchymateuses se développent à l'extérieur de l'encéphale",
+          "isTrue": false,
+          "explanation": "Les tumeurs intra parenchymateuses se développent à l'intérieur de l'encéphale."
+        },
+        {
+          "statement": "Les méningiomes sont souvent bénins et ont un pic d'incidence entre 50 et 70 ans",
+          "isTrue": true,
+          "explanation": "Les méningiomes sont généralement bénins et sont plus fréquents chez les femmes entre 50 et 70 ans."
+        },
+        {
+          "statement": "Les adénomes hypophysaires sont des tumeurs extra parenchymateuses",
+          "isTrue": false,
+          "explanation": "Les adénomes hypophysaires sont des tumeurs primitives intracrâniennes et ne proviennent pas des annexes de l'encéphale."
+        },
+        {
+          "statement": "Les tumeurs malignes, telles que le glioblastome, sont généralement bien circonscrites et de bon pronostic",
+          "isTrue": false,
+          "explanation": "Les tumeurs malignes ont tendance à être rapidement évolutive et ont un pronostic plus sombre."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754685441411_7f7v7hsum_1",
+      "topic": "Classification des gliomes de grade 1 et 2",
+      "rationale": "Ce QCM couvre les principales caractéristiques des gliomes de grade 1 et 2, en mettant en avant les différences de pronostic et de prise en charge.",
+      "propositions": [
+        {
+          "statement": "Les gliomes de grade 1 sont généralement infra-tentoriels et présentent un rehaussement après contraste.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 1 sont en effet généralement infra-tentoriels et peuvent présenter un rehaussement après contraste."
+        },
+        {
+          "statement": "Les gliomes de grade 2 sont caractérisés par un hypersignal en T2 et un hyposignal en T1, avec une absence de prise de contraste.",
+          "isTrue": true,
+          "explanation": "Effectivement, les gliomes de grade 2 présentent ces caractéristiques radiologiques."
+        },
+        {
+          "statement": "La chirurgie est recommandée pour les gliomes de grade 1, avec une guérison possible en cas de résection complète.",
+          "isTrue": true,
+          "explanation": "La chirurgie est en effet recommandée pour les gliomes de grade 1, et une résection complète peut mener à la guérison."
+        },
+        {
+          "statement": "Les gliomes de grade 2 progressent inéluctablement vers une anaplasie de grade 3 ou 4.",
+          "isTrue": false,
+          "explanation": "Bien que les gliomes de grade 2 puissent évoluer vers des grades supérieurs, cette progression n'est pas inéluctable."
+        },
+        {
+          "statement": "La radiothérapie et la chimiothérapie sont souvent nécessaires pour les gliomes de grade 2.",
+          "isTrue": true,
+          "explanation": "En effet, la radiothérapie et la chimiothérapie peuvent être nécessaires en complément de la chirurgie pour les gliomes de grade 2."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754685441411_7f7v7hsum_2",
+      "topic": "Classification des tumeurs intracrâniennes en fonction du grade",
+      "rationale": "Ce QCM couvre différents sous-types de tumeurs intracrâniennes en fonction du grade, en mettant l'accent sur des caractéristiques spécifiques de chaque type.",
+      "propositions": [
+        {
+          "statement": "Les neurinomes ont une localisation préférentielle au niveau du nerf vestibulaire.",
+          "isTrue": true,
+          "explanation": "Les neurinomes se développent à partir des cellules de Schwann et ont une localisation préférentielle au niveau du nerf vestibulaire."
+        },
+        {
+          "statement": "Les médulloblastomes surviennent principalement chez les adultes.",
+          "isTrue": false,
+          "explanation": "Les médulloblastomes surviennent surtout chez l'enfant, parfois chez l'adulte jeune."
+        },
+        {
+          "statement": "Les épendymomes peuvent être classés en grade 1, 2 ou 3 selon l'OMS.",
+          "isTrue": true,
+          "explanation": "Les épendymomes peuvent être bénins (grade 1 ou 2 OMS) ou plus rarement malins (grade 3 OMS)."
+        },
+        {
+          "statement": "Les hémangioblastomes sont des tumeurs malignes.",
+          "isTrue": false,
+          "explanation": "Les hémangioblastomes sont des tumeurs vasculaires bénignes."
+        },
+        {
+          "statement": "Les métastases cérébrales proviennent principalement de cancers à fort tropisme neurologique.",
+          "isTrue": true,
+          "explanation": "Les métastases cérébrales proviennent principalement de cancers broncho-pulmonaire, mammaire et mélanome, qui ont un fort tropisme neurologique."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    0,
+    1,
+    2
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": "Tumeurs intracrâniennes IC-299\nConnaître les principaux types et localisations des tumeurs intracrâniennes\nConnaître la définition des tumeurs primitives intracrâniennes : système nerveux central et annexes\nConnaître les principaux types histologiques des tumeurs cérébrales\nConnaître l'épidémiologie des différents types tumeurs primitives intracrâniennes\nConnaître les principaux tableaux cliniques devant faire évoquer une tumeur intracrânienne\nConnaître la stratégie d'exploration en imagerie devant une tumeur intracrânienne de l'adulte\nDécrire la recherche systématique de cancer primitif à effectuer devant une métastase cérébrale\nSavoir évoquer une hypertension intracrânienne (HTIC) et une épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principes de la prise en charge de l'HTIC et de l'épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principaux types et localisations des tumeurs intracrâniennes OIC-\n299-01-A\n·        Tumeur primi"
+}
