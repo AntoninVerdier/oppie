@@ -27,7 +27,10 @@ vercel --prod
 
 Make sure to set these in Vercel dashboard:
 - `OPENAI_API_KEY`: Your OpenAI API key
-- `KV_REST_API_URL`, `KV_REST_API_TOKEN` (when using Vercel KV)
+- Storage (Vercel Marketplace): either KV or Upstash Redis will inject one of:
+  - `KV_REST_API_URL`, `KV_REST_API_TOKEN`
+  - or `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN`
+  The app supports both automatically.
 
 ## Custom Domain Setup
 

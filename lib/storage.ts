@@ -1,10 +1,23 @@
 import fs from "fs";
 import path from "path";
-import { kv } from "@vercel/kv";
+
+// Lazy-load @vercel/kv after ensuring env var compatibility with Marketplace (Upstash) names
+async function getKV() {
+  // If Vercel Marketplace injected Upstash vars, alias them for @vercel/kv
+  if (!process.env.KV_REST_API_URL && process.env.UPSTASH_REDIS_REST_URL) {
+    process.env.KV_REST_API_URL = process.env.UPSTASH_REDIS_REST_URL;
+  }
+  if (!process.env.KV_REST_API_TOKEN && process.env.UPSTASH_REDIS_REST_TOKEN) {
+    process.env.KV_REST_API_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN;
+  }
+  const mod = await import("@vercel/kv");
+  return mod.kv;
+}
 
 // Generic JSON helpers for KV
 async function kvGetJson<T>(key: string, fallback: T): Promise<T> {
   try {
+    const kv = await getKV();
     const value = await kv.get<string>(key);
     if (!value) return fallback;
     return JSON.parse(value) as T;
@@ -14,11 +27,16 @@ async function kvGetJson<T>(key: string, fallback: T): Promise<T> {
 }
 
 async function kvSetJson<T>(key: string, value: T): Promise<void> {
+  const kv = await getKV();
   await kv.set(key, JSON.stringify(value));
 }
 
 function isVercelProd(): boolean {
-  return Boolean(process.env.VERCEL || process.env.KV_REST_API_URL);
+  return Boolean(
+    process.env.VERCEL ||
+    process.env.KV_REST_API_URL ||
+    process.env.UPSTASH_REDIS_REST_URL
+  );
 }
 
 // ----- Sessions storage -----
