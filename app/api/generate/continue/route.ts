@@ -165,7 +165,7 @@ IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`
           new Promise((_, reject) => 
             setTimeout(() => reject(new Error("Request timeout")), timeout)
           )
-        ]);
+        ]) as any;
 
         response = completion.choices[0]?.message?.content?.trim();
         if (!response) throw new Error("Empty response from OpenAI");
@@ -223,7 +223,7 @@ EXEMPLE DE FORMAT EXACT:
             new Promise((_, reject) => 
               setTimeout(() => reject(new Error("Retry request timeout")), timeout)
             )
-          ]);
+          ]) as any;
 
           retryResponse = retryCompletion.choices[0]?.message?.content?.trim();
           if (!retryResponse) throw new Error("Empty retry response from OpenAI");
