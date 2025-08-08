@@ -1,0 +1,292 @@
+{
+  "sessionId": "session_1754682151413_5z48j4l8j",
+  "questions": [
+    {
+      "id": "qcm_session_1754682151413_5z48j4l8j_0",
+      "topic": "Facteurs de risque de la fibrillation atriale",
+      "rationale": "Les facteurs de risque de la fibrillation atriale peuvent être variés et incluent des éléments tels que les pathologies respiratoires, la prise d'alcool ou de caféine, le score de CHADS-VASc, le traitement antiagrégant et la fermeture percutanée de l'auricule gauche. Chacune de ces propositions explore un aspect différent des facteurs de risque de la FA.",
+      "propositions": [
+        {
+          "statement": "Les pathologies respiratoires ne sont pas considérées comme des facteurs de risque de FA.",
+          "isTrue": false,
+          "explanation": "Les pathologies respiratoires font partie des facteurs de risque de FA."
+        },
+        {
+          "statement": "La prise d'alcool et de caféine n'est pas un facteur de risque de FA.",
+          "isTrue": false,
+          "explanation": "La prise d'alcool et de caféine est considérée comme un facteur de risque de FA."
+        },
+        {
+          "statement": "Le score de CHADS-VASc n'est utilisé que pour les FA valvulaires.",
+          "isTrue": false,
+          "explanation": "Le score de CHADS-VASc est utilisé en l'absence de FA valvulaire."
+        },
+        {
+          "statement": "Les antiagrégants plaquettaires sont recommandés en première intention pour les FA non valvulaires.",
+          "isTrue": false,
+          "explanation": "Les antiagrégants plaquettaires n'ont aucune place dans la FA."
+        },
+        {
+          "statement": "La fermeture percutanée de l'auricule gauche est indiquée en cas de fibrillation atriale avec indication d'anticoagulation et contre-indication simultanée et permanente aux anticoagulants oraux.",
+          "isTrue": true,
+          "explanation": "La fermeture percutanée de l'auricule gauche est recommandée dans ces cas spécifiques."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Section 2",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754682151413_5z48j4l8j_1",
+      "topic": "QCM sur la Fibrillation atriale",
+      "rationale": "Ce QCM aborde la définition, la physiopathologie, l'épidémiologie, les symptômes usuels et les complications de la fibrillation atriale, en couvrant différents aspects de ce trouble du rythme cardiaque.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale est un trouble du rythme supra-ventriculaire caractérisé par une activité électrique régulière dans les oreillettes.",
+          "isTrue": false,
+          "explanation": "La fibrillation atriale est caractérisée par une activité électrique anarchique dans les oreillettes."
+        },
+        {
+          "statement": "La fibrillation atriale est principalement due à des activités ectopiques focales au niveau des veines pulmonaires.",
+          "isTrue": true,
+          "explanation": "Les activités ectopiques focales au niveau des veines pulmonaires sont une des causes de la fibrillation atriale."
+        },
+        {
+          "statement": "La prévalence de la fibrillation atriale est plus élevée chez les femmes que chez les hommes.",
+          "isTrue": false,
+          "explanation": "Il y a une prédominance masculine dans la prévalence de la fibrillation atriale."
+        },
+        {
+          "statement": "La fibrillation atriale est rare chez les jeunes adultes.",
+          "isTrue": false,
+          "explanation": "La prévalence de la fibrillation atriale augmente avec l'âge."
+        },
+        {
+          "statement": "La fibrillation atriale peut être responsable de troubles cognitifs chez les patients.",
+          "isTrue": true,
+          "explanation": "La fibrillation atriale peut entraîner des complications neurologiques, y compris des troubles cognitifs."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754682151413_5z48j4l8j_2",
+      "topic": "Évaluation de la fibrillation atriale",
+      "rationale": "Ce QCM explore divers aspects de la fibrillation atriale, allant du diagnostic à l'épidémiologie en passant par les symptômes et les associations avec d'autres troubles du rythme. Les justifications fournies expliquent en détail chaque affirmation pour une meilleure compréhension.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale peut être diagnostiquée en présence de FA pendant plus de 10 secondes sur un tracé ECG de surface.",
+          "isTrue": false,
+          "explanation": "La présence de FA doit être pendant plus de 30 secondes pour un diagnostic de fibrillation atriale."
+        },
+        {
+          "statement": "La fibrillation atriale est principalement causée par des activités ectopiques focales au niveau des oreillettes.",
+          "isTrue": false,
+          "explanation": "Les activités ectopiques focales se produisent au niveau des veines pulmonaires."
+        },
+        {
+          "statement": "La prévalence de la fibrillation atriale augmente avec l'âge et est plus élevée chez les femmes.",
+          "isTrue": false,
+          "explanation": "La prévalence de la FA augmente avec l'âge et est plus élevée chez les hommes."
+        },
+        {
+          "statement": "La fibrillation atriale est fortement associée au flutter atrial commun.",
+          "isTrue": true,
+          "explanation": "La FA est en effet fortement associée au flutter atrial commun."
+        },
+        {
+          "statement": "Les patients présentant une FA sont toujours symptomatiques et ont des symptômes classiques prononcés.",
+          "isTrue": false,
+          "explanation": "Certains patients avec FA peuvent être asymptomatiques, soulignant l'importance du dépistage des patients à risque."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754682151413_5z48j4l8j_3",
+      "topic": "Facteurs de risque de fibrillation atriale",
+      "rationale": "Les propositions couvrent différents aspects des facteurs de risque de la fibrillation atriale, allant des troubles hydro-électrolytiques à la prise en charge personnalisée. Les justifications détaillées soulignent l'importance de chaque proposition dans la compréhension de la maladie.",
+      "propositions": [
+        {
+          "statement": "La présence de troubles hydro-électrolytiques est un facteur de risque de fibrillation atriale.",
+          "isTrue": true,
+          "explanation": "La présence de troubles hydro-électrolytiques tels que l'hypokaliémie peut déclencher une fibrillation atriale."
+        },
+        {
+          "statement": "Les antiagrégants plaquettaires sont recommandés en première intention pour la prévention de la fibrillation atriale.",
+          "isTrue": false,
+          "explanation": "Les antiagrégants plaquettaires n'ont aucune place dans la prise en charge de la fibrillation atriale."
+        },
+        {
+          "statement": "Le score de CHADS-VASc est utilisé pour évaluer le risque thromboembolique chez les patients avec fibrillation atriale valvulaire.",
+          "isTrue": false,
+          "explanation": "Le score de CHADS-VASc est utilisé en l'absence de fibrillation atriale valvulaire."
+        },
+        {
+          "statement": "La prise en charge de la fibrillation atriale repose uniquement sur une stratégie anti-thrombotique.",
+          "isTrue": false,
+          "explanation": "La prise en charge de la fibrillation atriale repose également sur une stratégie de contrôle du rythme pour obtenir un retour en rythme sinusal."
+        },
+        {
+          "statement": "La prise en charge des facteurs de risque de la fibrillation atriale nécessite une éducation thérapeutique des patients et une approche personnalisée.",
+          "isTrue": true,
+          "explanation": "La prise en charge des facteurs de risque de la fibrillation atriale implique une approche globale incluant l'éducation des patients et une prise en charge personnalisée."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Section 2",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754682151413_5z48j4l8j_4",
+      "topic": "Facteurs de risque de la fibrillation atriale",
+      "rationale": "La fibrillation atriale est une pathologie complexe avec des facteurs de risque variés et une prise en charge spécifique. Il est essentiel de connaître ces éléments pour assurer un traitement optimal des patients atteints.",
+      "propositions": [
+        {
+          "statement": "La prise d'alcool et de caféine sont des facteurs de risque de fibrillation atriale.",
+          "isTrue": true,
+          "explanation": "La prise d'alcool et de caféine sont des facteurs toxiques pouvant déclencher la fibrillation atriale."
+        },
+        {
+          "statement": "Les antiagrégants plaquettaires sont recommandés en première intention dans la prise en charge de la fibrillation atriale.",
+          "isTrue": false,
+          "explanation": "Les antiagrégants plaquettaires n'ont aucune place dans la prise en charge de la fibrillation atriale."
+        },
+        {
+          "statement": "La fibrillation atriale est une maladie chronique nécessitant une prise en charge personnalisée et une éducation thérapeutique des patients.",
+          "isTrue": true,
+          "explanation": "La prise en charge de la fibrillation atriale repose sur la correction des facteurs de risque et une approche personnalisée pour chaque patient."
+        },
+        {
+          "statement": "Le score de HAS-BLED est utilisé pour déterminer le risque thromboembolique chez les patients atteints de fibrillation atriale.",
+          "isTrue": false,
+          "explanation": "Le score de HAS-BLED est utilisé pour évaluer le risque hémorragique et non le risque thromboembolique."
+        },
+        {
+          "statement": "La stratégie de contrôle du rythme dans la prise en charge de la fibrillation atriale vise à obtenir un retour en rythme sinusal et à le maintenir.",
+          "isTrue": true,
+          "explanation": "L'objectif de la stratégie de contrôle du rythme est de ramener le patient en rythme sinusal et de le maintenir dans ce rythme."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Section 2",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754682151413_5z48j4l8j_5",
+      "topic": "Facteurs de risque de la fibrillation atriale",
+      "rationale": "Les facteurs de risque de la fibrillation atriale peuvent être variés, allant de problèmes métaboliques et inflammatoires à des réactions toxiques ou médicamenteuses. La prise en charge de la fibrillation atriale implique une évaluation du risque thromboembolique et hémorragique, ainsi qu'une attention particulière aux facteurs de risque cardiovasculaires et respiratoires.",
+      "propositions": [
+        {
+          "statement": "La hyperthyroïdie est un facteur de risque de fibrillation atriale.",
+          "isTrue": true,
+          "explanation": "L'hyperthyroïdie est un facteur de risque de fibrillation atriale en raison de son impact sur le fonctionnement du cœur."
+        },
+        {
+          "statement": "Les antiagrégants plaquettaires sont recommandés en première intention pour les patients atteints de fibrillation atriale.",
+          "isTrue": false,
+          "explanation": "Les antiagrégants plaquettaires n'ont aucune place dans la fibrillation atriale, contrairement aux anticoagulants."
+        },
+        {
+          "statement": "La prise en charge des facteurs de risque de la fibrillation atriale nécessite une éducation thérapeutique des patients.",
+          "isTrue": true,
+          "explanation": "Il est important d'éduquer les patients sur la gestion des facteurs de risque pour une prise en charge efficace de la fibrillation atriale."
+        },
+        {
+          "statement": "Le score de CHADS-VASc est utilisé en cas de fibrillation atriale valvulaire.",
+          "isTrue": false,
+          "explanation": "Le score de CHADS-VASc est utilisé en l'absence de fibrillation atriale valvulaire pour évaluer le risque thromboembolique."
+        },
+        {
+          "statement": "La fermeture percutanée de l'auricule gauche est recommandée pour les patients atteints de fibrillation atriale et ayant une contre-indication permanente aux anticoagulants oraux.",
+          "isTrue": true,
+          "explanation": "La fermeture percutanée de l'auricule gauche est une option pour les patients présentant une fibrillation atriale avec indication d'anticoagulation et une contre-indication aux anticoagulants oraux."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Section 2",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754682151413_5z48j4l8j_6",
+      "topic": "Fibrillation atriale: Facteurs de risque et prise en charge",
+      "rationale": "La prise en charge de la fibrillation atriale est complexe et implique à la fois une stratégie anti-thrombotique et de contrôle du rythme. Il est essentiel d'évaluer à la fois le risque thromboembolique et hémorragique des patients pour une prise en charge adaptée. L'éducation thérapeutique et une approche personnalisée sont également cruciales dans la gestion de cette maladie chronique.",
+      "propositions": [
+        {
+          "statement": "La prise en charge de la fibrillation atriale repose uniquement sur une stratégie anti-thrombotique.",
+          "isTrue": false,
+          "explanation": "La prise en charge de la fibrillation atriale repose également sur une stratégie de contrôle du rythme."
+        },
+        {
+          "statement": "Les antiagrégants plaquettaires sont recommandés en première intention pour les fibrillations atriales non valvulaires.",
+          "isTrue": false,
+          "explanation": "Les antiagrégants plaquettaires n'ont aucune place dans la fibrillation atriale."
+        },
+        {
+          "statement": "Le score de CHADS-VASc peut être utilisé pour évaluer le risque thromboembolique en présence de fibrillation atriale valvulaire.",
+          "isTrue": false,
+          "explanation": "Le score de CHADS-VASc n'est utilisé qu'en l'absence de fibrillation atriale valvulaire."
+        },
+        {
+          "statement": "Il est important d'évaluer le risque hémorragique des patients atteints de fibrillation atriale pour adapter leur suivi médical.",
+          "isTrue": true,
+          "explanation": "L'évaluation du risque hémorragique permet d'identifier les patients à risque afin d'intensifier leur suivi."
+        },
+        {
+          "statement": "La fibrillation atriale étant une maladie chronique, la prise en charge doit inclure l'éducation thérapeutique des patients et une approche personnalisée.",
+          "isTrue": true,
+          "explanation": "La prise en charge des facteurs de risque est au centre de la prise en charge de la fibrillation atriale, avec la nécessité d'une approche individualisée et de l'éducation des patients."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Section 2",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754682151413_5z48j4l8j_7",
+      "topic": "Fibrillation atriale: Facteurs de risque et prise en charge",
+      "rationale": "Ce QCM aborde différents aspects de la fibrillation atriale, notamment les facteurs de risque, l'évaluation du risque thromboembolique et hémorragique, ainsi que les principes de prise en charge. Les justifications détaillées permettent de clarifier chaque proposition.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale peut être déclenchée par une hyperthyroïdie.",
+          "isTrue": true,
+          "explanation": "L'hyperthyroïdie est un facteur déclenchant de la fibrillation atriale en raison de son impact sur le rythme cardiaque."
+        },
+        {
+          "statement": "Le score de CHADS-VASc est utilisé pour évaluer le risque hémorragique chez les patients atteints de fibrillation atriale.",
+          "isTrue": false,
+          "explanation": "Le score de CHADS-VASc est utilisé pour évaluer le risque d'accident vasculaire cérébral chez les patients atteints de fibrillation atriale."
+        },
+        {
+          "statement": "Les antiagrégants plaquettaires sont recommandés en première intention pour les FA non valvulaires.",
+          "isTrue": false,
+          "explanation": "Les antiagrégants plaquettaires n'ont aucune place dans la prise en charge de la fibrillation atriale."
+        },
+        {
+          "statement": "La fermeture percutanée de l'auricule gauche est indiquée chez les patients présentant une FA avec indication d'anticoagulation et une contre-indication simultanée et permanente aux anticoagulants oraux.",
+          "isTrue": true,
+          "explanation": "La fermeture percutanée de l'auricule gauche est une option pour les patients qui ne peuvent pas prendre d'anticoagulants oraux."
+        },
+        {
+          "statement": "La prise en charge de la FA repose uniquement sur une stratégie de contrôle du rythme.",
+          "isTrue": true,
+          "explanation": "En plus de la stratégie de contrôle du rythme, la prise en charge de la fibrillation atriale inclut également une stratégie anti-thrombotique."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Section 2",
+      "pageRange": "Pages 1-0"
+    }
+  ],
+  "usedChunks": [
+    1,
+    0
+  ],
+  "currentIndex": 7,
+  "total": 8,
+  "contextSnippet": "sont des facteurs de risque de FA. Ils peuvent être distingués dans trois groupes principaux :\nLes facteurs de risque cardiovasculaires\nLes pathologies cardiovasculaires\nLes pathologies respiratoires\n\n30/07/2025, 16:33Fiche LiSA:Fibrillation atriale — LiSA\nPage 5 of 13https://livret.uness.fr/lisa/2025/Fiche_LiSA:Fibrillation_atriale\nConnaître les facteurs déclenchants OIC-232-10-A\nTroubles hydro-électrolytiques et métaboliques :\nHypokaliémie\nHyperthyroïdie\nInflammation :\nGénérale : infection\nLocale :\nPost-opératoire de chirurgie thoracique et cardiaque\nPéricardite\nRéactions vagales\nTox i q u e :\nPrise d’alcool, de caféine, drogues (cocaïne, amphétamines)\nMédicaments : catécholamines, corticoïdes, chimiothérapies, ...\nConnaître le bilan de première intention OIC-232-11-A\n\n30/07/2025, 16:33Fiche LiSA:Fibrillation atriale — LiSA\nPage 6 of 13https://livret.uness.fr/lisa/2025/Fiche_LiSA:Fibrillation_atriale\nSavoir évaluer le risque thromboembolique et hémorragique OIC-232-12-\nA\nLe score de "
+}

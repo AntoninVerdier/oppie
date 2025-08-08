@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754680871231_06ezbeasy",
+  "questions": [
+    {
+      "id": "qcm_session_1754680871231_06ezbeasy_0",
+      "topic": "Identification des céphalées",
+      "rationale": "Ce QCM permet d'évaluer la compréhension des manifestations cliniques des céphalées chez différents âges, ainsi que la capacité à distinguer entre les signes typiques et atypiques. Chaque proposition aborde un aspect unique, permettant de tester la connaissance des subtilités de l'identification des céphalées.",
+      "propositions": [
+        {
+          "statement": "Les céphalées chez l'adulte se manifestent toujours par une douleur intense au niveau de la boîte crânienne.",
+          "isTrue": false,
+          "explanation": "Bien que les céphalées soient souvent perçues comme une douleur intense, elles peuvent également se manifester par d'autres symptômes comme une algie faciale sans douleur crânienne."
+        },
+        {
+          "statement": "Chez le nourrisson, une céphalée peut se manifester par des accès d'agitation et des cris stridents.",
+          "isTrue": true,
+          "explanation": "Les nourrissons peuvent présenter des signes atypiques de céphalée, y compris agitation et cris stridents, plutôt que la description classique de la douleur."
+        },
+        {
+          "statement": "Les enfants en âge de parler peuvent exprimer leur douleur de tête de manière précise.",
+          "isTrue": true,
+          "explanation": "Les enfants capables de parler peuvent décrire leur douleur, ce qui facilite l'identification des céphalées."
+        },
+        {
+          "statement": "Une attitude prostrée est un signe classique de céphalée chez l'adulte.",
+          "isTrue": false,
+          "explanation": "L'attitude prostrée est plus souvent observée chez les nourrissons en réponse à la douleur que chez les adultes."
+        },
+        {
+          "statement": "Il est possible d'avoir des céphalées sans douleur faciale associée chez l'adulte.",
+          "isTrue": true,
+          "explanation": "Les céphalées peuvent se manifester sans algie faciale, ce qui est important à considérer lors du diagnostic."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Identifier une céphalée",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    1
+  ],
+  "currentIndex": 0,
+  "total": 8,
+  "contextSnippet": "1.     Identifier une céphalée\n·     Adulte et enfant en âge de parler : le patient se plaint dʼune douleur perçue au niveau de la boite crânienne, avec ou sans algie\nfaciale associée.\n·     Nourrisson et petit enfant : tableau clinique atypique : accès dʼagitation, tête roulée en tous les sens dans le berceau avec cris\nstridents, hostilité, mobilisation algique de la tête, ou au contraire attitude prostrée antalgique.\n"
+}

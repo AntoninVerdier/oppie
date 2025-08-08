@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754680536546_ifjsnn4ck",
+  "questions": [
+    {
+      "id": "qcm_session_1754680536546_ifjsnn4ck_0",
+      "topic": "Traitement ambulatoire de la thrombose veineuse profonde",
+      "rationale": "Ce QCM aborde les critères d'hospitalisation des patients avec TVP, mettant en lumière les exceptions et les situations cliniques particulières. Les propositions testent la compréhension des indications d'hospitalisation et des erreurs courantes dans la gestion de la TVP.",
+      "propositions": [
+        {
+          "statement": "L'hospitalisation est recommandée pour les patients avec insuffisance rénale sévère.",
+          "isTrue": true,
+          "explanation": "Les patients avec une clairance de la créatinine < 30 mL/min nécessitent une surveillance plus étroite en milieu hospitalier en raison du risque accru de complications."
+        },
+        {
+          "statement": "Tous les patients atteints de TVP doivent être alités pendant le traitement.",
+          "isTrue": false,
+          "explanation": "Un alitement n'est pas indiqué dans tous les cas de TVP, car cela peut aggraver la condition du patient."
+        },
+        {
+          "statement": "Une TVP proximale avec syndrome obstructif sévère nécessite une hospitalisation.",
+          "isTrue": true,
+          "explanation": "Cette situation clinique requiert une prise en charge hospitalière pour éviter des complications graves."
+        },
+        {
+          "statement": "Les patients avec une TVP malgré un traitement anticoagulant bien conduit peuvent rester en ambulatoire.",
+          "isTrue": false,
+          "explanation": "Ces patients devraient être hospitalisés pour un suivi et une évaluation plus approfondis en raison de l'échec du traitement."
+        },
+        {
+          "statement": "Une phlegmatia cœrulea indique un besoin d'hospitalisation immédiate.",
+          "isTrue": true,
+          "explanation": "La phlegmatia cœrulea est une forme de TVP ischémique qui nécessite une attention médicale urgente en milieu hospitalier."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "TVP",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754680536546_ifjsnn4ck_1",
+      "topic": "Diagnostic de la TVP ou EP",
+      "rationale": "Ce QCM aborde des aspects cruciaux du diagnostic de la TVP et de l'EP, en intégrant l'importance de la probabilité clinique et les implications des résultats des tests. Les propositions sont conçues pour évaluer la compréhension des étudiants sur la relation entre les résultats des tests et les évaluations cliniques, tout en incluant des pièges et des nuances liées au diagnostic.",
+      "propositions": [
+        {
+          "statement": "Un résultat inférieur au seuil diagnostique exclut toujours le diagnostic de TVP ou EP.",
+          "isTrue": false,
+          "explanation": "Un résultat inférieur au seuil ne permet d'exclure le diagnostic que si la probabilité clinique n'est pas forte."
+        },
+        {
+          "statement": "La probabilité clinique doit être évaluée avant d'interpréter les résultats des tests diagnostiques.",
+          "isTrue": true,
+          "explanation": "L'évaluation de la probabilité clinique est cruciale pour interpréter correctement les résultats des tests et décider des prochaines étapes."
+        },
+        {
+          "statement": "Un seuil diagnostique peut varier en fonction du contexte clinique.",
+          "isTrue": true,
+          "explanation": "Les seuils diagnostiques peuvent varier selon les protocoles utilisés, les populations étudiées ou les critères cliniques."
+        },
+        {
+          "statement": "Tous les patients avec des résultats au-dessus du seuil diagnostique doivent recevoir un traitement immédiat.",
+          "isTrue": false,
+          "explanation": "Le traitement dépend également de l'évaluation clinique et d'autres facteurs, pas uniquement des résultats des tests."
+        },
+        {
+          "statement": "Une probabilité clinique forte nécessite souvent des tests supplémentaires même si le résultat est inférieur au seuil.",
+          "isTrue": true,
+          "explanation": "Une probabilité clinique forte peut justifier des investigations additionnelles pour confirmer ou infirmer le diagnostic, indépendamment des résultats des tests."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Sʼils sont inférieurs au seuil diagnostique, ils permettent d'éliminer le diagnostic de TVP ou EP si la probabilité clinique est non",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754680536546_ifjsnn4ck_2",
+      "topic": "Seuils de diagnostic d'exclusion d'EP non grave",
+      "rationale": "Ce QCM aborde les seuils de diagnostic d'exclusion d'EP non grave, en mettant l'accent sur l'importance de l'âge dans ces seuils et en clarifiant les exceptions pour les cas graves et la TVP.",
+      "propositions": [
+        {
+          "statement": "Le seuil pour exclure une EP non grave est de < 500 μg/L pour les patients de moins de 50 ans.",
+          "isTrue": true,
+          "explanation": "Ce seuil est spécifiquement établi pour les patients de moins de 50 ans afin d'optimiser le diagnostic d'exclusion."
+        },
+        {
+          "statement": "Le seuil pour exclure une EP non grave est de < [âge × 10] pour tous les patients, indépendamment de leur âge.",
+          "isTrue": false,
+          "explanation": "Ce seuil ajusté à l'âge ne s'applique qu'aux patients âgés de plus de 50 ans, et non à tous."
+        },
+        {
+          "statement": "L'ajustement à l'âge pour le diagnostic d'exclusion d'EP non grave ne s'applique pas aux cas de TVP.",
+          "isTrue": true,
+          "explanation": "L'ajustement à l'âge est spécifique aux diagnostics d'EP non grave et ne concerne pas la TVP."
+        },
+        {
+          "statement": "Les seuils d'exclusion d'EP non grave s'appliquent également aux cas d'EP grave ou de probabilité forte.",
+          "isTrue": false,
+          "explanation": "Les seuils d'exclusion ne s'appliquent pas aux cas d'EP grave ou de probabilité forte."
+        },
+        {
+          "statement": "Pour un patient de 60 ans, le seuil d'exclusion d'EP non grave est de < 600 μg/L.",
+          "isTrue": true,
+          "explanation": "Pour un patient de 60 ans, le seuil est calculé comme [âge × 10], soit 60 × 10 = 600 μg/L."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "Le seuil est ajusté à lʼâge pour le diagnostic d'exclusion dʼEP non grave  : < 500 μg/L si patient âgé de moins 50 ans, < [âge × 10]",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    3,
+    1,
+    2
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": "TVP\nSauf cas particuliers, les patients avec TVP sont traités en ambulatoire.\nLʼhospitalisation est recommandée chez les patients :\ninsuffisants rénaux sévères (clairance de la créatinine < 30 mL/min) ;\nou présentant une pathologie à risque hémorragique ;\nou en cas de contexte psycho-social et dʼenvironnement géographique et médical ne permettant pas une prise en charge\noptimale à domicile ;\nou en cas de TVP proximale avec syndrome obstructif sévère ou de localisation ilio-cave ;\nou en cas de phlegmatia cœrulea (TVP ischémique) ;\nou en cas de TVP survenant malgré un traitement anticoagulant bien conduit ;\nou en cas de TVP associée à une embolie pulmonaire non à faible risque.\nDans tous les cas, un alitement nʼest pas indiqué.\n"
+}

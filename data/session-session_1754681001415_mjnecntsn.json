@@ -1,0 +1,154 @@
+{
+  "sessionId": "session_1754681001415_mjnecntsn",
+  "questions": [
+    {
+      "id": "qcm_session_1754681001415_mjnecntsn_0",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM aborde les notions clés des tumeurs intracrâniennes, y compris les différences entre les types de tumeurs, leur classification histologique, et les facteurs de risque associés. Les propositions mettent en avant des informations critiques tout en incluant des exceptions et des pièges pour tester la compréhension approfondie des étudiants.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs primitives intracrâniennes proviennent uniquement des cellules nerveuses.",
+          "isTrue": false,
+          "explanation": "Les tumeurs primitives peuvent également se développer à partir des annexes du système nerveux central, comme les méninges."
+        },
+        {
+          "statement": "Les méningiomes sont généralement considérés comme des tumeurs malignes.",
+          "isTrue": false,
+          "explanation": "Les méningiomes sont souvent bénins et classés comme grade 1 selon l'OMS."
+        },
+        {
+          "statement": "Les gliomes sont les tumeurs cérébrales les plus fréquentes chez les adultes.",
+          "isTrue": true,
+          "explanation": "Les gliomes, incluant les glioblastomes, représentent une part significative des tumeurs primitives intracrâniennes."
+        },
+        {
+          "statement": "Les tumeurs infra-tentorielle représentent environ 80% des cas chez l'adulte.",
+          "isTrue": false,
+          "explanation": "Environ 20% des tumeurs intracrâniennes chez l'adulte sont infra-tentorielles."
+        },
+        {
+          "statement": "La prise de certains progestatifs peut favoriser le développement de méningiomes.",
+          "isTrue": true,
+          "explanation": "Des études montrent que la prise de progestatifs comme l'acétate de cyprotérone peut augmenter le risque de méningiomes."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754681001415_mjnecntsn_1",
+      "topic": "Physiologie respiratoire",
+      "rationale": "Ce QCM aborde divers aspects de la physiologie respiratoire, en incluant des concepts clés tels que la diffusion des gaz, les particularités de l'oxygénothérapie en MPOC, et des valeurs physiologiques comme le volume courant. Les propositions incluent des exceptions et des pièges, permettant d'évaluer la compréhension et l'application des connaissances médicales des étudiants.",
+      "propositions": [
+        {
+          "statement": "La diffusion des gaz à travers la membrane alvéolo-capillaire est facilitée par la différence de pression partielle des gaz.",
+          "isTrue": true,
+          "explanation": "La loi de Fick stipule que la diffusion des gaz est proportionnelle à la différence de pression partielle entre deux compartiments, ce qui est fondamental pour l'échange gazeux dans les poumons."
+        },
+        {
+          "statement": "L'oxygénothérapie est toujours bénéfique pour les patients atteints de maladie pulmonaire obstructive chronique (MPOC).",
+          "isTrue": false,
+          "explanation": "L'oxygénothérapie peut être contre-productive chez certains patients atteints de MPOC, car une augmentation excessive de l'oxygène peut supprimer le stimulus respiratoire de l'hypoxie."
+        },
+        {
+          "statement": "Le volume courant (VC) chez un adulte au repos est d'environ 500 ml par respiration.",
+          "isTrue": true,
+          "explanation": "Le volume courant est le volume d'air inhalé ou exhalé lors d'une respiration normale et est typiquement d'environ 500 ml chez un adulte en bonne santé."
+        },
+        {
+          "statement": "L'hypercapnie est toujours causée par une hypoventilation.",
+          "isTrue": false,
+          "explanation": "Bien que l'hypercapnie soit souvent le résultat d'une hypoventilation, elle peut également survenir en raison d'une augmentation de la production de CO2 ou de troubles de la diffusion des gaz."
+        },
+        {
+          "statement": "Les alvéoles sont la principale site de résistance à l'écoulement de l'air dans les voies respiratoires.",
+          "isTrue": true,
+          "explanation": "Les alvéoles, bien qu'étant des sites d'échange gazeux, créent une résistance à l'écoulement d'air en raison de leur structure et de la surface d'échange qu'elles offrent."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "HAUT",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754681001415_mjnecntsn_2",
+      "topic": "Évaluation des tumeurs cérébrales de bas grade",
+      "rationale": "Ce QCM aborde les caractéristiques cliniques, radiologiques et thérapeutiques des tumeurs cérébrales de bas grade, en mettant l'accent sur les différences entre les grades et les implications de traitement. Les propositions incluent des pièges concernant les interprétations des signaux en IRM et les attentes de progression des tumeurs, permettant une évaluation nuancée de la compréhension des étudiants.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs de grade 1 surviennent principalement chez les patients de moins de 20 ans.",
+          "isTrue": true,
+          "explanation": "Les tumeurs de grade 1 sont fréquemment diagnostiquées chez les jeunes patients, notamment ceux de moins de 20 ans."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 présentent toujours un hypersignal T2.",
+          "isTrue": false,
+          "explanation": "Bien que les tumeurs de grade 2 montrent souvent un hypersignal T2, ce n'est pas systématique et d'autres caractéristiques peuvent prédominer."
+        },
+        {
+          "statement": "La chirurgie est un traitement efficace pour les tumeurs de grade 1, avec guérison possible si résection complète.",
+          "isTrue": true,
+          "explanation": "Une résection complète des tumeurs de grade 1 peut mener à une guérison, soulignant l'importance d'une approche chirurgicale."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 ne progressent jamais vers des grades supérieurs.",
+          "isTrue": false,
+          "explanation": "Les tumeurs de grade 2 ont une progression inéluctable vers des grades plus élevés, comme les grades 3 et 4."
+        },
+        {
+          "statement": "Les tumeurs mixtes (kystiques et solides) sont souvent observées dans le grade 1.",
+          "isTrue": true,
+          "explanation": "Les tumeurs de grade 1 peuvent présenter une composition mixte, indiquant leur nature variée."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754681001415_mjnecntsn_3",
+      "topic": "Évaluation des tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM évalue la compréhension des tumeurs primitives intracrâniennes en abordant des caractéristiques, des localisations et des traitements spécifiques. Les propositions incluent des pièges liés aux confusions entre différents types de tumeurs, permettant ainsi d'évaluer la connaissance approfondie des étudiants sur ce sujet.",
+      "propositions": [
+        {
+          "statement": "Les épendymomes se développent principalement à partir des cellules de Schwann.",
+          "isTrue": false,
+          "explanation": "Les épendymomes se développent à partir des épendymocytes des ventricules, et non des cellules de Schwann."
+        },
+        {
+          "statement": "Les médulloblastomes ont une localisation préférentielle dans le vermis du cervelet.",
+          "isTrue": true,
+          "explanation": "Les médulloblastomes sont des tumeurs embryonnaires malignes qui se localisent principalement dans le vermis du cervelet."
+        },
+        {
+          "statement": "Les neurinomes sont généralement des tumeurs malignes.",
+          "isTrue": false,
+          "explanation": "Les neurinomes, ou schwannomes, sont bénins dans la grande majorité des cas."
+        },
+        {
+          "statement": "Les tumeurs métastatiques cérébrales peuvent présenter un rehaussement hétérogène après injection de contraste.",
+          "isTrue": true,
+          "explanation": "Les métastases cérébrales peuvent apparaître avec un rehaussement hétérogène, souvent avec un aspect en cocarde dû à la nécrose centrale."
+        },
+        {
+          "statement": "La prise en charge des glioblastomes de grade 4 inclut souvent la chimiothérapie concomitante.",
+          "isTrue": true,
+          "explanation": "Les glioblastomes de grade 4 sont traités par chirurgie suivie de radiothérapie et de chimiothérapie concomitante selon le protocole de Stupp."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    0,
+    2,
+    1,
+    3
+  ],
+  "currentIndex": 3,
+  "total": 15,
+  "contextSnippet": "Tumeurs intracrâniennes IC-299\nConnaître les principaux types et localisations des tumeurs intracrâniennes\nConnaître la définition des tumeurs primitives intracrâniennes : système nerveux central et annexes\nConnaître les principaux types histologiques des tumeurs cérébrales\nConnaître l'épidémiologie des différents types tumeurs primitives intracrâniennes\nConnaître les principaux tableaux cliniques devant faire évoquer une tumeur intracrânienne\nConnaître la stratégie d'exploration en imagerie devant une tumeur intracrânienne de l'adulte\nDécrire la recherche systématique de cancer primitif à effectuer devant une métastase cérébrale\nSavoir évoquer une hypertension intracrânienne (HTIC) et une épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principes de la prise en charge de l'HTIC et de l'épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principaux types et localisations des tumeurs intracrâniennes OIC-\n299-01-A\n·        Tumeur primi"
+}

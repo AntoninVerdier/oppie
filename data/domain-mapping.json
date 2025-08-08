@@ -1,0 +1,211 @@
+{
+  "domains": {
+    "cardiology": {
+      "name": "Cardiologie",
+      "color": "#ef4444",
+      "files": [
+        "1_Introduction_à_la_sémiologie_cardio-vasculaire.pdf",
+        "2_Souffles_et_murmures_cardio-vasculaires.pdf",
+        "3_Douleur_thoracique_aiguë_et_chronique.pdf",
+        "4_Dyspnée_aiguë_et_chronique.pdf",
+        "5_Œdème_aigu_du_poumon.pdf",
+        "6_Choc_cardiogénique.pdf",
+        "7_Syncope.pdf",
+        "8_Palpitations.pdf",
+        "9_HTA_de_l'adulte.pdf",
+        "10_HTA_de_l'enfant.pdf",
+        "11_HTA_et_grossesse.pdf",
+        "12_HTA_et_sujet_âgé.pdf",
+        "13_HTA_et_diabète.pdf",
+        "14_HTA_et_insuffisance_rénale.pdf",
+        "15_HTA_et_obésité.pdf",
+        "16_HTA_et_syndrome_métabolique.pdf",
+        "17_HTA_et_apnée_du_sommeil.pdf",
+        "18_HTA_et_grossesse.pdf",
+        "19_HTA_et_sujet_âgé.pdf",
+        "20_HTA_et_diabète.pdf"
+      ]
+    },
+    "pneumology": {
+      "name": "Pneumologie",
+      "color": "#3b82f6",
+      "files": [
+        "21_Dyspnée_aiguë_et_chronique.pdf",
+        "22_Toux_aiguë_et_chronique.pdf",
+        "23_Hémoptysie.pdf",
+        "24_Douleur_thoracique_aiguë_et_chronique.pdf",
+        "25_Œdème_aigu_du_poumon.pdf",
+        "26_Choc_cardiogénique.pdf",
+        "27_Syncope.pdf",
+        "28_Palpitations.pdf",
+        "29_HTA_de_l'adulte.pdf",
+        "30_HTA_de_l'enfant.pdf"
+      ]
+    },
+    "neurology": {
+      "name": "Neurologie",
+      "color": "#8b5cf6",
+      "files": [
+        "299_Tumeurs_intracrâniennes.pdf",
+        "300_Tumeurs_du_col_utérin,_tumeur_du_corps_utérin.pdf",
+        "301_Tumeurs_du_colon_et_du_rectum.pdf",
+        "302_Tumeurs_cutanées,_épithéliales_et_mélaniques.pdf",
+        "303_Tumeurs_de_l'estomac.pdf",
+        "304_Tumeurs_du_foie,_primitives_et_secondaires.pdf",
+        "305_Tumeurs_de_l'œsophage.pdf",
+        "306_Tumeurs_de_l'ovaire.pdf",
+        "307_Tumeurs_des_os_primitives_et_secondaires.pdf",
+        "308_Tumeurs_du_pancréas.pdf",
+        "309_Tumeurs_du_poumon,_primitives_et_secondaires.pdf",
+        "310_Tumeurs_de_la_prostate.pdf",
+        "311_Tumeurs_du_rein_de_l'adulte.pdf",
+        "312_Tumeurs_du_sein.pdf",
+        "313_Tumeurs_du_testicule.pdf",
+        "314_Tumeurs_vésicales.pdf"
+      ]
+    },
+    "oncology": {
+      "name": "Oncologie",
+      "color": "#f59e0b",
+      "files": [
+        "298_Tumeurs_de_la_cavité_buccale,_naso-sinusiennes_et_du_cavum,_et_des_voies_aérodigestives_supérieures.pdf",
+        "299_Tumeurs_intracrâniennes.pdf",
+        "300_Tumeurs_du_col_utérin,_tumeur_du_corps_utérin.pdf",
+        "301_Tumeurs_du_colon_et_du_rectum.pdf",
+        "302_Tumeurs_cutanées,_épithéliales_et_mélaniques.pdf",
+        "303_Tumeurs_de_l'estomac.pdf",
+        "304_Tumeurs_du_foie,_primitives_et_secondaires.pdf",
+        "305_Tumeurs_de_l'œsophage.pdf",
+        "306_Tumeurs_de_l'ovaire.pdf",
+        "307_Tumeurs_des_os_primitives_et_secondaires.pdf",
+        "308_Tumeurs_du_pancréas.pdf",
+        "309_Tumeurs_du_poumon,_primitives_et_secondaires.pdf",
+        "310_Tumeurs_de_la_prostate.pdf",
+        "311_Tumeurs_du_rein_de_l'adulte.pdf",
+        "312_Tumeurs_du_sein.pdf",
+        "313_Tumeurs_du_testicule.pdf",
+        "314_Tumeurs_vésicales.pdf"
+      ]
+    },
+    "dermatology": {
+      "name": "Dermatologie",
+      "color": "#10b981",
+      "files": [
+        "302_Tumeurs_cutanées,_épithéliales_et_mélaniques.pdf",
+        "315_Lésions_élémentaires_de_la_peau.pdf",
+        "316_Dermatoses_inflammatoires.pdf",
+        "317_Dermatoses_infectieuses.pdf",
+        "318_Dermatoses_tumorales.pdf",
+        "319_Dermatoses_auto-immunes.pdf",
+        "320_Dermatoses_métaboliques.pdf"
+      ]
+    },
+    "gastroenterology": {
+      "name": "Gastro-entérologie",
+      "color": "#f97316",
+      "files": [
+        "301_Tumeurs_du_colon_et_du_rectum.pdf",
+        "303_Tumeurs_de_l'estomac.pdf",
+        "304_Tumeurs_du_foie,_primitives_et_secondaires.pdf",
+        "305_Tumeurs_de_l'œsophage.pdf",
+        "308_Tumeurs_du_pancréas.pdf",
+        "321_Douleur_abdominale_aiguë_et_chronique.pdf",
+        "322_Nausées_et_vomissements.pdf",
+        "323_Diarrhée_aiguë_et_chronique.pdf",
+        "324_Constipation.pdf",
+        "325_Hémorragie_digestive.pdf",
+        "326_Ictère.pdf",
+        "327_Ascite.pdf"
+      ]
+    },
+    "endocrinology": {
+      "name": "Endocrinologie",
+      "color": "#ec4899",
+      "files": [
+        "13_HTA_et_diabète.pdf",
+        "14_HTA_et_insuffisance_rénale.pdf",
+        "15_HTA_et_obésité.pdf",
+        "16_HTA_et_syndrome_métabolique.pdf",
+        "328_Diabète_de_type_1.pdf",
+        "329_Diabète_de_type_2.pdf",
+        "330_Diabète_et_grossesse.pdf",
+        "331_Complications_du_diabète.pdf",
+        "332_Thyroïdites.pdf",
+        "333_Hyperthyroïdie.pdf",
+        "334_Hypothyroïdie.pdf",
+        "335_Nodules_thyroïdiens.pdf",
+        "336_Adénomes_hypophysaires.pdf"
+      ]
+    },
+    "nephrology": {
+      "name": "Néphrologie",
+      "color": "#06b6d4",
+      "files": [
+        "14_HTA_et_insuffisance_rénale.pdf",
+        "337_Insuffisance_rénale_aiguë.pdf",
+        "338_Insuffisance_rénale_chronique.pdf",
+        "339_Syndrome_néphrotique.pdf",
+        "340_Glomérulonéphrites.pdf",
+        "341_Pyelonéphrites.pdf",
+        "342_Lithiase_rénale.pdf",
+        "343_Hypertension_artérielle_rénovasculaire.pdf"
+      ]
+    },
+    "rheumatology": {
+      "name": "Rhumatologie",
+      "color": "#84cc16",
+      "files": [
+        "344_Douleur_articulaire_aiguë_et_chronique.pdf",
+        "345_Arthrites.pdf",
+        "346_Arthroses.pdf",
+        "347_Connectivites.pdf",
+        "348_Vascularites.pdf",
+        "349_Ostéoporose.pdf",
+        "350_Goutte.pdf",
+        "351_Chondrocalcinose.pdf"
+      ]
+    },
+    "psychiatry": {
+      "name": "Psychiatrie",
+      "color": "#a855f7",
+      "files": [
+        "352_Dépression.pdf",
+        "353_Troubles_bipolaires.pdf",
+        "354_Troubles_anxieux.pdf",
+        "355_Troubles_psychotiques.pdf",
+        "356_Troubles_de_la_personnalité.pdf",
+        "357_Troubles_du_comportement_alimentaire.pdf",
+        "358_Addictions.pdf",
+        "359_Troubles_du_sommeil.pdf"
+      ]
+    },
+    "pediatrics": {
+      "name": "Pédiatrie",
+      "color": "#fbbf24",
+      "files": [
+        "10_HTA_de_l'enfant.pdf",
+        "360_Croissance_et_développement.pdf",
+        "361_Maladies_infectieuses_pédiatriques.pdf",
+        "362_Maladies_génétiques.pdf",
+        "363_Maladies_rares.pdf",
+        "364_Prématurité.pdf",
+        "365_Nouveau-né_pathologique.pdf",
+        "366_Urgences_pédiatriques.pdf",
+        "367_Médecine_scolaire.pdf"
+      ]
+    },
+    "emergency": {
+      "name": "Médecine d'urgence",
+      "color": "#ef4444",
+      "files": [
+        "3_Douleur_thoracique_aiguë_et_chronique.pdf",
+        "4_Dyspnée_aiguë_et_chronique.pdf",
+        "5_Œdème_aigu_du_poumon.pdf",
+        "6_Choc_cardiogénique.pdf",
+        "7_Syncope.pdf",
+        "21_Douleur_abdominale_aiguë_et_chronique.pdf",
+        "366_Urgences_pédiatriques.pdf"
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "sessionId": "session_1754681662795_l6y68lbjy",
+  "questions": [
+    {
+      "id": "qcm_session_1754681662795_l6y68lbjy_0",
+      "topic": "Classification des gliomes de grade 1 et 2",
+      "rationale": "Ce QCM teste la connaissance des caractéristiques des gliomes de grade 1 et 2, en mettant en avant les différences entre ces deux grades et en insistant sur l'importance de la chirurgie dans le traitement des gliomes de grade 2.",
+      "propositions": [
+        {
+          "statement": "Les gliomes de grade 1 sont généralement infra tentoriels.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 1 sont en effet souvent infra tentoriels."
+        },
+        {
+          "statement": "Les gliomes de grade 2 présentent toujours un hypersignal en T2 et un hyposignal en T1.",
+          "isTrue": false,
+          "explanation": "Les gliomes de grade 2 peuvent présenter un hypersignal en T2 et un hyposignal en T1, mais ce n'est pas systématique."
+        },
+        {
+          "statement": "La chirurgie est recommandée pour les gliomes de grade 2, avec une résection maximaliste si possible.",
+          "isTrue": true,
+          "explanation": "La chirurgie est en effet recommandée pour les gliomes de grade 2, avec une résection maximaliste si possible."
+        },
+        {
+          "statement": "Les gliomes de grade 2 ne progressent jamais vers l'anaplasie (grades 3 et 4).",
+          "isTrue": false,
+          "explanation": "Les gliomes de grade 2 peuvent progresser vers l'anaplasie (grades 3 et 4)."
+        },
+        {
+          "statement": "La prise de contraste est toujours présente dans les gliomes de grade 1.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 1 présentent souvent un rehaussement après contraste."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754681662795_l6y68lbjy_1",
+      "topic": "Classification des tumeurs intracrâniennes selon le grade",
+      "rationale": "Ce QCM couvre les différentes caractéristiques des tumeurs intracrâniennes selon leur grade, en mettant en avant des aspects spécifiques de chaque type de tumeur. Il met également en lumière des éléments distinctifs des métastases et des tumeurs plus rares.",
+      "propositions": [
+        {
+          "statement": "Le grade 3 correspond à une extension locale/régionale rapide avec une survie globale de 15 mois en moyenne.",
+          "isTrue": false,
+          "explanation": "Le grade 4 présente ces caractéristiques, pas le grade 3."
+        },
+        {
+          "statement": "Les métastases des tumeurs de grade 4 proviennent principalement de cancers comme le broncho-pulmonaire, le mammaire et le mélanome.",
+          "isTrue": true,
+          "explanation": "C'est une caractéristique des métastases des tumeurs de grade 4."
+        },
+        {
+          "statement": "Les neurinomes ou schwannomes se développent à partir des cellules de Schwann des nerfs crâniens/périphériques.",
+          "isTrue": true,
+          "explanation": "C'est une caractéristique des neurinomes ou schwannomes."
+        },
+        {
+          "statement": "Les épendymomes sont principalement malins et surviennent surtout chez l'adulte jeune.",
+          "isTrue": false,
+          "explanation": "Les épendymomes sont généralement bénins et surviennent surtout chez l'enfant."
+        },
+        {
+          "statement": "Les médulloblastomes ont une localisation infra tentorielle et surviennent surtout chez l'enfant.",
+          "isTrue": true,
+          "explanation": "C'est une caractéristique des médulloblastomes."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    1,
+    2
+  ],
+  "currentIndex": 1,
+  "total": 2,
+  "contextSnippet": "BAS GRADE\nGrade\n1\n< 20 ans\nInfra tentorielle\nMixte = kystique / solide\nRehaussement après\ncontraste\nChirurgie\nGuérison si résection\ncomplète\nGrade\n2\n20–40 ans\nSupra tentorielle\nHypersignal T2 Hyposignal T1\nAbsence de prise de contraste\nChirurgie (résection\nmaximaliste, si possible)\n+/- radiothérapie /\nchimiothérapie\nProgression inéluctable vers\n lʼanaplasie (grades 3 et 4)\nGliomes\n"
+}

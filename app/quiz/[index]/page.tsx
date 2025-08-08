@@ -21,6 +21,8 @@ export default function QuizStepPage() {
   const [validated, setValidated] = useState<boolean>(false);
   const [initializedQid, setInitializedQid] = useState<string | null>(null);
   const initializedQidRef = useRef<string | null>(null);
+  const [hasInteracted, setHasInteracted] = useState<boolean>(false);
+  const questionRef = useRef<GeneratedQuestion | null>(null);
 
   useEffect(() => {
     const sid = search.get("sid") || sessionStorage.getItem("oppie-session-id");
@@ -39,23 +41,35 @@ export default function QuizStepPage() {
       if (cancelled) return;
       if (res.ok) {
         const j = await res.json();
-        setQuestion(j.question);
+        // NEVER update question once it's been set - only set it once
+        if (!questionRef.current && j.question) {
+          setQuestion(j.question);
+          questionRef.current = j.question;
+          console.log('🔒 Question set and locked forever');
+        }
         setTotal(j.total);
         setAvailable(j.available);
         setStatus(j.status);
+        // Only reset question ref when we detect a NEW question ID
         if (j.question?.id && j.question.id !== initializedQidRef.current) {
           setAnswers(Array(j.question.propositions.length).fill(false));
           setInitializedQid(j.question.id);
           initializedQidRef.current = j.question.id;
           setValidated(false);
+          setHasInteracted(false); // Reset interaction flag for new question
+          questionRef.current = null; // Reset question ref for new question
+          console.log('🔄 New question detected, resetting question ref');
         }
-        // persist/merge question into local quiz store for summary later
+        // persist question into local quiz store for summary later - NEVER UPDATE EXISTING
         try {
           const raw = sessionStorage.getItem("oppie-quiz");
           const arr: GeneratedQuestion[] = raw ? JSON.parse(raw) : [];
           const exists = arr.findIndex((qq) => qq.id === j.question.id);
-          if (exists >= 0) arr[exists] = j.question; else arr.push(j.question);
-          sessionStorage.setItem("oppie-quiz", JSON.stringify(arr));
+          if (exists === -1) {
+            // Only add if not already present - NEVER UPDATE
+            arr.push(j.question);
+            sessionStorage.setItem("oppie-quiz", JSON.stringify(arr));
+          }
         } catch {}
         // kick background generation
         if (j.status !== "completed") {
@@ -77,15 +91,24 @@ export default function QuizStepPage() {
       if (cancelled) return;
       if (r.ok) {
         const j = await r.json();
-        setQuestion(j.question);
+        // NEVER update question once it's been set - only set it once
+        if (!questionRef.current && j.question) {
+          setQuestion(j.question);
+          questionRef.current = j.question;
+          console.log('🔒 Question set and locked forever');
+        }
         setTotal(j.total);
         setAvailable(j.available);
         setStatus(j.status);
+        // Only reset question ref when we detect a NEW question ID
         if (j.question?.id && j.question.id !== initializedQidRef.current) {
           setAnswers(Array(j.question.propositions.length).fill(false));
           setInitializedQid(j.question.id);
           initializedQidRef.current = j.question.id;
           setValidated(false);
+          setHasInteracted(false); // Reset interaction flag for new question
+          questionRef.current = null; // Reset question ref for new question
+          console.log('🔄 New question detected, resetting question ref');
         }
         if (j.status !== "completed" && j.available < j.total) {
           // keep generation moving in the background
@@ -100,6 +123,8 @@ export default function QuizStepPage() {
 
   function toggle(i: number) {
     if (validated) return;
+    setHasInteracted(true); // Mark that user has started interacting
+    console.log('👆 User clicked proposition', i, '- interaction recorded');
     setAnswers((prev) => prev.map((v, k) => (k === i ? !v : v)));
   }
 
@@ -114,6 +139,20 @@ export default function QuizStepPage() {
     if (mismatches === 0) s = 1; else if (mismatches === 1) s = 0.5; else if (mismatches === 2) s = 0.2; else s = 0;
     return { mismatches, score: s };
   }, [answers, question]);
+
+  // Validation functions
+  const hasAtLeastOneSelection = useMemo(() => {
+    return answers.some(answer => answer === true);
+  }, [answers]);
+
+  const hasAtLeastOneTrueAnswer = useMemo(() => {
+    if (!question) return true;
+    return question.propositions.some(prop => prop.isTrue);
+  }, [question]);
+
+  const canValidate = useMemo(() => {
+    return hasAtLeastOneSelection && hasAtLeastOneTrueAnswer;
+  }, [hasAtLeastOneSelection, hasAtLeastOneTrueAnswer]);
 
   function next() {
     if (!question) return;
@@ -141,9 +180,52 @@ export default function QuizStepPage() {
           if (mismatches === 0) s = 1; else if (mismatches === 1) s = 0.5; else if (mismatches === 2) s = 0.2; else s = 0;
           return { id: q.id, topic: q.topic, mismatches, score: s };
         });
-        const sum = per.reduce((acc, p) => acc + p.score, 0);
-        const summary = { at: new Date().toISOString(), per, sum, count: per.length };
+        
+        // Only count questions that were actually answered
+        const answeredQuestions = per.filter(p => {
+          const st = stored[p.id]?.answers as boolean[] | undefined;
+          return st && Array.isArray(st) && st.some(answer => answer === true);
+        });
+        
+        // Handle case where no questions were answered
+        if (answeredQuestions.length === 0) {
+          const summary = { 
+            at: new Date().toISOString(), 
+            per: [], 
+            sum: 0, 
+            count: 0,
+            message: "Aucun QCM n'a été validé"
+          };
+          sessionStorage.setItem("oppie-summary", JSON.stringify(summary));
+          router.push("/summary");
+          return;
+        }
+        
+        const sum = answeredQuestions.reduce((acc, p) => acc + p.score, 0);
+        const summary = { at: new Date().toISOString(), per: answeredQuestions, sum, count: answeredQuestions.length };
         sessionStorage.setItem("oppie-summary", JSON.stringify(summary));
+        
+        // Track domain scores
+        try {
+          const sessionData = JSON.parse(sessionStorage.getItem("oppie-session") || "{}");
+          if (sessionData.filename) {
+            // This will be handled by the API to avoid client-side domain mapping
+            fetch('/api/domains/track-score', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                sessionId,
+                filename: sessionData.filename,
+                score: sum,
+                totalQuestions: arr.length,
+                answeredQuestions: answeredQuestions.length,
+                averageScore: answeredQuestions.length > 0 ? sum / answeredQuestions.length : 0
+              })
+            }).catch(console.error);
+          }
+        } catch (error) {
+          console.error('Error tracking domain score:', error);
+        }
       } catch {}
       router.push("/summary");
     } else {
@@ -164,7 +246,14 @@ export default function QuizStepPage() {
         <div className="mt-10 text-slate-400">Préparation du QCM…</div>
       ) : (
         <div className="mt-6 rounded-2xl border border-slate-700 bg-slate-900 p-5">
-          <h3 className="font-semibold">{question.topic}</h3>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="font-semibold">{question.topic}</h3>
+            {(question as any).chunkHeading && (
+              <div className="text-xs text-slate-400 bg-slate-800 px-2 py-1 rounded">
+                {(question as any).chunkHeading} • {(question as any).pageRange}
+              </div>
+            )}
+          </div>
           <ul className="mt-3 space-y-2">
             {question.propositions.map((p, i) => {
               const userTrue = answers[i] === true;
@@ -227,11 +316,30 @@ export default function QuizStepPage() {
             })}
           </ul>
           <div className="mt-3 flex items-center justify-between">
-            <button onClick={() => setValidated(true)} disabled={validated} className={clsx("rounded-xl px-3 py-1.5 text-sm", validated ? "bg-slate-200 text-slate-600 cursor-not-allowed" : "bg-mint-600 text-white")}>{validated ? "Validé" : "Valider ce QCM"}</button>
+            <button 
+              onClick={() => setValidated(true)} 
+              disabled={validated || !canValidate} 
+              className={clsx(
+                "rounded-xl px-3 py-1.5 text-sm", 
+                validated 
+                  ? "bg-slate-200 text-slate-600 cursor-not-allowed" 
+                  : canValidate 
+                    ? "bg-mint-600 text-white hover:bg-mint-700" 
+                    : "bg-slate-600 text-slate-400 cursor-not-allowed"
+              )}
+            >
+              {validated ? "Validé" : canValidate ? "Valider ce QCM" : "Sélectionnez au moins une réponse"}
+            </button>
             {validated && (
               <div className="text-sm text-slate-300 flex-1 text-right">{`Score: ${score.score.toFixed(1)}/1 • ${score.mismatches} discordance${score.mismatches>1?"s":""}`}</div>
             )}
           </div>
+          {!hasAtLeastOneTrueAnswer && (
+            <div className="mt-3 rounded-xl border border-amber-600 bg-amber-900/30 p-3 text-sm text-amber-300">
+              <div className="font-medium text-amber-200 mb-1">⚠️ Attention</div>
+              <p>Ce QCM ne contient aucune réponse vraie. Veuillez signaler ce problème.</p>
+            </div>
+          )}
           {validated && question.rationale && (
             <div className="mt-3 rounded-xl border border-slate-700 bg-slate-900 p-3 text-sm text-slate-300">
               <div className="font-medium text-slate-200 mb-1">Justification détaillée</div>

@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754679731124_mzpjw2me9",
+  "questions": [
+    {
+      "id": "qcm_session_1754679731124_mzpjw2me9_0",
+      "topic": "Traitement d'une suspicion de céphalée secondaire",
+      "rationale": "Ce QCM couvre les recommandations pour l'évaluation et la prise en charge de la céphalée secondaire, en mettant l'accent sur les méthodes de traitement, les précautions à prendre et les choix d'antalgique. Les propositions visent à tester la compréhension des pratiques cliniques appropriées et des risques associés.",
+      "propositions": [
+        {
+          "statement": "Il est recommandé de positionner le patient allongé avec la tête surélevée à 30° pour soulager la douleur.",
+          "isTrue": true,
+          "explanation": "Cette position aide à réduire la pression intracrânienne et améliore le confort du patient."
+        },
+        {
+          "statement": "Le paracétamol est contre-indiqué en cas de céphalée secondaire.",
+          "isTrue": false,
+          "explanation": "Le paracétamol est un traitement de première ligne pour la douleur aiguë, même en cas de céphalée secondaire."
+        },
+        {
+          "statement": "Il est conseillé d'administrer des sédatifs pour calmer le patient durant une céphalée aiguë.",
+          "isTrue": false,
+          "explanation": "Les sédatifs peuvent masquer l'émergence de troubles de la conscience, ce qui est dangereux dans le cadre d'une céphalée secondaire."
+        },
+        {
+          "statement": "L'administration de néfopam (Acupan®) est appropriée en tant qu'antalgique en cas de céphalée aiguë.",
+          "isTrue": true,
+          "explanation": "Le néfopam est un antalgique efficace qui peut être utilisé pour traiter la douleur, en complément du paracétamol."
+        },
+        {
+          "statement": "Il est important d'éviter l'aspirine et les AINS en raison du risque d'aggraver une hémorragie.",
+          "isTrue": true,
+          "explanation": "Les AINS et l'aspirine peuvent augmenter le risque hémorragique, ce qui est particulièrement préoccupant en cas de céphalée secondaire."
+        }
+      ],
+      "chunkId": "chunk_9",
+      "chunkHeading": "Traitement dʼune suspicion de céphalée secondaire(évaluation et prise en charge de la douleur aiguë)",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    9
+  ],
+  "currentIndex": 0,
+  "total": 3,
+  "contextSnippet": "1. Traitement dʼune suspicion de céphalée secondaire(évaluation et prise en charge de la douleur aiguë)\n·     Position allongée, tête à 30°, patient au calme, obscurité si photophobie\n·     A jeun\n·     Traitement antalgique (paracétamol 1g, néfopam [Acupan®] 20 mg) associé à un traitement antiémétique si\nnausées/vomissements (métoclopramide). Voie IV si troubles digestifs associés. Passer à un antalgique de palier 2 si échec.\n·     Éviter lʼaspirine et les AINS susceptibles dʼaggraver une hémorragie\n·     Éviter les sédatifs susceptibles de masquer lʼémergence de troubles de la conscience.\n·     Le traitement étiologique dépend de la cause identifiée par les examens complémentaires\n"
+}

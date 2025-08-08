@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754679569352_8t45nllfq",
+  "questions": [
+    {
+      "id": "qcm_session_1754679569352_8t45nllfq_0",
+      "topic": "Céphalées aiguës et chroniques chez l'adulte et l'enfant",
+      "rationale": "Ce QCM vise à évaluer la compréhension des céphalées aiguës et chroniques, leurs causes, manifestations cliniques, et les indications de traitements et d'examens complémentaires. Les propositions incluent des nuances sur les types de céphalées, leur classification, et l'importance des symptômes associés, tout en intégrant des pièges pour tester la connaissance des exceptions et indications cliniques.",
+      "propositions": [
+        {
+          "statement": "Une céphalée aiguë peut être causée par une hémorragie méningée, qui se manifeste souvent par un début soudain et intense.",
+          "isTrue": true,
+          "explanation": "L'hémorragie méningée se présente généralement par une céphalée très intense, souvent décrite comme 'la pire de ma vie', et débute soudainement, nécessitant une prise en charge urgente."
+        },
+        {
+          "statement": "Les céphalées de tension sont classées comme des céphalées aiguës et doivent toujours être traitées en urgence.",
+          "isTrue": false,
+          "explanation": "Les céphalées de tension sont considérées comme des céphalées chroniques épisodiques et ne nécessitent pas de traitement en urgence, bien qu'elles puissent être invalidantes."
+        },
+        {
+          "statement": "Une céphalée chronique quotidienne peut être associée à des troubles du sommeil et à l'anxiété.",
+          "isTrue": true,
+          "explanation": "Les céphalées chroniques quotidiennes, telles que les céphalées de tension chroniques, peuvent être exacerbées par des facteurs psychologiques comme l'anxiété et le stress, ainsi que par un sommeil de mauvaise qualité."
+        },
+        {
+          "statement": "Une ponction lombaire est toujours nécessaire pour diagnostiquer une céphalée aiguë.",
+          "isTrue": false,
+          "explanation": "La ponction lombaire n'est pas systématiquement indiquée pour toutes les céphalées aiguës; elle est réservée aux cas avec suspicion d'hémorragie ou d'infection après évaluation clinique appropriée."
+        },
+        {
+          "statement": "Les migraines peuvent être accompagnées de symptômes prodromiques, tels que des modifications visuelles ou des troubles de l'humeur.",
+          "isTrue": true,
+          "explanation": "Les migraines peuvent être précedées de symptômes prodromiques, tels que des auras visuelles ou des changements d'humeur, qui aident à les distinguer des autres types de céphalées."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    }
+  ],
+  "usedChunks": [
+    0
+  ],
+  "currentIndex": 0,
+  "total": 3,
+  "contextSnippet": "Céphalée inhabituelle aiguë et chronique chez l'adulte et l'enfant IC-\n100\nConnaître les modalités du diagnostic d'une céphalée aiguë et d'une céphalée chronique\nConnaître les principales causes de céphalées nécessitant une prise en charge en urgence et leur présentation clinique\nÉnoncer les principales causes de céphalée aiguë et les caractéristiques cliniques propres à chacune\nÉnoncer les principales causes de céphalée chronique (épisodique ou quotidienne) et les caractéristiques cliniques propres à\nchacune\nÉnoncer les principales causes des céphalées récentes d'aggravation progressive et les caractéristiques cliniques propres à\nchacune\nDiscuter l'indication d'une hospitalisation et d'une ponction lombaire devant une céphalée aiguë en connaissant la pertinence de\ncet examen\nSavoir mettre en route un traitement des céphalées aux urgences\nConnaître l'indication et la pertinence de l'imagerie devant une céphalée aiguë et chronique chez l'adulte et l'enfant\nConnaître les principes de tra"
+}

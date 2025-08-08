@@ -1,0 +1,44 @@
+{
+  "sessionId": "session_1754677294029_4w5dswiv1",
+  "questions": [
+    {
+      "id": "qcm_session_1754677294029_4w5dswiv1_0",
+      "topic": "Identifier une céphalée",
+      "propositions": [
+        {
+          "statement": "Chez un adulte, la céphalée peut se manifester par une douleur localisée au niveau de la boîte crânienne.",
+          "isTrue": true,
+          "explanation": "Les adultes décrivent souvent leur céphalée comme une douleur précise au niveau de la tête, ce qui est conforme à la présentation clinique."
+        },
+        {
+          "statement": "Les nourrissons sont capables de verbaliser leur douleur de tête, ce qui facilite le diagnostic.",
+          "isTrue": false,
+          "explanation": "Les nourrissons ne peuvent pas verbaliser leur douleur, ce qui rend le diagnostic plus difficile et basé sur des signes comportementaux."
+        },
+        {
+          "statement": "Un accès d'agitation et des cris stridents chez un petit enfant peuvent être des indicateurs de céphalée.",
+          "isTrue": true,
+          "explanation": "Ces signes comportementaux peuvent indiquer une douleur, y compris une céphalée, chez les jeunes enfants."
+        },
+        {
+          "statement": "La prostration antalgique chez un nourrisson exclut la possibilité d'une céphalée.",
+          "isTrue": false,
+          "explanation": "Au contraire, une attitude prostrée peut être un signe de douleur, y compris une céphalée, chez les nourrissons."
+        },
+        {
+          "statement": "Une céphalée chez un enfant peut s'accompagner d'une mobilité algique de la tête.",
+          "isTrue": true,
+          "explanation": "La mobilisation algique de la tête est un comportement observé chez les enfants lorsqu'ils ressentent de la douleur, y compris en cas de céphalée."
+        }
+      ],
+      "rationale": "Ce QCM permet d'évaluer la compréhension des différentes manifestations de la céphalée chez les adultes et les enfants, tout en soulignant les particularités cliniques observées chez les nourrissons. Les propositions incluent des affirmations véridiques ainsi que des pièges qui clarifient la complexité du diagnostic de céphalée selon l'âge et l'expression des symptômes.",
+      "chunkId": "chunk_1",
+      "chunkHeading": "Identifier une céphalée",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    1
+  ],
+  "currentIndex": 0
+}

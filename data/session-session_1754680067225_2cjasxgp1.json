@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754680067225_2cjasxgp1",
+  "questions": [
+    {
+      "id": "qcm_session_1754680067225_2cjasxgp1_0",
+      "topic": "Identifier une céphalée",
+      "rationale": "Ce QCM permet d'évaluer la compréhension des manifestations cliniques de la céphalée chez différents âges, soulignant les expressions variées de la douleur et les comportements atypiques, tout en intégrant des pièges pour éviter les généralisations hâtives.",
+      "propositions": [
+        {
+          "statement": "Chez l'adulte et l'enfant en âge de parler, la céphalée peut être associée à une algie faciale.",
+          "isTrue": true,
+          "explanation": "La céphalée chez ces patients peut effectivement s'accompagner de douleurs faciales, soulignant des pathologies sous-jacentes."
+        },
+        {
+          "statement": "Les nourrissons et petits enfants expriment la céphalée uniquement par des pleurs.",
+          "isTrue": false,
+          "explanation": "Leur expression de la douleur peut être variée, incluant agitation et comportements atypiques, pas seulement des pleurs."
+        },
+        {
+          "statement": "Une attitude prostrée chez un nourrisson peut indiquer une céphalée.",
+          "isTrue": true,
+          "explanation": "L'attitude prostrée peut être un signe de douleur chez les jeunes enfants, représentant une réaction antalgique."
+        },
+        {
+          "statement": "Les cris stridents chez un nourrisson sont toujours liés à une céphalée.",
+          "isTrue": false,
+          "explanation": "Bien que les cris stridents puissent indiquer une douleur, ils ne sont pas spécifiques à la céphalée et peuvent représenter d'autres douleurs."
+        },
+        {
+          "statement": "La mobilisation algique de la tête chez un petit enfant peut être un indicateur de céphalée.",
+          "isTrue": true,
+          "explanation": "Ce comportement peut refléter une tentative d'atténuer la douleur, suggérant la présence d'une céphalée."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Identifier une céphalée",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    1
+  ],
+  "currentIndex": 0,
+  "total": 3,
+  "contextSnippet": "1.     Identifier une céphalée\n·     Adulte et enfant en âge de parler : le patient se plaint dʼune douleur perçue au niveau de la boite crânienne, avec ou sans algie\nfaciale associée.\n·     Nourrisson et petit enfant : tableau clinique atypique : accès dʼagitation, tête roulée en tous les sens dans le berceau avec cris\nstridents, hostilité, mobilisation algique de la tête, ou au contraire attitude prostrée antalgique.\n"
+}

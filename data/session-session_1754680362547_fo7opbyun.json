@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754680362547_fo7opbyun",
+  "questions": [
+    {
+      "id": "qcm_session_1754680362547_fo7opbyun_0",
+      "topic": "Syndrome de vasoconstriction cérébrale réversible (SVCR)",
+      "rationale": "Ce QCM aborde divers aspects du syndrome de vasoconstriction cérébrale réversible, incluant ses manifestations cliniques, ses complications, et les contextes évocateurs. Les propositions sont conçues pour tester la compréhension des étudiants sur le SVCR tout en incluant des pièges pour évaluer leur capacité à distinguer entre des faits vrais et faux.",
+      "propositions": [
+        {
+          "statement": "Le syndrome de vasoconstriction cérébrale réversible peut être responsable de céphalées en coup de tonnerre.",
+          "isTrue": true,
+          "explanation": "Entre 10 à 45% des cas de céphalées en coup de tonnerre aux urgences sont dus au SVCR."
+        },
+        {
+          "statement": "Le SVCR se caractérise par une vasodilatation des artères cérébrales.",
+          "isTrue": false,
+          "explanation": "Le SVCR est caractérisé par une vasoconstriction segmentaire et diffuse des artères cérébrales."
+        },
+        {
+          "statement": "Les céphalées liées au SVCR durent généralement entre 5 minutes et plusieurs heures et peuvent se répéter sur une période de 1 à 3 semaines.",
+          "isTrue": true,
+          "explanation": "Les céphalées en coup de tonnerre du SVCR durent effectivement entre 5 minutes et plusieurs heures et se répètent sur 1 à 3 semaines."
+        },
+        {
+          "statement": "Le SVCR ne peut se compliquer que d'accidents vasculaires cérébraux (AVC) ischémiques.",
+          "isTrue": false,
+          "explanation": "Le SVCR peut se compliquer d'hémorragies cérébrales sans anévrisme, ainsi que d'infarctus cérébral."
+        },
+        {
+          "statement": "Le SVCR est souvent associé à des contextes tels que le postpartum ou l'exposition à des substances vasoactives.",
+          "isTrue": true,
+          "explanation": "Des contextes évocateurs du SVCR incluent le postpartum, ainsi que l'exposition à des substances comme le cannabis ou la cocaïne."
+        }
+      ],
+      "chunkId": "chunk_7",
+      "chunkHeading": "Syndrome de vasoconstriction cérébrale réversible (SVCR)",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754680362547_fo7opbyun_1",
+      "topic": "Céphalées aiguës et chroniques chez l'adulte et l'enfant",
+      "rationale": "Ce QCM aborde les céphalées aiguës et chroniques, en distinguant les causes nécessitant une urgence, les caractéristiques cliniques des céphalées primaires et secondaires, ainsi que la pertinence des examens comme la ponction lombaire. Chaque proposition est conçue pour tester la compréhension des étudiants sur les aspects cliniques et diagnostiques des céphalées.",
+      "propositions": [
+        {
+          "statement": "Les céphalées aiguës peuvent être causées par une méningite, qui nécessite une prise en charge d'urgence.",
+          "isTrue": true,
+          "explanation": "La méningite est une inflammation des membranes entourant le cerveau et la moelle épinière, entraînant des céphalées aiguës sévères, souvent accompagnées de fièvre, de raideur de la nuque et de troubles neurologiques."
+        },
+        {
+          "statement": "Les céphalées de tension sont considérées comme des urgences médicales.",
+          "isTrue": false,
+          "explanation": "Les céphalées de tension, bien que douloureuses, ne sont pas classées comme des urgences. Elles sont généralement moins graves et peuvent être gérées en ambulatoire."
+        },
+        {
+          "statement": "Une céphalée chronique quotidienne peut être causée par une surconsommation de médicaments analgésiques.",
+          "isTrue": true,
+          "explanation": "La céphalée par abus médicamenteux survient souvent chez des patients prenant régulièrement des analgésiques, entraînant une douleur persistante qui nécessite un sevrage."
+        },
+        {
+          "statement": "Les céphalées chroniques sont toujours secondaires à une pathologie sous-jacente identifiable.",
+          "isTrue": false,
+          "explanation": "Les céphalées primaires, comme la migraine et les céphalées de tension, ne résultent pas d'une pathologie identifiable, contrairement aux céphalées secondaires."
+        },
+        {
+          "statement": "Une ponction lombaire est indiquée chez tout patient présentant une céphalée aiguë sans antécédents clairs.",
+          "isTrue": false,
+          "explanation": "La ponction lombaire n'est pas systématique et doit être indiquée en fonction de l'examen clinique et des signes de méningite ou d'hypertension intracrânienne."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754680362547_fo7opbyun_2",
+      "topic": "Identifier une céphalée",
+      "rationale": "Ce QCM aborde les différents aspects de l'identification des céphalées chez les adultes et les enfants, mettant en lumière les différences cliniques et les symptômes atypiques, tout en intégrant des pièges pour tester la compréhension des nuances dans les présentations cliniques.",
+      "propositions": [
+        {
+          "statement": "Un adulte se plaint d'une douleur au niveau de la boîte crânienne, ce qui peut indiquer une céphalée.",
+          "isTrue": true,
+          "explanation": "La douleur perçue au niveau de la boîte crânienne est un symptôme classique des céphalées chez l'adulte."
+        },
+        {
+          "statement": "Les nourrissons présentent des symptômes de céphalée identiques à ceux des adultes.",
+          "isTrue": false,
+          "explanation": "Les nourrissons et petits enfants montrent un tableau clinique atypique, avec agitation et comportements spécifiques, qui diffèrent des céphalées de l'adulte."
+        },
+        {
+          "statement": "Des cris stridents peuvent être un indicateur de céphalée chez un petit enfant.",
+          "isTrue": true,
+          "explanation": "Les cris stridents, associés à une agitation, peuvent refléter une douleur ou un inconfort, potentiellement liés à une céphalée."
+        },
+        {
+          "statement": "Mobilisation algique de la tête est un symptôme fréquent chez l'adulte lors d'une céphalée.",
+          "isTrue": false,
+          "explanation": "La mobilisation algique de la tête est plus typiquement observée chez les nourrissons et petits enfants, pas chez les adultes."
+        },
+        {
+          "statement": "Une attitude prostrée antalgique chez un petit enfant peut également indiquer une céphalée.",
+          "isTrue": true,
+          "explanation": "Une attitude prostrée peut signaler une douleur intense chez les jeunes enfants, pouvant être causée par une céphalée."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Identifier une céphalée",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    7,
+    0,
+    1
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": "2. Syndrome de vasoconstriction cérébrale réversible (SVCR)\n·       SVCR : 10 à 45% des céphalées en coup de tonnerre aux urgences ; sous-diagnostiqué car de description récente (2007).\n·       SVCR : vasoconstriction segmentaire et diffuse des artères cérébrales, réversible en 3 mois. Peut se compliquer d'HSA corticale\nsans anévrisme et dʼAVC (item 340) (soit hémorragie cérébrale, soit infarctus cérébral).\n·       Céphalée typique : céphalée en coup de tonnerre, dure 5 minutes à plusieurs heures et se répète sur 1 à 3 semaines, volontiers\nprovoquée par l'effort, lʼémotion, le Valsalva ou l'activité sexuelle.\n·       Autres signes associés : poussée hypertensive, crises comitiales et/ou déficit focal.\n·       Contextes évocateurs : postpartum, exposition à des substances vasoactives (cannabis, cocaïne, antidépresseur\nsérotoninergique, sympathomimétiques, décongestionnant nasal, ou triptan) ou contexte de stress.\n"
+}

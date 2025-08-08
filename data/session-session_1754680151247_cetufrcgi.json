@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754680151247_cetufrcgi",
+  "questions": [
+    {
+      "id": "qcm_session_1754680151247_cetufrcgi_0",
+      "topic": "Évaluation des tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM aborde différents types de tumeurs primitives intracrâniennes, leurs caractéristiques, leur épidémiologie et leurs traitements. Les propositions incluent des informations sur les grades des tumeurs, leur localisation, et les traitements, tout en présentant des pièges pour évaluer la compréhension des nuances cliniques.",
+      "propositions": [
+        {
+          "statement": "Les épendymomes surviennent principalement chez l'adulte et sont souvent localisés infra tentoriellement.",
+          "isTrue": false,
+          "explanation": "Les épendymomes sont généralement localisés intra ventriculaire et surviennent surtout chez l'enfant, avec une localisation supra tentorielle chez l'adulte."
+        },
+        {
+          "statement": "Le glioblastome est classé comme une tumeur de grade 4 selon l'OMS.",
+          "isTrue": true,
+          "explanation": "Le glioblastome est bien reconnu comme une tumeur maligne de grade 4, présentant une progression inéluctable."
+        },
+        {
+          "statement": "Les neurinomes, en dehors des nerfs crâniens, peuvent également se développer à partir de nerfs périphériques.",
+          "isTrue": true,
+          "explanation": "Les neurinomes se développent à partir des cellules de Schwann des nerfs crâniens ou périphériques, excluant le nerf olfactif et le nerf optique."
+        },
+        {
+          "statement": "Le traitement des métastases cérébrales est identique indépendamment du nombre et de la localisation des lésions.",
+          "isTrue": false,
+          "explanation": "Le traitement des métastases cérébrales dépend du nombre, de la localisation et du volume des métastases, ainsi que des déficits neurologiques."
+        },
+        {
+          "statement": "Le médulloblastome est une tumeur embryonnaire maligne qui se localise principalement dans le vermis du cervelet.",
+          "isTrue": true,
+          "explanation": "Le médulloblastome est effectivement une tumeur embryonnaire maligne, se localisant souvent dans le vermis du cervelet et survenant surtout chez l'enfant."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754680151247_cetufrcgi_1",
+      "topic": "Pathologie et traitements en médecine",
+      "rationale": "Ce QCM aborde des aspects variés des pathologies courantes et de leur gestion, soulignant les erreurs fréquentes et les nuances en matière de traitement. Les propositions incluent des pièges pour tester la compréhension des étudiants sur des concepts clés en médecine.",
+      "propositions": [
+        {
+          "statement": "Les antibiotiques sont efficaces contre les infections virales.",
+          "isTrue": false,
+          "explanation": "Les antibiotiques ciblent les bactéries et n'ont aucun effet sur les virus, ce qui les rend inefficaces pour traiter les infections virales."
+        },
+        {
+          "statement": "Le diabète de type 2 peut être géré par des modifications du mode de vie.",
+          "isTrue": true,
+          "explanation": "Des changements dans l'alimentation, l'activité physique et la perte de poids peuvent significativement améliorer la gestion du diabète de type 2."
+        },
+        {
+          "statement": "Tous les patients atteints de maladies chroniques ont besoin d'une thérapie médicamenteuse constante.",
+          "isTrue": false,
+          "explanation": "Certains patients peuvent gérer leurs maladies chroniques uniquement par des changements de style de vie ou des interventions non médicamenteuses, selon la gravité de leur état."
+        },
+        {
+          "statement": "L'hypertension artérielle peut entraîner des complications cardiovasculaires graves.",
+          "isTrue": true,
+          "explanation": "L'hypertension non contrôlée est un facteur de risque majeur pour les accidents vasculaires cérébraux, les infarctus du myocarde et d'autres maladies cardiovasculaires."
+        },
+        {
+          "statement": "Les vaccins ne sont efficaces que durant la première année suivant leur administration.",
+          "isTrue": false,
+          "explanation": "De nombreux vaccins offrent une protection durable, et certains nécessitent des rappels pour maintenir leur efficacité au fil du temps."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "HAUT",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754680151247_cetufrcgi_2",
+      "topic": "Évaluation des tumeurs cérébrales de bas grade",
+      "rationale": "Ce QCM évalue la compréhension des caractéristiques, des localisations et des traitements des tumeurs cérébrales de bas grade, en mettant l'accent sur les différences entre les grades 1 et 2, et en clarifiant les concepts liés à leur imagerie et à leur gestion clinique.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs de grade 1 peuvent être mixtes, c'est-à-dire à la fois kystiques et solides.",
+          "isTrue": true,
+          "explanation": "Les tumeurs de grade 1, notamment les kystes et les tumeurs mixtes, peuvent présenter une composition kystique et solide."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 sont toujours situées dans la région infratentorielle.",
+          "isTrue": false,
+          "explanation": "Les tumeurs de grade 2 sont généralement supérieures à la tente cérébelleuse, donc infratentorielle est incorrect."
+        },
+        {
+          "statement": "Une résection complète des tumeurs de grade 1 peut conduire à une guérison.",
+          "isTrue": true,
+          "explanation": "La résection complète des tumeurs de grade 1 est souvent associée à une guérison, car elles sont généralement bénignes."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 présentent un hypersignal T2 et un hyposignal T1 sans prise de contraste.",
+          "isTrue": true,
+          "explanation": "Les caractéristiques d'imagerie des tumeurs de grade 2 incluent un hypersignal sur les séquences T2 et un hyposignal sur T1, ainsi qu'une absence de prise de contraste."
+        },
+        {
+          "statement": "La progression vers l'anaplasie est une caractéristique des tumeurs de grade 1.",
+          "isTrue": false,
+          "explanation": "La progression vers l'anaplasie est associée aux tumeurs de grade 2, et non aux tumeurs de grade 1 qui sont généralement stables après résection."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    3,
+    2,
+    1
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": "GRADE\nGrade\n3\n30–50 ansSupra tentorielle\nHypersignal T2 Hyposignal T1\nPrise de contraste\nChirurgie (résection\nmaximaliste, si possible)\n+ radiothérapie /\nchimiothérapie\nProgression inéluctable vers\nle glioblastome (grade 4)\nGrade\n4\n60–70 ansSupra tentorielle\nNécrose\nPrise de contraste hétérogène\nChirurgie (résection\nmaximaliste, si possible)\n+ radio-chimiothérapie\nconcomitante (protocole de\nStupp)\nExtension locale/régionale\nrapide\nSurvie globale de 15 mois\nMétastase :\n·        Origines principales = cancers à fort tropisme neurologique : broncho-pulmonaire, mammaire et mélanome\n·        IRM : tumeur(s) unique ou multiples ; localisation cortico-sous-corticale ; rehaussement hétérogène après injection de\ncontraste, avec aspect en cocarde (nécrose centrale et prise de contraste périphérique) ;   œdème péri-tumoral +++ ; révélation\nhémorragique des métastases de mélanome et de cancer du rein\n·        Traitement :\no  Dépend du nombre, de la localisation et du volume de la (ou des) métastas"
+}

@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754679888340_3ryfxki9n",
+  "questions": [
+    {
+      "id": "qcm_session_1754679888340_3ryfxki9n_0",
+      "topic": "Détermination de la nature aiguë ou chronique des céphalées",
+      "rationale": "Ce QCM aborde différents aspects de la détermination de la nature aiguë ou chronique des céphalées, en incluant des affirmations sur les céphalées aiguës, chroniques, épisodiques, et les signaux d'alerte à surveiller. Les propositions varient entre des faits établis et des pièges pour tester la compréhension des futurs médecins sur la sémiologie des céphalées.",
+      "propositions": [
+        {
+          "statement": "Toute céphalée brutale est une hémorragie sous-arachnoïdienne jusqu'à preuve du contraire.",
+          "isTrue": true,
+          "explanation": "Cette affirmation est justifiée par le fait que la céphalée brutale est un signe clinique évocateur d'une hémorragie sous-arachnoïdienne (HSA), nécessitant une investigation immédiate."
+        },
+        {
+          "statement": "Une céphalée chronique est toujours primaire et ne peut jamais être secondaire.",
+          "isTrue": false,
+          "explanation": "Cette affirmation est incorrecte car bien que la majorité des céphalées chroniques soient primaires, certaines peuvent être secondaires en cas de modification récente ou d'autres drapeaux rouges présents."
+        },
+        {
+          "statement": "Les céphalées chroniques épisodiques sont définies comme moins de 15 jours de céphalée par mois.",
+          "isTrue": true,
+          "explanation": "Cela correspond à la définition clinique des céphalées chroniques épisodiques, qui incluent des types tels que la migraine épisodique et les céphalées de tension."
+        },
+        {
+          "statement": "Une céphalée fébrile sans autre cause évidente est un signe d'hypertension intracrânienne.",
+          "isTrue": false,
+          "explanation": "Cette proposition est erronée ; une céphalée fébrile sans cause évidente doit faire suspecter une méningite, et non directement une hypertension intracrânienne."
+        },
+        {
+          "statement": "Une agression en position allongée peut indiquer une hypertension intracrânienne.",
+          "isTrue": true,
+          "explanation": "C'est un des drapeaux rouges cliniques qui indique que la céphalée s'aggrave en position allongée, ce qui est typique d'une hypertension intracrânienne."
+        }
+      ],
+      "chunkId": "chunk_5",
+      "chunkHeading": "Détermination de la nature aiguë ou chronique",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    5
+  ],
+  "currentIndex": 0,
+  "total": 3,
+  "contextSnippet": "5.      Détermination de la nature aiguë ou chronique\n(douleur chronique ; évaluation et prise en charge de la douleur aiguë ;  évaluation et prise en charge de la douleur chronique ;\névaluation et prise en charge de la douleur de l'enfant et du nourrisson)\n·    Toute céphalée aiguë (au sens de récente et inhabituelle) est secondaire jusqu'à preuve du contraire et nécessite des\nexamens en urgence. En pratique :\n-      Toute céphalée brutale est une hémorragie sous-arachnoïdienne (HSA) jusquʼà preuve du contraire.\n-      Toute céphalée progressive est un syndrome dʼhypertension intracrânienne (HTIC) jusquʼà preuve du contraire.\n-      Toute céphalée fébrile sans autre cause évidente est une méningite jusquʼà preuve du contraire.\n-      Certains drapeaux rouges (tableaux 1 et 2) peuvent orienter le diagnostic.\n-      Toute modification récente d'une céphalée ancienne et habituelle fait suspecter une céphalée secondaire.\n·     Une céphalée chronique (au sens dʼancienne et habituelle) est "
+}

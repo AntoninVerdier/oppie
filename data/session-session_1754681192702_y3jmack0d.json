@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754681192702_y3jmack0d",
+  "questions": [
+    {
+      "id": "qcm_session_1754681192702_y3jmack0d_0",
+      "topic": "Évaluation des tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM évalue la connaissance des tumeurs primitives intracrâniennes en abordant différents types, leur épidémiologie, leurs caractéristiques et leur traitement. Les propositions sont conçues pour tester la compréhension des nuances entre les types de tumeurs, leurs localisations, ainsi que les implications pronostiques associées.",
+      "propositions": [
+        {
+          "statement": "Les épendymomes sont souvent malins et surviennent principalement chez les adultes.",
+          "isTrue": false,
+          "explanation": "Les épendymomes sont généralement bénins (grade 1 ou 2 OMS) et surviennent surtout chez les enfants, bien qu'ils puissent également apparaître chez les jeunes adultes."
+        },
+        {
+          "statement": "Les neurinomes, développés à partir des cellules de Schwann, se localisent préférentiellement sur le nerf vestibulaire.",
+          "isTrue": true,
+          "explanation": "Les neurinomes, ou schwannomes, naissent effectivement des cellules de Schwann et se localisent souvent sur le nerf vestibulaire, surtout en relation avec le conduit auditif interne."
+        },
+        {
+          "statement": "Le glioblastome (grade 4) a une survie globale médiane de 15 mois après traitement.",
+          "isTrue": true,
+          "explanation": "La survie globale médiane pour le glioblastome grade 4 est généralement estimée à environ 15 mois, même avec un traitement agressif incluant chirurgie et radio-chimiothérapie."
+        },
+        {
+          "statement": "Les hémangioblastomes sont des tumeurs malignes qui surviennent principalement dans la moelle épinière.",
+          "isTrue": false,
+          "explanation": "Les hémangioblastomes sont des tumeurs vasculaires bénignes, et bien qu'ils puissent se développer dans la moelle épinière, leur localisation préférentielle est généralement dans le cervelet."
+        },
+        {
+          "statement": "Les médulloblastomes sont des tumeurs embryonnaires qui peuvent se disséminer dans le liquide céphalorachidien (LCS).",
+          "isTrue": true,
+          "explanation": "Les médulloblastomes, classés comme grade 4 OMS, sont des tumeurs embryonnaires malignes qui peuvent effectivement se propager dans le LCS, nécessitant une IRM panmédullaire pour évaluer la dissémination."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    3
+  ],
+  "currentIndex": 0,
+  "total": 3,
+  "contextSnippet": "GRADE\nGrade\n3\n30–50 ansSupra tentorielle\nHypersignal T2 Hyposignal T1\nPrise de contraste\nChirurgie (résection\nmaximaliste, si possible)\n+ radiothérapie /\nchimiothérapie\nProgression inéluctable vers\nle glioblastome (grade 4)\nGrade\n4\n60–70 ansSupra tentorielle\nNécrose\nPrise de contraste hétérogène\nChirurgie (résection\nmaximaliste, si possible)\n+ radio-chimiothérapie\nconcomitante (protocole de\nStupp)\nExtension locale/régionale\nrapide\nSurvie globale de 15 mois\nMétastase :\n·        Origines principales = cancers à fort tropisme neurologique : broncho-pulmonaire, mammaire et mélanome\n·        IRM : tumeur(s) unique ou multiples ; localisation cortico-sous-corticale ; rehaussement hétérogène après injection de\ncontraste, avec aspect en cocarde (nécrose centrale et prise de contraste périphérique) ;   œdème péri-tumoral +++ ; révélation\nhémorragique des métastases de mélanome et de cancer du rein\n·        Traitement :\no  Dépend du nombre, de la localisation et du volume de la (ou des) métastas"
+}

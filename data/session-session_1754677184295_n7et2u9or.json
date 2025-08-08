@@ -1,0 +1,44 @@
+{
+  "sessionId": "session_1754677184295_n7et2u9or",
+  "questions": [
+    {
+      "id": "qcm_session_1754677184295_n7et2u9or_0",
+      "topic": "Signes neuro-végétatifs",
+      "propositions": [
+        {
+          "statement": "Les nausées peuvent être un signe de dysfonctionnement du système nerveux autonome.",
+          "isTrue": true,
+          "explanation": "Les nausées peuvent résulter d'une activation excessive du système nerveux autonome, souvent en réaction à des stimuli stressants ou pathologiques."
+        },
+        {
+          "statement": "Les vomissements ne sont jamais considérés comme un signe neuro-végétatif.",
+          "isTrue": false,
+          "explanation": "Les vomissements sont en fait un signe neuro-végétatif courant, souvent associé à des troubles de l'équilibre autonome."
+        },
+        {
+          "statement": "Les sueurs peuvent être causées par des désordres hormonaux indépendants du système nerveux.",
+          "isTrue": false,
+          "explanation": "Bien que des désordres hormonaux puissent provoquer des sueurs, celles-ci sont souvent liées à une régulation neuro-végétative, notamment à travers le système sympathique."
+        },
+        {
+          "statement": "Les nausées et les vomissements peuvent être des réactions du corps en réponse à un stress aigu.",
+          "isTrue": true,
+          "explanation": "En situation de stress aigu, le corps peut réagir par des nausées et des vomissements en raison de l'activation du système nerveux autonome."
+        },
+        {
+          "statement": "L'hyperhidrose est un exemple de signe neuro-végétatif lié à une stimulation excessive des glandes sudoripares.",
+          "isTrue": true,
+          "explanation": "L'hyperhidrose, qui se manifeste par une sudation excessive, est souvent causée par une stimulation du système nerveux autonome, ce qui en fait un signe neuro-végétatif."
+        }
+      ],
+      "rationale": "Ce QCM aborde les signes neuro-végétatifs en se concentrant sur les nausées, vomissements et sueurs, explorant leurs causes, mécanismes et exceptions. Les propositions mettent en lumière les interactions complexes entre le système nerveux autonome et les manifestations physiologiques, tout en incluant des éléments pièges pour tester la compréhension des étudiants.",
+      "chunkId": "chunk_6",
+      "chunkHeading": "Signes neuro-végétatifs : nausées/vomissements, sueurs...",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    6
+  ],
+  "currentIndex": 0
+}

@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754680222724_jremtda3m",
+  "questions": [
+    {
+      "id": "qcm_session_1754680222724_jremtda3m_0",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM couvre les types et localisations des tumeurs intracrâniennes, les différences entre tumeurs primitives et secondaires, ainsi que l'épidémiologie et les symptômes associés. Les propositions sont conçues pour tester la compréhension des étudiants sur ces concepts, tout en incluant des éléments de piège et des notions précises.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs primitives intracrâniennes proviennent toujours du tissu cérébral lui-même.",
+          "isTrue": false,
+          "explanation": "Les tumeurs primitives intracrâniennes incluent également des tumeurs des annexes, comme les méningiomes, qui ne proviennent pas du tissu cérébral."
+        },
+        {
+          "statement": "Les méningiomes sont souvent bénins et se développent à partir des cellules arachnoïdiennes.",
+          "isTrue": true,
+          "explanation": "Les méningiomes, classés comme grade 1 OMS, se développent principalement à partir des cellules arachnoïdiennes et sont généralement bénins."
+        },
+        {
+          "statement": "La majorité des tumeurs intracrâniennes chez les adultes se localisent dans la région infra tentorielle.",
+          "isTrue": false,
+          "explanation": "Environ 80% des tumeurs intracrâniennes chez les adultes se situent dans la région supra tentorielle."
+        },
+        {
+          "statement": "Les métastases cérébrales sont le type de tumeur intracrânienne le plus fréquent.",
+          "isTrue": true,
+          "explanation": "Les métastases représentent la première cause de tumeurs intracrâniennes et surpassent les tumeurs primitives en termes de fréquence."
+        },
+        {
+          "statement": "L'hypertension intracrânienne est un symptôme commun chez les patients atteints de tumeurs cérébrales.",
+          "isTrue": true,
+          "explanation": "L'HTIC est fréquemment observée chez les patients porteurs de tumeurs intracrâniennes en raison de la pression exercée par la masse tumorale."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754680222724_jremtda3m_1",
+      "topic": "Évaluation des tumeurs cérébrales de bas grade",
+      "rationale": "Ce QCM explore les caractéristiques des tumeurs cérébrales de bas grade, en mettant l'accent sur les différences entre les grades, les implications cliniques des traitements, et les évolutions possibles, tout en évitant les erreurs courantes et en renforçant la compréhension des étudiants en médecine.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs de grade 1 surviennent principalement chez les patients de moins de 20 ans.",
+          "isTrue": true,
+          "explanation": "Les tumeurs de grade 1 sont généralement observées chez les jeunes patients, souvent en dessous de 20 ans."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 sont souvent associées à un hypersignal T1 sur l'IRM.",
+          "isTrue": false,
+          "explanation": "Les tumeurs de grade 2 présentent plutôt un hypersignal T2 et un hyposignal T1, ce qui est caractéristique."
+        },
+        {
+          "statement": "La résection complète d'une tumeur de grade 1 peut mener à une guérison complète.",
+          "isTrue": true,
+          "explanation": "Une résection complète des tumeurs de grade 1 est souvent couronnée de succès et peut mener à une guérison."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 ne nécessitent pas de traitement adjuvant après la chirurgie.",
+          "isTrue": false,
+          "explanation": "Bien que la chirurgie soit la première étape, les tumeurs de grade 2 peuvent nécessiter une radiothérapie ou une chimiothérapie en complément."
+        },
+        {
+          "statement": "Les gliomes de grade 2 évoluent inévitablement vers des formes plus agressives, comme le grade 3 ou 4.",
+          "isTrue": true,
+          "explanation": "Il est reconnu que les gliomes de grade 2 progressent souvent vers une anaplasie, conduisant à des grades plus élevés."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754680222724_jremtda3m_2",
+      "topic": "Physiologie Respiratoire",
+      "rationale": "Ce QCM aborde des concepts clés de la physiologie respiratoire, en se concentrant sur la diffusion des gaz, la capacité pulmonaire, le transport d'oxygène et la ventilation alvéolaire, tout en intégrant des exceptions et des nuances liées à différents facteurs physiologiques.",
+      "propositions": [
+        {
+          "statement": "La diffusion des gaz dans les alvéoles est influencée par la surface de diffusion et la différence de pression partielle.",
+          "isTrue": true,
+          "explanation": "La loi de Fick stipule que la diffusion des gaz est directement proportionnelle à la surface de diffusion et à la différence de pression partielle, ce qui est crucial dans l'échange gazeux alvéolaire."
+        },
+        {
+          "statement": "Les poumons ont une capacité de réserve fonctionnelle qui est indépendante de l'âge et du sexe.",
+          "isTrue": false,
+          "explanation": "La capacité de réserve fonctionnelle varie selon l'âge, le sexe et d'autres facteurs physiologiques, affectant ainsi la capacité pulmonaire globale."
+        },
+        {
+          "statement": "L'oxygène est transporté dans le sang principalement sous forme dissoute.",
+          "isTrue": false,
+          "explanation": "Environ 98% de l'oxygène est transporté lié à l'hémoglobine dans les globules rouges, tandis qu'une petite fraction est dissoute dans le plasma."
+        },
+        {
+          "statement": "La ventilation alvéolaire est le volume d'air qui atteint les alvéoles et participe à l'échange gazeux.",
+          "isTrue": true,
+          "explanation": "La ventilation alvéolaire représente le volume d'air qui atteint effectivement les alvéoles par minute, essentiel pour l'oxygénation sanguine."
+        },
+        {
+          "statement": "L'augmentation de la fréquence respiratoire entraîne toujours une augmentation de la ventilation minute.",
+          "isTrue": false,
+          "explanation": "L'augmentation de la fréquence respiratoire peut ne pas augmenter la ventilation minute si le volume courant diminue simultanément, ce qui pourrait se produire dans certaines pathologies."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "HAUT",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    0,
+    1,
+    2
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": "Tumeurs intracrâniennes IC-299\nConnaître les principaux types et localisations des tumeurs intracrâniennes\nConnaître la définition des tumeurs primitives intracrâniennes : système nerveux central et annexes\nConnaître les principaux types histologiques des tumeurs cérébrales\nConnaître l'épidémiologie des différents types tumeurs primitives intracrâniennes\nConnaître les principaux tableaux cliniques devant faire évoquer une tumeur intracrânienne\nConnaître la stratégie d'exploration en imagerie devant une tumeur intracrânienne de l'adulte\nDécrire la recherche systématique de cancer primitif à effectuer devant une métastase cérébrale\nSavoir évoquer une hypertension intracrânienne (HTIC) et une épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principes de la prise en charge de l'HTIC et de l'épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principaux types et localisations des tumeurs intracrâniennes OIC-\n299-01-A\n·        Tumeur primi"
+}

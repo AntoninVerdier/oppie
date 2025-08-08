@@ -1,0 +1,293 @@
+{
+  "sessionId": "session_1754683853806_2cit4oxe3",
+  "questions": [
+    {
+      "id": "qcm_session_1754683853806_2cit4oxe3_0",
+      "topic": "Classification des gliomes de bas grade",
+      "rationale": "Ce QCM aborde différents aspects des gliomes de bas grade, de la localisation à la prise en charge chirurgicale et thérapeutique. Il met en lumière des caractéristiques spécifiques de chaque grade et souligne l'importance de la résection complète dans le pronostic des patients atteints de gliomes de bas grade.",
+      "propositions": [
+        {
+          "statement": "Les gliomes de grade 1 sont généralement infra tentoriels et présentent un rehaussement après contraste.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 1 sont effectivement infra tentoriels et peuvent présenter un rehaussement après contraste."
+        },
+        {
+          "statement": "Les gliomes de grade 2 sont caractérisés par un hypersignal en T2 et un hyposignal en T1, avec une prise de contraste.",
+          "isTrue": false,
+          "explanation": "Les gliomes de grade 2 sont en réalité caractérisés par un hypersignal en T2, un hyposignal en T1 et une absence de prise de contraste."
+        },
+        {
+          "statement": "La chirurgie est recommandée pour les gliomes de grade 2, avec une résection maximaliste si possible, suivie éventuellement de radiothérapie ou chimiothérapie.",
+          "isTrue": true,
+          "explanation": "Effectivement, la chirurgie est recommandée pour les gliomes de grade 2, avec une résection maximaliste si possible, suivie éventuellement de radiothérapie ou chimiothérapie."
+        },
+        {
+          "statement": "Les gliomes de grade 2 ont une progression inéluctable vers l'anaplasie (grades 3 et 4).",
+          "isTrue": false,
+          "explanation": "Contrairement aux gliomes de grade 2, les gliomes de grade 3 et 4 ont une progression inéluctable vers l'anaplasie."
+        },
+        {
+          "statement": "Les gliomes de bas grade peuvent guérir si une résection complète est réalisée lors de la chirurgie.",
+          "isTrue": true,
+          "explanation": "En effet, les gliomes de bas grade peuvent guérir si une résection complète est réalisée lors de la chirurgie."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754683853806_2cit4oxe3_1",
+      "topic": "Tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM couvre les différents sous-types de tumeurs intracrâniennes mentionnés dans la section GRADE, en mettant en avant des caractéristiques spécifiques de chaque type.",
+      "propositions": [
+        {
+          "statement": "Les neurinomes peuvent se développer à partir des cellules de Schwann des nerfs crâniens et périphériques.",
+          "isTrue": true,
+          "explanation": "Les neurinomes se développent à partir des cellules de Schwann des nerfs crâniens et périphériques."
+        },
+        {
+          "statement": "Les épendymomes surviennent principalement chez l'adulte et se caractérisent par un rehaussement faible après injection de contraste en IRM.",
+          "isTrue": false,
+          "explanation": "Les épendymomes surviennent surtout chez l'enfant et se caractérisent par un rehaussement intense après injection de contraste en IRM."
+        },
+        {
+          "statement": "Les médulloblastomes sont des tumeurs embryonnaires malignes qui se localisent surtout dans le vermis du cervelet.",
+          "isTrue": true,
+          "explanation": "Les médulloblastomes sont des tumeurs embryonnaires malignes qui se localisent principalement dans le vermis du cervelet."
+        },
+        {
+          "statement": "Les hémangioblastomes sont des tumeurs malignes qui se développent principalement dans la moelle épinière.",
+          "isTrue": false,
+          "explanation": "Les hémangioblastomes sont des tumeurs vasculaires bénignes qui se développent principalement dans le cervelet."
+        },
+        {
+          "statement": "Les neurinomes peuvent se développer dans le cadre de la neurofibromatose de type 2.",
+          "isTrue": true,
+          "explanation": "Les neurinomes peuvent se développer dans le cadre de la neurofibromatose de type 2."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754683853806_2cit4oxe3_2",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM aborde différentes caractéristiques des tumeurs intracrâniennes, notamment leur classification, leur localisation, leur nature bénigne ou maligne, et l'impact de la topographie sur la répartition des types histologiques.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs intracrâniennes peuvent être classées en tumeurs primitives et tumeurs secondaires.",
+          "isTrue": true,
+          "explanation": "Les tumeurs primitives prennent leur origine dans un tissu intracrânien, tandis que les tumeurs secondaires sont des métastases issues de la dissémination intracrânienne d'une tumeur provenant d'un autre organe."
+        },
+        {
+          "statement": "Les tumeurs intra parenchymateuses se développent à l'intérieur des annexes de l'encéphale.",
+          "isTrue": false,
+          "explanation": "Les tumeurs intra parenchymateuses se développent à l'intérieur de l'encéphale lui-même, tandis que les tumeurs extra parenchymateuses se développent à partir des annexes de l'encéphale comme les méninges et les nerfs crâniens."
+        },
+        {
+          "statement": "Les tumeurs bénignes sont généralement bien circonscrites, évoluent lentement et ont un bon pronostic.",
+          "isTrue": true,
+          "explanation": "Les tumeurs bénignes sont caractérisées par une croissance lente, une bonne délimitation et un pronostic favorable, par exemple les méningiomes."
+        },
+        {
+          "statement": "Les tumeurs malignes sont généralement bien circonscrites et ont un pronostic favorable.",
+          "isTrue": false,
+          "explanation": "Les tumeurs malignes, comme le glioblastome, sont rapidement évolutives et ont un pronostic moins favorable que les tumeurs bénignes."
+        },
+        {
+          "statement": "La topographie des tumeurs intracrâniennes ne joue pas un rôle dans la répartition des différents types histologiques.",
+          "isTrue": true,
+          "explanation": "La répartition des différents types histologiques n'est pas homogène entre les tumeurs supra tentorielles et infra tentorielles."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754683853806_2cit4oxe3_3",
+      "topic": "Evaluation des connaissances sur les tumeurs intracrâniennes",
+      "rationale": "Ce QCM vise à évaluer la compréhension des concepts clés liés aux tumeurs intracrâniennes, en abordant différents aspects tels que la classification, les types histologiques, et les localisations. Les justifications fournies détaillent les réponses correctes et incorrectes pour renforcer la compréhension.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs intracrâniennes peuvent être classées en tumeurs primitives et en métastases.",
+          "isTrue": true,
+          "explanation": "Les tumeurs intracrâniennes peuvent être soit primitives, issues d'un tissu intracrânien, soit des métastases, provenant de la dissémination intracrânienne d'une tumeur d'origine externe."
+        },
+        {
+          "statement": "Les tumeurs intra parenchymateuses se développent à partir des annexes de l'encéphale.",
+          "isTrue": false,
+          "explanation": "Les tumeurs intra parenchymateuses se développent à l'intérieur de l'encéphale lui-même, et non à partir des annexes de l'encéphale."
+        },
+        {
+          "statement": "Les tumeurs bénignes sont généralement bien circonscrites, d'évolution lente et de bon pronostic.",
+          "isTrue": true,
+          "explanation": "Les tumeurs bénignes sont caractérisées par leur bonne délimitation, leur évolution lente et leur pronostic favorable."
+        },
+        {
+          "statement": "Les adénomes hypophysaires sont les tumeurs intracrâniennes les plus fréquentes.",
+          "isTrue": false,
+          "explanation": "Les gliomes et les méningiomes sont plus fréquents que les adénomes hypophysaires parmi les tumeurs intracrâniennes."
+        },
+        {
+          "statement": "Les tumeurs primitives de l'encéphale se développent à l'intérieur de l'encéphale lui-même.",
+          "isTrue": true,
+          "explanation": "Les tumeurs primitives de l'encéphale sont intra axiales et se développent à l'intérieur de l'encéphale, par exemple le glioblastome."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754683853806_2cit4oxe3_4",
+      "topic": "Classification des gliomes de bas grade",
+      "rationale": "Les gliomes de bas grade sont des tumeurs cérébrales qui surviennent généralement chez les patients plus jeunes, nécessitant une chirurgie avec résection maximale. Ils peuvent présenter différents aspects en IRM et peuvent éventuellement progresser vers des grades plus élevés. Le recours à la radiothérapie et la chimiothérapie peut être envisagé dans certains cas.",
+      "propositions": [
+        {
+          "statement": "Les gliomes de bas grade surviennent principalement chez les patients de plus de 40 ans.",
+          "isTrue": false,
+          "explanation": "Les gliomes de bas grade surviennent généralement chez les patients de moins de 40 ans, en particulier entre 20 et 40 ans."
+        },
+        {
+          "statement": "La chirurgie est le principal traitement recommandé pour les gliomes de bas grade, avec une résection maximale si possible.",
+          "isTrue": true,
+          "explanation": "La chirurgie avec résection maximale est en effet le traitement recommandé pour les gliomes de bas grade."
+        },
+        {
+          "statement": "Les gliomes de bas grade présentent toujours un rehaussement après injection de contraste en IRM.",
+          "isTrue": false,
+          "explanation": "Les gliomes de bas grade peuvent être mixtes, avec une composante kystique/solide, mais ils n'ont pas nécessairement un rehaussement après injection de contraste en IRM."
+        },
+        {
+          "statement": "Les gliomes de bas grade ne présentent jamais de progression vers des grades plus élevés (grades 3 et 4).",
+          "isTrue": false,
+          "explanation": "Les gliomes de bas grade peuvent progresser vers des grades plus élevés, comme les gliomes de haut grade (grades 3 et 4)."
+        },
+        {
+          "statement": "La radiothérapie et la chimiothérapie sont rarement nécessaires dans le traitement des gliomes de bas grade.",
+          "isTrue": true,
+          "explanation": "Dans certains cas, la radiothérapie et la chimiothérapie peuvent être utilisées en complément de la chirurgie pour traiter les gliomes de bas grade, mais elles ne sont pas toujours nécessaires."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754683853806_2cit4oxe3_5",
+      "topic": "Classification des gliomes de bas grade",
+      "rationale": "Les gliomes de bas grade sont des tumeurs cérébrales caractérisées par un âge de survenue jeune, des caractéristiques radiologiques spécifiques, une chirurgie comme traitement principal, parfois un rehaussement après contraste et une possible progression vers des formes plus anaplasiques.",
+      "propositions": [
+        {
+          "statement": "Les gliomes de bas grade touchent principalement les patients de plus de 40 ans.",
+          "isTrue": false,
+          "explanation": "Les gliomes de bas grade touchent principalement les patients de moins de 20 ans."
+        },
+        {
+          "statement": "Les gliomes de bas grade sont caractérisés par un hypersignal T2 et un hyposignal T1.",
+          "isTrue": true,
+          "explanation": "Ces caractéristiques radiologiques sont typiques des gliomes de bas grade."
+        },
+        {
+          "statement": "La chirurgie est la principale modalité de traitement pour les gliomes de bas grade.",
+          "isTrue": true,
+          "explanation": "La résection complète est généralement associée à une guérison pour les gliomes de bas grade."
+        },
+        {
+          "statement": "Les gliomes de bas grade ne montrent jamais de rehaussement après injection de contraste.",
+          "isTrue": false,
+          "explanation": "Certains gliomes de bas grade peuvent présenter un rehaussement après contraste."
+        },
+        {
+          "statement": "Les gliomes de bas grade ne progressent jamais vers des formes plus anaplasiques (grades 3 et 4).",
+          "isTrue": false,
+          "explanation": "La progression vers des formes plus anaplasiques est une évolution possible des gliomes de bas grade."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754683853806_2cit4oxe3_6",
+      "topic": "Classification des tumeurs cérébrales selon le grade",
+      "rationale": "Ce QCM vise à évaluer la compréhension de la classification des tumeurs cérébrales selon le grade, en mettant en lumière des aspects spécifiques de chaque grade et des types de tumeurs plus rares.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs de grade 3 surviennent principalement chez les patients âgés de 30 à 50 ans.",
+          "isTrue": true,
+          "explanation": "Les tumeurs de grade 3 sont généralement observées chez les patients de ce groupe d'âge."
+        },
+        {
+          "statement": "Les tumeurs de grade 4 présentent souvent une nécrose et une prise de contraste homogène.",
+          "isTrue": false,
+          "explanation": "Les tumeurs de grade 4 montrent une nécrose et une prise de contraste hétérogène."
+        },
+        {
+          "statement": "La chirurgie est recommandée pour les tumeurs de grade 3 avec résection maximaliste si possible, suivie de radiothérapie/chimiothérapie.",
+          "isTrue": true,
+          "explanation": "Le traitement standard pour les tumeurs de grade 3 inclut la chirurgie avec résection maximaliste et une combinaison de radiothérapie/chimiothérapie."
+        },
+        {
+          "statement": "Les métastases cérébrales les plus courantes proviennent de cancers tels que le cancer du col de l'utérus et du foie.",
+          "isTrue": false,
+          "explanation": "Les métastases cérébrales proviennent principalement de cancers à fort tropisme neurologique comme le cancer broncho-pulmonaire, mammaire et mélanome."
+        },
+        {
+          "statement": "Les schwannomes se développent à partir des cellules de Schwann des nerfs crâniens/périphériques et sont souvent malins.",
+          "isTrue": false,
+          "explanation": "Les schwannomes sont généralement bénins et se développent à partir des cellules de Schwann des nerfs crâniens/périphériques."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754683853806_2cit4oxe3_7",
+      "topic": "Évaluation des connaissances sur les tumeurs intracrâniennes",
+      "rationale": "Ce QCM vise à évaluer la compréhension des différents types et caractéristiques des tumeurs intracrâniennes, en mettant l'accent sur la classification, l'origine, la nature et l'incidence des différentes tumeurs.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs intracrâniennes peuvent être classées en tumeurs primitives et en métastases.",
+          "isTrue": true,
+          "explanation": "Les tumeurs intracrâniennes peuvent être d'origine primaire ou être des métastases provenant d'un autre organe."
+        },
+        {
+          "statement": "Les tumeurs intra parenchymateuses se développent à partir des annexes de l'encéphale.",
+          "isTrue": false,
+          "explanation": "Les tumeurs intra parenchymateuses se développent à l'intérieur de l'encéphale lui-même."
+        },
+        {
+          "statement": "Les méningiomes sont en majorité des tumeurs bénignes.",
+          "isTrue": true,
+          "explanation": "Les méningiomes sont généralement bien circonscrits, évoluent lentement et ont un bon pronostic."
+        },
+        {
+          "statement": "Les tumeurs primitives de l'encéphale incluent les méningiomes et les schwannomes.",
+          "isTrue": false,
+          "explanation": "Les tumeurs primitives de l'encéphale se développent à l'intérieur de l'encéphale lui-même, tandis que les méningiomes et les schwannomes sont des tumeurs des annexes."
+        },
+        {
+          "statement": "Les gliomes sont les tumeurs cérébrales les plus fréquentes en termes d'incidence.",
+          "isTrue": true,
+          "explanation": "Les gliomes sont parmi les tumeurs cérébrales les plus courantes en termes d'incidence, avec environ 8 nouveaux cas pour 100 000 habitants par an."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    }
+  ],
+  "usedChunks": [
+    1,
+    2,
+    0
+  ],
+  "currentIndex": 7,
+  "total": 8,
+  "contextSnippet": "BAS GRADE\nGrade\n1\n< 20 ans\nInfra tentorielle\nMixte = kystique / solide\nRehaussement après\ncontraste\nChirurgie\nGuérison si résection\ncomplète\nGrade\n2\n20–40 ans\nSupra tentorielle\nHypersignal T2 Hyposignal T1\nAbsence de prise de contraste\nChirurgie (résection\nmaximaliste, si possible)\n+/- radiothérapie /\nchimiothérapie\nProgression inéluctable vers\n lʼanaplasie (grades 3 et 4)\nGliomes\n"
+}

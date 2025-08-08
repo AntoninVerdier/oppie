@@ -1,0 +1,82 @@
+{
+  "sessionId": "session_1754679037385_800fu55ng",
+  "questions": [
+    {
+      "id": "qcm_session_1754679037385_800fu55ng_0",
+      "topic": "Hémorragie sous-arachnoïdienne (HSA) ou hémorragie méningée",
+      "rationale": "Ce QCM aborde divers aspects de l'HSA, y compris les manifestations cliniques et les signes associés. Il souligne les spécificités des céphalées, les variations dans la présentation, ainsi que les complications potentielles, permettant une évaluation approfondie de la compréhension du sujet.",
+      "propositions": [
+        {
+          "statement": "Une céphalée explosive est un signe typique d'HSA par rupture d'anévrisme.",
+          "isTrue": true,
+          "explanation": "La céphalée explosive, décrite comme un 'coup de tonnerre', est caractéristique de l'HSA liée à la rupture d'un anévrisme."
+        },
+        {
+          "statement": "L'HSA ne peut se manifester que par des céphalées très sévères.",
+          "isTrue": false,
+          "explanation": "Bien que les céphalées soient souvent sévères, il peut exister des cas de céphalées isolées, moins intenses, précédant une HSA massive."
+        },
+        {
+          "statement": "Les signes d'un syndrome méningé peuvent accompagner une HSA.",
+          "isTrue": true,
+          "explanation": "L'HSA est souvent associée à des signes de syndrome méningé, tels que la raideur de la nuque."
+        },
+        {
+          "statement": "La paralysie du III est toujours présente en cas d'HSA.",
+          "isTrue": false,
+          "explanation": "La paralysie du III n'est pas systématique ; elle survient spécifiquement en cas de compression par un anévrisme."
+        },
+        {
+          "statement": "Des crises comitiales peuvent survenir en cas d'HSA.",
+          "isTrue": true,
+          "explanation": "Les crises comitiales sont des signes associés possibles, notamment en cas d'hémorragie cérébro-méningée."
+        }
+      ],
+      "chunkId": "chunk_6",
+      "chunkHeading": "Hémorragie sous-arachnoïdienne (HSA) ou hémorragie méningée (item 341)",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754679037385_800fu55ng_1",
+      "topic": "Céphalées aiguës et chroniques : diagnostic et prise en charge",
+      "rationale": "Ce QCM aborde divers aspects des céphalées, incluant leurs causes, la nécessité d'une hospitalisation et d'une ponction lombaire, ainsi que les options de traitement en urgence. Les propositions sont conçues pour tester la compréhension des étudiants sur les céphalées aiguës et chroniques, tout en incluant des pièges pour évaluer leur capacité à distinguer les nuances cliniques.",
+      "propositions": [
+        {
+          "statement": "Une céphalée aiguë nécessitant une hospitalisation peut être causée par une méningite.",
+          "isTrue": true,
+          "explanation": "La méningite est une cause sérieuse de céphalée aiguë qui nécessite une prise en charge en urgence, car elle peut entraîner des complications graves."
+        },
+        {
+          "statement": "Les céphalées de tension sont toujours considérées comme des céphalées chroniques.",
+          "isTrue": false,
+          "explanation": "Les céphalées de tension peuvent être épisodiques ou chroniques, donc elles ne sont pas systématiquement classées comme chroniques."
+        },
+        {
+          "statement": "L'imagerie cérébrale est systématiquement indiquée pour toute céphalée chronique.",
+          "isTrue": false,
+          "explanation": "L'imagerie cérébrale n'est pas toujours nécessaire pour les céphalées chroniques, notamment si les caractéristiques cliniques sont typiques et sans signes d'alerte."
+        },
+        {
+          "statement": "Une ponction lombaire est indiquée en cas de céphalée aiguë avec suspicion d'hémorragie sous-arachnoïdienne.",
+          "isTrue": true,
+          "explanation": "La ponction lombaire est essentielle pour diagnostiquer une hémorragie sous-arachnoïdienne, surtout si le scanner cérébral est négatif mais la suspicion clinique demeure."
+        },
+        {
+          "statement": "Le traitement des céphalées primaires aux urgences doit inclure des analgésiques et des anti-inflammatoires non stéroïdiens.",
+          "isTrue": true,
+          "explanation": "Les analgésiques et les AINS sont souvent utilisés en première ligne pour traiter les céphalées primaires lors d'une consultation aux urgences."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    }
+  ],
+  "usedChunks": [
+    6,
+    0
+  ],
+  "currentIndex": 1,
+  "total": 5,
+  "contextSnippet": "1. Hémorragie sous-arachnoïdienne (HSA) ou hémorragie méningée (item 341)\n·       HSA ou hémorragie méningée : cause de 10 à 25% des céphalées brutales .\n·       Céphalée typique (HSA par rupture dʼanévrisme): explosive, en coup de tonnerre, sévère, associée aux autres signes d'un\nsyndrome méningé et à une cervicalgie, persistante.\n·       Parfois céphalée isolée, de courte durée (épistaxis méningée de faible abondance, précédant une HSA massive).\n·       Signes associés : crises comitiales, déficit focal (si hémorragie cérébro-méningée), paralysie du III (compression par un\nanévrysme de lʼartère communicante postérieure ou de la terminaison carotidienne) et/ou trouble de conscience (transitoire ou\ncoma).\n"
+}

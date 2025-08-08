@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754682352030_iq72h3rmh",
+  "questions": [
+    {
+      "id": "qcm_session_1754682352030_iq72h3rmh_0",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM couvre divers aspects des tumeurs intracrâniennes, allant de leur localisation à leurs caractéristiques histologiques. Les justifications détaillées fournissent des explications claires sur chaque proposition.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs extra parenchymateuses se développent à partir des annexes de l'encéphale.",
+          "isTrue": true,
+          "explanation": "Les tumeurs extra parenchymateuses proviennent des méninges et des nerfs crâniens."
+        },
+        {
+          "statement": "Les tumeurs malignes sont généralement bien circonscrites et d'évolution lente.",
+          "isTrue": false,
+          "explanation": "Les tumeurs malignes sont rapidement évolutives et de mauvais pronostic."
+        },
+        {
+          "statement": "Les gliomes sont les variétés histologiques les plus fréquentes des tumeurs intracrâniennes.",
+          "isTrue": true,
+          "explanation": "Les gliomes sont parmi les types les plus communs de tumeurs intracrâniennes."
+        },
+        {
+          "statement": "Les tumeurs primitives de l'encéphale se développent à partir des méninges et des nerfs crâniens.",
+          "isTrue": false,
+          "explanation": "Les tumeurs primitives de l'encéphale sont intra axiales, développées à l'intérieur de l'encéphale."
+        },
+        {
+          "statement": "Les méningiomes ont un pic d'incidence entre 50 et 70 ans.",
+          "isTrue": true,
+          "explanation": "Les méningiomes sont souvent diagnostiqués dans cette tranche d'âge."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754682352030_iq72h3rmh_1",
+      "topic": "Classification des gliomes",
+      "rationale": "Ce QCM couvre les caractéristiques des gliomes de grade 1 et 2, en soulignant les particularités de chaque grade et les interventions associées.",
+      "propositions": [
+        {
+          "statement": "Les gliomes de grade 1 sont caractérisés par un rehaussement après contraste.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 1 présentent un rehaussement après contraste."
+        },
+        {
+          "statement": "Les gliomes de grade 2 progressent toujours vers l'anaplasie (grades 3 et 4).",
+          "isTrue": false,
+          "explanation": "Les gliomes de grade 2 ne progressent pas toujours vers l'anaplasie, mais peuvent évoluer vers des formes plus agressives."
+        },
+        {
+          "statement": "Pour les gliomes de grade 2, la chirurgie consiste en une résection maximaliste si possible.",
+          "isTrue": true,
+          "explanation": "La chirurgie pour les gliomes de grade 2 vise une résection maximaliste lorsque c'est réalisable."
+        },
+        {
+          "statement": "Les gliomes de grade 1 sont situés infra tentoriellement.",
+          "isTrue": false,
+          "explanation": "Les gliomes de grade 1 peuvent être situés supra ou infra tentoriellement."
+        },
+        {
+          "statement": "Les gliomes de grade 2 sont caractérisés par un hypersignal T2 et un hyposignal T1.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 2 présentent en effet un hypersignal T2 et un hyposignal T1."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754682352030_iq72h3rmh_2",
+      "topic": "Classification des tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM couvre différents sous-types de tumeurs intracrâniennes, en mettant en avant leurs caractéristiques spécifiques. Il permet de tester la compréhension des étudiants sur ces types de tumeurs et de renforcer leurs connaissances dans ce domaine.",
+      "propositions": [
+        {
+          "statement": "Les neurinomes ou schwannomes se développent à partir des cellules de Schwann des nerfs crâniens/périphériques.",
+          "isTrue": true,
+          "explanation": "Les neurinomes proviennent des cellules de Schwann."
+        },
+        {
+          "statement": "Les épendymomes surviennent principalement chez l'adulte et présentent une morphologie lisse sur l'IRM.",
+          "isTrue": false,
+          "explanation": "Les épendymomes surviennent surtout chez l'enfant et ont une morphologie poly lobulée sur l'IRM."
+        },
+        {
+          "statement": "Les médulloblastomes sont des tumeurs malignes qui se développent principalement dans le vermis du cervelet.",
+          "isTrue": true,
+          "explanation": "Les médulloblastomes sont des tumeurs malignes et se localisent principalement dans le vermis du cervelet."
+        },
+        {
+          "statement": "Les hémangioblastomes sont des tumeurs malignes qui se développent préférentiellement dans la moelle épinière.",
+          "isTrue": false,
+          "explanation": "Les hémangioblastomes sont des tumeurs vasculaires bénignes et se localisent préférentiellement dans le cervelet."
+        },
+        {
+          "statement": "Les tumeurs primitives intracrâniennes les plus fréquentes sont les neurinomes et les épendymomes.",
+          "isTrue": true,
+          "explanation": "Les neurinomes et les épendymomes sont parmi les tumeurs intracrâniennes les plus fréquentes."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    0,
+    1,
+    2
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": "Tumeurs intracrâniennes IC-299\nConnaître les principaux types et localisations des tumeurs intracrâniennes\nConnaître la définition des tumeurs primitives intracrâniennes : système nerveux central et annexes\nConnaître les principaux types histologiques des tumeurs cérébrales\nConnaître l'épidémiologie des différents types tumeurs primitives intracrâniennes\nConnaître les principaux tableaux cliniques devant faire évoquer une tumeur intracrânienne\nConnaître la stratégie d'exploration en imagerie devant une tumeur intracrânienne de l'adulte\nDécrire la recherche systématique de cancer primitif à effectuer devant une métastase cérébrale\nSavoir évoquer une hypertension intracrânienne (HTIC) et une épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principes de la prise en charge de l'HTIC et de l'épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principaux types et localisations des tumeurs intracrâniennes OIC-\n299-01-A\n·        Tumeur primi"
+}

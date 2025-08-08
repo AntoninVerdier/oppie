@@ -1,0 +1,82 @@
+{
+  "sessionId": "session_1754681624246_lega1pw12",
+  "questions": [
+    {
+      "id": "qcm_session_1754681624246_lega1pw12_0",
+      "topic": "Facteurs de risque de fibrillation atriale",
+      "rationale": "Ce QCM couvre divers aspects des facteurs de risque et de la prise en charge de la fibrillation atriale, en mettant en lumière des éléments importants et des nuances à prendre en compte.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale peut être déclenchée par des troubles hydro-électrolytiques et métaboliques tels que l'hypokaliémie et l'hyperthyroïdie.",
+          "isTrue": true,
+          "explanation": "Les troubles hydro-électrolytiques et métaboliques peuvent jouer un rôle dans la survenue de la fibrillation atriale."
+        },
+        {
+          "statement": "Le score de CHADS-VASc est utilisé même en présence de FA valvulaire.",
+          "isTrue": false,
+          "explanation": "Le score de CHADS-VASc n'est utilisé qu'en l'absence de FA valvulaire."
+        },
+        {
+          "statement": "L'évaluation du risque hémorragique n'a pas d'incidence sur la décision de traitement anticoagulant.",
+          "isTrue": false,
+          "explanation": "L'évaluation du risque hémorragique permet d'identifier les patients à risque pour adapter leur suivi."
+        },
+        {
+          "statement": "Les antiagrégants plaquettaires ont une place importante dans la prise en charge de la FA.",
+          "isTrue": false,
+          "explanation": "Les antiagrégants plaquettaires n'ont aucune place dans la prise en charge de la FA."
+        },
+        {
+          "statement": "La fermeture percutanée de l'auricule gauche est indiquée en cas de fibrillation atriale avec besoin d'anticoagulation et contre-indication aux anticoagulants oraux.",
+          "isTrue": true,
+          "explanation": "La fermeture percutanée de l'auricule gauche est une option en cas de contre-indication aux anticoagulants oraux et nécessité d'anticoagulation pour la fibrillation atriale."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Section 2",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754681624246_lega1pw12_1",
+      "topic": "Fibrillation atriale et sa physiopathologie",
+      "rationale": "Ce QCM aborde divers aspects de la fibrillation atriale, y compris sa définition, son épidémiologie, la présentation clinique et ses complications, tout en intégrant des éléments de physiopathologie et des considérations de dépistage, permettant une évaluation complète des connaissances des étudiants sur le sujet.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale est un trouble du rythme résultant d'une activité électrique anarchique dans les oreillettes.",
+          "isTrue": true,
+          "explanation": "Cette définition est correcte et reflète la nature chaotique de l'activité électrique dans les oreillettes, entraînant une perte de contraction atriale."
+        },
+        {
+          "statement": "La fibrillation atriale est plus fréquente chez les femmes que chez les hommes.",
+          "isTrue": false,
+          "explanation": "L'épidémiologie indique une prédominance masculine dans l'apparition de la fibrillation atriale."
+        },
+        {
+          "statement": "Un patient peut présenter une fibrillation atriale sans symptômes apparents.",
+          "isTrue": true,
+          "explanation": "De nombreux patients peuvent être asymptomatiques, ce qui souligne l'importance du dépistage chez les patients à risque."
+        },
+        {
+          "statement": "La prévalence de la fibrillation atriale est constante à travers tous les pays.",
+          "isTrue": false,
+          "explanation": "La prévalence de la FA varie selon les pays et est influencée par des facteurs comme l'ethnicité et la génétique."
+        },
+        {
+          "statement": "La fibrillation atriale peut entraîner des AVC ischémiques chez les patients.",
+          "isTrue": true,
+          "explanation": "La FA est responsable d'environ un quart des AVC ischémiques, ce qui en fait une condition à risque important."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    }
+  ],
+  "usedChunks": [
+    1,
+    0
+  ],
+  "currentIndex": 1,
+  "total": 8,
+  "contextSnippet": "sont des facteurs de risque de FA. Ils peuvent être distingués dans trois groupes principaux :\nLes facteurs de risque cardiovasculaires\nLes pathologies cardiovasculaires\nLes pathologies respiratoires\n\n30/07/2025, 16:33Fiche LiSA:Fibrillation atriale — LiSA\nPage 5 of 13https://livret.uness.fr/lisa/2025/Fiche_LiSA:Fibrillation_atriale\nConnaître les facteurs déclenchants OIC-232-10-A\nTroubles hydro-électrolytiques et métaboliques :\nHypokaliémie\nHyperthyroïdie\nInflammation :\nGénérale : infection\nLocale :\nPost-opératoire de chirurgie thoracique et cardiaque\nPéricardite\nRéactions vagales\nTox i q u e :\nPrise d’alcool, de caféine, drogues (cocaïne, amphétamines)\nMédicaments : catécholamines, corticoïdes, chimiothérapies, ...\nConnaître le bilan de première intention OIC-232-11-A\n\n30/07/2025, 16:33Fiche LiSA:Fibrillation atriale — LiSA\nPage 6 of 13https://livret.uness.fr/lisa/2025/Fiche_LiSA:Fibrillation_atriale\nSavoir évaluer le risque thromboembolique et hémorragique OIC-232-12-\nA\nLe score de "
+}

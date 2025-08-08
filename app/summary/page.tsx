@@ -34,6 +34,24 @@ export default function SummaryPage() {
     );
   }
 
+  if (summary.count === 0) {
+    return (
+      <main className="min-h-screen px-6 py-10 mx-auto max-w-5xl">
+        <h1 className="text-2xl font-semibold">Bilan de session</h1>
+        <p className="text-slate-300 mt-1">{new Date(summary.at).toLocaleString()}</p>
+        
+        <div className="mt-6 rounded-2xl border border-amber-700 bg-amber-900/30 p-5">
+          <div className="text-amber-200 font-medium mb-2">Aucun QCM validé</div>
+          <p className="text-amber-300 text-sm">Vous n'avez validé aucun QCM lors de cette session.</p>
+        </div>
+        
+        <div className="mt-8">
+          <Link href="/" className="rounded-xl border border-slate-700 px-4 py-2 hover:bg-slate-800">Refaire une session</Link>
+        </div>
+      </main>
+    );
+  }
+
   return (
     <main className="min-h-screen px-6 py-10 mx-auto max-w-5xl">
       <h1 className="text-2xl font-semibold">Bilan de session</h1>

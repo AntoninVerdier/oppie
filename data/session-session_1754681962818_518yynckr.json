@@ -1,0 +1,295 @@
+{
+  "sessionId": "session_1754681962818_518yynckr",
+  "questions": [
+    {
+      "id": "qcm_session_1754681962818_518yynckr_0",
+      "topic": "Facteurs de risque de la fibrillation atriale",
+      "rationale": "Les facteurs de risque de la fibrillation atriale incluent des troubles hydro-électrolytiques, des pathologies inflammatoires, des réactions toxiques, etc. La prise en charge repose sur des stratégies anti-thrombotiques et de contrôle du rythme, avec des particularités telles que la fermeture percutanée de l'auricule gauche dans certains cas.",
+      "propositions": [
+        {
+          "statement": "L'inflammation locale, telle que la péricardite, est un facteur de risque de fibrillation atriale.",
+          "isTrue": true,
+          "explanation": "La péricardite, une inflammation locale, peut déclencher la fibrillation atriale."
+        },
+        {
+          "statement": "Les antiagrégants plaquettaires sont recommandés en première intention pour la prévention de la fibrillation atriale.",
+          "isTrue": false,
+          "explanation": "Les antiagrégants plaquettaires n'ont aucune place dans la prise en charge de la fibrillation atriale."
+        },
+        {
+          "statement": "Le score de CHADS-VASc est utilisé pour évaluer le risque thromboembolique chez les patients avec FA valvulaire.",
+          "isTrue": false,
+          "explanation": "Le score de CHADS-VASc n'est utilisé qu'en l'absence de FA valvulaire."
+        },
+        {
+          "statement": "La fermeture percutanée de l'auricule gauche est une option lorsque le patient a une indication d'anticoagulation et une contre-indication simultanée et permanente aux anticoagulants oraux.",
+          "isTrue": true,
+          "explanation": "L'association de ces deux éléments peut justifier une fermeture percutanée de l'auricule gauche."
+        },
+        {
+          "statement": "L'évaluation du risque hémorragique dans la FA est essentielle pour décider de la mise en place d'un traitement anticoagulant.",
+          "isTrue": false,
+          "explanation": "Un score HAS-BLED élevé n'est pas en soi une contre-indication à un traitement anticoagulant, mais permet d'identifier les patients à risque pour un suivi renforcé."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Section 2",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754681962818_518yynckr_1",
+      "topic": "QCM sur la fibrillation atriale",
+      "rationale": "Ce QCM couvre différents aspects de la fibrillation atriale, notamment son épidémiologie, ses complications et les symptômes associés. Les propositions ont été choisies pour leur pertinence dans le contexte de la section 1, et les justifications fournies permettent une compréhension approfondie des réponses.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale est plus fréquente chez les femmes que chez les hommes.",
+          "isTrue": false,
+          "explanation": "La FA présente une prédominance masculine."
+        },
+        {
+          "statement": "La prévalence de la FA augmente avec l'âge.",
+          "isTrue": true,
+          "explanation": "Effectivement, la prévalence de la FA augmente avec l'âge."
+        },
+        {
+          "statement": "La FA n'est pas associée au flutter atrial commun.",
+          "isTrue": false,
+          "explanation": "La FA est fortement associée au flutter atrial commun."
+        },
+        {
+          "statement": "La FA est responsable de la moitié des AVC ischémiques.",
+          "isTrue": false,
+          "explanation": "La FA est responsable de ¼ des AVC ischémiques."
+        },
+        {
+          "statement": "Les patients atteints de FA peuvent être totalement asymptomatiques.",
+          "isTrue": true,
+          "explanation": "Certains patients peuvent être totalement asymptomatiques malgré la présence de FA."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754681962818_518yynckr_2",
+      "topic": "QCM sur la fibrillation atriale",
+      "rationale": "Ce QCM couvre différents aspects de la fibrillation atriale, incluant sa prévalence, sa physiopathologie, ses complications et ses symptômes. Les justifications détaillées fournissent une explication claire de chaque proposition.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale est le trouble du rythme supra-ventriculaire le plus rare.",
+          "isTrue": false,
+          "explanation": "La FA est en fait le trouble du rythme supra-ventriculaire le plus fréquent."
+        },
+        {
+          "statement": "Le nœud atrio-ventriculaire est responsable de la régulation de la réponse ventriculaire à la fibrillation atriale.",
+          "isTrue": true,
+          "explanation": "Le nœud atrio-ventriculaire filtre l'activité atriale anarchique et rapide."
+        },
+        {
+          "statement": "La prévalence de la FA augmente avec l'âge.",
+          "isTrue": true,
+          "explanation": "La FA est plus fréquente chez les personnes âgées."
+        },
+        {
+          "statement": "La FA n'est pas associée au flutter atrial commun.",
+          "isTrue": false,
+          "explanation": "La FA est fortement associée au flutter atrial commun."
+        },
+        {
+          "statement": "Les patients présentant une FA sont toujours symptomatiques.",
+          "isTrue": false,
+          "explanation": "Les patients peuvent être asymptomatiques, justifiant le dépistage des patients à risque."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754681962818_518yynckr_3",
+      "topic": "QCM sur la Fibrillation atriale",
+      "rationale": "Ce QCM couvre différents aspects de la fibrillation atriale, allant de la définition à l'épidémiologie en passant par les symptômes et les complications. Les propositions ont été choisies pour être nuancées et non triviales, avec des explications détaillées pour chaque réponse.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale est un trouble du rythme supra-ventriculaire résultant d'une activité électrique anarchique dans les oreillettes",
+          "isTrue": true,
+          "explanation": "La description de la fibrillation atriale est correcte."
+        },
+        {
+          "statement": "Le diagnostic de la FA peut être posé en présence de FA pendant moins de 30 secondes sur un tracé ECG de surface",
+          "isTrue": false,
+          "explanation": "Le diagnostic de la FA nécessite la présence de FA pendant plus de 30 secondes sur un tracé ECG de surface."
+        },
+        {
+          "statement": "La FA est plus fréquente chez les femmes que chez les hommes",
+          "isTrue": false,
+          "explanation": "La FA présente une prédominance masculine."
+        },
+        {
+          "statement": "La fibrillation atriale est responsable de 50% des AVC ischémiques",
+          "isTrue": false,
+          "explanation": "La FA est responsable de 1/4 des AVC ischémiques."
+        },
+        {
+          "statement": "Les patients présentant une FA peuvent être asymptomatiques, justifiant l'intérêt du dépistage des patients à risque",
+          "isTrue": true,
+          "explanation": "Certains patients avec FA peuvent ne pas présenter de symptômes, d'où l'importance du dépistage."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754681962818_518yynckr_4",
+      "topic": "Evaluation de la fibrillation atriale",
+      "rationale": "Ce QCM évalue les connaissances sur la définition, la physiopathologie, l'épidémiologie, les symptômes et les complications de la fibrillation atriale. Les propositions ont été formulées pour tester la compréhension en profondeur de ces aspects spécifiques de la maladie.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale est un trouble du rythme supra-ventriculaire résultant d'une activité électrique régulière dans les oreillettes.",
+          "isTrue": false,
+          "explanation": "La fibrillation atriale est caractérisée par une activité électrique anarchique dans les oreillettes."
+        },
+        {
+          "statement": "Le diagnostic de fibrillation atriale peut être posé si la condition persiste pendant au moins 10 secondes sur un tracé ECG.",
+          "isTrue": false,
+          "explanation": "Pour diagnostiquer la fibrillation atriale, la condition doit persister pendant plus de 30 secondes sur un tracé ECG."
+        },
+        {
+          "statement": "Les activités ectopiques focales au niveau des veines pulmonaires sont responsables de la physiopathologie de la fibrillation atriale.",
+          "isTrue": true,
+          "explanation": "Les activités ectopiques focales au niveau des veines pulmonaires contribuent au développement de la fibrillation atriale."
+        },
+        {
+          "statement": "La prévalence de la fibrillation atriale augmente avec l'âge et est plus élevée chez les femmes que chez les hommes.",
+          "isTrue": false,
+          "explanation": "La prévalence de la fibrillation atriale augmente avec l'âge et est plus élevée chez les hommes que chez les femmes."
+        },
+        {
+          "statement": "La fibrillation atriale est responsable d'un quart des AVC hémorragiques.",
+          "isTrue": false,
+          "explanation": "La fibrillation atriale est responsable d'un quart des AVC ischémiques, pas hémorragiques."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754681962818_518yynckr_5",
+      "topic": "Fibrillation atriale - QCM",
+      "rationale": "La fibrillation atriale est un trouble du rythme cardiaque courant, avec des symptômes variables et des complications graves. Il est crucial de comprendre les différentes causes, les implications cliniques et la diversité des présentations pour une prise en charge adéquate.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale est un trouble du rythme supra-ventriculaire le plus rare.",
+          "isTrue": false,
+          "explanation": "La fibrillation atriale est en fait le trouble du rythme supra-ventriculaire le plus fréquent."
+        },
+        {
+          "statement": "Le diagnostic de fibrillation atriale peut être établi en moins de 30 secondes sur un ECG de surface.",
+          "isTrue": false,
+          "explanation": "Le diagnostic de fibrillation atriale nécessite la présence de FA pendant plus de 30 secondes sur un tracé ECG de surface."
+        },
+        {
+          "statement": "Les activités ectopiques focales au niveau des veines pulmonaires sont une cause fréquente de fibrillation atriale.",
+          "isTrue": true,
+          "explanation": "La fibrillation atriale peut être secondaire à des activités ectopiques focales au niveau des veines pulmonaires."
+        },
+        {
+          "statement": "La fibrillation atriale n'a aucun impact sur le risque d'AVC ischémique.",
+          "isTrue": false,
+          "explanation": "La fibrillation atriale est responsable de 1/4 des AVC ischémiques."
+        },
+        {
+          "statement": "Les patients atteints de fibrillation atriale sont toujours symptomatiques.",
+          "isTrue": false,
+          "explanation": "Les patients atteints de fibrillation atriale peuvent être asymptomatiques, d'où l'importance du dépistage des patients à risque."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754681962818_518yynckr_6",
+      "topic": "QCM sur la fibrillation atriale",
+      "rationale": "La fibrillation atriale est un trouble du rythme supra-ventriculaire associé à des complications graves telles que les AVC ischémiques et les troubles cognitifs. Il existe une prédominance masculine dans sa prévalence, et elle est souvent associée au flutter atrial commun. Certains patients peuvent être asymptomatiques malgré la présence de la fibrillation atriale.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale est exclusivement un trouble du rythme ventriculaire.",
+          "isTrue": false,
+          "explanation": "La fibrillation atriale est un trouble du rythme supra-ventriculaire."
+        },
+        {
+          "statement": "La prévalence de la fibrillation atriale est plus élevée chez les femmes que chez les hommes.",
+          "isTrue": false,
+          "explanation": "Il y a une prédominance masculine dans la prévalence de la fibrillation atriale."
+        },
+        {
+          "statement": "La fibrillation atriale est fortement associée au flutter atrial commun.",
+          "isTrue": true,
+          "explanation": "La fibrillation atriale est effectivement associée au flutter atrial commun."
+        },
+        {
+          "statement": "Les patients atteints de fibrillation atriale présentent toujours des symptômes évidents.",
+          "isTrue": false,
+          "explanation": "Certains patients atteints de fibrillation atriale peuvent être asymptomatiques."
+        },
+        {
+          "statement": "La fibrillation atriale peut entraîner des AVC ischémiques et des troubles cognitifs.",
+          "isTrue": true,
+          "explanation": "La fibrillation atriale est responsable d'un quart des AVC ischémiques et peut également causer des troubles cognitifs."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754681962818_518yynckr_7",
+      "topic": "Test de QCM sur la fibrillation atriale",
+      "rationale": "Ce QCM aborde différents aspects de la fibrillation atriale, notamment sa nature supra-ventriculaire, les critères de diagnostic, la prévalence chez les hommes, les complications telles que les AVC ischémiques et la possibilité d'être asymptomatique.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale est exclusivement un trouble du rythme ventriculaire.",
+          "isTrue": false,
+          "explanation": "La fibrillation atriale est un trouble du rythme supra-ventriculaire."
+        },
+        {
+          "statement": "Le diagnostic de fibrillation atriale peut être posé sur la base d'un ECG de 6 dérivations.",
+          "isTrue": false,
+          "explanation": "Le diagnostic de FA nécessite la présence de FA pendant plus de 30 secondes sur un tracé ECG de surface, ou sur l’ensemble d’un ECG 12 dérivations."
+        },
+        {
+          "statement": "La prévalence de la fibrillation atriale est plus élevée chez les femmes que chez les hommes.",
+          "isTrue": false,
+          "explanation": "La prédominance de la fibrillation atriale est masculine."
+        },
+        {
+          "statement": "La fibrillation atriale est responsable d'environ 25% des AVC ischémiques.",
+          "isTrue": true,
+          "explanation": "La FA est responsable de ¼ des AVC ischémiques."
+        },
+        {
+          "statement": "Les patients atteints de fibrillation atriale sont toujours symptomatiques.",
+          "isTrue": false,
+          "explanation": "Les patients présentant une FA peuvent être asymptomatiques."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    }
+  ],
+  "usedChunks": [
+    1,
+    0,
+    0,
+    0,
+    0
+  ],
+  "currentIndex": 7,
+  "total": 8,
+  "contextSnippet": "sont des facteurs de risque de FA. Ils peuvent être distingués dans trois groupes principaux :\nLes facteurs de risque cardiovasculaires\nLes pathologies cardiovasculaires\nLes pathologies respiratoires\n\n30/07/2025, 16:33Fiche LiSA:Fibrillation atriale — LiSA\nPage 5 of 13https://livret.uness.fr/lisa/2025/Fiche_LiSA:Fibrillation_atriale\nConnaître les facteurs déclenchants OIC-232-10-A\nTroubles hydro-électrolytiques et métaboliques :\nHypokaliémie\nHyperthyroïdie\nInflammation :\nGénérale : infection\nLocale :\nPost-opératoire de chirurgie thoracique et cardiaque\nPéricardite\nRéactions vagales\nTox i q u e :\nPrise d’alcool, de caféine, drogues (cocaïne, amphétamines)\nMédicaments : catécholamines, corticoïdes, chimiothérapies, ...\nConnaître le bilan de première intention OIC-232-11-A\n\n30/07/2025, 16:33Fiche LiSA:Fibrillation atriale — LiSA\nPage 6 of 13https://livret.uness.fr/lisa/2025/Fiche_LiSA:Fibrillation_atriale\nSavoir évaluer le risque thromboembolique et hémorragique OIC-232-12-\nA\nLe score de "
+}

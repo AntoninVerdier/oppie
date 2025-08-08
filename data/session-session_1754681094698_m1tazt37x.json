@@ -1,0 +1,154 @@
+{
+  "sessionId": "session_1754681094698_m1tazt37x",
+  "questions": [
+    {
+      "id": "qcm_session_1754681094698_m1tazt37x_0",
+      "topic": "Évaluation des Gliomes selon les Grades",
+      "rationale": "Ce QCM permet d'évaluer la compréhension des caractéristiques cliniques et radiologiques des gliomes de grade 1 et 2, ainsi que leurs traitements. Les propositions incluent des affirmations véridiques et fallacieuses pour tester la connaissance des exceptions et des nuances dans la gestion de ces tumeurs cérébrales.",
+      "propositions": [
+        {
+          "statement": "Les gliomes de grade 1 sont généralement infra-tentoriels et peuvent être mixtes (kystiques et solides).",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 1 se situent souvent dans la région infra-tentorielle et présentent des caractéristiques mixtes."
+        },
+        {
+          "statement": "Tous les gliomes de grade 2 doivent être traités par chimiothérapie dès le diagnostic.",
+          "isTrue": false,
+          "explanation": "Les gliomes de grade 2 sont généralement traités par chirurgie et éventuellement radiothérapie, mais la chimiothérapie n'est pas systématique."
+        },
+        {
+          "statement": "La résection complète d'un gliome de grade 1 conduit à une guérison probable.",
+          "isTrue": true,
+          "explanation": "Une résection complète des gliomes de grade 1 est souvent associée à une guérison, car ces tumeurs sont moins agressives."
+        },
+        {
+          "statement": "Les gliomes de grade 2 présentent toujours un hypersignal T2 et un hyposignal T1 sur les IRM.",
+          "isTrue": false,
+          "explanation": "Bien que les gliomes de grade 2 montrent généralement un hypersignal T2 et un hyposignal T1, des variations peuvent exister selon les cas."
+        },
+        {
+          "statement": "Un gliome de grade 2 évolue inéluctablement vers une anaplasie (grades 3 et 4).",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 2 ont une progression inéluctable vers des formes plus agressives, impliquant les grades 3 et 4."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754681094698_m1tazt37x_1",
+      "topic": "QCM sur les tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM aborde divers aspects des tumeurs primitives intracrâniennes, en incluant des informations sur les épendymomes, glioblastomes, neurinomes et métastases. Les propositions sont conçues pour tester la compréhension des étudiants sur la classification, l'épidémiologie et les caractéristiques radiologiques de ces tumeurs, tout en intégrant des pièges pour évaluer leur capacité à distinguer les faits des erreurs courantes.",
+      "propositions": [
+        {
+          "statement": "Les épendymomes sont principalement malins et surviennent souvent chez les adultes.",
+          "isTrue": false,
+          "explanation": "Les épendymomes sont généralement bénins (grade 1 ou 2 OMS) et surviennent surtout chez l'enfant, bien qu'ils puissent se présenter chez les adultes jeunes."
+        },
+        {
+          "statement": "Le glioblastome est une progression inéluctable des tumeurs de grade 3.",
+          "isTrue": true,
+          "explanation": "Les tumeurs de grade 3, comme les astrocytomes anaplasiques, progressent généralement vers un glioblastome de grade 4."
+        },
+        {
+          "statement": "Les neurinomes, également appelés schwannomes, sont des tumeurs bénignes dérivées des cellules de Schwann et sont souvent localisés sur le nerf vestibulaire.",
+          "isTrue": true,
+          "explanation": "Les neurinomes se développent à partir des cellules de Schwann et se localisent fréquemment sur le nerf vestibulaire, étant bénins dans la plupart des cas."
+        },
+        {
+          "statement": "Les métastases cérébrales se présentent toujours sous forme de tumeurs uniques sur l'IRM.",
+          "isTrue": false,
+          "explanation": "Les métastases cérébrales peuvent être uniques ou multiples, et leur présentation à l'IRM dépend de plusieurs facteurs, y compris la localisation et le volume."
+        },
+        {
+          "statement": "La prise de contraste hétérogène avec aspect en cocarde est typique des métastases, en particulier celles provenant de mélanome.",
+          "isTrue": true,
+          "explanation": "Les métastases, notamment celles d'origine mélanome, se caractérisent par un rehaussement hétérogène après injection de contraste, avec un aspect en cocarde dû à la nécrose centrale."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754681094698_m1tazt37x_2",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM aborde divers aspects des tumeurs intracrâniennes, y compris leur classification, leur nature bénigne ou maligne, leur topographie et leur épidémiologie. Les propositions sont conçues pour tester la compréhension des étudiants sur les concepts clés et éviter les pièges courants liés à la terminologie et aux statistiques.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs primitives intracrâniennes peuvent être classées en tumeurs intra-axiales et extra-axiales.",
+          "isTrue": true,
+          "explanation": "Les tumeurs primitives intracrâniennes incluent les tumeurs intra-axiales, qui se développent à l'intérieur de l'encéphale (ex : glioblastome), et les tumeurs extra-axiales, qui proviennent des annexes comme les méninges (ex : méningiome)."
+        },
+        {
+          "statement": "Les méningiomes sont toujours considérés comme des tumeurs malignes.",
+          "isTrue": false,
+          "explanation": "Les méningiomes sont généralement des tumeurs bénignes, souvent de grade 1 selon l'OMS, et ont une évolution lente avec un bon pronostic."
+        },
+        {
+          "statement": "La majorité des tumeurs intracrâniennes chez l'adulte se situent dans la région infra-tentorielle.",
+          "isTrue": false,
+          "explanation": "Environ 80% des tumeurs intracrâniennes chez l'adulte se situent dans la région supra-tentorielle, tandis que seulement 20% sont infra-tentorielles."
+        },
+        {
+          "statement": "Les métastases cérébrales sont le type le plus fréquent de tumeurs primitives intracrâniennes.",
+          "isTrue": true,
+          "explanation": "Les métastases cérébrales sont effectivement le type le plus fréquent de tumeurs intracrâniennes, représentant une part significative des cas observés."
+        },
+        {
+          "statement": "Les adénomes hypophysaires ont une incidence similaire à celle des gliomes.",
+          "isTrue": true,
+          "explanation": "Les adénomes hypophysaires et les gliomes présentent une incidence similaire, avec environ 5 nouveaux cas pour 100 000 habitants par an pour chacun."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754681094698_m1tazt37x_3",
+      "topic": "Pathologies respiratoires",
+      "rationale": "Ce QCM aborde les caractéristiques de l'asthme et de la BPCO, en mettant l'accent sur des concepts clés tels que l'inflammation, la variabilité des symptômes et les traitements appropriés, tout en intégrant des pièges concernant la réversibilité des maladies respiratoires.",
+      "propositions": [
+        {
+          "statement": "L'asthme est une maladie inflammatoire des voies respiratoires.",
+          "isTrue": true,
+          "explanation": "L'asthme est caractérisé par une inflammation chronique des voies respiratoires, entraînant une hyperréactivité bronchique et une obstruction réversible du flux aérien."
+        },
+        {
+          "statement": "Tous les patients asthmatiques présentent des symptômes constants.",
+          "isTrue": false,
+          "explanation": "Les symptômes de l'asthme varient d'un patient à l'autre et peuvent être intermittents, avec des périodes de rémission où aucun symptôme n'est présent."
+        },
+        {
+          "statement": "La bronchopneumopathie chronique obstructive (BPCO) est réversible avec des bronchodilatateurs.",
+          "isTrue": false,
+          "explanation": "La BPCO est généralement une maladie progressive et irréversible, bien que les bronchodilatateurs puissent aider à soulager les symptômes en améliorant le flux d'air."
+        },
+        {
+          "statement": "La spirométrie est l'examen de référence pour le diagnostic de l'asthme.",
+          "isTrue": true,
+          "explanation": "La spirométrie mesure la fonction pulmonaire et est essentielle pour diagnostiquer l'asthme, en évaluant la variabilité du débit expiratoire."
+        },
+        {
+          "statement": "Les corticostéroïdes inhalés sont le traitement de première ligne pour l'asthme persistant.",
+          "isTrue": true,
+          "explanation": "Les corticostéroïdes inhalés sont considérés comme le traitement de choix pour contrôler l'inflammation et prévenir les exacerbations chez les patients asthmatiques persistants."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "HAUT",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    1,
+    3,
+    0,
+    2
+  ],
+  "currentIndex": 3,
+  "total": 19,
+  "contextSnippet": "BAS GRADE\nGrade\n1\n< 20 ans\nInfra tentorielle\nMixte = kystique / solide\nRehaussement après\ncontraste\nChirurgie\nGuérison si résection\ncomplète\nGrade\n2\n20–40 ans\nSupra tentorielle\nHypersignal T2 Hyposignal T1\nAbsence de prise de contraste\nChirurgie (résection\nmaximaliste, si possible)\n+/- radiothérapie /\nchimiothérapie\nProgression inéluctable vers\n lʼanaplasie (grades 3 et 4)\nGliomes\n"
+}

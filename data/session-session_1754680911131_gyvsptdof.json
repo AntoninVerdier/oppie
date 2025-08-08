@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754680911131_gyvsptdof",
+  "questions": [
+    {
+      "id": "qcm_session_1754680911131_gyvsptdof_0",
+      "topic": "Raisonner devant une céphalée",
+      "rationale": "Ce QCM aborde les distinctions entre céphalées primaires et secondaires, les causes des céphalées, ainsi que l'importance de l'évaluation clinique pour identifier des situations d'urgence. Les propositions incluent des pièges et des nuances pour tester la compréhension des étudiants sur le raisonnement clinique face aux céphalées.",
+      "propositions": [
+        {
+          "statement": "Les céphalées primaires sont toujours sans lésion sous-jacente.",
+          "isTrue": true,
+          "explanation": "Les céphalées primaires, telles que la migraine et la céphalée de tension, sont liées à l'activation des systèmes nociceptifs céphaliques, sans lésion organique sous-jacente."
+        },
+        {
+          "statement": "Une céphalée secondaire est toujours causée par une lésion cérébrale.",
+          "isTrue": false,
+          "explanation": "Les céphalées secondaires peuvent avoir des causes variées, y compris des troubles bénins, comme des problèmes de réfraction, et ne sont pas toujours dues à des lésions cérébrales."
+        },
+        {
+          "statement": "L'évaluation d'une céphalée doit inclure la distinction entre céphalée primaire et secondaire.",
+          "isTrue": true,
+          "explanation": "L'objectif prioritaire est de trancher entre céphalée primaire, secondaire bénigne, et céphalée secondaire grave, afin de déterminer l'urgence de la prise en charge."
+        },
+        {
+          "statement": "Les céphalées de tension sont classées comme des céphalées secondaires.",
+          "isTrue": false,
+          "explanation": "Les céphalées de tension sont considérées comme des céphalées primaires, car elles ne sont pas causées par une affection sous-jacente."
+        },
+        {
+          "statement": "Une céphalée peut être le seul symptôme d'une hémorragie méningée.",
+          "isTrue": true,
+          "explanation": "Une céphalée peut être le symptôme principal et parfois unique d'une pathologie grave comme une hémorragie méningée, nécessitant une évaluation rapide."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "Raisonner devant une céphalée",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    2
+  ],
+  "currentIndex": 0,
+  "total": 10,
+  "contextSnippet": "2.     Raisonner devant une céphalée\n·     Les céphalées primaires sont les plus fréquentes (migraine, céphalée de tension, algie vasculaire de la face, item 99) et sont\nliées à lʼactivation des systèmes nociceptifs céphaliques, sans lésion sous-jacente.\n·     Les céphalées secondaires ont des causes variées dont certaines très graves. La céphalée est le symptôme principal et parfois\nunique dʼune lésion locale ou dʼune pathologie générale.\n·     Lʼobjectif prioritaire devant toute céphalée est de trancher entre une céphalée primaire, une céphalée secondaire bénigne\n(trouble de la réfraction) et une céphalée secondaire à une affection grave nécessitant des explorations et un traitement en urgence\n(hémorragie méningée).\n"
+}

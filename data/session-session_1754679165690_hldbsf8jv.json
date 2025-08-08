@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754679165690_hldbsf8jv",
+  "questions": [
+    {
+      "id": "qcm_session_1754679165690_hldbsf8jv_0",
+      "topic": "Limitation et arrêt des traitements en médecine",
+      "rationale": "Ce QCM aborde les aspects clés de la limitation et de l'arrêt des traitements, en incluant des nuances sur la législation, l'importance de la volonté du patient et les procédures nécessaires pour les patients incapables de s'exprimer. Les propositions sont conçues pour tester la compréhension des étudiants sur des points critiques de l'éthique médicale en relation avec la loi.",
+      "propositions": [
+        {
+          "statement": "La loi permet à un médecin de suspendre un traitement vital sans consulter d'autres professionnels de santé.",
+          "isTrue": false,
+          "explanation": "La loi exige une procédure collégiale impliquant plusieurs professionnels de santé avant de prendre une telle décision."
+        },
+        {
+          "statement": "La nutrition et l'hydratation artificielles sont considérées comme des traitements pouvant être suspendus.",
+          "isTrue": true,
+          "explanation": "Selon la loi de 2016, la nutrition et l'hydratation artificielles peuvent être suspendues si le patient a exprimé sa volonté."
+        },
+        {
+          "statement": "Un patient peut demander une sédation profonde et continue même si son pronostic vital n'est pas engagé à court terme.",
+          "isTrue": false,
+          "explanation": "La sédation profonde et continue est spécifiquement réservée aux cas où le pronostic vital est engagé à court terme."
+        },
+        {
+          "statement": "La décision d'arrêter un traitement doit tenir compte des directives anticipées du patient.",
+          "isTrue": true,
+          "explanation": "Le médecin doit consulter les directives anticipées, ou la personne de confiance, avant de décider d'arrêter un traitement."
+        },
+        {
+          "statement": "Un patient incapable d'exprimer sa volonté ne peut pas bénéficier d'une limitation de traitement sans une procédure collégiale.",
+          "isTrue": true,
+          "explanation": "La loi stipule qu'une procédure collégiale est nécessaire pour déterminer la volonté d'un patient qui ne peut pas s'exprimer."
+        }
+      ],
+      "chunkId": "chunk_25",
+      "chunkHeading": "Section 26",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754679165690_hldbsf8jv_1",
+      "topic": "Impact du diagnostic présymptomatique sur l'individu et sa famille",
+      "rationale": "Ce QCM aborde des aspects variés du diagnostic présymptomatique, y compris les bénéfices individuels, les implications familiales, le respect du secret médical, et les conséquences sociétales. Les propositions visent à tester la compréhension des étudiants sur ces enjeux complexes et nuancés.",
+      "propositions": [
+        {
+          "statement": "Le diagnostic présymptomatique peut offrir un bénéfice individuel en termes de prise de décision sur la vie personnelle.",
+          "isTrue": true,
+          "explanation": "Ce diagnostic permet à l'individu de planifier et d'organiser sa vie en fonction des informations sur sa santé."
+        },
+        {
+          "statement": "Il est toujours bénéfique d'informer la famille d'un risque génétique sans considérer les conséquences.",
+          "isTrue": false,
+          "explanation": "Informer la famille sans évaluer les conséquences peut entraîner des tensions et des discriminations, nuisant à la cohésion sociale."
+        },
+        {
+          "statement": "Le respect du secret médical est un impératif dans la relation médecin-patient, même en cas de découverte d'une mutation génétique.",
+          "isTrue": true,
+          "explanation": "La confidentialité protège l'individu et ses droits fondamentaux, bien qu'il puisse y avoir des exceptions."
+        },
+        {
+          "statement": "Les informations sur des mutations génétiques devraient être partagées librement avec toute la parentèle, indépendamment du consentement.",
+          "isTrue": false,
+          "explanation": "Le partage d'information doit respecter le consentement explicite et la volonté de la personne concernée."
+        },
+        {
+          "statement": "Le projet parental peut être significativement influencé par la connaissance des risques génétiques.",
+          "isTrue": true,
+          "explanation": "La connaissance des risques permet aux couples d'organiser leur projet de grossesse de manière informée."
+        }
+      ],
+      "chunkId": "chunk_40",
+      "chunkHeading": "Section 41",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754679165690_hldbsf8jv_2",
+      "topic": "Évaluation des recherches impliquant la personne humaine",
+      "rationale": "Ce QCM évalue la compréhension des enjeux réglementaires et éthiques autour des recherches impliquant des personnes humaines, en abordant des aspects spécifiques concernant les CPP, la CNIL, et le rôle de l'ANSM. Les propositions sont conçues pour tester la connaissance des étudiants sur le cadre légal, les acteurs impliqués, et les exceptions qui peuvent survenir.",
+      "propositions": [
+        {
+          "statement": "Le CPP doit rendre un avis dans un délai de 45 jours, le silence vaut rejet.",
+          "isTrue": true,
+          "explanation": "Selon le cadre réglementaire, le CPP se prononce dans un délai de quarante-cinq jours et le silence à l'issue de ce délai est considéré comme un rejet."
+        },
+        {
+          "statement": "Les recherches sur des données rétrospectives nécessitent l'approbation du CPP.",
+          "isTrue": false,
+          "explanation": "Les recherches portant sur des données rétrospectives ne sont pas soumises à l'avis du CPP, mais relèvent de la CNIL."
+        },
+        {
+          "statement": "La Commission nationale des recherches impliquant la personne humaine (CNRIPH) a été créée pour harmoniser les pratiques des CPP.",
+          "isTrue": true,
+          "explanation": "La CNRIPH a été créée en 2018 pour coordonner et uniformiser les pratiques des Comités de protection des personnes."
+        },
+        {
+          "statement": "Le promoteur d'une recherche peut être une personne physique ou morale, mais doit être établi en dehors de l'Union Européenne.",
+          "isTrue": false,
+          "explanation": "Le promoteur doit être établi dans l'Union Européenne, ce qui exclut les entités basées hors de l'UE."
+        },
+        {
+          "statement": "L'ANSM attribue le numéro ID-RCB pour toutes les recherches, sauf celles interventionnelles sur des médicaments.",
+          "isTrue": true,
+          "explanation": "L'ANSM fournit le numéro ID-RCB pour toutes les recherches, sauf celles qui nécessitent un numéro EUDRACT, attribué par l'Agence européenne du médicament."
+        }
+      ],
+      "chunkId": "chunk_34",
+      "chunkHeading": "Section 35",
+      "pageRange": "Pages 1-0"
+    }
+  ],
+  "usedChunks": [
+    25,
+    40,
+    34
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": " [les traitements] peuvent être suspendus ou ne pas être\nentrepris, conformément à la volonté du patient et, si ce dernier est hors d'état d'exprimer sa volonté, à l'issue d'une\nprocédure collégiale définie par voie réglementaire. »\nLa loi permet ainsi de répondre à deux situations médicales ; la limitation des soins et l’arrêt des soins. Les deux\ns’inscrivent dans le fait d’éviter l’obstination déraisonnable. Dans la limitation, il s’agit de renoncer à mettre en œuvre des\nmoyens susceptibles de prolonger une vie très compromise. Il s’agit de ne pas entreprendre certains soins de prolongation\nqui sont techniquement possibles mais sans finalité d’ amélioration du patient. Dans l’arrêt, il s’agit de la suspension d’un\ntraitement vital en cours par exemple une respiration artificielle.\nLa loi de 2016 est venue confirmer que la nutrition et l’hydratation artificielles doivent être entendues comme des\ntraitements comme les autres et peuvent être suspendues à condition que le patient ait lui"
+}

@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754679751814_72qbt7csh",
+  "questions": [
+    {
+      "id": "qcm_session_1754679751814_72qbt7csh_0",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM aborde les différents types de tumeurs intracrâniennes, leurs localisations, leur histologie et des facteurs de risque associés. Les propositions comprennent des affirmations correctes et fausses pour tester la compréhension des étudiants, tout en incluant des éléments de nuance concernant la classification et l'épidémiologie des tumeurs.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs primitives intracrâniennes se développent exclusivement à partir des cellules nerveuses.",
+          "isTrue": false,
+          "explanation": "Les tumeurs primitives peuvent également se développer à partir des méninges et des annexes du système nerveux central."
+        },
+        {
+          "statement": "Les méningiomes sont généralement considérés comme des tumeurs malignes.",
+          "isTrue": false,
+          "explanation": "Les méningiomes sont souvent bénins, classés comme grade 1 OMS, et ont un bon pronostic."
+        },
+        {
+          "statement": "Les gliomes, en particulier le glioblastome, sont des exemples de tumeurs malignes.",
+          "isTrue": true,
+          "explanation": "Les gliomes, comme le glioblastome, sont des tumeurs malignes qui évoluent rapidement et ont un pronostic défavorable."
+        },
+        {
+          "statement": "La majorité des tumeurs intracrâniennes chez l'adulte se situent infra tentorielles.",
+          "isTrue": false,
+          "explanation": "Environ 80% des tumeurs intracrâniennes chez l'adulte sont supra tentorielles."
+        },
+        {
+          "statement": "La prise de progestatifs, comme l'acétate de cyprotérone, peut favoriser la genèse des méningiomes.",
+          "isTrue": true,
+          "explanation": "Il a été démontré que certains progestatifs, tels que l'acétate de cyprotérone, peuvent favoriser le développement des méningiomes."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754679751814_72qbt7csh_1",
+      "topic": "Évaluation des gliomes selon les grades",
+      "rationale": "Ce QCM évalue la compréhension des caractéristiques des gliomes en fonction de leur grade, en abordant des éléments clés tels que leur localisation, leur signal en IRM, les options de traitement chirurgical et adjuvant, ainsi que la nature évolutive des gliomes. Les propositions présentent des pièges pour tester la nuance de la connaissance des étudiants.",
+      "propositions": [
+        {
+          "statement": "Les gliomes de grade 1 se trouvent principalement dans la région infra-tentorielle.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 1 sont souvent observés dans la région infra-tentorielle, où ils peuvent présenter une nature mixte kystique/solide."
+        },
+        {
+          "statement": "Tous les gliomes de grade 2 présentent un hypersignal T2 et un hyposignal T1.",
+          "isTrue": false,
+          "explanation": "Bien que la majorité des gliomes de grade 2 montrent un hypersignal T2 et un hyposignal T1, il peut exister des exceptions selon les caractéristiques spécifiques de la tumeur."
+        },
+        {
+          "statement": "La résection complète des gliomes de grade 1 peut mener à une guérison.",
+          "isTrue": true,
+          "explanation": "La chirurgie avec résection complète des gliomes de grade 1 est associée à une guérison, car ces tumeurs sont généralement moins agressives."
+        },
+        {
+          "statement": "Les gliomes de grade 2 n'ont jamais besoin de traitement adjuvant après la chirurgie.",
+          "isTrue": false,
+          "explanation": "Bien que la chirurgie soit la principale option pour les gliomes de grade 2, un traitement adjuvant comme la radiothérapie ou la chimiothérapie peut être envisagé."
+        },
+        {
+          "statement": "La progression vers l'anaplasie est inéluctable pour les gliomes de grade 2.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 2 ont une progression inéluctable vers des formes plus agressives (grades 3 et 4), ce qui souligne leur nature évolutive."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754679751814_72qbt7csh_2",
+      "topic": "Pathologie Haut et Épidermique",
+      "rationale": "Ce QCM aborde des concepts clés et variés concernant les pathologies cutanées, incluant des maladies auto-immunes, des cancers cutanés, des affections allergiques, des infections fongiques et des pathologies liées à l'excès de sébum. Les propositions sont conçues pour tester la compréhension des étudiants sur des notions complexes, tout en intégrant des pièges et des informations précises.",
+      "propositions": [
+        {
+          "statement": "Le psoriasis est une maladie auto-immune qui se manifeste par des plaques squameuses sur la peau.",
+          "isTrue": true,
+          "explanation": "Le psoriasis est effectivement considéré comme une maladie auto-immune, où une réponse immunitaire anormale entraîne une prolifération des kératinocytes, provoquant des plaques rouges et squameuses."
+        },
+        {
+          "statement": "Le mélanome est le type de cancer cutané le moins agressif et le plus fréquent.",
+          "isTrue": false,
+          "explanation": "Le mélanome est en réalité le type de cancer cutané le plus agressif en raison de sa capacité à se propager rapidement, bien qu'il soit moins fréquent que le carcinome basocellulaire ou squameux."
+        },
+        {
+          "statement": "La dermatite atopique est souvent associée à d'autres maladies allergiques comme l'asthme et la rhinite allergique.",
+          "isTrue": true,
+          "explanation": "La dermatite atopique fait partie du 'triangle atopique', où elle est fréquemment associée à l'asthme et à la rhinite allergique, soulignant une prédisposition génétique aux maladies allergiques."
+        },
+        {
+          "statement": "Les infections fongiques de la peau, comme la teigne, ne nécessitent généralement pas de traitement antifongique systémique.",
+          "isTrue": false,
+          "explanation": "Bien que certaines infections fongiques puissent être traitées localement, les cas plus sévères ou étendus de teigne peuvent nécessiter un traitement antifongique systémique pour une éradication efficace."
+        },
+        {
+          "statement": "L'acné est principalement causée par une hyperproduction de sébum et un blocage des follicules pileux.",
+          "isTrue": true,
+          "explanation": "L'acné est effectivement liée à l'hyperproduction de sébum, à l'inflammation et à l'obstruction des follicules, et peut être influencée par des facteurs hormonaux."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "HAUT",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    0,
+    1,
+    2
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": "Tumeurs intracrâniennes IC-299\nConnaître les principaux types et localisations des tumeurs intracrâniennes\nConnaître la définition des tumeurs primitives intracrâniennes : système nerveux central et annexes\nConnaître les principaux types histologiques des tumeurs cérébrales\nConnaître l'épidémiologie des différents types tumeurs primitives intracrâniennes\nConnaître les principaux tableaux cliniques devant faire évoquer une tumeur intracrânienne\nConnaître la stratégie d'exploration en imagerie devant une tumeur intracrânienne de l'adulte\nDécrire la recherche systématique de cancer primitif à effectuer devant une métastase cérébrale\nSavoir évoquer une hypertension intracrânienne (HTIC) et une épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principes de la prise en charge de l'HTIC et de l'épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principaux types et localisations des tumeurs intracrâniennes OIC-\n299-01-A\n·        Tumeur primi"
+}

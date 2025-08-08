@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754681504541_ggi9wi625",
+  "questions": [
+    {
+      "id": "qcm_session_1754681504541_ggi9wi625_0",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM évalue la compréhension des tumeurs intracrâniennes en abordant des concepts clés tels que la classification des tumeurs, leur localisation, et les tableaux cliniques associés. Les propositions incluent des affirmations vraies et fausses pour tester la connaissance des étudiants tout en intégrant des pièges pour éviter les réponses impulsives.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs primitives intracrâniennes se développent uniquement à partir des cellules du système nerveux central.",
+          "isTrue": true,
+          "explanation": "Les tumeurs primitives intracrâniennes incluent celles qui se développent à l'intérieur de l'encéphale (intra axiales) ainsi que celles provenant des annexes (extra axiales)."
+        },
+        {
+          "statement": "Les méningiomes sont toujours de grade 2 ou plus selon la classification OMS.",
+          "isTrue": false,
+          "explanation": "Les méningiomes sont souvent de grade 1 selon l'OMS, ce qui les rend généralement bénins."
+        },
+        {
+          "statement": "La majorité des tumeurs intracrâniennes chez l'adulte se localisent infra tentoriellement.",
+          "isTrue": false,
+          "explanation": "Environ 80% des tumeurs intracrâniennes chez l'adulte se situent supra tentoriellement."
+        },
+        {
+          "statement": "Les gliomes et les méningiomes ont une incidence similaire dans la population.",
+          "isTrue": false,
+          "explanation": "Les gliomes et les méningiomes ont des incidences différentes, les gliomes ayant environ 8 nouveaux cas par 100 000 habitants par an, tandis que les méningiomes en ont environ 5."
+        },
+        {
+          "statement": "Une hypertension intracrânienne peut être un signe clinique d'une tumeur intracrânienne.",
+          "isTrue": true,
+          "explanation": "L'hypertension intracrânienne est un tableau clinique souvent associé à des tumeurs intracrâniennes en raison de l'augmentation de la pression dans le crâne."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754681504541_ggi9wi625_1",
+      "topic": "Évaluation des tumeurs cérébrales de bas grade",
+      "rationale": "Ce QCM aborde les caractéristiques cliniques et radiologiques des tumeurs cérébrales de bas grade, en mettant en évidence les différences entre les grades 1 et 2, ainsi que les implications thérapeutiques, tout en incluant des pièges pour tester la compréhension des étudiants.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs de grade 1 se présentent souvent sous forme mixte, kystique et solide.",
+          "isTrue": true,
+          "explanation": "Les tumeurs de grade 1 peuvent effectivement présenter un aspect mixte, incluant des composantes kystiques et solides."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 se caractérisent par une hypersignal T1 et un hyposignal T2.",
+          "isTrue": false,
+          "explanation": "Les tumeurs de grade 2 se caractérisent par un hypersignal T2 et un hyposignal T1, ce qui est l'inverse de l'affirmation."
+        },
+        {
+          "statement": "La résection complète d'une tumeur de grade 1 peut mener à une guérison.",
+          "isTrue": true,
+          "explanation": "La résection complète des tumeurs de grade 1 est souvent curative, permettant une guérison."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 ne nécessitent pas de traitement adjuvant après chirurgie.",
+          "isTrue": false,
+          "explanation": "Les tumeurs de grade 2 peuvent nécessiter un traitement adjuvant comme la radiothérapie ou la chimiothérapie après chirurgie."
+        },
+        {
+          "statement": "Les gliomes de grade 2 progressent inéluctablement vers des grades plus élevés, tels que les grades 3 et 4.",
+          "isTrue": true,
+          "explanation": "Il est reconnu que les gliomes de grade 2 ont une progression inéluctable vers l'anaplasie et des grades plus élevés."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754681504541_ggi9wi625_2",
+      "topic": "Évaluation des tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM couvre divers types de tumeurs primitives intracrâniennes, en abordant à la fois les caractéristiques des tumeurs bénignes et malignes, ainsi que les traitements associés. Les propositions incluent des pièges concernant la nature bénigne ou maligne de certaines tumeurs, ainsi que des spécificités de traitement et de localisation.",
+      "propositions": [
+        {
+          "statement": "Les épendymomes se développent principalement à partir des épendymocytes des ventricules et sont souvent bénins chez l'adulte.",
+          "isTrue": true,
+          "explanation": "Les épendymomes se développent effectivement à partir des épendymocytes et, bien qu'ils soient plus fréquents chez les enfants, ils peuvent être bénins (grade 1 ou 2 OMS) chez les adultes."
+        },
+        {
+          "statement": "Les neurinomes sont des tumeurs malignes qui se développent à partir des cellules de Schwann des nerfs crâniens.",
+          "isTrue": false,
+          "explanation": "Les neurinomes, ou schwannomes, sont généralement bénins et se développent à partir des cellules de Schwann, mais ne sont pas malins dans la majorité des cas."
+        },
+        {
+          "statement": "Le glioblastome (grade 4) est associé à une survie globale de 15 mois et nécessite souvent une radio-chimiothérapie concomitante.",
+          "isTrue": true,
+          "explanation": "Le glioblastome est effectivement caractérisé par une survie globale d'environ 15 mois et le traitement recommandé inclut la radio-chimiothérapie selon le protocole de Stupp."
+        },
+        {
+          "statement": "Les hémangioblastomes se forment exclusivement dans le cervelet et sont toujours considérés comme des tumeurs malignes.",
+          "isTrue": false,
+          "explanation": "Les hémangioblastomes sont des tumeurs vasculaires bénignes et peuvent également se localiser dans la moelle épinière, pas uniquement dans le cervelet."
+        },
+        {
+          "statement": "Les métastases cérébrales présentent généralement un aspect en cocarde avec nécrose centrale et prise de contraste périphérique.",
+          "isTrue": true,
+          "explanation": "Les métastases cérébrales montrent souvent un aspect en cocarde à l'IRM, avec une nécrose centrale entourée de prise de contraste, ce qui est un critère clé pour leur identification."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    0,
+    1,
+    2
+  ],
+  "currentIndex": 2,
+  "total": 8,
+  "contextSnippet": "Tumeurs intracrâniennes IC-299\nConnaître les principaux types et localisations des tumeurs intracrâniennes\nConnaître la définition des tumeurs primitives intracrâniennes : système nerveux central et annexes\nConnaître les principaux types histologiques des tumeurs cérébrales\nConnaître l'épidémiologie des différents types tumeurs primitives intracrâniennes\nConnaître les principaux tableaux cliniques devant faire évoquer une tumeur intracrânienne\nConnaître la stratégie d'exploration en imagerie devant une tumeur intracrânienne de l'adulte\nDécrire la recherche systématique de cancer primitif à effectuer devant une métastase cérébrale\nSavoir évoquer une hypertension intracrânienne (HTIC) et une épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principes de la prise en charge de l'HTIC et de l'épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principaux types et localisations des tumeurs intracrâniennes OIC-\n299-01-A\n·        Tumeur primi"
+}

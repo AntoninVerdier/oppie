@@ -1,0 +1,154 @@
+{
+  "sessionId": "session_1754679915840_7t62xbb6r",
+  "questions": [
+    {
+      "id": "qcm_session_1754679915840_7t62xbb6r_0",
+      "topic": "Physiologie de la respiration",
+      "rationale": "Ce QCM aborde divers aspects de la physiologie de la respiration, incluant des processus passifs et actifs, des mécanismes de compensation, et l'importance du surfactant, tout en intégrant des propositions qui pourraient induire en erreur par leur formulation.",
+      "propositions": [
+        {
+          "statement": "La diffusion des gaz dans les alvéoles se fait uniquement par transport actif.",
+          "isTrue": false,
+          "explanation": "La diffusion des gaz dans les alvéoles est un processus passif qui se produit selon le gradient de concentration, sans nécessiter d'énergie."
+        },
+        {
+          "statement": "L'augmentation de la fréquence respiratoire peut compenser une hypoxie.",
+          "isTrue": true,
+          "explanation": "Une augmentation de la fréquence respiratoire permet de fournir plus d'oxygène au sang et d'éliminer le dioxyde de carbone, contribuant ainsi à corriger une hypoxie."
+        },
+        {
+          "statement": "Les poumons sont entièrement remplis d'air à chaque respiration.",
+          "isTrue": false,
+          "explanation": "Les poumons ne se remplissent pas complètement d'air à chaque respiration; il reste toujours un volume résiduel qui ne peut pas être expulsé."
+        },
+        {
+          "statement": "La ventilation alvéolaire est plus importante que la ventilation totale pour l'échange gazeux.",
+          "isTrue": true,
+          "explanation": "La ventilation alvéolaire, qui prend en compte le volume d'air atteint par les alvéoles pour l'échange gazeux, est crucialement plus significative que la ventilation totale, qui inclut l'air dans les voies respiratoires."
+        },
+        {
+          "statement": "Le surfactant pulmonaire diminue la tension superficielle et aide à maintenir les alvéoles ouvertes.",
+          "isTrue": true,
+          "explanation": "Le surfactant pulmonaire réduit la tension superficielle à l'intérieur des alvéoles, empêchant leur collapsus et facilitant l'expansion pulmonaire lors de l'inspiration."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "HAUT",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754679915840_7t62xbb6r_1",
+      "topic": "Évaluation des tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM évalue la compréhension des différents types de tumeurs primitives intracrâniennes, leurs caractéristiques IRM, leur épidémiologie et leur traitement. Les propositions incluent des informations précises sur les grades de tumeurs, leur nature bénigne ou maligne, et les aspects cliniques associés, incitant les étudiants à réfléchir de manière critique sur le sujet.",
+      "propositions": [
+        {
+          "statement": "Les glioblastomes sont des tumeurs de grade 4 qui présentent un rehaussement homogène à l'IRM.",
+          "isTrue": false,
+          "explanation": "Les glioblastomes (grade 4) présentent un rehaussement hétérogène à l'IRM, souvent associé à une nécrose centrale."
+        },
+        {
+          "statement": "Le médulloblastome est une tumeur maligne qui survient principalement chez l'adulte.",
+          "isTrue": false,
+          "explanation": "Le médulloblastome est une tumeur embryonnaire maligne qui survient surtout chez l'enfant, bien qu'il puisse également apparaître chez l'adulte jeune."
+        },
+        {
+          "statement": "Les neurinomes sont majoritairement bénins et localisés au niveau du nerf vestibulaire.",
+          "isTrue": true,
+          "explanation": "Les neurinomes, ou schwannomes, se développent à partir des cellules de Schwann et sont le plus souvent bénins, avec une localisation préférentielle au nerf vestibulaire."
+        },
+        {
+          "statement": "L'épendymome est une tumeur qui se développe principalement dans les ventricules et est plus fréquente chez l'adulte.",
+          "isTrue": false,
+          "explanation": "L'épendymome survient surtout chez l'enfant et est plus souvent localisé dans les ventricules, mais chez l'adulte, il se retrouve principalement supra tentoriel."
+        },
+        {
+          "statement": "Les métastases cérébrales peuvent présenter un aspect en cocarde sur l'IRM avec un œdème péri-tumoral important.",
+          "isTrue": true,
+          "explanation": "Les métastases cérébrales montrent un rehaussement hétérogène avec un aspect en cocarde et un œdème péri-tumoral marqué, surtout pour les mélanomes et cancers du rein."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754679915840_7t62xbb6r_2",
+      "topic": "Évaluation des tumeurs cérébrales de bas grade",
+      "rationale": "Ce QCM aborde les caractéristiques des tumeurs cérébrales de bas grade, en mettant l'accent sur les différences entre les grades 1 et 2, ainsi que sur les traitements et pronostics associés. Les propositions incluent des éléments clés du diagnostic et des options thérapeutiques, tout en intégrant des pièges pour tester la compréhension des étudiants.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs de grade 1 peuvent être guéries par une résection complète.",
+          "isTrue": true,
+          "explanation": "Les tumeurs de grade 1, souvent infra-tentorielle, présentent un bon pronostic si elles sont complètement résectées."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 sont généralement solides et montrent un hypersignal T1 en IRM.",
+          "isTrue": false,
+          "explanation": "Les tumeurs de grade 2 présentent un hypersignal T2 et un hyposignal T1, ce qui est caractéristique."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 peuvent progresser inéluctablement vers l'anaplasie.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 2 ont un risque élevé de progression vers des grades plus élevés, notamment les grades 3 et 4."
+        },
+        {
+          "statement": "Le rehaussement après contraste est un critère diagnostic spécifique aux tumeurs de grade 2.",
+          "isTrue": false,
+          "explanation": "Le rehaussement après contraste est généralement absent dans les tumeurs de grade 2, ce qui les distingue des grades supérieurs."
+        },
+        {
+          "statement": "La chimiothérapie peut être envisagée pour les tumeurs de grade 2 après chirurgie.",
+          "isTrue": true,
+          "explanation": "Bien que la résection maximaliste soit la priorité, la radiothérapie et la chimiothérapie sont des options complémentaires pour les tumeurs de grade 2."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754679915840_7t62xbb6r_3",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM couvre divers aspects des tumeurs intracrâniennes, y compris leur classification, leur localisation, et leur épidémiologie, tout en incluant des propositions qui nécessitent une compréhension nuancée du sujet.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs primitives intracrâniennes se développent uniquement à partir des cellules nerveuses.",
+          "isTrue": false,
+          "explanation": "Les tumeurs primitives peuvent également se développer à partir des annexes du système nerveux central, comme les méninges."
+        },
+        {
+          "statement": "Les méningiomes sont souvent bénins et se développent à partir des cellules arachnoïdiennes.",
+          "isTrue": true,
+          "explanation": "Les méningiomes, qui sont des tumeurs bénignes, proviennent des cellules arachnoïdiennes et sont classés comme grade 1 OMS."
+        },
+        {
+          "statement": "La majorité des tumeurs intracrâniennes chez l'adulte sont localisées en infra tentoriel.",
+          "isTrue": false,
+          "explanation": "Environ 80% des tumeurs intracrâniennes chez l'adulte sont supra tentorielles."
+        },
+        {
+          "statement": "Les gliomes sont les tumeurs cérébrales les plus fréquentes après les métastases.",
+          "isTrue": true,
+          "explanation": "Les gliomes représentent une des catégories principales de tumeurs primitives intracrâniennes, après les métastases."
+        },
+        {
+          "statement": "Les adénomes hypophysaires ont une incidence similaire à celle des méningiomes.",
+          "isTrue": true,
+          "explanation": "Les adénomes hypophysaires et les méningiomes ont tous deux une incidence d'environ 5 nouveaux cas par 100 000 habitants par an."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    }
+  ],
+  "usedChunks": [
+    2,
+    3,
+    1,
+    0
+  ],
+  "currentIndex": 3,
+  "total": 4,
+  "contextSnippet": "HAUT\n"
+}

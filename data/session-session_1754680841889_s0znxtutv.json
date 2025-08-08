@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754680841889_s0znxtutv",
+  "questions": [
+    {
+      "id": "qcm_session_1754680841889_s0znxtutv_0",
+      "topic": "Raisonner devant une céphalée",
+      "rationale": "Ce QCM aborde la distinction entre céphalées primaires et secondaires, en intégrant des exemples et des exceptions. Les propositions visent à tester la compréhension des types de céphalées, leur évaluation et leur prise en charge, tout en évitant les généralisations excessives.",
+      "propositions": [
+        {
+          "statement": "Les céphalées primaires sont souvent liées à des lésions sous-jacentes.",
+          "isTrue": false,
+          "explanation": "Les céphalées primaires, telles que la migraine et la céphalée de tension, ne sont pas causées par des lésions sous-jacentes mais par l'activation des systèmes nociceptifs céphaliques."
+        },
+        {
+          "statement": "La céphalée peut être le seul symptôme d'une affection grave nécessitant une prise en charge rapide.",
+          "isTrue": true,
+          "explanation": "Certaines céphalées secondaires peuvent être le seul signe d'une affection grave, comme une hémorragie méningée, justifiant des explorations et un traitement urgent."
+        },
+        {
+          "statement": "Une céphalée secondaire peut être causée par un trouble de la réfraction.",
+          "isTrue": true,
+          "explanation": "Les troubles de la réfraction peuvent provoquer des céphalées secondaires bénignes, ce qui souligne l'importance de bien évaluer chaque cas."
+        },
+        {
+          "statement": "Tous les types de céphalées nécessitent des explorations médicales immédiates.",
+          "isTrue": false,
+          "explanation": "Seules les céphalées secondaires, en particulier celles suspectes d'être graves, nécessitent des explorations médicales urgentes, tandis que les céphalées primaires n'en ont généralement pas besoin."
+        },
+        {
+          "statement": "L'identification d'une céphalée primaire est suffisante pour exclure toutes les céphalées secondaires.",
+          "isTrue": false,
+          "explanation": "Bien que la reconnaissance d'une céphalée primaire soit importante, il est essentiel de différencier également les céphalées secondaires bénignes des céphalées secondaires graves."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "Raisonner devant une céphalée",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    2
+  ],
+  "currentIndex": 0,
+  "total": 8,
+  "contextSnippet": "2.     Raisonner devant une céphalée\n·     Les céphalées primaires sont les plus fréquentes (migraine, céphalée de tension, algie vasculaire de la face, item 99) et sont\nliées à lʼactivation des systèmes nociceptifs céphaliques, sans lésion sous-jacente.\n·     Les céphalées secondaires ont des causes variées dont certaines très graves. La céphalée est le symptôme principal et parfois\nunique dʼune lésion locale ou dʼune pathologie générale.\n·     Lʼobjectif prioritaire devant toute céphalée est de trancher entre une céphalée primaire, une céphalée secondaire bénigne\n(trouble de la réfraction) et une céphalée secondaire à une affection grave nécessitant des explorations et un traitement en urgence\n(hémorragie méningée).\n"
+}

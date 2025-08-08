@@ -1,0 +1,44 @@
+{
+  "sessionId": "session_1754677332644_s9k1l5xaz",
+  "questions": [
+    {
+      "id": "qcm_session_1754677332644_s9k1l5xaz_0",
+      "topic": "Fibrillation atriale",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale est un trouble du rythme caractérisé par une activité électrique régulière dans les oreillettes.",
+          "isTrue": false,
+          "explanation": "La fibrillation atriale est définie par une activité électrique anarchique dans les oreillettes, entraînant une perte de la contraction atriale."
+        },
+        {
+          "statement": "La prévalence de la fibrillation atriale augmente avec l'âge.",
+          "isTrue": true,
+          "explanation": "L'épidémiologie de la fibrillation atriale montre une augmentation de sa prévalence avec l'âge, faisant d'elle le trouble du rythme le plus fréquent chez les personnes âgées."
+        },
+        {
+          "statement": "Un patient atteint de fibrillation atriale peut être asymptomatique.",
+          "isTrue": true,
+          "explanation": "De nombreux patients peuvent ne présenter aucun symptôme, ce qui souligne l'importance du dépistage chez les individus à risque."
+        },
+        {
+          "statement": "La fibrillation atriale est responsable de plus de la moitié des AVC ischémiques.",
+          "isTrue": false,
+          "explanation": "La fibrillation atriale est responsable d'environ un quart des AVC ischémiques, et non de plus de la moitié."
+        },
+        {
+          "statement": "Le nœud atrio-ventriculaire filtre l'activité atriale anarchique et régule la fréquence ventriculaire.",
+          "isTrue": true,
+          "explanation": "Le nœud atrio-ventriculaire est la seule structure permettant la connexion électrique entre les oreillettes et les ventricules, filtrant l'activité électrocardiaque rapide et irrégulière."
+        }
+      ],
+      "rationale": "Ce QCM aborde divers aspects de la fibrillation atriale, y compris sa définition, épidémiologie, symptômes, complications, et physiopathologie. Les propositions incluent des vérités et des falsifications pour tester la compréhension nuancée des étudiants sur ce trouble du rythme, tout en intégrant des exceptions et des détails essentiels.",
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    }
+  ],
+  "usedChunks": [
+    0
+  ],
+  "currentIndex": 0
+}

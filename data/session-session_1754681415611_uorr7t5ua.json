@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754681415611_uorr7t5ua",
+  "questions": [
+    {
+      "id": "qcm_session_1754681415611_uorr7t5ua_0",
+      "topic": "Évaluation des tumeurs intracrâniennes",
+      "rationale": "Ce QCM teste la compréhension des catégories de tumeurs intracrâniennes, leur développement, leur incidence et les facteurs de risque. Les propositions incluent des affirmations sur les types de tumeurs et leur histologie, ainsi que des détails sur les facteurs de risque, permettant ainsi d'évaluer la connaissance approfondie des étudiants sur le sujet.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs primitives intracrâniennes se développent exclusivement à partir des cellules nerveuses.",
+          "isTrue": false,
+          "explanation": "Les tumeurs primitives peuvent aussi se développer à partir des annexes du système nerveux central, comme les méninges."
+        },
+        {
+          "statement": "Les gliomes sont le type de tumeur cérébrale le plus fréquent chez l'adulte.",
+          "isTrue": false,
+          "explanation": "Bien que les gliomes soient fréquents, les métastases représentent le type de tumeur cérébrale le plus courant chez l'adulte."
+        },
+        {
+          "statement": "Les méningiomes sont généralement des tumeurs bénignes et leur incidence augmente avec l'âge.",
+          "isTrue": true,
+          "explanation": "Les méningiomes sont souvent bénins et leur pic d'incidence se situe entre 50 et 70 ans."
+        },
+        {
+          "statement": "La prise de progestatifs n'a aucun impact sur la genèse des méningiomes.",
+          "isTrue": false,
+          "explanation": "Certaines études indiquent que la prise de progestatifs, comme l'acétate de cyprotérone, peut favoriser la genèse des méningiomes."
+        },
+        {
+          "statement": "Les tumeurs extra parenchymateuses incluent les adénomes hypophysaires et les schwannomes.",
+          "isTrue": true,
+          "explanation": "Les tumeurs extra parenchymateuses se développent à partir des annexes du système nerveux central, incluant les adénomes hypophysaires et les schwannomes."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    }
+  ],
+  "usedChunks": [
+    0
+  ],
+  "currentIndex": 0,
+  "total": 3,
+  "contextSnippet": "Tumeurs intracrâniennes IC-299\nConnaître les principaux types et localisations des tumeurs intracrâniennes\nConnaître la définition des tumeurs primitives intracrâniennes : système nerveux central et annexes\nConnaître les principaux types histologiques des tumeurs cérébrales\nConnaître l'épidémiologie des différents types tumeurs primitives intracrâniennes\nConnaître les principaux tableaux cliniques devant faire évoquer une tumeur intracrânienne\nConnaître la stratégie d'exploration en imagerie devant une tumeur intracrânienne de l'adulte\nDécrire la recherche systématique de cancer primitif à effectuer devant une métastase cérébrale\nSavoir évoquer une hypertension intracrânienne (HTIC) et une épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principes de la prise en charge de l'HTIC et de l'épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principaux types et localisations des tumeurs intracrâniennes OIC-\n299-01-A\n·        Tumeur primi"
+}

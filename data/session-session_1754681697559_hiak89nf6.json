@@ -1,0 +1,82 @@
+{
+  "sessionId": "session_1754681697559_hiak89nf6",
+  "questions": [
+    {
+      "id": "qcm_session_1754681697559_hiak89nf6_0",
+      "topic": "QCM sur les souffles cardiaques chez l'enfant",
+      "rationale": "Ce QCM couvre divers aspects des souffles cardiaques chez l'enfant, en distinguant les souffles organiques et non organiques, les circonstances de diagnostic, les caractéristiques des souffles et leurs localisations spécifiques.",
+      "propositions": [
+        {
+          "statement": "Un souffle cardiaque non organique est également appelé souffle 'fonctionnel' et nécessite une prise en charge particulière.",
+          "isTrue": false,
+          "explanation": "Un souffle cardiaque non organique est bénin et ne nécessite aucune prise en charge particulière."
+        },
+        {
+          "statement": "Un souffle cardiaque organique correspond à une anomalie anatomique du cœur.",
+          "isTrue": true,
+          "explanation": "Un souffle cardiaque organique est associé à une anomalie anatomique du cœur."
+        },
+        {
+          "statement": "Les circonstances de diagnostic d'un souffle cardiaque peuvent inclure une insuffisance cardiaque du nourrisson.",
+          "isTrue": true,
+          "explanation": "Une insuffisance cardiaque du nourrisson peut être une circonstance de diagnostic d'un souffle cardiaque."
+        },
+        {
+          "statement": "Un souffle cardiaque systolique holo est typique de la coarctation de l'aorte.",
+          "isTrue": false,
+          "explanation": "Un souffle cardiaque systolique holo est typique d'une communication interventriculaire (CIV)."
+        },
+        {
+          "statement": "La localisation maximale d'un souffle cardiaque au dos est associée à une coarctation de l'aorte.",
+          "isTrue": true,
+          "explanation": "La localisation d'un souffle cardiaque au dos est souvent associée à une coarctation de l'aorte."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754681697559_hiak89nf6_1",
+      "topic": "Evaluation des souffles cardiaques",
+      "rationale": "L'évaluation des souffles cardiaques nécessite une approche spécifique en fonction de l'âge du patient et des circonstances cliniques. L'échographie cardiaque est cruciale pour le diagnostic des anomalies cardiaques chez les nourrissons et les nouveaux-nés, tandis que la radiographie du thorax peut aider à identifier des signes indirects de cardiopathie. L'électrocardiogramme et la numération sanguine sont réalisés en fonction des besoins cliniques spécifiques.",
+      "propositions": [
+        {
+          "statement": "L'échographie cardiaque est l'examen de référence pour les souffles cardiaques organiques chez les nourrissons et les nouveaux-nés.",
+          "isTrue": true,
+          "explanation": "L'échographie cardiaque permet une visualisation précise de la structure cardiaque et est essentielle pour le diagnostic des anomalies."
+        },
+        {
+          "statement": "La radiographie du thorax est l'examen le plus approprié pour évaluer les souffles cardiaques chez les nourrissons et les nouveaux-nés.",
+          "isTrue": false,
+          "explanation": "La radiographie du thorax n'est plus recommandée en première intention pour évaluer les souffles cardiaques."
+        },
+        {
+          "statement": "L'électrocardiogramme est systématiquement réalisé en cas de souffle cardiaque chez un enfant de plus de 12 ans pratiquant un sport de compétition.",
+          "isTrue": true,
+          "explanation": "L'électrocardiogramme est indiqué dans le cadre du bilan d'aptitude au sport pour détecter d'éventuelles anomalies cardiaques."
+        },
+        {
+          "statement": "La numération sanguine est toujours réalisée pour rechercher une anémie en cas de souffle cardiaque.",
+          "isTrue": false,
+          "explanation": "La numération sanguine n'est réalisée que selon l'orientation clinique pour rechercher des causes spécifiques de souffle cardiaque, comme une anémie."
+        },
+        {
+          "statement": "La cardiopathie peut être détectée par la radiographie du thorax en révélant une cardiomégalie.",
+          "isTrue": true,
+          "explanation": "Une cardiomégalie visible à la radiographie du thorax peut indiquer la présence d'une cardiopathie sous-jacente."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Section 2",
+      "pageRange": "Pages 1-0"
+    }
+  ],
+  "usedChunks": [
+    0,
+    1
+  ],
+  "currentIndex": 1,
+  "total": 8,
+  "contextSnippet": "\n\nSouffle cardiaque chez l'enfant IC-238\nConnaître la sémiologie cardiovasculaire chez l'enfant\nConnaître la définition d'un souffle cardiaque organique et non organique\nConnaître les apports des examens de première intention devant un souffle de l'enfant\nConnaître l'orientation étiologique des souffles cardiaques\nConnaître la sémiologie cardiovasculaire chez l'enfant OIC-238-01-A\nSouffle non organique\nTableau 1. Caractéristiques sémiologiques en faveur dʼun souffle cardiaque fonctionnel\nSymptomatologiePas de symptomatologie fonctionnelle\nTempsBref, mésosystolique\nIntensitéFaible (≤ 2/6), non frémissant\nVariabilité\nDans le temps (présent ou non dʼune consultation à lʼautre), diminue en orthostatisme ou au repos, augmente en cas\nde fièvre ou à lʼeffort\nLocalisation maximaleEndapexien, foyer pulmonaire\nIrradiationPas ou peu dʼirradiation\nAnomalies auscultatoires\nassociées\nBruits B1 et B2 normaux, diastole libre\nReste de lʼexamen\ncardiovasculaire\nNormal (pouls fémoraux, pression artériell"
+}

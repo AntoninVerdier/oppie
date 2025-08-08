@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754679343559_xqcv1m1z8",
+  "questions": [
+    {
+      "id": "qcm_session_1754679343559_xqcv1m1z8_0",
+      "topic": "Prise en charge de l'agitation et du délire aigu",
+      "rationale": "Ce QCM aborde divers aspects de la prise en charge de l'agitation et du délire aigu, incluant des traitements pharmacologiques et non pharmacologiques, ainsi que les considérations d'hospitalisation et de surveillance. Les propositions sont conçues pour tester la compréhension des protocoles de traitement et des précautions nécessaires dans la gestion de ces états.",
+      "propositions": [
+        {
+          "statement": "Les benzodiazépines à demi-vie courte sont le traitement de première ligne pour l'agitation sévère.",
+          "isTrue": true,
+          "explanation": "Les benzodiazépines à demi-vie courte sont recommandées en première ligne pour traiter l'agitation, car elles permettent une action rapide et un risque réduit d'accumulation."
+        },
+        {
+          "statement": "L'hospitalisation en psychiatrie est toujours nécessaire en cas d'état d'agitation.",
+          "isTrue": false,
+          "explanation": "L'hospitalisation en psychiatrie n'est nécessaire que si un trouble psychiatrique sous-jacent est identifié et après avoir écarté une étiologie non psychiatrique."
+        },
+        {
+          "statement": "Il est recommandé d'utiliser plusieurs traitements pharmacologiques en association pour une meilleure efficacité.",
+          "isTrue": false,
+          "explanation": "Il est préférable de privilégier une monothérapie et de rechercher la posologie minimale efficace pour éviter des effets indésirables cumulés."
+        },
+        {
+          "statement": "Les techniques de désescalade et la prise en charge relationnelle sont essentielles dans la gestion de l'agitation.",
+          "isTrue": true,
+          "explanation": "Une approche relationnelle et des techniques de désescalade sont cruciales pour établir un climat de confiance et réduire l'agitation sans recourir immédiatement à des mesures coercitives."
+        },
+        {
+          "statement": "Un ECG est recommandé avant l'administration d'antipsychotiques en cas d'agitation sévère en raison du risque de QT long.",
+          "isTrue": true,
+          "explanation": "Un ECG doit être réalisé avant d'administrer des antipsychotiques en raison des risques associés au QT long, ce qui peut avoir des conséquences graves sur la santé cardiaque du patient."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "ECBU",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754679343559_xqcv1m1z8_1",
+      "topic": "Électroencéphalogramme (EEG)",
+      "rationale": "Ce QCM couvre divers aspects de l'EEG, y compris son utilisation dans le diagnostic de l'épilepsie, les limitations d'un EEG normal, les artefacts qui peuvent affecter les résultats, et son rôle dans l'étude des troubles du sommeil. Les propositions sont conçues pour tester la compréhension des étudiants sur des concepts clés et nuancés relatifs à l'EEG.",
+      "propositions": [
+        {
+          "statement": "L'EEG peut détecter les crises épileptiques en enregistrant les activités électriques cérébrales.",
+          "isTrue": true,
+          "explanation": "L'EEG est un outil essentiel pour diagnostiquer l'épilepsie car il permet de visualiser les décharges électriques anormales associées aux crises."
+        },
+        {
+          "statement": "Un EEG normal exclut complètement la possibilité d'une épilepsie.",
+          "isTrue": false,
+          "explanation": "Un EEG normal ne peut pas exclure l'épilepsie, car certaines formes de cette condition peuvent ne pas produire d'anomalies visibles pendant l'enregistrement."
+        },
+        {
+          "statement": "Les artefacts musculaires peuvent interférer avec l'interprétation des résultats d'un EEG.",
+          "isTrue": true,
+          "explanation": "Les mouvements musculaires et d'autres artefacts peuvent masquer ou simuler des activités cérébrales, rendant l'interprétation de l'EEG plus complexe."
+        },
+        {
+          "statement": "L'EEG est principalement utilisé pour évaluer les troubles de la mémoire.",
+          "isTrue": false,
+          "explanation": "Bien que des anomalies dans l'EEG puissent être observées chez des patients ayant des troubles de la mémoire, cet examen est principalement utilisé pour évaluer l'activité électrique cérébrale dans le cadre de crises et non spécifiquement pour les troubles de la mémoire."
+        },
+        {
+          "statement": "L'EEG peut être enregistré pendant le sommeil pour étudier les troubles du sommeil.",
+          "isTrue": true,
+          "explanation": "L'EEG peut être utilisé pour analyser les différentes phases du sommeil et identifier des troubles comme l'apnée du sommeil ou le syndrome des jambes sans repos."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "EEG",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754679343559_xqcv1m1z8_2",
+      "topic": "Évaluation de la TSH et des examens complémentaires",
+      "rationale": "Ce QCM évalue la compréhension de la TSH, des examens d'imagerie et des procédures comme la ponction lombaire, avec un accent sur les interprétations cliniques et les implications des résultats. Les propositions sont conçues pour tester des connaissances approfondies et des nuances dans la pratique clinique.",
+      "propositions": [
+        {
+          "statement": "Une augmentation de la TSH peut indiquer une hypothyroïdie primaire.",
+          "isTrue": true,
+          "explanation": "La TSH est sécrétée par l'hypophyse et son augmentation est souvent le reflet d'une défaillance de la thyroïde à produire des hormones thyroïdiennes."
+        },
+        {
+          "statement": "La TSH peut être faussement élevée en cas de prise de médicaments contenant des hormones thyroïdiennes.",
+          "isTrue": false,
+          "explanation": "Les médicaments contenant des hormones thyroïdiennes peuvent abaisser la TSH, et non pas l'augmenter, car ils augmentent le rétrocontrôle négatif sur l'hypophyse."
+        },
+        {
+          "statement": "L'imagerie cérébrale est utile pour évaluer des causes secondaires d'hyperthyroïdie, comme des tumeurs hypophysaires.",
+          "isTrue": true,
+          "explanation": "Les tumeurs hypophysaires peuvent provoquer une hyperthyroïdie par sécrétion excessive de TSH, nécessitant une imagerie pour un diagnostic approprié."
+        },
+        {
+          "statement": "Une ponction lombaire est systématiquement indiquée en cas d'augmentation de la TSH.",
+          "isTrue": false,
+          "explanation": "La ponction lombaire n'est pas indiquée pour une augmentation de la TSH, à moins qu'il y ait des signes de méningite ou d'autres pathologies neurologiques."
+        },
+        {
+          "statement": "Les niveaux de TSH peuvent varier en fonction de l'heure de la prise de sang.",
+          "isTrue": true,
+          "explanation": "La sécrétion de TSH suit un rythme circadien, ce qui peut influencer les résultats des tests si les échantillons sont prélevés à des moments différents de la journée."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "TSH US",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    3,
+    2,
+    1
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": "ECBU\nGoutte épaisse\nRadiographie pulmonaire\nConnaître les principes de la prise en charge de l'épisode délirant aigu, de l'état\nd'agitation OIC-351-11-A\nAgitation\nPrévention dʼun risque suicidaire ou dʼune dangerosité éventuels\nHospitalisation en psychiatrie\nPrise en charge réalisée dans le service des urgences initialement (bilan clinique et paraclinique)\nUne hospitalisation en psychiatrie sera nécessaire sʼil existe un épisode aigu dʼun trouble psychiatrique sous-jacent.\nTraitements pharmacologiques (cf item 2C-074)\nIl sʼagit dʼapaiser lʼétat dʼagitation sans sédater le patient.\nLʼidéal est dʼimpliquer le patient dans le choix du produit et de la voie dʼadministration. Toujours proposer un traitement per os en\npremière intention.\nRechercher la posologie minimale efficace et privilégier une monothérapie.\nTenir compte du délai dʼaction avant de retraiter le patient, évaluer les effets du traitement déjà reçu afin dʼéviter des effets\ncumulatifs différés sur la vigilance.\nSurveiller les "
+}

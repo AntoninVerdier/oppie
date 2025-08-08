@@ -80,7 +80,7 @@ export async function POST(req: NextRequest) {
     const user = `Source content (may be truncated):\n\n${contextSnippet}\n\nTask: Generate ${numQuestions} QCM questions in ${language}. Each question must have:\n- a short 'topic' (<= 120 chars)\n- exactly 5 propositions\n- for each proposition: 'statement' (short, specific), 'isTrue' (boolean), and a concise 'explanation' (1-2 sentences).\n- a final 'rationale' (3-6 sentences) summarizing the reasoning across the 5 propositions and clarifying tricky points.\n- Ensure facts are faithful to the source. Prefer coverage across distinct subtopics.\nTone: ${tone}.\nReturn JSON with shape: {"questions": [{"id": string, "topic": string, "rationale": string, "propositions": [{"statement": string, "isTrue": boolean, "explanation": string}] }] }`;
 
     const completion = await client.chat.completions.create({
-      model: "gpt-4o-mini",
+      model: "gpt-3.5-turbo",
       temperature: 0.3,
       messages: [
         { role: "system", content: system },

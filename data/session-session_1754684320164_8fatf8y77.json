@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754684320164_8fatf8y77",
+  "questions": [
+    {
+      "id": "qcm_session_1754684320164_8fatf8y77_0",
+      "topic": "Classification des tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM vise à tester la connaissance des caractéristiques des tumeurs intracrâniennes les plus fréquentes, en mettant l'accent sur des aspects spécifiques de chaque type de tumeur.",
+      "propositions": [
+        {
+          "statement": "Les neurinomes ont une localisation préférentielle au niveau du nerf olfactif.",
+          "isTrue": false,
+          "explanation": "Les neurinomes ont une localisation préférentielle au niveau du nerf vestibulaire."
+        },
+        {
+          "statement": "Les épendymomes peuvent être classés en grade 3 selon l'OMS.",
+          "isTrue": false,
+          "explanation": "Les épendymomes peuvent être classés en grade 1 ou 2 selon l'OMS."
+        },
+        {
+          "statement": "Les médulloblastomes surviennent surtout chez l'enfant.",
+          "isTrue": true,
+          "explanation": "Les médulloblastomes surviennent surtout chez l'enfant, parfois chez l'adulte jeune."
+        },
+        {
+          "statement": "Les hémangioblastomes sont toujours malins.",
+          "isTrue": false,
+          "explanation": "Les hémangioblastomes sont des tumeurs vasculaires bénignes."
+        },
+        {
+          "statement": "Les neurinomes peuvent se développer à partir des cellules de Schwann des nerfs périphériques.",
+          "isTrue": true,
+          "explanation": "Les neurinomes peuvent se développer à partir des cellules de Schwann des nerfs crâniens/périphériques."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754684320164_8fatf8y77_1",
+      "topic": "Classification des gliomes",
+      "rationale": "Ce QCM couvre les critères de classification, les caractéristiques radiologiques, la progression des gliomes, les recommandations chirurgicales et les traitements complémentaires.",
+      "propositions": [
+        {
+          "statement": "Les gliomes de grade 1 sont généralement situés supra tentoriellement.",
+          "isTrue": false,
+          "explanation": "Les gliomes de grade 1 sont en réalité infra tentoriels."
+        },
+        {
+          "statement": "Les gliomes de grade 2 présentent un hypersignal en T2 et un hyposignal en T1.",
+          "isTrue": true,
+          "explanation": "Ces caractéristiques radiologiques sont typiques des gliomes de grade 2."
+        },
+        {
+          "statement": "Les gliomes de grade 2 ont une tendance à progresser vers des grades plus élevés.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 2 ont une progression inéluctable vers les grades 3 et 4."
+        },
+        {
+          "statement": "La chirurgie est rarement recommandée pour les gliomes de grade 2.",
+          "isTrue": false,
+          "explanation": "La chirurgie, avec résection maximale si possible, est recommandée pour les gliomes de grade 2."
+        },
+        {
+          "statement": "Les gliomes de grade 2 peuvent nécessiter une radiothérapie ou une chimiothérapie en complément de la chirurgie.",
+          "isTrue": true,
+          "explanation": "La radiothérapie et la chimiothérapie peuvent être nécessaires pour les gliomes de grade 2 en fonction de la situation clinique."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754684320164_8fatf8y77_2",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM couvre les différents types de tumeurs intracrâniennes, leurs caractéristiques, les facteurs de risque et les particularités de certains types de tumeurs. Il permet d'évaluer la compréhension des étudiants sur ce sujet complexe et varié.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs intracrâniennes peuvent être primaires ou secondaires",
+          "isTrue": true,
+          "explanation": "Les tumeurs intracrâniennes peuvent être des tumeurs primitives intracrâniennes (issues d'un tissu intracrânien) ou des métastases (issus de la dissémination intracrânienne d'une tumeur prenant son origine dans un autre organe/système)."
+        },
+        {
+          "statement": "Les tumeurs extra parenchymateuses se développent à l'intérieur de l'encéphale lui-même",
+          "isTrue": false,
+          "explanation": "Les tumeurs extra parenchymateuses se développent à partir des annexes de l'encéphale, c'est-à-dire les méninges et les nerfs crâniens."
+        },
+        {
+          "statement": "Les gliomes sont les tumeurs les plus fréquentes chez l'adulte",
+          "isTrue": true,
+          "explanation": "Les gliomes représentent 8 nouveaux cas sur 100 000 habitants par an, les plaçant parmi les tumeurs intracrâniennes les plus fréquentes."
+        },
+        {
+          "statement": "Les adénomes hypophysaires sont des tumeurs malignes",
+          "isTrue": false,
+          "explanation": "Les adénomes hypophysaires sont généralement considérés comme des tumeurs bénignes, avec un pronostic favorable."
+        },
+        {
+          "statement": "Les méningiomes peuvent être favorisés par la prise de certains progestatifs",
+          "isTrue": true,
+          "explanation": "Les méningiomes peuvent être favorisés par la prise de certains progestatifs, tels que l'acétate de cyprotérone."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    }
+  ],
+  "usedChunks": [
+    2,
+    1,
+    0
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": "GRADE\nGrade\n3\n30–50 ansSupra tentorielle\nHypersignal T2 Hyposignal T1\nPrise de contraste\nChirurgie (résection\nmaximaliste, si possible)\n+ radiothérapie /\nchimiothérapie\nProgression inéluctable vers\nle glioblastome (grade 4)\nGrade\n4\n60–70 ansSupra tentorielle\nNécrose\nPrise de contraste hétérogène\nChirurgie (résection\nmaximaliste, si possible)\n+ radio-chimiothérapie\nconcomitante (protocole de\nStupp)\nExtension locale/régionale\nrapide\nSurvie globale de 15 mois\nMétastase :\n·        Origines principales = cancers à fort tropisme neurologique : broncho-pulmonaire, mammaire et mélanome\n·        IRM : tumeur(s) unique ou multiples ; localisation cortico-sous-corticale ; rehaussement hétérogène après injection de\ncontraste, avec aspect en cocarde (nécrose centrale et prise de contraste périphérique) ;   œdème péri-tumoral +++ ; révélation\nhémorragique des métastases de mélanome et de cancer du rein\n·        Traitement :\no  Dépend du nombre, de la localisation et du volume de la (ou des) métastas"
+}

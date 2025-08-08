@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754681822670_to3jmo3o0",
+  "questions": [
+    {
+      "id": "qcm_session_1754681822670_to3jmo3o0_0",
+      "topic": "Classification des tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM couvre les différents sous-types de tumeurs intracrâniennes en mettant en avant des caractéristiques spécifiques de chaque type, permettant ainsi d'évaluer la compréhension des étudiants sur ce sujet.",
+      "propositions": [
+        {
+          "statement": "Les neurinomes se développent à partir des cellules de Schwann des nerfs crâniens/périphériques.",
+          "isTrue": true,
+          "explanation": "Les neurinomes se développent à partir des cellules de Schwann."
+        },
+        {
+          "statement": "Les épendymomes surviennent principalement chez les adultes.",
+          "isTrue": false,
+          "explanation": "Les épendymomes surviennent surtout chez l'enfant."
+        },
+        {
+          "statement": "Les médulloblastomes ont une localisation infra tentorielle dans le vermis du cervelet.",
+          "isTrue": true,
+          "explanation": "Les médulloblastomes ont une localisation infra tentorielle dans le vermis du cervelet."
+        },
+        {
+          "statement": "Les hémangioblastomes sont toujours malins.",
+          "isTrue": false,
+          "explanation": "Les hémangioblastomes sont des tumeurs vasculaires bénignes."
+        },
+        {
+          "statement": "Les neurinomes peuvent survenir dans le cadre de la maladie de Von Hippel–Lindau.",
+          "isTrue": false,
+          "explanation": "Les neurinomes peuvent être sporadiques ou survenir dans le cadre de la neurofibromatose de type 2."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754681822670_to3jmo3o0_1",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM couvre différents aspects des tumeurs intracrâniennes, allant de la classification aux types histologiques en passant par les localisations. Les justifications détaillées fournissent des explications claires pour chaque proposition.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs intracrâniennes peuvent être classées en tumeurs primitives et tumeurs secondaires.",
+          "isTrue": true,
+          "explanation": "Les tumeurs primitives proviennent du tissu intracrânien, tandis que les tumeurs secondaires sont des métastases."
+        },
+        {
+          "statement": "Les tumeurs extra parenchymateuses se développent à l'intérieur de l'encéphale lui-même.",
+          "isTrue": false,
+          "explanation": "Les tumeurs extra parenchymateuses se développent à partir des annexes de l'encéphale, comme les méninges et les nerfs crâniens."
+        },
+        {
+          "statement": "Les méningiomes sont généralement bénins, d'évolution lente et de bon pronostic.",
+          "isTrue": true,
+          "explanation": "Les méningiomes sont en effet souvent bien circonscrits, d'évolution lente et de bon pronostic."
+        },
+        {
+          "statement": "Les adénomes hypophysaires sont plus fréquents que les gliomes comme tumeurs intracrâniennes.",
+          "isTrue": false,
+          "explanation": "Les gliomes sont plus fréquents que les adénomes hypophysaires comme tumeurs intracrâniennes."
+        },
+        {
+          "statement": "Les tumeurs primitives de l'encéphale se développent à l'intérieur de l'encéphale lui-même.",
+          "isTrue": true,
+          "explanation": "Les tumeurs primitives de l'encéphale sont intra axiales, développées à l'intérieur de l'encéphale, par exemple le glioblastome."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754681822670_to3jmo3o0_2",
+      "topic": "Classification des gliomes",
+      "rationale": "Ce QCM aborde les caractéristiques et le traitement des gliomes de grade 1 et 2, mettant en avant l'importance de la chirurgie et des traitements complémentaires.",
+      "propositions": [
+        {
+          "statement": "Les gliomes de grade 1 sont généralement infra tentoriels et présentent un rehaussement après contraste.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 1 sont en effet souvent infra tentoriels et peuvent présenter un rehaussement après contraste."
+        },
+        {
+          "statement": "Les gliomes de grade 2 sont caractérisés par un hypersignal T2 et un hyposignal T1, avec une absence de prise de contraste.",
+          "isTrue": true,
+          "explanation": "C'est exact, les gliomes de grade 2 ont ces caractéristiques radiologiques."
+        },
+        {
+          "statement": "La chirurgie est le traitement principal pour les gliomes de grade 2, avec une résection maximaliste si possible.",
+          "isTrue": true,
+          "explanation": "Effectivement, la chirurgie est recommandée pour les gliomes de grade 2, avec une résection maximaliste si réalisable."
+        },
+        {
+          "statement": "Les gliomes de grade 2 peuvent évoluer vers des grades 3 et 4, conduisant à une progression inéluctable vers l'anaplasie.",
+          "isTrue": false,
+          "explanation": "Les gliomes de grade 2 ne progressent pas nécessairement vers des grades plus élevés."
+        },
+        {
+          "statement": "La radiothérapie et la chimiothérapie sont souvent nécessaires en complément de la chirurgie pour les gliomes de grade 2.",
+          "isTrue": true,
+          "explanation": "Effectivement, ces traitements peuvent être envisagés en complément de la chirurgie pour les gliomes de grade 2."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    2,
+    0,
+    1
+  ],
+  "currentIndex": 2,
+  "total": 10,
+  "contextSnippet": "GRADE\nGrade\n3\n30–50 ansSupra tentorielle\nHypersignal T2 Hyposignal T1\nPrise de contraste\nChirurgie (résection\nmaximaliste, si possible)\n+ radiothérapie /\nchimiothérapie\nProgression inéluctable vers\nle glioblastome (grade 4)\nGrade\n4\n60–70 ansSupra tentorielle\nNécrose\nPrise de contraste hétérogène\nChirurgie (résection\nmaximaliste, si possible)\n+ radio-chimiothérapie\nconcomitante (protocole de\nStupp)\nExtension locale/régionale\nrapide\nSurvie globale de 15 mois\nMétastase :\n·        Origines principales = cancers à fort tropisme neurologique : broncho-pulmonaire, mammaire et mélanome\n·        IRM : tumeur(s) unique ou multiples ; localisation cortico-sous-corticale ; rehaussement hétérogène après injection de\ncontraste, avec aspect en cocarde (nécrose centrale et prise de contraste périphérique) ;   œdème péri-tumoral +++ ; révélation\nhémorragique des métastases de mélanome et de cancer du rein\n·        Traitement :\no  Dépend du nombre, de la localisation et du volume de la (ou des) métastas"
+}

@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754681212828_2kwlgn9vt",
+  "questions": [
+    {
+      "id": "qcm_session_1754681212828_2kwlgn9vt_0",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM aborde différents aspects des tumeurs intracrâniennes, y compris les types, la définition, l'épidémiologie et les facteurs de risque. Les propositions sont conçues pour tester des connaissances nuancées, avec des pièges sur la nature bénigne ou maligne des tumeurs et leur prévalence. Les justifications fournissent un aperçu pédagogique pour chaque affirmation.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs primitives intracrâniennes incluent les gliomes et les méningiomes.",
+          "isTrue": true,
+          "explanation": "Les tumeurs primitives intracrâniennes sont définies comme celles qui se développent à partir du tissu nerveux central ou de ses annexes, incluant les gliomes et les méningiomes."
+        },
+        {
+          "statement": "Les tumeurs métastatiques représentent la majorité des tumeurs intracrâniennes chez l'adulte.",
+          "isTrue": false,
+          "explanation": "Bien que les métastases soient fréquentes, les gliomes et les méningiomes sont également des types courants, et les métastases ne représentent pas la majorité."
+        },
+        {
+          "statement": "Les méningiomes sont généralement considérés comme des tumeurs malignes.",
+          "isTrue": false,
+          "explanation": "Les méningiomes sont souvent bénins, étant classés principalement comme des tumeurs de grade 1 selon l'OMS."
+        },
+        {
+          "statement": "La prise de certains progestatifs peut favoriser la genèse des méningiomes.",
+          "isTrue": true,
+          "explanation": "Il a été observé que l'utilisation de progestatifs comme l'acétate de cyprotérone peut augmenter le risque de développement de méningiomes."
+        },
+        {
+          "statement": "Les tumeurs infra-tentorielle représentent environ 80% des tumeurs intracrâniennes chez l'adulte.",
+          "isTrue": false,
+          "explanation": "En réalité, les tumeurs supra-tentorielles constituent environ 80% des cas chez l'adulte, tandis que les infra-tentorielles représentent environ 20%."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    }
+  ],
+  "usedChunks": [
+    0
+  ],
+  "currentIndex": 0,
+  "total": 3,
+  "contextSnippet": "Tumeurs intracrâniennes IC-299\nConnaître les principaux types et localisations des tumeurs intracrâniennes\nConnaître la définition des tumeurs primitives intracrâniennes : système nerveux central et annexes\nConnaître les principaux types histologiques des tumeurs cérébrales\nConnaître l'épidémiologie des différents types tumeurs primitives intracrâniennes\nConnaître les principaux tableaux cliniques devant faire évoquer une tumeur intracrânienne\nConnaître la stratégie d'exploration en imagerie devant une tumeur intracrânienne de l'adulte\nDécrire la recherche systématique de cancer primitif à effectuer devant une métastase cérébrale\nSavoir évoquer une hypertension intracrânienne (HTIC) et une épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principes de la prise en charge de l'HTIC et de l'épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principaux types et localisations des tumeurs intracrâniennes OIC-\n299-01-A\n·        Tumeur primi"
+}

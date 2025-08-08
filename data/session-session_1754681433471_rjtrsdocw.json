@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754681433471_rjtrsdocw",
+  "questions": [
+    {
+      "id": "qcm_session_1754681433471_rjtrsdocw_0",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM aborde divers aspects des tumeurs intracrâniennes, y compris les types et localisations, les différences entre tumeurs primitives et secondaires, et les caractéristiques spécifiques des méningiomes. Chaque proposition est conçue pour tester la compréhension des nuances et des exceptions dans le domaine des tumeurs cérébrales.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs primitives intracrâniennes incluent les gliomes et les méningiomes.",
+          "isTrue": true,
+          "explanation": "Les tumeurs primitives intracrâniennes se développent à partir des tissus du système nerveux central, comme les gliomes (ex. glioblastome) et les méningiomes (ex. méningiome)."
+        },
+        {
+          "statement": "Les tumeurs secondaires intracrâniennes sont toujours bénignes.",
+          "isTrue": false,
+          "explanation": "Les tumeurs secondaires, ou métastases, peuvent être malignes et sont généralement des cancers à évolution rapide."
+        },
+        {
+          "statement": "La majorité des tumeurs intracrâniennes chez l'adulte sont localisées infra tentoriellement.",
+          "isTrue": false,
+          "explanation": "Environ 80% des tumeurs intracrâniennes chez l'adulte sont supra tentorielle, tandis que 20% sont infra tentorielle."
+        },
+        {
+          "statement": "Les méningiomes ont une prédominance masculine.",
+          "isTrue": false,
+          "explanation": "Les méningiomes présentent une prédominance féminine, avec un sex ratio en faveur des femmes."
+        },
+        {
+          "statement": "L'hypertension intracrânienne peut être un symptôme chez les patients porteurs de tumeurs intracrâniennes.",
+          "isTrue": true,
+          "explanation": "L'hypertension intracrânienne peut survenir en raison de la croissance tumorale, entraînant des symptômes neurologiques variés."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754681433471_rjtrsdocw_1",
+      "topic": "Évaluation des tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM évalue la compréhension des différents types de tumeurs primitives intracrâniennes, incluant leurs caractéristiques, leur classification et leur épidémiologie. Les propositions mettent en lumière des distinctions importantes entre les types de tumeurs, leur traitement et leur pronostic, tout en intégrant des pièges pour tester l'attention aux détails.",
+      "propositions": [
+        {
+          "statement": "Les épendymomes se développent principalement à partir des cellules de Schwann.",
+          "isTrue": false,
+          "explanation": "Les épendymomes se développent à partir des épendymocytes, et non des cellules de Schwann, qui sont impliquées dans la formation des neurinomes."
+        },
+        {
+          "statement": "Le glioblastome (grade 4) est associé à une survie globale moyenne de 15 mois.",
+          "isTrue": true,
+          "explanation": "Le glioblastome, considéré comme une tumeur maligne, présente une survie globale d'environ 15 mois malgré les traitements agressifs."
+        },
+        {
+          "statement": "Les neurinomes, bien que souvent bénins, peuvent survenir dans le cadre de la neurofibromatose de type 1.",
+          "isTrue": false,
+          "explanation": "Les neurinomes peuvent survenir dans le cadre de la neurofibromatose de type 2, et non de type 1."
+        },
+        {
+          "statement": "La prise de contraste hétérogène sur IRM est caractéristique des métastases cérébrales.",
+          "isTrue": true,
+          "explanation": "Les métastases cérébrales présentent souvent un rehaussement hétérogène après injection de contraste, avec des zones de nécrose centrale."
+        },
+        {
+          "statement": "Les hémangioblastomes sont toujours considérés comme malins.",
+          "isTrue": false,
+          "explanation": "Les hémangioblastomes sont des tumeurs vasculaires bénignes, bien qu'ils puissent être associés à des syndromes comme la maladie de Von Hippel–Lindau."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754681433471_rjtrsdocw_2",
+      "topic": "QCM sur les Gliomes de Bas Grade",
+      "rationale": "Ce QCM évalue la compréhension des caractéristiques cliniques et radiologiques des gliomes de bas grade, mettant en évidence les différences entre les grades et les approches thérapeutiques, tout en intégrant des pièges pour tester la connaissance des étudiants sur le sujet.",
+      "propositions": [
+        {
+          "statement": "Les gliomes de grade 1 surviennent principalement chez les patients de moins de 20 ans.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 1 sont fréquemment diagnostiqués chez les patients jeunes, surtout ceux de moins de 20 ans."
+        },
+        {
+          "statement": "Les gliomes de grade 2 se caractérisent par un hypersignal T2 et un hyposignal T1.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 2 présentent effectivement un hypersignal sur les séquences T2 et un hyposignal sur les séquences T1 en IRM."
+        },
+        {
+          "statement": "Tous les gliomes de grade 2 prennent systématiquement le contraste.",
+          "isTrue": false,
+          "explanation": "Les gliomes de grade 2 ne montrent pas de prise de contraste, ce qui les distingue des grades supérieurs."
+        },
+        {
+          "statement": "La chirurgie est le traitement principal pour les gliomes de grade 1, avec une guérison possible si résection complète.",
+          "isTrue": true,
+          "explanation": "Une résection chirurgicale complète des gliomes de grade 1 peut mener à une guérison, ce qui en fait un traitement clé."
+        },
+        {
+          "statement": "Les gliomes de grade 2 ont une progression inéluctable vers l'anaplasie, mais peuvent être traités avec une radiothérapie adjuvante.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 2 progressent souvent vers des formes plus agressives et peuvent nécessiter une radiothérapie ou une chimiothérapie après chirurgie."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    0,
+    2,
+    1
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": "Tumeurs intracrâniennes IC-299\nConnaître les principaux types et localisations des tumeurs intracrâniennes\nConnaître la définition des tumeurs primitives intracrâniennes : système nerveux central et annexes\nConnaître les principaux types histologiques des tumeurs cérébrales\nConnaître l'épidémiologie des différents types tumeurs primitives intracrâniennes\nConnaître les principaux tableaux cliniques devant faire évoquer une tumeur intracrânienne\nConnaître la stratégie d'exploration en imagerie devant une tumeur intracrânienne de l'adulte\nDécrire la recherche systématique de cancer primitif à effectuer devant une métastase cérébrale\nSavoir évoquer une hypertension intracrânienne (HTIC) et une épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principes de la prise en charge de l'HTIC et de l'épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principaux types et localisations des tumeurs intracrâniennes OIC-\n299-01-A\n·        Tumeur primi"
+}

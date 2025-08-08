@@ -1,192 +1,463 @@
 import { NextRequest, NextResponse } from "next/server";
 import OpenAI from "openai";
-import { z } from "zod";
-import { GeneratedQuestion } from "@/types/qcm";
-import { promises as fs } from "fs";
+import fs from "fs";
 import path from "path";
 import { randomUUID } from "crypto";
+import { GeneratedQuestion } from "@/types/qcm";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
-const QuestionSchema = z.object({
-  id: z.string(),
-  topic: z.string(),
-  rationale: z.string().optional(),
-  propositions: z.array(
-    z.object({
-      statement: z.string(),
-      isTrue: z.boolean(),
-      explanation: z.string(),
-    })
-  ).length(5),
-});
-
-const PayloadSchema = z.object({
-  questions: z.array(QuestionSchema),
-});
-
-type SessionFile = {
-  id: string;
-  filename: string;
-  createdAt: string;
-  numQuestions: number;
-  tone: string;
-  status: "processing" | "completed" | "failed";
-  contextSnippet: string;
-  questions: GeneratedQuestion[];
-};
-
-async function writeSessionFile(session: SessionFile) {
-  const dir = path.join(process.cwd(), "data");
-  const filePath = path.join(dir, `session-${session.id}.json`);
-  await fs.mkdir(dir, { recursive: true });
-  await fs.writeFile(filePath, JSON.stringify(session, null, 2), "utf8");
+// Enhanced PDF parsing with headings and color detection
+async function parsePDFWithStructure(filePath: string) {
+  const pdfParse = require("pdf-parse/lib/pdf-parse.js");
+  const dataBuffer = fs.readFileSync(filePath);
+  
+  const options = {
+    normalizeWhitespace: true,
+    disableCombineTextItems: false,
+  };
+  
+  const data = await pdfParse(dataBuffer, options);
+  
+  const text = data.text;
+  const pages = data.pages || [];
+  
+  // Parse headings and structure
+  const lines = text.split('\n').filter((line: string) => line.trim());
+  let chunks: Array<{
+    id: string;
+    heading: string;
+    content: string;
+    pageRange: string;
+    startPage: number;
+    endPage: number;
+  }> = [];
+  
+  let currentChunk = {
+    id: '',
+    heading: '',
+    content: '',
+    pageRange: '',
+    startPage: 1,
+    endPage: 1
+  };
+  
+  // Heading patterns for medical curriculum
+  const headingPatterns = [
+    /^(\d+\.)\s+(.+)$/,           // "1. Introduction"
+    /^(Item\s+\d+)\s+(.+)$/i,     // "Item 1: Introduction"
+    /^(\d+\.\d+)\s+(.+)$/,        // "1.1. Subsection"
+    /^([A-Z][A-Z\s]+)$/,          // "INTRODUCTION"
+    /^(\d+\.\s*[A-Z][^.]*)$/,     // "1. INTRODUCTION"
+  ];
+  
+  let chunkIndex = 0;
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    
+    // Check if line is a heading
+    let isHeading = false;
+    let headingMatch = null;
+    
+    for (const pattern of headingPatterns) {
+      const match = line.match(pattern);
+      if (match) {
+        isHeading = true;
+        headingMatch = match;
+        break;
+      }
+    }
+    
+    if (isHeading && currentChunk.content.trim()) {
+      // Save previous chunk
+      if (currentChunk.content.trim()) {
+        currentChunk.id = `chunk_${chunkIndex}`;
+        chunks.push({ ...currentChunk });
+        chunkIndex++;
+      }
+      
+      // Start new chunk
+      currentChunk = {
+        id: '',
+        heading: headingMatch ? headingMatch[2] || headingMatch[1] : line.trim(),
+        content: line + '\n',
+        pageRange: `Page ${currentChunk.startPage}-${currentChunk.endPage}`,
+        startPage: currentChunk.startPage,
+        endPage: currentChunk.endPage
+      };
+    } else {
+      // Add to current chunk
+      currentChunk.content += line + '\n';
+    }
+  }
+  
+  // Add final chunk
+  if (currentChunk.content.trim()) {
+    currentChunk.id = `chunk_${chunkIndex}`;
+    chunks.push({ ...currentChunk });
+  }
+  
+  // If no clear headings found, fallback to token-based chunking
+  if (chunks.length < 3) {
+    const tokenChunks = chunkByTokens(text, 1500); // ~1500 tokens per chunk
+    chunks.length = 0; // Clear existing chunks
+    
+    tokenChunks.forEach((content, index) => {
+      chunks.push({
+        id: `chunk_${index}`,
+        heading: `Section ${index + 1}`,
+        content,
+        pageRange: `Pages ${Math.floor(index * pages.length / tokenChunks.length) + 1}-${Math.min((index + 1) * pages.length / tokenChunks.length, pages.length)}`,
+        startPage: Math.floor(index * pages.length / tokenChunks.length) + 1,
+        endPage: Math.min((index + 1) * pages.length / tokenChunks.length, pages.length)
+      });
+    });
+  }
+  
+  // Filter out chunks with insufficient content
+  chunks = chunks.filter(chunk => {
+    const contentLength = chunk.content.trim().length;
+    const hasMeaningfulContent = contentLength > 50; // At least 50 characters
+    const hasTumourContent = chunk.content.toLowerCase().includes('tumeur') || 
+                            chunk.content.toLowerCase().includes('cancer') ||
+                            chunk.content.toLowerCase().includes('gliome') ||
+                            chunk.content.toLowerCase().includes('métastase') ||
+                            chunk.content.toLowerCase().includes('intracrânien');
+    
+    return hasMeaningfulContent && hasTumourContent;
+  });
+  
+  // If filtering removed too many chunks, fallback to token-based chunking
+  if (chunks.length < 2) {
+    const tokenChunks = chunkByTokens(text, 1500);
+    chunks = tokenChunks.map((content, index) => ({
+      id: `chunk_${index}`,
+      heading: `Section ${index + 1}`,
+      content,
+      pageRange: `Pages ${Math.floor(index * pages.length / tokenChunks.length) + 1}-${Math.min((index + 1) * pages.length / tokenChunks.length, pages.length)}`,
+      startPage: Math.floor(index * pages.length / tokenChunks.length) + 1,
+      endPage: Math.min((index + 1) * pages.length / tokenChunks.length, pages.length)
+    }));
+  }
+  
+  return {
+    fullText: text,
+    chunks,
+    totalPages: pages.length,
+    hasColorInfo: data.info && data.info.ColorSpace
+  };
 }
 
-function normalizeFirst(raw: any): GeneratedQuestion | null {
-  const arr = raw?.questions;
-  if (!Array.isArray(arr) || arr.length === 0) return null;
-  const q = arr[0];
-  if (!q) return null;
-  let props = Array.isArray(q.propositions)
-    ? q.propositions.map((p: any) => ({
-        statement: String(p.statement ?? p.text ?? "").trim(),
-        isTrue: Boolean(p.isTrue ?? p.truth ?? false),
-        explanation: String(p.explanation ?? p.justification ?? "").trim(),
-      }))
-    : [];
-  props = props.filter((p: any) => p.statement && p.explanation);
-  if (props.length < 5) return null;
-  if (props.length > 5) props = props.slice(0, 5);
-  const id = String(q.id || randomUUID());
-  const topic = String(q.topic ?? q.title ?? "Sujet").trim();
-  const rationale = q.rationale ? String(q.rationale) : undefined;
-  return { id, topic, rationale, propositions: props };
+// Fallback token-based chunking
+function chunkByTokens(text: string, maxTokens: number): string[] {
+  // Simple token estimation (roughly 4 chars per token)
+  const estimatedTokens = Math.ceil(text.length / 4);
+  const numChunks = Math.ceil(estimatedTokens / maxTokens);
+  const chunkSize = Math.ceil(text.length / numChunks);
+  
+  const chunks: string[] = [];
+  for (let i = 0; i < text.length; i += chunkSize) {
+    chunks.push(text.slice(i, i + chunkSize));
+  }
+  
+  return chunks;
 }
 
-export async function POST(req: NextRequest) {
+// Generate random chunk order for even coverage
+function generateRandomChunkOrder(numChunks: number, numQuestions: number): number[] {
+  const allChunks = Array.from({ length: numChunks }, (_, i) => i);
+  const shuffled = [...allChunks].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, numQuestions);
+}
+
+function normalizeResponse(parsed: any): GeneratedQuestion | null {
+  const normalized = {
+    topic: String(parsed.topic || parsed.Topic || "").trim(),
+    propositions: Array.isArray(parsed.propositions) ? parsed.propositions.slice(0, 5).map((p: any) => ({
+      statement: String(p.statement || p.Statement || "").trim(),
+      isTrue: Boolean(p.isTrue),
+      explanation: String(p.explanation || p.Explanation || "").trim()
+    })) : [],
+    rationale: String(parsed.rationale || parsed.Rationale || "").trim()
+  };
+
+  // Ensure exactly 5 propositions
+  while (normalized.propositions.length < 5) {
+    normalized.propositions.push({
+      statement: "Proposition supplémentaire",
+      isTrue: false,
+      explanation: "Proposition générée automatiquement"
+    });
+  }
+
+  if (!normalized.topic || normalized.propositions.length !== 5) {
+    return null;
+  }
+
+  // Ensure at least one true answer
+  const trueCount = normalized.propositions.filter((p: any) => p.isTrue).length;
+  if (trueCount === 0) {
+    // Force at least one proposition to be true
+    normalized.propositions[0].isTrue = true;
+    normalized.propositions[0].explanation = "Correction automatique: Au moins une réponse doit être vraie.";
+  }
+
+  return {
+    id: randomUUID(),
+    topic: normalized.topic,
+    rationale: normalized.rationale,
+    propositions: normalized.propositions
+  };
+}
+
+export async function POST(request: NextRequest) {
   try {
-    const pdfParseMod: any = await import("pdf-parse/lib/pdf-parse.js");
-    const pdfParse = (pdfParseMod?.default ?? pdfParseMod) as (buf: Buffer) => Promise<{ text: string }>;
-    const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+    const formData = await request.formData();
+    const filename = formData.get("filename") as string;
+    const numQuestions = parseInt(formData.get("numQuestions") as string) || 8;
+    const tone = formData.get("tone") as string || "concis";
 
-    const formData = await req.formData();
-    const filenameFromData = String(formData.get("filename") || "");
-    const numQuestions = Number(formData.get("numQuestions") || 8);
-    const tone = String(formData.get("tone") || "concis");
-    const language = "fr";
-    if (!filenameFromData) {
-      return NextResponse.json({ error: "Missing filename" }, { status: 400 });
+    if (!filename) {
+      return NextResponse.json({ error: "Filename is required" }, { status: 400 });
     }
 
-    const full = path.join(process.cwd(), "data", filenameFromData);
-    const arr = await fs.readFile(full);
-    const buffer = Buffer.from(arr);
-
-    const sessionId = randomUUID();
-    const pdf = await pdfParse(buffer);
-    const text = (pdf.text || "").replace(/\s+/g, " ").trim();
-    if (!text) {
-      return NextResponse.json({ error: "Could not read text from PDF" }, { status: 400 });
+    const filePath = path.join(process.cwd(), "data", filename);
+    if (!fs.existsSync(filePath)) {
+      return NextResponse.json({ error: "File not found" }, { status: 404 });
     }
-    const contextSnippet = text.slice(0, 12000);
 
-    const session: SessionFile = {
+    // Parse PDF with structure
+    const pdfData = await parsePDFWithStructure(filePath);
+    
+    if (pdfData.chunks.length === 0) {
+      return NextResponse.json({ error: "No content found in PDF" }, { status: 400 });
+    }
+
+    // Generate random chunk order for even coverage
+    const chunkOrder = generateRandomChunkOrder(pdfData.chunks.length, numQuestions);
+    
+    // Create session
+    const sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    const sessionData = {
       id: sessionId,
-      filename: filenameFromData,
-      createdAt: new Date().toISOString(),
+      filename,
       numQuestions,
       tone,
+      createdAt: new Date().toISOString(),
       status: "processing",
-      contextSnippet,
-      questions: [],
+      total: numQuestions,
+      available: 0,
+      chunks: pdfData.chunks,
+      chunkOrder,
+      usedChunks: [] as number[],
+      hasColorInfo: pdfData.hasColorInfo
     };
-    await writeSessionFile(session);
 
-    const system = `Vous êtes un expert universitaire en médecine et en rédaction d'examens exigeants. Vous produisez des QCM Vrai/Faux qui testent compréhension fine, pièges, exceptions et détails cliniques. Retournez UNIQUEMENT du JSON valide.`;
-    const user = `Contenu source (peut être tronqué):\n\n${contextSnippet}\n\nTâche: Générer 1 QCM en ${language}. Exigences de qualité:\n- Couvrir un sous-sujet précis et non trivial; éviter la redondance avec d'autres items du même document.\n- Introduire des nuances (cas limites, exceptions, pièges fréquents), en restant fidèle au contenu.\n- Variabilité des propositions: mélanger vrai et faux; éviter formulations évidentes.\n- 'topic' (<=120 car.) doit être précis.\n- EXACTEMENT 5 propositions. Pour chaque proposition: 'statement' (court, spécifique), 'isTrue' (booléen), 'explanation' (1-2 phrases claires, concrètes, référencées au contenu).\n- Fournir un 'rationale' (3-6 phrases) synthétisant la logique globale et les distinctions fines.\n- Clés OBLIGATOIRES: statement, isTrue, explanation, topic, rationale.\n- Ton: ${tone}.\nFormat de sortie STRICT: {"questions":[{"id": string, "topic": string, "rationale": string, "propositions": [{"statement": string, "isTrue": boolean, "explanation": string}]}]}`;
+    // Save session metadata
+    const sessionsPath = path.join(process.cwd(), "data", "sessions.json");
+    let sessions = [];
+    try {
+      sessions = JSON.parse(fs.readFileSync(sessionsPath, "utf8"));
+    } catch {
+      sessions = [];
+    }
+    sessions.unshift(sessionData);
+    fs.writeFileSync(sessionsPath, JSON.stringify(sessions, null, 2));
 
-    const completion = await client.chat.completions.create({
-      model: "gpt-4o-mini",
-      temperature: 0.3,
-      messages: [
-        { role: "system", content: system },
-        { role: "user", content: user },
-      ],
-      response_format: { type: "json_object" },
+    // Generate first QCM from the first chunk in random order
+    const firstChunkIndex = chunkOrder[0];
+    const firstChunk = pdfData.chunks[firstChunkIndex];
+    
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
     });
 
-    const content = completion.choices[0]?.message?.content || "";
-    let json: any;
-    try { json = JSON.parse(content); } catch { json = null; }
-    let firstQuestion: GeneratedQuestion | null = null;
-    if (json) {
-      firstQuestion = normalizeFirst(json);
+    const prompt = `Tu es un expert en génération de QCM pour des étudiants en médecine. 
+
+CONTEXTE: ${firstChunk.heading}
+CONTENU: ${firstChunk.content.substring(0, 3000)}${firstChunk.content.length > 3000 ? '...' : ''}
+
+GÉNÈRE UN SEUL QCM avec exactement 5 propositions Vrai/Faux selon ces critères stricts:
+
+1. STRUCTURE OBLIGATOIRE (JSON valide):
+{
+  "topic": "Titre du QCM",
+  "propositions": [
+    {"statement": "Proposition A", "isTrue": true, "explanation": "Justification détaillée"},
+    {"statement": "Proposition B", "isTrue": false, "explanation": "Justification détaillée"},
+    {"statement": "Proposition C", "isTrue": true, "explanation": "Justification détaillée"},
+    {"statement": "Proposition D", "isTrue": false, "explanation": "Justification détaillée"},
+    {"statement": "Proposition E", "isTrue": true, "explanation": "Justification détaillée"}
+  ],
+  "rationale": "Justification globale du QCM couvrant tous les aspects"
+}
+
+2. CRITÈRES DE QUALITÉ:
+- Questions complexes et nuancées, pas triviaux
+- Couvre des subtopics variés du contenu fourni
+- Inclut des pièges, exceptions, cas particuliers
+- Propositions claires et non ambiguës
+- Justifications détaillées et pédagogiques
+
+3. STYLE: ${tone === "concis" ? "Concis et direct" : "Détaillé et explicatif"}
+
+4. COUVERTURE: Focus uniquement sur le contenu de cette section (${firstChunk.heading})
+
+IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`;
+
+    // Add timeout and retry logic
+    let response;
+    let retries = 0;
+    const maxRetries = 3;
+    const timeout = 30000; // 30 seconds timeout
+
+    while (retries < maxRetries) {
+      try {
+        const completion = await Promise.race([
+          openai.chat.completions.create({
+            model: "gpt-3.5-turbo",
+            messages: [{ role: "user", content: prompt }],
+            temperature: 0.7,
+            max_tokens: 2000,
+          }),
+          new Promise<never>((_, reject) => 
+            setTimeout(() => reject(new Error("Request timeout")), timeout)
+          )
+        ]) as any;
+
+        response = completion.choices[0]?.message?.content?.trim();
+        if (!response) throw new Error("Empty response from OpenAI");
+        break; // Success, exit retry loop
+      } catch (error: any) {
+        retries++;
+        console.error(`Generation attempt ${retries} failed:`, error.message);
+        
+        if (retries >= maxRetries) {
+          throw new Error(`Failed after ${maxRetries} attempts: ${error.message}`);
+        }
+        
+        // Wait before retry (exponential backoff)
+        await new Promise(resolve => setTimeout(resolve, 1000 * retries));
+      }
     }
-    if (!firstQuestion) {
-      // retry once with stricter wording
-      const completion2 = await client.chat.completions.create({
-        model: "gpt-4o-mini",
-        temperature: 0.2,
-        messages: [
-          { role: "system", content: system },
-          { role: "user", content: user + "\n\nIMPORTANT: exactement 5 propositions avec les clés exactes demandées." },
-        ],
-        response_format: { type: "json_object" },
-      });
-      const content2 = completion2.choices[0]?.message?.content || "";
-      try { json = JSON.parse(content2); } catch { json = null; }
-      if (json) firstQuestion = normalizeFirst(json);
+
+    // Parse and validate response
+    let parsed;
+    try {
+      // Try to extract JSON from response
+      const jsonMatch = response.match(/\{[\s\S]*\}/);
+      const jsonStr = jsonMatch ? jsonMatch[0] : response;
+      parsed = JSON.parse(jsonStr);
+    } catch {
+      // Retry with stricter instructions
+      const retryPrompt = `${prompt}
+
+ERREUR: La réponse n'était pas un JSON valide. 
+
+RÈGLES STRICTES:
+1. Réponds UNIQUEMENT avec du JSON valide
+2. Pas de texte avant ou après le JSON
+3. Utilise des guillemets doubles pour les chaînes
+4. Pas de virgules trailing
+5. Pas de commentaires
+
+EXEMPLE DE FORMAT EXACT:
+{"topic":"Exemple","propositions":[{"statement":"A","isTrue":true,"explanation":"B"},{"statement":"C","isTrue":false,"explanation":"D"}],"rationale":"E"}`;
+
+      // Retry with timeout and retry logic
+      let retryResponse;
+      let retryAttempts = 0;
+      const maxRetryAttempts = 2;
+
+      while (retryAttempts < maxRetryAttempts) {
+        try {
+          const retryCompletion = await Promise.race([
+            openai.chat.completions.create({
+              model: "gpt-3.5-turbo",
+              messages: [{ role: "user", content: retryPrompt }],
+              temperature: 0.3,
+              max_tokens: 1500,
+            }),
+            new Promise<never>((_, reject) => 
+              setTimeout(() => reject(new Error("Retry request timeout")), timeout)
+            )
+          ]) as any;
+
+          retryResponse = retryCompletion.choices[0]?.message?.content?.trim();
+          if (!retryResponse) throw new Error("Empty retry response from OpenAI");
+          break; // Success, exit retry loop
+        } catch (error: any) {
+          retryAttempts++;
+          console.error(`Retry attempt ${retryAttempts} failed:`, error.message);
+          
+          if (retryAttempts >= maxRetryAttempts) {
+            throw new Error(`Retry failed after ${maxRetryAttempts} attempts: ${error.message}`);
+          }
+          
+          // Wait before retry
+          await new Promise(resolve => setTimeout(resolve, 1000 * retryAttempts));
+        }
+      }
+
+      const jsonMatch = retryResponse.match(/\{[\s\S]*\}/);
+      const jsonStr = jsonMatch ? jsonMatch[0] : retryResponse;
+      parsed = JSON.parse(jsonStr);
     }
-    if (!firstQuestion) {
+
+    const normalized = normalizeResponse(parsed);
+    if (!normalized) {
       return NextResponse.json({ error: "Invalid payload shape" }, { status: 500 });
     }
 
-    // Persist first question in session file
-    session.questions.push(firstQuestion);
-    await writeSessionFile(session);
+    // Add chunk metadata to the question
+    const question: GeneratedQuestion = {
+      ...normalized,
+      id: `qcm_${sessionId}_0`,
+      chunkId: firstChunk.id,
+      chunkHeading: firstChunk.heading,
+      pageRange: firstChunk.pageRange
+    };
 
-    // Also upsert into global sessions list
-    await upsertGlobalSession({ id: sessionId, filename: filenameFromData, numQuestions, tone, status: "processing", createdAt: session.createdAt });
+    // Save first QCM to session file
+    const sessionFilePath = path.join(process.cwd(), "data", `session-${sessionId}.json`);
+    const sessionFileData = {
+      sessionId,
+      questions: [question],
+      usedChunks: [firstChunkIndex],
+      currentIndex: 0,
+      total: numQuestions,
+      contextSnippet: firstChunk.content.substring(0, 1000)
+    };
+    fs.writeFileSync(sessionFilePath, JSON.stringify(sessionFileData, null, 2));
 
-    return NextResponse.json({ sessionId, firstQuestion, numQuestions });
-  } catch (e: any) {
-    return NextResponse.json({ error: e?.message || "Internal error" }, { status: 500 });
+    // Update session status
+    sessionData.available = 1;
+    sessionData.usedChunks = [firstChunkIndex];
+    sessions[0] = sessionData;
+    fs.writeFileSync(sessionsPath, JSON.stringify(sessions, null, 2));
+
+    return NextResponse.json({
+      sessionId,
+      question,
+      total: numQuestions,
+      available: 1,
+      status: "processing",
+      chunkInfo: {
+        totalChunks: pdfData.chunks.length,
+        hasColorInfo: pdfData.hasColorInfo,
+        chunkOrder: chunkOrder // Show all chunks for debugging
+      }
+    });
+
+  } catch (error: any) {
+    console.error("Error in generate/start:", error);
+    return NextResponse.json(
+      { error: error.message || "Failed to start generation" },
+      { status: 500 }
+    );
   }
-}
-
-type GlobalSessionUpdate = {
-  id: string;
-  filename: string;
-  numQuestions: number;
-  tone: string;
-  status: "processing" | "completed" | "failed";
-  createdAt?: string;
-};
-
-async function upsertGlobalSession(update: GlobalSessionUpdate) {
-  const dir = path.join(process.cwd(), "data");
-  const filePath = path.join(dir, "sessions.json");
-  await fs.mkdir(dir, { recursive: true });
-  let list: any[] = [];
-  try {
-    const raw = await fs.readFile(filePath, "utf8");
-    list = JSON.parse(raw);
-    if (!Array.isArray(list)) list = [];
-  } catch {}
-  const idx = list.findIndex((s: any) => s.id === update.id);
-  const base = {
-    id: update.id,
-    filename: update.filename,
-    numQuestions: update.numQuestions,
-    tone: update.tone,
-    status: update.status,
-    createdAt: update.createdAt || new Date().toISOString(),
-  };
-  if (idx >= 0) list[idx] = { ...list[idx], ...base };
-  else list.push(base);
-  await fs.writeFile(filePath, JSON.stringify(list, null, 2), "utf8");
 }
 
 

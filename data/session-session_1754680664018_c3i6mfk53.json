@@ -1,0 +1,154 @@
+{
+  "sessionId": "session_1754680664018_c3i6mfk53",
+  "questions": [
+    {
+      "id": "qcm_session_1754680664018_c3i6mfk53_0",
+      "topic": "QCM sur les tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM aborde différents types de tumeurs primitives intracrâniennes, leurs caractéristiques, et les traitements associés. Il inclut des pièges en confondant les types de cellules et les âges d'apparition, tout en soulignant l'importance des traitements individualisés.",
+      "propositions": [
+        {
+          "statement": "Les épendymomes sont des tumeurs qui se développent à partir des cellules de Schwann.",
+          "isTrue": false,
+          "explanation": "Les épendymomes se développent à partir des épendymocytes des ventricules, et non des cellules de Schwann."
+        },
+        {
+          "statement": "Le glioblastome est une progression inéluctable d'une tumeur de grade 3.",
+          "isTrue": true,
+          "explanation": "Le glioblastome (grade 4) est considéré comme la progression inéluctable d'une tumeur de grade 3, généralement due à une évolution maligne."
+        },
+        {
+          "statement": "Les neurinomes sont presque toujours des tumeurs malignes.",
+          "isTrue": false,
+          "explanation": "Les neurinomes, ou schwannomes, sont bénins dans l'immense majorité des cas."
+        },
+        {
+          "statement": "Le traitement des métastases cérébrales dépend du nombre et de la localisation des lésions.",
+          "isTrue": true,
+          "explanation": "Le traitement des métastases cérébrales est personnalisé selon le nombre, la localisation et le volume des métastases, ainsi que les déficits neurologiques."
+        },
+        {
+          "statement": "Le médulloblastome est une tumeur qui se localise principalement dans le cervelet chez les adultes.",
+          "isTrue": false,
+          "explanation": "Le médulloblastome est principalement une tumeur embryonnaire qui se localise dans le vermis du cervelet mais survient surtout chez l'enfant, et moins fréquemment chez l'adulte."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754680664018_c3i6mfk53_1",
+      "topic": "Physiologie du Système Respiratoire",
+      "rationale": "Ce QCM aborde divers aspects de la physiologie respiratoire, incluant la pression et la solubilité des gaz, tout en intégrant des pièges sur des concepts mal compris tels que la diffusion et la filtration. Les justifications fournissent des explications pédagogiques pour chaque proposition, renforçant la compréhension du sujet.",
+      "propositions": [
+        {
+          "statement": "La pression partielle de l'oxygène diminue avec l'altitude.",
+          "isTrue": true,
+          "explanation": "À mesure que l'altitude augmente, la pression atmosphérique totale diminue, entraînant une baisse de la pression partielle de l'oxygène."
+        },
+        {
+          "statement": "Le dioxyde de carbone a une solubilité plus élevée dans le sang que l'oxygène.",
+          "isTrue": true,
+          "explanation": "Le CO2 est beaucoup plus soluble dans le plasma sanguin que l'O2, ce qui facilite son transport dans le sang."
+        },
+        {
+          "statement": "Les alvéoles pulmonaires sont responsables de la filtration de l'air inhalé.",
+          "isTrue": false,
+          "explanation": "Les alvéoles sont principalement responsables des échanges gazeux et non de la filtration de l'air, qui est réalisée par les voies respiratoires supérieures."
+        },
+        {
+          "statement": "La diffusion des gaz à travers la membrane alvéolo-capillaire est un processus actif.",
+          "isTrue": false,
+          "explanation": "La diffusion des gaz est un processus passif qui se produit selon le gradient de concentration, sans consommation d'énergie."
+        },
+        {
+          "statement": "Le surfactant pulmonaire joue un rôle crucial dans la prévention de l'affaissement des alvéoles.",
+          "isTrue": true,
+          "explanation": "Le surfactant réduit la tension superficielle dans les alvéoles, empêchant leur collapse et facilitant leur expansion lors de la respiration."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "HAUT",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754680664018_c3i6mfk53_2",
+      "topic": "Évaluation des tumeurs cérébrales de bas grade",
+      "rationale": "Ce QCM évalue les connaissances sur les caractéristiques cliniques et radiologiques des tumeurs cérébrales de bas grade, ainsi que leur prise en charge thérapeutique, tout en intégrant des pièges et des nuances pour tester la compréhension des étudiants.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs de grade 1 sont généralement infra-tentorielles et présentent un rehaussement après injection de contraste.",
+          "isTrue": true,
+          "explanation": "Les tumeurs de grade 1, comme les kystes ou les tumeurs mixte, se localisent souvent en dessous du tentorium et montrent un rehaussement après contraste en raison de leur vascularisation."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 sont toujours associées à un hypersignal T2 et un hyposignal T1 sans exception.",
+          "isTrue": false,
+          "explanation": "Bien que les tumeurs de grade 2 présentent souvent ces caractéristiques, il existe des exceptions où certaines tumeurs peuvent ne pas suivre ce schéma classique."
+        },
+        {
+          "statement": "La chirurgie est la seule option thérapeutique pour les tumeurs de grade 2.",
+          "isTrue": false,
+          "explanation": "Pour les tumeurs de grade 2, la chirurgie est souvent suivie d'une radiothérapie ou chimiothérapie, surtout en cas de résection incomplète."
+        },
+        {
+          "statement": "Une résection complète des tumeurs de grade 1 peut conduire à une guérison.",
+          "isTrue": true,
+          "explanation": "Les tumeurs de grade 1, lorsqu'elles sont complètement résectées, présentent un pronostic favorable et peuvent être guéries."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 présentent une progression inéluctable vers les grades 3 et 4.",
+          "isTrue": true,
+          "explanation": "Les tumeurs de grade 2 sont considérées comme précurseurs des gliomes plus agressifs, avec une progression inévitable vers l'anaplasie."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754680664018_c3i6mfk53_3",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM couvre les différents types de tumeurs intracrâniennes, leurs localisations, leurs caractéristiques histologiques, ainsi que les complications associées, telles que l'hypertension intracrânienne. Chaque proposition aborde des concepts critiques et des exceptions, permettant aux étudiants d'évaluer leur compréhension des tumeurs intracrâniennes.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs primitives intracrâniennes comprennent uniquement les gliomes et les méningiomes.",
+          "isTrue": false,
+          "explanation": "Les tumeurs primitives intracrâniennes incluent également d'autres types comme les adénomes hypophysaires et les schwannomes, en plus des gliomes et méningiomes."
+        },
+        {
+          "statement": "Les tumeurs malignes intracrâniennes sont généralement bien circonscrites et d'évolution lente.",
+          "isTrue": false,
+          "explanation": "Les tumeurs malignes, comme le glioblastome, sont rapidement évolutives et présentent un pronostic défavorable, contrairement aux tumeurs bénignes."
+        },
+        {
+          "statement": "Environ 80 % des tumeurs intracrâniennes chez l'adulte sont situées au-dessus de la tente du cervelet.",
+          "isTrue": true,
+          "explanation": "La majorité des tumeurs intracrâniennes chez l'adulte se trouvent effectivement au-dessus de la tente du cervelet, ce qui est un fait bien établi en neuro-oncologie."
+        },
+        {
+          "statement": "Les méningiomes sont des tumeurs bénignes, mais peuvent parfois évoluer vers un grade plus élevé.",
+          "isTrue": true,
+          "explanation": "Bien que souvent classés comme grade 1 OMS et bénins, certains méningiomes peuvent présenter une transformation maligne ou un comportement agressif nécessitant une surveillance."
+        },
+        {
+          "statement": "Une hypertension intracrânienne (HTIC) ne peut pas être évoquée chez les patients porteurs de tumeurs cérébrales.",
+          "isTrue": false,
+          "explanation": "L'HTIC est une complication fréquente chez les patients avec des tumeurs intracrâniennes, souvent due à l'augmentation du volume tumoral ou à des obstructions du flux cérébrospinal."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    }
+  ],
+  "usedChunks": [
+    3,
+    2,
+    1,
+    0
+  ],
+  "currentIndex": 3,
+  "total": 7,
+  "contextSnippet": "GRADE\nGrade\n3\n30–50 ansSupra tentorielle\nHypersignal T2 Hyposignal T1\nPrise de contraste\nChirurgie (résection\nmaximaliste, si possible)\n+ radiothérapie /\nchimiothérapie\nProgression inéluctable vers\nle glioblastome (grade 4)\nGrade\n4\n60–70 ansSupra tentorielle\nNécrose\nPrise de contraste hétérogène\nChirurgie (résection\nmaximaliste, si possible)\n+ radio-chimiothérapie\nconcomitante (protocole de\nStupp)\nExtension locale/régionale\nrapide\nSurvie globale de 15 mois\nMétastase :\n·        Origines principales = cancers à fort tropisme neurologique : broncho-pulmonaire, mammaire et mélanome\n·        IRM : tumeur(s) unique ou multiples ; localisation cortico-sous-corticale ; rehaussement hétérogène après injection de\ncontraste, avec aspect en cocarde (nécrose centrale et prise de contraste périphérique) ;   œdème péri-tumoral +++ ; révélation\nhémorragique des métastases de mélanome et de cancer du rein\n·        Traitement :\no  Dépend du nombre, de la localisation et du volume de la (ou des) métastas"
+}

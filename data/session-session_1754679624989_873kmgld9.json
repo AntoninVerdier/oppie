@@ -1,0 +1,154 @@
+{
+  "sessionId": "session_1754679624989_873kmgld9",
+  "questions": [
+    {
+      "id": "qcm_session_1754679624989_873kmgld9_0",
+      "topic": "Syndrome tumoral ayant fait découvrir une lésion de la région sellaire",
+      "rationale": "Ce QCM couvre les différentes manifestations cliniques et les diagnostics différentiels liés aux lésions de la région sellaire, tout en abordant la complexité des syndromes tumoraux et les variations individuelles de présentation. Les propositions incluent des pièges et des nuances pour évaluer la compréhension des étudiants sur ce sujet.",
+      "propositions": [
+        {
+          "statement": "Un syndrome tumoral peut être causé par un adénome hypophysaire.",
+          "isTrue": true,
+          "explanation": "Les adénomes hypophysaires sont des tumeurs bénignes qui se développent dans la région sellaire et peuvent provoquer des symptômes liés à une pression sur les structures environnantes."
+        },
+        {
+          "statement": "La présence d'une lésion sellaire exclut la possibilité d'autres diagnostics comme une méningiome.",
+          "isTrue": false,
+          "explanation": "Une lésion sellaire peut être due à différentes pathologies, y compris des méningiomes, qui peuvent également se développer dans cette région."
+        },
+        {
+          "statement": "Les symptômes visuels peuvent être un signe d'une lésion dans la région sellaire.",
+          "isTrue": true,
+          "explanation": "Les lésions sellaire peuvent comprimer le chiasma optique, entraînant des troubles visuels chez le patient."
+        },
+        {
+          "statement": "Tous les adénomes hypophysaires provoquent des symptômes endocriniens.",
+          "isTrue": false,
+          "explanation": "Certains adénomes, notamment les adénomes inactifs, peuvent ne pas provoquer de symptômes endocriniens, bien qu'ils puissent être détectés par imagerie."
+        },
+        {
+          "statement": "Un traitement chirurgical est toujours nécessaire pour les lésions sellaire détectées.",
+          "isTrue": false,
+          "explanation": "La prise en charge dépend de la nature de la lésion; certaines peuvent être surveillées sans intervention immédiate."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Syndrome tumoral ayant fait découvrir une lésion de la région sellaire",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754679624989_873kmgld9_1",
+      "topic": "Adénome hypophysaire et ses manifestations cliniques",
+      "rationale": "Ce QCM aborde divers aspects cliniques associés aux adénomes hypophysaires, en mettant l'accent sur les signes cliniques et les manifestations des hypersécrétions hormonales, tout en intégrant des pièges pour tester la compréhension des étudiants.",
+      "propositions": [
+        {
+          "statement": "Les céphalées frontales sont un signe typique d'un syndrome tumoral hypophysaire.",
+          "isTrue": true,
+          "explanation": "Les céphalées frontales sont souvent rapportées dans le cadre d'un syndrome tumoral hypophysaire, même si leur intensité n'est pas nécessairement proportionnelle à la taille de l'adénome."
+        },
+        {
+          "statement": "Un adénome hypophysaire ne peut pas provoquer de troubles visuels.",
+          "isTrue": false,
+          "explanation": "Les adénomes hypophysaires peuvent comprimer les voies optiques, entraînant des troubles visuels tels que l'hémianopsie bitemporale."
+        },
+        {
+          "statement": "L'hyperprolactinémie peut se manifester par une galactorrhée chez les femmes.",
+          "isTrue": true,
+          "explanation": "Chez les femmes, l'hyperprolactinémie se traduit souvent par des troubles menstruels et une galactorrhée, ce qui est un signe clinique important."
+        },
+        {
+          "statement": "La dysfonction érectile chez les hommes n'est jamais liée à l'hyperprolactinémie.",
+          "isTrue": false,
+          "explanation": "La dysfonction érectile est un des signes d'hyperprolactinémie chez les hommes, souvent associée à une baisse de libido."
+        },
+        {
+          "statement": "L'acromégalie se caractérise par un élargissement des extrémités et des modifications faciales.",
+          "isTrue": true,
+          "explanation": "L'acromégalie, due à une hypersécrétion de l'hormone de croissance, se manifeste par un élargissement des mains et des pieds, ainsi que par des changements morphologiques du visage."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754679624989_873kmgld9_2",
+      "topic": "Signes d'insuffisances antéhypophysaires",
+      "rationale": "Ce QCM aborde divers aspects des signes d'insuffisance antéhypophysaire, y compris les conséquences sur les glandes surrénales, la thyroïde et la fonction gonadique. Les propositions incluent des vérités claires ainsi que des pièges sur des conditions connexes, renforçant ainsi la compréhension des étudiants sur les dysfonctionnements hormonaux liés à l'hypophyse.",
+      "propositions": [
+        {
+          "statement": "Une diminution de la production de corticosurrénales peut être un signe d'insuffisance antéhypophysaire.",
+          "isTrue": true,
+          "explanation": "L'hypophyse antérieure produit l'ACTH, qui stimule la production de cortisol par les glandes surrénales. Une insuffisance antéhypophysaire entraîne une diminution de l'ACTH et donc une hypofonction surrénalienne."
+        },
+        {
+          "statement": "L'insuffisance antéhypophysaire ne peut jamais entraîner d'hypothyroïdie.",
+          "isTrue": false,
+          "explanation": "Une insuffisance antéhypophysaire peut entraîner une diminution de la production de TSH, ce qui provoque une hypothyroïdie, car la TSH stimule la thyroïde à produire des hormones."
+        },
+        {
+          "statement": "L'acromégalie est un signe typique d'insuffisance antéhypophysaire.",
+          "isTrue": false,
+          "explanation": "L'acromégalie résulte d'une hyperproduction de GH due à une tumeur hypophysaire, et non d'une insuffisance antéhypophysaire."
+        },
+        {
+          "statement": "Les femmes peuvent présenter des troubles menstruels en raison d'insuffisances antéhypophysaires.",
+          "isTrue": true,
+          "explanation": "Une insuffisance antéhypophysaire peut entraîner une diminution des gonadotrophines (LH et FSH), entraînant des troubles du cycle menstruel."
+        },
+        {
+          "statement": "L'insuffisance antéhypophysaire peut provoquer une perte de la libido chez les hommes en raison d'une baisse de la testostérone.",
+          "isTrue": true,
+          "explanation": "La baisse de FSH et LH due à l'insuffisance antéhypophysaire peut entraîner une hypogonadisme secondaire, causant ainsi une perte de libido."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "Des signes d’insuffisances antéhypophysaires.",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754679624989_873kmgld9_3",
+      "topic": "Hyper sécrétion hypophysaire et ses symptômes",
+      "rationale": "Ce QCM aborde les différentes pathologies liées à l'hypersécrétion hypophysaire, en se concentrant sur des symptômes variés et en incluant des exceptions et des nuances, ce qui permet d'évaluer la compréhension des étudiants sur ce sujet complexe.",
+      "propositions": [
+        {
+          "statement": "L'acromégalie est causée par une hypersécrétion de l'hormone de croissance.",
+          "isTrue": true,
+          "explanation": "L'acromégalie résulte d'une production excessive de l'hormone de croissance souvent due à une tumeur hypophysaire."
+        },
+        {
+          "statement": "Le syndrome de Cushing est exclusivement causé par une hypersécrétion de cortisol.",
+          "isTrue": false,
+          "explanation": "Le syndrome de Cushing peut être causé par une hypersécrétion de cortisol, mais peut également résulter d'autres facteurs, comme un excès d'ACTH."
+        },
+        {
+          "statement": "L'hypersécrétion de prolactine peut entraîner des symptômes tels que l'aménorrhée chez les femmes.",
+          "isTrue": true,
+          "explanation": "L'hyperprolactinémie peut provoquer des troubles menstruels tels que l'aménorrhée et l'infertilité en raison d'une insuffisance gonadotrope."
+        },
+        {
+          "statement": "Tous les patients présentant une hypersécrétion de prolactine présentent des symptômes d'insuffisance gonadotrope.",
+          "isTrue": false,
+          "explanation": "Bien que l'insuffisance gonadotrope soit fréquente, tous les patients ne présentent pas nécessairement des symptômes cliniques visibles."
+        },
+        {
+          "statement": "Le syndrome de Cushing et l'acromégalie peuvent tous deux provoquer une obésité centripète.",
+          "isTrue": true,
+          "explanation": "Le syndrome de Cushing est bien connu pour entraîner une obésité centripète, tandis que l'acromégalie peut également contribuer à des changements de la composition corporelle."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "Des symptômes évoquant une hyper sécrétion hypophysaire (Acromégalie, syndrome de Cushing). L’hypersécrétion de",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    1,
+    0,
+    3,
+    2
+  ],
+  "currentIndex": 3,
+  "total": 4,
+  "contextSnippet": "1.     Syndrome tumoral ayant fait découvrir une lésion de la région sellaire\n"
+}

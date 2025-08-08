@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754680100984_naxov4y1r",
+  "questions": [
+    {
+      "id": "qcm_session_1754680100984_naxov4y1r_0",
+      "topic": "Évaluation des connaissances sur les tumeurs intracrâniennes",
+      "rationale": "Ce QCM couvre divers aspects des tumeurs intracrâniennes, y compris la distinction entre tumeurs bénignes et malignes, les caractéristiques épidémiologiques des méningiomes, ainsi que la prévalence des tumeurs métastatiques. Les propositions sont conçues pour évaluer la compréhension des étudiants sur les tumeurs intracrâniennes, en incluant des cas particuliers et des exceptions.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs primitives intracrâniennes sont toujours malignes.",
+          "isTrue": false,
+          "explanation": "Les tumeurs primitives intracrâniennes peuvent être bénignes, comme les méningiomes, qui sont généralement bien circonscrits et d'évolution lente."
+        },
+        {
+          "statement": "Les méningiomes sont plus fréquents chez les hommes que chez les femmes.",
+          "isTrue": false,
+          "explanation": "Les méningiomes présentent une prédominance féminine, avec un sex ratio favorisant les femmes."
+        },
+        {
+          "statement": "Les tumeurs métastatiques intracrâniennes représentent la majorité des tumeurs cérébrales chez l'adulte.",
+          "isTrue": true,
+          "explanation": "Les métastases cérébrales sont les tumeurs intracrâniennes les plus fréquentes, surpassant les tumeurs primitives en incidence."
+        },
+        {
+          "statement": "Les gliomes sont des tumeurs bénignes et de bon pronostic.",
+          "isTrue": false,
+          "explanation": "Les gliomes, en particulier les glioblastomes, sont souvent malins, rapidement évolutifs et associés à un mauvais pronostic."
+        },
+        {
+          "statement": "La prise de progestatifs peut favoriser la genèse des méningiomes.",
+          "isTrue": true,
+          "explanation": "Une association a été observée entre la prise d'acétate de cyprotérone et le développement de méningiomes, suggérant une influence hormonale."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    },
+    {
+      "id": "qcm_session_1754680100984_naxov4y1r_1",
+      "topic": "Évaluation des tumeurs cérébrales de bas grade",
+      "rationale": "Ce QCM évalue la compréhension des caractéristiques et des traitements des tumeurs cérébrales de bas grade, en se concentrant sur les différences entre les grades 1 et 2, ainsi que sur les implications cliniques de ces caractéristiques. Les propositions sont conçues pour tester des connaissances nuancées et éviter les simplifications excessives.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs de grade 1 peuvent être mixtes, kystiques ou solides et nécessitent une chirurgie pour la guérison.",
+          "isTrue": true,
+          "explanation": "Les tumeurs de grade 1, souvent infra-tentorielle, peuvent être de nature mixte et la guérison est possible avec une résection complète."
+        },
+        {
+          "statement": "Les tumeurs de grade 2 se présentent toujours avec un hypersignal T2 et un hyposignal T1.",
+          "isTrue": false,
+          "explanation": "Bien que les tumeurs de grade 2 montrent souvent un hypersignal T2 et un hyposignal T1, il peut exister des variations dans l'imagerie."
+        },
+        {
+          "statement": "Les gliomes de grade 2 n'ont pas de prise de contraste sur les examens d'imagerie.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 2 sont caractérisés par l'absence de prise de contraste, ce qui les distingue des grades supérieurs."
+        },
+        {
+          "statement": "La chirurgie pour les gliomes de grade 2 est généralement une résection minimale.",
+          "isTrue": false,
+          "explanation": "La chirurgie pour les gliomes de grade 2 doit être maximaliste lorsque cela est possible pour optimiser la gestion de la maladie."
+        },
+        {
+          "statement": "Les gliomes de grade 2 progressent inéluctablement vers des anaplasies de grades 3 et 4.",
+          "isTrue": true,
+          "explanation": "Les gliomes de grade 2 sont associés à une progression inéluctable vers des formes plus agressives, ce qui souligne l'importance d'une prise en charge appropriée."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754680100984_naxov4y1r_2",
+      "topic": "Pathologies respiratoires",
+      "rationale": "Ce QCM couvre les aspects clés de l'asthme, y compris la pathophysiologie, le diagnostic, et le traitement. Il met en lumière les idées fausses courantes et clarifie le rôle des différents traitements, assurant une compréhension approfondie des enjeux cliniques associés à cette maladie respiratoire.",
+      "propositions": [
+        {
+          "statement": "L'asthme est une maladie inflammatoire chronique des voies respiratoires.",
+          "isTrue": true,
+          "explanation": "L'asthme est caractérisé par une inflammation et une hyperréactivité bronchique, provoquant des symptômes respiratoires récurrents."
+        },
+        {
+          "statement": "Tous les patients asthmatiques souffrent de dyspnée seulement lors d'efforts physiques.",
+          "isTrue": false,
+          "explanation": "Les patients asthmatiques peuvent ressentir de la dyspnée même au repos ou en réponse à des déclencheurs environnementaux, pas uniquement à l'effort."
+        },
+        {
+          "statement": "La spirométrie est l'examen de choix pour diagnostiquer l'asthme.",
+          "isTrue": true,
+          "explanation": "La spirométrie permet de mesurer le volume et le débit d'air, aidant à démontrer une obstruction réversible typique de l'asthme."
+        },
+        {
+          "statement": "Les corticostéroïdes inhalés ne sont pas recommandés pour le traitement de l'asthme sévère.",
+          "isTrue": false,
+          "explanation": "Les corticostéroïdes inhalés sont en fait le traitement de première ligne pour les asthmatiques sévères et permettent de contrôler l'inflammation."
+        },
+        {
+          "statement": "Les bronchodilatateurs à action rapide sont utilisés pour le soulagement des symptômes aigus de l'asthme.",
+          "isTrue": true,
+          "explanation": "Ils agissent rapidement pour dilater les voies respiratoires et soulager les symptômes aigus d'asthme, mais ne traitent pas l'inflammation sous-jacente."
+        }
+      ],
+      "chunkId": "chunk_2",
+      "chunkHeading": "HAUT",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    0,
+    1,
+    2
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": "Tumeurs intracrâniennes IC-299\nConnaître les principaux types et localisations des tumeurs intracrâniennes\nConnaître la définition des tumeurs primitives intracrâniennes : système nerveux central et annexes\nConnaître les principaux types histologiques des tumeurs cérébrales\nConnaître l'épidémiologie des différents types tumeurs primitives intracrâniennes\nConnaître les principaux tableaux cliniques devant faire évoquer une tumeur intracrânienne\nConnaître la stratégie d'exploration en imagerie devant une tumeur intracrânienne de l'adulte\nDécrire la recherche systématique de cancer primitif à effectuer devant une métastase cérébrale\nSavoir évoquer une hypertension intracrânienne (HTIC) et une épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principes de la prise en charge de l'HTIC et de l'épilepsie chez un patient porteur d'une tumeur intra-cérébrale\nConnaître les principaux types et localisations des tumeurs intracrâniennes OIC-\n299-01-A\n·        Tumeur primi"
+}

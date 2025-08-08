@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Upload, FileText, Wand2, ChevronDown, Search } from "lucide-react";
+import Link from "next/link";
+import { Upload, FileText, Wand2, ChevronDown, Search, TrendingUp } from "lucide-react";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import clsx from "clsx";
@@ -11,6 +12,7 @@ export default function HomePage() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [sessions, setSessions] = useState<any[]>([]);
+  const [domainStats, setDomainStats] = useState<any[]>([]);
   const { register, handleSubmit, setValue, watch } = useForm();
   const tone = watch("tone");
   const numQuestions = watch("numQuestions");
@@ -64,6 +66,10 @@ export default function HomePage() {
         sessionStorage.removeItem("oppie-summary");
       } catch {}
       sessionStorage.setItem("oppie-session-id", json.sessionId);
+      sessionStorage.setItem("oppie-session", JSON.stringify({
+        sessionId: json.sessionId,
+        filename: data.filename
+      }));
       // Push directly to first step; background generation will continue
       router.push(`/quiz/0?sid=${encodeURIComponent(json.sessionId)}`);
     } catch (e: any) {
@@ -75,8 +81,10 @@ export default function HomePage() {
 
   useEffect(() => {
     fetch("/api/sessions").then(r => r.json()).then(setSessions).catch(() => setSessions([]));
+    fetch("/api/domains/stats").then(r => r.json()).then(data => setDomainStats(data.stats || [])).catch(() => setDomainStats([]));
     const iv = setInterval(() => {
       fetch("/api/sessions").then(r => r.json()).then(setSessions).catch(() => {});
+      fetch("/api/domains/stats").then(r => r.json()).then(data => setDomainStats(data.stats || [])).catch(() => {});
     }, 5000);
     return () => clearInterval(iv);
   }, []);
@@ -188,49 +196,80 @@ export default function HomePage() {
             </form>
 
             {isLoading && (
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <div key={i} className="rounded-md border border-slate-700 bg-slate-900 p-4 animate-pulse">
-                    <div className="h-4 w-2/3 bg-slate-700 rounded mb-3" />
-                    <div className="space-y-2">
-                      <div className="h-3 w-11/12 bg-slate-800 rounded" />
-                      <div className="h-3 w-10/12 bg-slate-800 rounded" />
-                      <div className="h-3 w-9/12 bg-slate-800 rounded" />
-                    </div>
-                  </div>
-                ))}
+              <div className="mt-6 text-center">
+                <div className="inline-flex items-center gap-2 text-mint-400">
+                  <div className="w-4 h-4 border-2 border-mint-400 border-t-transparent rounded-full animate-spin" />
+                  Génération en cours...
+                </div>
               </div>
             )}
           </div>
 
-          {/* Side widgets */}
+          {/* Side widgets - Top right */}
           <div className="col-span-12 lg:col-span-5 grid gap-5">
-            <div className="rounded-lg border border-slate-800 bg-slate-900/70 p-5">
-              <h3 className="text-lg mb-2">Raccourcis</h3>
-              <ul className="text-sm text-slate-300 space-y-2">
-                <li>• Générer rapidement: Importer un PDF et cliquer Générer</li>
-                <li>• Valider chaque QCM pour voir corrections et justifications</li>
-                <li>• Terminer la session pour accéder au bilan</li>
-              </ul>
-            </div>
-            <div className="rounded-lg border border-slate-800 bg-slate-900/70 p-5">
-              <h3 className="text-lg mb-2">Sessions récentes</h3>
-              {sessions.length === 0 ? (
-                <p className="text-sm text-slate-400">Aucune session récente trouvée.</p>
-              ) : (
-                <ul className="divide-y divide-slate-800 text-sm">
-                  {sessions.slice(0, 10).map((s) => (
-                    <li key={s.id} className="py-2 flex items-center justify-between">
-                      <div className="min-w-0 pr-3">
-                        <div className="truncate text-slate-200">{s.filename}</div>
-                        <div className="text-xs text-slate-400">{new Date(s.createdAt).toLocaleString()} • {s.numQuestions} q • {s.tone}</div>
-                      </div>
-                      <span className={`text-xs px-2 py-0.5 rounded border ${s.status === 'completed' ? 'border-emerald-500 text-emerald-300' : s.status === 'processing' ? 'border-amber-500 text-amber-300' : 'border-rose-500 text-rose-300'}`}>
-                        {s.status}
-                      </span>
-                    </li>
-                  ))}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <div className="rounded-lg border border-slate-800 bg-slate-900/70 p-5">
+                <h3 className="text-lg mb-2">Raccourcis</h3>
+                <ul className="text-sm text-slate-300 space-y-2">
+                  <li>• Générer rapidement: Importer un PDF et cliquer Générer</li>
+                  <li>• Valider chaque QCM pour voir corrections et justifications</li>
+                  <li>• Terminer la session pour accéder au bilan</li>
+                  <li>• <Link href="/domains" className="text-mint-400 hover:text-mint-300">Voir l'évolution par domaine</Link></li>
                 </ul>
+              </div>
+              <div className="rounded-lg border border-slate-800 bg-slate-900/70 p-5">
+                <h3 className="text-lg mb-2">Sessions récentes</h3>
+                {sessions.length === 0 ? (
+                  <p className="text-sm text-slate-400">Aucune session récente trouvée.</p>
+                ) : (
+                  <ul className="divide-y divide-slate-800 text-sm">
+                    {sessions.slice(0, 5).map((s) => (
+                      <li key={s.id} className="py-2 flex items-center justify-between">
+                        <div className="min-w-0 pr-3">
+                          <div className="truncate text-slate-200 text-xs">{s.filename}</div>
+                          <div className="text-xs text-slate-400">{new Date(s.createdAt).toLocaleDateString()} • {s.numQuestions}q</div>
+                        </div>
+                        <span className={`text-xs px-1.5 py-0.5 rounded border ${s.status === 'completed' ? 'border-emerald-500 text-emerald-300' : s.status === 'processing' ? 'border-amber-500 text-amber-300' : 'border-rose-500 text-rose-300'}`}>
+                          {s.status}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Domain evolution below all cards */}
+          <div className="col-span-12 mt-6">
+            <div className="rounded-lg border border-slate-800 bg-slate-900/70 p-5">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="h-8 w-8 grid place-items-center rounded bg-slate-600 text-white"><TrendingUp size={16} /></div>
+                <h2 className="text-xl">Évolution par domaine</h2>
+              </div>
+              {domainStats.length === 0 ? (
+                <p className="text-sm text-slate-400">Aucune donnée de domaine trouvée.</p>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                  {domainStats.slice(0, 8).map((domain) => (
+                    <div key={domain.key} className="flex items-center gap-3 p-3 rounded border border-slate-700 bg-slate-800/50">
+                      <div 
+                        className="w-4 h-4 rounded-full shrink-0" 
+                        style={{ backgroundColor: domain.color }}
+                      />
+                      <div className="min-w-0 flex-1">
+                        <div className="text-sm font-medium truncate">{domain.name}</div>
+                        <div className="text-xs text-slate-400">
+                          {domain.totalSessions} session{domain.totalSessions > 1 ? 's' : ''} • 
+                          {(domain.averageScore * 100).toFixed(0)}% moy
+                        </div>
+                      </div>
+                      <div className="text-xs text-slate-400 shrink-0">
+                        {domain.lastSession ? new Date(domain.lastSession).toLocaleDateString() : 'Jamais'}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               )}
             </div>
           </div>
