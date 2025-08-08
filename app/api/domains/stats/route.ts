@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getAllDomainStats, getDomainEvolution } from "@/lib/domains";
+import { getAllDomainStatsAsync, getDomainEvolutionAsync } from "@/lib/domains";
 
 export async function GET(request: NextRequest) {
   try {
@@ -7,12 +7,10 @@ export async function GET(request: NextRequest) {
     const domain = searchParams.get('domain');
 
     if (domain) {
-      // Get specific domain evolution
-      const evolution = getDomainEvolution(domain);
+      const evolution = await getDomainEvolutionAsync(domain);
       return NextResponse.json(evolution);
     } else {
-      // Get all domain stats
-      const stats = getAllDomainStats();
+      const stats = await getAllDomainStatsAsync();
       return NextResponse.json({ stats });
     }
 

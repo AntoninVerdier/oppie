@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { loadDomainScoresKV, saveDomainScoresKV } from '@/lib/storage';
 
 export interface Domain {
   name: string;
@@ -66,9 +67,13 @@ export function loadDomainScores(): DomainScores {
     const scoresData = fs.readFileSync(scoresPath, 'utf8');
     return JSON.parse(scoresData);
   } catch (error) {
-    console.error('Error loading domain scores:', error);
+    // In production on Vercel, filesystem is read-only; caller should prefer async KV versions
     return { scores: [], lastUpdated: null };
   }
+}
+
+export async function loadDomainScoresAsync(): Promise<DomainScores> {
+  return loadDomainScoresKV();
 }
 
 // Save domain scores
@@ -77,21 +82,26 @@ export function saveDomainScores(scores: DomainScores): void {
     const scoresPath = path.join(process.cwd(), 'data', 'domain-scores.json');
     scores.lastUpdated = new Date().toISOString();
     fs.writeFileSync(scoresPath, JSON.stringify(scores, null, 2));
-  } catch (error) {
-    console.error('Error saving domain scores:', error);
-  }
+  } catch {}
+}
+
+export async function saveDomainScoresAsync(scores: DomainScores): Promise<void> {
+  await saveDomainScoresKV(scores);
 }
 
 // Add a new domain score
 export function addDomainScore(score: Omit<DomainScore, 'timestamp'>): void {
   const scores = loadDomainScores();
-  const newScore: DomainScore = {
-    ...score,
-    timestamp: new Date().toISOString()
-  };
-  
+  const newScore: DomainScore = { ...score, timestamp: new Date().toISOString() };
   scores.scores.push(newScore);
   saveDomainScores(scores);
+}
+
+export async function addDomainScoreAsync(score: Omit<DomainScore, 'timestamp'>): Promise<void> {
+  const scores = await loadDomainScoresAsync();
+  const newScore: DomainScore = { ...score, timestamp: new Date().toISOString() };
+  scores.scores.push(newScore);
+  await saveDomainScoresAsync(scores);
 }
 
 // Get domain evolution data
@@ -121,6 +131,27 @@ export function getDomainEvolution(domainKey: string): {
   };
 }
 
+export async function getDomainEvolutionAsync(domainKey: string): Promise<{
+  scores: number[];
+  dates: string[];
+  averageScore: number;
+  totalSessions: number;
+}> {
+  const scores = await loadDomainScoresAsync();
+  const domainScores = scores.scores
+    .filter(score => score.domain === domainKey)
+    .sort((a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());
+
+  const scoreValues = domainScores.map(s => s.averageScore);
+  const dates = domainScores.map(s => s.timestamp);
+
+  const averageScore = scoreValues.length > 0
+    ? scoreValues.reduce((sum, score) => sum + score, 0) / scoreValues.length
+    : 0;
+
+  return { scores: scoreValues, dates, averageScore, totalSessions: domainScores.length };
+}
+
 // Get all domains with their stats
 export function getAllDomainStats(): Array<{
   key: string;
@@ -147,5 +178,30 @@ export function getAllDomainStats(): Array<{
     });
   }
   
+  return stats.sort((a, b) => b.totalSessions - a.totalSessions);
+}
+
+export async function getAllDomainStatsAsync(): Promise<Array<{
+  key: string;
+  name: string;
+  color: string;
+  averageScore: number;
+  totalSessions: number;
+  lastSession: string | null;
+}>> {
+  const mapping = loadDomainMapping();
+  const stats: any[] = [];
+  for (const [domainKey, domain] of Object.entries(mapping.domains)) {
+    const evolution = await getDomainEvolutionAsync(domainKey);
+    const lastSession = evolution.dates.length > 0 ? evolution.dates[evolution.dates.length - 1] : null;
+    stats.push({
+      key: domainKey,
+      name: domain.name,
+      color: domain.color,
+      averageScore: evolution.averageScore,
+      totalSessions: evolution.totalSessions,
+      lastSession,
+    });
+  }
   return stats.sort((a, b) => b.totalSessions - a.totalSessions);
 }

@@ -1,15 +1,12 @@
 import { NextResponse } from "next/server";
-import { promises as fs } from "fs";
-import path from "path";
+import { loadSessions } from "@/lib/storage";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 export async function GET() {
   try {
-    const filePath = path.join(process.cwd(), "data", "sessions.json");
-    const raw = await fs.readFile(filePath, "utf8");
-    const list = JSON.parse(raw);
+    const list = await loadSessions();
     if (!Array.isArray(list)) return NextResponse.json([]);
     // newest first
     list.sort((a: any, b: any) => (new Date(b.createdAt || b.timestamp || 0).getTime()) - (new Date(a.createdAt || a.timestamp || 0).getTime()));

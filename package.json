@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/kv": "^3.0.0",
     "autoprefixer": "^10.4.19",
     "clsx": "^2.1.1",
     "lucide-react": "^0.453.0",

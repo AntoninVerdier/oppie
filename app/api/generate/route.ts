@@ -2,8 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import OpenAI from "openai";
 import { z } from "zod";
 import { GeneratedQuestion } from "@/types/qcm";
-import { promises as fs } from "fs";
-import path from "path";
+import { loadSessions, saveSessions } from "@/lib/storage";
 import { randomUUID } from "crypto";
 
 
@@ -138,15 +137,8 @@ type SessionUpdate = {
 };
 
 async function upsertSession(update: SessionUpdate) {
-  const dir = path.join(process.cwd(), "data");
-  const filePath = path.join(dir, "sessions.json");
-  await fs.mkdir(dir, { recursive: true });
-  let list: any[] = [];
-  try {
-    const raw = await fs.readFile(filePath, "utf8");
-    list = JSON.parse(raw);
-    if (!Array.isArray(list)) list = [];
-  } catch {}
+  let list: any[] = await loadSessions();
+  if (!Array.isArray(list)) list = [];
 
   if (update.id) {
     const idx = list.findIndex((s: any) => s.id === update.id);
@@ -166,7 +158,6 @@ async function upsertSession(update: SessionUpdate) {
       });
     }
   } else {
-    // fallback: update last processing
     for (let i = list.length - 1; i >= 0; i--) {
       if (list[i]?.status === "processing") {
         list[i] = { ...list[i], ...update };
@@ -175,7 +166,7 @@ async function upsertSession(update: SessionUpdate) {
     }
   }
 
-  await fs.writeFile(filePath, JSON.stringify(list, null, 2), "utf8");
+  await saveSessions(list);
 }
 
 

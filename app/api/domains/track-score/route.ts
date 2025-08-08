@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getDomainsForFile, addDomainScore } from "@/lib/domains";
+import { getDomainsForFile, addDomainScoreAsync } from "@/lib/domains";
 
 export async function POST(request: NextRequest) {
   try {
@@ -18,18 +18,16 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ message: "No domains mapped for this file" });
     }
 
-    // Add score for each domain this file belongs to
-    for (const domain of domains) {
-      addDomainScore({
-        domain,
-        sessionId,
-        filename,
-        score,
-        totalQuestions,
-        answeredQuestions,
-        averageScore
-      });
-    }
+    // Add score for each domain this file belongs to (KV-safe)
+    await Promise.all(domains.map((domain) => addDomainScoreAsync({
+      domain,
+      sessionId,
+      filename,
+      score,
+      totalQuestions,
+      answeredQuestions,
+      averageScore,
+    })));
 
     return NextResponse.json({ 
       message: "Domain scores tracked successfully",

@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { promises as fs } from "fs";
-import path from "path";
+import { readSessionFile, loadSessions, saveSessions } from "@/lib/storage";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -14,25 +13,21 @@ export async function GET(req: NextRequest) {
     const idx = parseInt(indexStr, 10);
     if (Number.isNaN(idx) || idx < 0) return NextResponse.json({ error: "Bad index" }, { status: 400 });
     
-    const filePath = path.join(process.cwd(), "data", `session-${sessionId}.json`);
-    const raw = await fs.readFile(filePath, "utf8");
-    const j = JSON.parse(raw);
+    const j = await readSessionFile(sessionId);
+    if (!j) return NextResponse.json({ error: "Session not found" }, { status: 404 });
     const q = j.questions?.[idx];
     const available = j.questions?.length || 0;
     const total = j.total || j.numQuestions;
     
     // Auto-complete if generation finished but status not updated
     if (available >= total) {
-      // Update global sessions list
-      const sessionsPath = path.join(process.cwd(), "data", "sessions.json");
       try {
-        const sessionsRaw = await fs.readFile(sessionsPath, "utf8");
-        const sessions = JSON.parse(sessionsRaw);
+        const sessions = await loadSessions();
         const sessionIndex = sessions.findIndex((s: any) => s.id === sessionId);
         if (sessionIndex !== -1) {
           sessions[sessionIndex].status = "completed";
           sessions[sessionIndex].available = total;
-          await fs.writeFile(sessionsPath, JSON.stringify(sessions, null, 2), "utf8");
+          await saveSessions(sessions);
         }
       } catch {}
     }

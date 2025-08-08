@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import { randomUUID } from "crypto";
 import { GeneratedQuestion } from "@/types/qcm";
+import { loadSessions, saveSessions, writeSessionFile } from "@/lib/storage";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -256,15 +257,9 @@ export async function POST(request: NextRequest) {
     };
 
     // Save session metadata
-    const sessionsPath = path.join(process.cwd(), "data", "sessions.json");
-    let sessions = [];
-    try {
-      sessions = JSON.parse(fs.readFileSync(sessionsPath, "utf8"));
-    } catch {
-      sessions = [];
-    }
+    let sessions = await loadSessions();
     sessions.unshift(sessionData);
-    fs.writeFileSync(sessionsPath, JSON.stringify(sessions, null, 2));
+    await saveSessions(sessions);
 
     // Generate first QCM from the first chunk in random order
     const firstChunkIndex = chunkOrder[0];
@@ -421,7 +416,6 @@ EXEMPLE DE FORMAT EXACT:
     };
 
     // Save first QCM to session file
-    const sessionFilePath = path.join(process.cwd(), "data", `session-${sessionId}.json`);
     const sessionFileData = {
       sessionId,
       questions: [question],
@@ -430,13 +424,13 @@ EXEMPLE DE FORMAT EXACT:
       total: numQuestions,
       contextSnippet: firstChunk.content.substring(0, 1000)
     };
-    fs.writeFileSync(sessionFilePath, JSON.stringify(sessionFileData, null, 2));
+    await writeSessionFile(sessionId, sessionFileData);
 
     // Update session status
     sessionData.available = 1;
     sessionData.usedChunks = [firstChunkIndex];
     sessions[0] = sessionData;
-    fs.writeFileSync(sessionsPath, JSON.stringify(sessions, null, 2));
+    await saveSessions(sessions);
 
     return NextResponse.json({
       sessionId,

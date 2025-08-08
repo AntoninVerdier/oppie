@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import OpenAI from "openai";
 import fs from "fs";
 import path from "path";
+import { loadSessions, saveSessions, readSessionFile, writeSessionFile } from "@/lib/storage";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -51,28 +52,18 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Session ID required" }, { status: 400 });
     }
 
-    // Load session data
-    const sessionsPath = path.join(process.cwd(), "data", "sessions.json");
-    let sessions = [];
-    try {
-      sessions = JSON.parse(fs.readFileSync(sessionsPath, "utf8"));
-    } catch {
-      return NextResponse.json({ error: "Sessions file not found" }, { status: 404 });
-    }
-
+    // Load session data (KV or file)
+    let sessions = await loadSessions();
     const sessionIndex = sessions.findIndex((s: any) => s.id === sessionId);
     if (sessionIndex === -1) {
       return NextResponse.json({ error: "Session not found" }, { status: 404 });
     }
 
     const session = sessions[sessionIndex];
-    const sessionFilePath = path.join(process.cwd(), "data", `session-${sessionId}.json`);
     
-    // Load session file
-    let sessionFileData;
-    try {
-      sessionFileData = JSON.parse(fs.readFileSync(sessionFilePath, "utf8"));
-    } catch {
+    // Load session file (KV or file)
+    const sessionFileData = await readSessionFile(sessionId);
+    if (!sessionFileData) {
       return NextResponse.json({ error: "Session file not found" }, { status: 404 });
     }
 
@@ -267,7 +258,7 @@ EXEMPLE DE FORMAT EXACT:
       sessionFileData.usedChunks.push(nextChunkIndex);
     }
     sessionFileData.currentIndex = sessionFileData.questions.length - 1;
-    fs.writeFileSync(sessionFilePath, JSON.stringify(sessionFileData, null, 2));
+    await writeSessionFile(sessionId, sessionFileData);
 
     // Update global session status
     session.available = sessionFileData.questions.length;
@@ -276,7 +267,7 @@ EXEMPLE DE FORMAT EXACT:
       session.status = "completed";
     }
     sessions[sessionIndex] = session;
-    fs.writeFileSync(sessionsPath, JSON.stringify(sessions, null, 2));
+    await saveSessions(sessions);
 
     return NextResponse.json({
       status: session.status,
@@ -290,19 +281,12 @@ EXEMPLE DE FORMAT EXACT:
     
     // Mark session as failed if we can't continue
     try {
-      // Reload sessions to get current state
-      const sessionsPath = path.join(process.cwd(), "data", "sessions.json");
-      let sessions = [];
-      try {
-        sessions = JSON.parse(fs.readFileSync(sessionsPath, "utf8"));
-        const sessionIndex = sessions.findIndex((s: any) => s.id === sessionId);
-        if (sessionIndex !== -1) {
-          sessions[sessionIndex].status = "failed";
-          sessions[sessionIndex].error = error.message || "Failed to continue generation";
-          fs.writeFileSync(sessionsPath, JSON.stringify(sessions, null, 2));
-        }
-      } catch (updateError) {
-        console.error("Failed to update session status:", updateError);
+      let sessions = await loadSessions();
+      const idx = sessions.findIndex((s: any) => s.id === sessionId);
+      if (idx !== -1) {
+        sessions[idx].status = "failed";
+        sessions[idx].error = error.message || "Failed to continue generation";
+        await saveSessions(sessions);
       }
     } catch (updateError) {
       console.error("Failed to update session status:", updateError);
