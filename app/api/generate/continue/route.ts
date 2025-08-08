@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import OpenAI from "openai";
 import fs from "fs";
-import path from "path";
 import { loadSessions, saveSessions, readSessionFile, writeSessionFile } from "@/lib/storage";
 
 export const dynamic = "force-dynamic";
@@ -73,7 +72,7 @@ export async function POST(request: NextRequest) {
       session.status = "completed";
       session.available = session.total;
       sessions[sessionIndex] = session;
-      fs.writeFileSync(sessionsPath, JSON.stringify(sessions, null, 2));
+      await saveSessions(sessions);
       return NextResponse.json({ status: "completed" });
     }
 
