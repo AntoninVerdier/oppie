@@ -49,8 +49,9 @@ export default function HomePage() {
     setError(null);
     try {
       const form = new FormData();
-      if (!data.filename) throw new Error("Veuillez sélectionner un fichier depuis le dossier data.");
-      form.append("filename", data.filename);
+      const effectiveFilename = data.filename || selectedFile;
+      if (!effectiveFilename) throw new Error("Veuillez sélectionner un fichier depuis le dossier data.");
+      form.append("filename", effectiveFilename);
       form.append("numQuestions", data.numQuestions || "8");
       form.append("tone", data.tone || "concis");
 
@@ -68,7 +69,7 @@ export default function HomePage() {
       sessionStorage.setItem("oppie-session-id", json.sessionId);
       sessionStorage.setItem("oppie-session", JSON.stringify({
         sessionId: json.sessionId,
-        filename: data.filename
+        filename: effectiveFilename
       }));
       // Push directly to first step; background generation will continue
       router.push(`/quiz/0?sid=${encodeURIComponent(json.sessionId)}`);

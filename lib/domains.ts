@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { loadDomainScoresKV, saveDomainScoresKV } from '@/lib/storage';
+import { getDomainsForItemNumber } from '@/lib/items';
 
 export interface Domain {
   name: string;
@@ -40,18 +41,53 @@ export function loadDomainMapping(): DomainMapping {
   }
 }
 
+export function ensureDomainsExist(domainKeys: string[]): void {
+  // On Vercel (read-only FS), skip writing and rely on pre-generated mapping
+  if (process.env.VERCEL || process.env.KV_REST_API_URL) return;
+  try {
+    const mappingPath = path.join(process.cwd(), 'data', 'domain-mapping.json');
+    const raw = fs.readFileSync(mappingPath, 'utf8');
+    const mapping: DomainMapping = JSON.parse(raw);
+    let changed = false;
+    for (const key of domainKeys) {
+      if (!mapping.domains[key]) {
+        // Create a readable name from key
+        const name = key
+          .replace(/_/g, ' ')
+          .replace(/\b\w/g, (m) => m.toUpperCase());
+        // Deterministic color pick (simple hash -> hue)
+        const hash = [...key].reduce((a, c) => a + c.charCodeAt(0), 0);
+        const hue = hash % 360;
+        const color = `hsl(${hue} 70% 50%)`;
+        mapping.domains[key] = { name, color, files: [] } as any;
+        changed = true;
+      }
+    }
+    if (changed) {
+      fs.writeFileSync(mappingPath, JSON.stringify(mapping, null, 2));
+    }
+  } catch (e) {
+    // Best-effort; if file missing we skip silently in local
+  }
+}
+
 // Get domains for a specific filename
 export function getDomainsForFile(filename: string): string[] {
-  const mapping = loadDomainMapping();
-  const domains: string[] = [];
-  
-  for (const [domainKey, domain] of Object.entries(mapping.domains)) {
-    if (domain.files.includes(filename)) {
-      domains.push(domainKey);
-    }
+  // First, try to infer item number from filename prefix `NNN_...`
+  const match = filename.match(/^(\d{1,3})_/);
+  if (match) {
+    const item = parseInt(match[1], 10);
+    const fromCsv = getDomainsForItemNumber(item);
+    if (fromCsv && fromCsv.length > 0) return fromCsv;
   }
-  
-  return domains;
+
+  // Fallback to static mapping file
+  const mapping = loadDomainMapping();
+  const results: string[] = [];
+  for (const [domainKey, domain] of Object.entries(mapping.domains)) {
+    if (domain.files.includes(filename)) results.push(domainKey);
+  }
+  return results;
 }
 
 // Get domain info

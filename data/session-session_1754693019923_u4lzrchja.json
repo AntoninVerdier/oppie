@@ -1,0 +1,118 @@
+{
+  "sessionId": "session_1754693019923_u4lzrchja",
+  "questions": [
+    {
+      "id": "qcm_session_1754693019923_u4lzrchja_0",
+      "topic": "Tumeurs primitives intracrâniennes",
+      "rationale": "Ce QCM couvre divers sous-types de tumeurs intracrâniennes, mettant en lumière des caractéristiques spécifiques de chacun. Il permet de tester la connaissance des étudiants sur ces différentes entités tumorales.",
+      "propositions": [
+        {
+          "statement": "Les neurinomes se développent à partir des cellules de Schwann des nerfs crâniens.",
+          "isTrue": true,
+          "explanation": "Les neurinomes proviennent des cellules de Schwann."
+        },
+        {
+          "statement": "Les épendymomes surviennent principalement chez les adultes jeunes.",
+          "isTrue": false,
+          "explanation": "Les épendymomes surviennent surtout chez les enfants."
+        },
+        {
+          "statement": "Les médulloblastomes se localisent principalement au niveau du vermis du cervelet.",
+          "isTrue": true,
+          "explanation": "Les médulloblastomes se trouvent majoritairement dans le vermis du cervelet."
+        },
+        {
+          "statement": "Les hémangioblastomes sont toujours malins.",
+          "isTrue": false,
+          "explanation": "Les hémangioblastomes sont des tumeurs vasculaires bénignes."
+        },
+        {
+          "statement": "Les schwannomes vestibulaires naissent à partir du nerf optique.",
+          "isTrue": false,
+          "explanation": "Les schwannomes vestibulaires naissent du nerf vestibulaire."
+        }
+      ],
+      "chunkId": "chunk_3",
+      "chunkHeading": "GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754693019923_u4lzrchja_1",
+      "topic": "Classification des gliomes bas grade",
+      "rationale": "Ce QCM couvre différents aspects des gliomes bas grade, en abordant l'âge des patients, les caractéristiques radiologiques, les stratégies de traitement et les résultats attendus. Les propositions A, B, C, D et E fournissent des informations pertinentes sur ce sujet.",
+      "propositions": [
+        {
+          "statement": "Les gliomes bas grade sont plus fréquents chez les patients de moins de 20 ans.",
+          "isTrue": false,
+          "explanation": "Les gliomes bas grade sont plus fréquents chez les patients de 20-40 ans."
+        },
+        {
+          "statement": "Les gliomes bas grade sont généralement infra-tentoriels et présentent un aspect mixte kystique/solide.",
+          "isTrue": true,
+          "explanation": "C'est une caractéristique des gliomes bas grade."
+        },
+        {
+          "statement": "Une résection complète des gliomes bas grade entraîne généralement une guérison.",
+          "isTrue": true,
+          "explanation": "La résection complète peut conduire à la guérison dans ces cas."
+        },
+        {
+          "statement": "Les gliomes bas grade présentent un hypersignal en T2 et un hyposignal en T1.",
+          "isTrue": true,
+          "explanation": "C'est une caractéristique des gliomes bas grade."
+        },
+        {
+          "statement": "Les gliomes bas grade ne montrent jamais de rehaussement après injection de contraste.",
+          "isTrue": false,
+          "explanation": "Certains gliomes bas grade peuvent montrer un rehaussement après contraste, bien que ce soit moins fréquent que dans les gliomes de haut grade."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "BAS GRADE",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754693019923_u4lzrchja_2",
+      "topic": "Tumeurs intracrâniennes",
+      "rationale": "Ce QCM couvre les principaux types de tumeurs intracrâniennes, leurs caractéristiques histologiques, et les différences entre les tumeurs primitives et secondaires. Les justifications détaillées fournissent des explications claires pour chaque proposition.",
+      "propositions": [
+        {
+          "statement": "Les tumeurs intracrâniennes peuvent être primitives ou secondaires",
+          "isTrue": true,
+          "explanation": "Les tumeurs intracrâniennes peuvent être primitives, issues d'un tissu intracrânien, ou secondaires, résultant de la dissémination d'une tumeur provenant d'un autre organe."
+        },
+        {
+          "statement": "Les tumeurs intra parenchymateuses se développent à l'extérieur de l'encéphale lui-même",
+          "isTrue": false,
+          "explanation": "Les tumeurs intra parenchymateuses se développent à l'intérieur de l'encéphale lui-même."
+        },
+        {
+          "statement": "Les tumeurs bénignes ont généralement un bon pronostic",
+          "isTrue": true,
+          "explanation": "En général, les tumeurs bénignes sont bien circonscrites, évoluent lentement et ont un meilleur pronostic que les tumeurs malignes."
+        },
+        {
+          "statement": "Les gliomes sont les tumeurs intracrâniennes les plus fréquentes",
+          "isTrue": true,
+          "explanation": "Les gliomes sont parmi les types histologiques les plus fréquents de tumeurs intracrâniennes."
+        },
+        {
+          "statement": "Les méningiomes se développent à partir des cellules arachnoïdiennes",
+          "isTrue": true,
+          "explanation": "Les méningiomes se développent à partir des cellules arachnoïdiennes et sont souvent bénins."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    }
+  ],
+  "usedChunks": [
+    2,
+    1,
+    0
+  ],
+  "currentIndex": 2,
+  "total": 3,
+  "contextSnippet": "GRADE\nGrade\n3\n30–50 ansSupra tentorielle\nHypersignal T2 Hyposignal T1\nPrise de contraste\nChirurgie (résection\nmaximaliste, si possible)\n+ radiothérapie /\nchimiothérapie\nProgression inéluctable vers\nle glioblastome (grade 4)\nGrade\n4\n60–70 ansSupra tentorielle\nNécrose\nPrise de contraste hétérogène\nChirurgie (résection\nmaximaliste, si possible)\n+ radio-chimiothérapie\nconcomitante (protocole de\nStupp)\nExtension locale/régionale\nrapide\nSurvie globale de 15 mois\nMétastase :\n·        Origines principales = cancers à fort tropisme neurologique : broncho-pulmonaire, mammaire et mélanome\n·        IRM : tumeur(s) unique ou multiples ; localisation cortico-sous-corticale ; rehaussement hétérogène après injection de\ncontraste, avec aspect en cocarde (nécrose centrale et prise de contraste périphérique) ;   œdème péri-tumoral +++ ; révélation\nhémorragique des métastases de mélanome et de cancer du rein\n·        Traitement :\no  Dépend du nombre, de la localisation et du volume de la (ou des) métastas"
+}

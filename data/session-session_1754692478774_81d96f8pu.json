@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754692478774_81d96f8pu",
+  "questions": [
+    {
+      "id": "qcm_session_1754692478774_81d96f8pu_0",
+      "topic": "QCM sur la fibrillation atriale",
+      "rationale": "Ce QCM couvre des aspects variés de la fibrillation atriale, incluant la physiopathologie, l'épidémiologie, les symptômes usuels, et les complications. Les justifications fournies détaillent les réponses correctes et incorrectes, aidant à consolider la compréhension de la matière.",
+      "propositions": [
+        {
+          "statement": "La fibrillation atriale est un trouble du rythme secondaire à des activités ectopiques focales au niveau des veines pulmonaires.",
+          "isTrue": true,
+          "explanation": "La fibrillation atriale est effectivement secondaire à des activités ectopiques focales au niveau des veines pulmonaires."
+        },
+        {
+          "statement": "Le nœud atrio-ventriculaire filtre l'activité atriale anarchique et rapide, aboutissant à une réponse ventriculaire régulière.",
+          "isTrue": false,
+          "explanation": "Le nœud atrio-ventriculaire filtre l'activité atriale anarchique et rapide, aboutissant à une réponse ventriculaire irrégulière et de fréquence variable selon les patients."
+        },
+        {
+          "statement": "La FA est le trouble du rythme supra-ventriculaire le plus fréquent, affectant environ 1 individu sur 3 au cours de sa vie.",
+          "isTrue": true,
+          "explanation": "Effectivement, la fibrillation atriale est le trouble du rythme supra-ventriculaire le plus fréquent, touchant environ 1 individu sur 3 au cours de sa vie."
+        },
+        {
+          "statement": "Les patients présentant une FA sont toujours symptomatiques.",
+          "isTrue": false,
+          "explanation": "Les patients présentant une FA peuvent être asymptomatiques, justifiant l'intérêt du dépistage des patients à risque."
+        },
+        {
+          "statement": "La FA est responsable de plus de la moitié des AVC ischémiques.",
+          "isTrue": true,
+          "explanation": "En réalité, la FA est responsable de 1/4 des AVC ischémiques."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    }
+  ],
+  "usedChunks": [
+    0
+  ],
+  "currentIndex": 0,
+  "total": 8,
+  "contextSnippet": "\n\n30/07/2025, 16:33Fiche LiSA:Fibrillation atriale — LiSA\nPage 1 of 13https://livret.uness.fr/lisa/2025/Fiche_LiSA:Fibrillation_atriale\nFibrillation atriale IC-232\nConnaître la définition de la fibrillation atriale (FA)\nConnaître la physiopathologie de la FA\nConnaître l'épidémiologie de la FA\nConnaître les symptômes usuels\nIdentifier sur l'électrocardiogramme\nConnaître la présentation clinique\nConnaître les formes cliniques usuelles\nConnaître les formes cliniques non usuelles\nConnaître les comorbidités de la FA\nConnaître les facteurs déclenchants\nConnaître le bilan de première intention\nSavoir évaluer le risque thromboembolique et hémorragique\nConnaître les principes de correction des facteurs de risque\nConnaître les principes de prise en charge de la FA\nIdentifier la mauvaise tolérance et connaître les principes de sa prise en charge\nConnaître la définition de la fibrillation atriale (FA) OIC-232-01-A\nTrouble du rythme supra-ventriculaire résultant d’une activité électrique anarchique"
+}

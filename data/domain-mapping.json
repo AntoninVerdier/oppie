@@ -1,210 +1,1080 @@
 {
   "domains": {
-    "cardiology": {
+    "addictologie": {
+      "name": "Addictologie",
+      "color": "hsl(176 70% 50%)",
+      "files": [
+        "71_Troubles_des_conduites_alimentaires_chez_l_adolescent_et_l_adulte_voir_item_253.pdf",
+        "75_Addiction_au_tabac.pdf",
+        "76_Addiction_a_l_alcool.pdf",
+        "77_Addiction_aux_medicaments_psychotropes_benzodiazepines_et_apparentes_voir_item_322.pdf",
+        "78_Addiction_au_cannabis_a_la_cocaine_aux_amphetamines_aux_opiaces_aux_drogues_de_synthese_voir_item_322.pdf",
+        "79_Addictions_comportementales.pdf",
+        "80_Dopage_et_conduites_dopantes_voir_item_256.pdf"
+      ]
+    },
+    "allergologie": {
+      "name": "Allergologie",
+      "color": "hsl(190 70% 50%)",
+      "files": [
+        "186_Hypersensibilites_et_allergies_chez_l_enfant_et_l_adulte_aspects_physiopathologiques_epidemiologiques_diagnostiques_et_principes_de_traitement.pdf",
+        "187_Hypersensibilites_et_allergies_cutaneomuqueuses_chez_l_enfant_et_l_adulte_Urticaire_dermatites_atopique_et_de_contact.pdf",
+        "198_Arthropathies_microcristallines.pdf"
+      ]
+    },
+    "anesthesie_reanimation_medecine_peri_operatoire": {
+      "name": "Anesthesie Reanimation Medecine Peri Operatoire",
+      "color": "hsl(280 70% 50%)",
+      "files": [
+        "120_Complications_de_l_immobilite_et_du_decubitus_Prevention_et_prise_en_charge.pdf",
+        "134_Bases_neurophysiologiques_mecanismes_physiopathologiques_d_une_douleur_aigue_et_d_une_douleur_chronique.pdf",
+        "135_Therapeutiques_antalgiques_medicamenteuses_et_non_medicamenteuses_voir_item_330.pdf",
+        "136_Anesthesie_locale_locoregionale_et_generale.pdf",
+        "229_Surveillance_et_complications_des_abords_veineux.pdf",
+        "329_Connaitre_les_caracteristiques_des_produits_sanguins_labiles_PSL_et_leur_specificite.pdf",
+        "331_Arret_cardio_circulatoire.pdf",
+        "332_Etat_de_choc_Principales_etiologies_hypovolemique_septique_voir_item_158_cardio_genique_anaphylactique.pdf",
+        "333_Situations_exceptionnelles.pdf",
+        "334_Prise_en_charge_immediate_pre_hospitaliere_et_a_l_arrivee_a_l_hopital_evaluation_des_complications_chez_un_brule_un_polytraumatise_un_traumatise_thoracique_un_traumatise_abdominal_un_traumatise_des_membres_et_ou_du_bassin_un_traumatise_du_rachis_ou_vertebro_medullaire_un_traumatise_cranien_ou_cranio_encephalique.pdf",
+        "336_Coma_non_traumatique_chez_l_adulte_et_chez_l_enfant.pdf",
+        "337_Principales_intoxications_aigues.pdf",
+        "338_deme_de_Quincke_et_anaphylaxie.pdf",
+        "340_Accidents_vasculaires_cerebraux.pdf",
+        "341_Hemorragie_meningee.pdf",
+        "342_Malaise_perte_de_connaissance_crise_comitiale_chez_l_adulte_voir_item_105.pdf",
+        "344_Prise_en_charge_d_une_patiente_atteinte_de_pre_eclampsie.pdf",
+        "348_Insuffisance_renale_aigue_Anurie.pdf",
+        "349_Infection_aigue_des_parties_molles_abces_panaris_phlegmon_des_gaines.pdf",
+        "355_Hemorragie_digestive.pdf",
+        "357_Peritonite_aigue_chez_l_enfant_et_chez_l_adulte.pdf",
+        "358_Pancreatite_aigue.pdf",
+        "359_Detresse_et_insuffisance_respiratoire_aigue_du_nourrisson_de_l_enfant_et_de_l_adulte.pdf",
+        "360_Pneumothorax.pdf"
+      ]
+    },
+    "bacteriologie_virologie_hygiene_hospitaliere": {
+      "name": "Bacteriologie Virologie Hygiene Hospitaliere",
+      "color": "hsl(344 70% 50%)",
+      "files": [
+        "145_Surveillance_des_maladies_infectieuses_transmissibles.pdf",
+        "146_Vaccinations.pdf",
+        "159_Tuberculose_de_l_adulte_et_de_l_enfant.pdf",
+        "160_Tetanos.pdf",
+        "163_Coqueluche.pdf",
+        "165_Oreillons.pdf",
+        "177_Prescription_et_surveillance_des_anti_infectieux_chez_l_adulte_et_l_enfant_voir_item_330.pdf",
+        "178_Risques_emergents_bioterrorisme_maladies_hautement_transmissibles.pdf",
+        "349_Infection_aigue_des_parties_molles_abces_panaris_phlegmon_des_gaines.pdf"
+      ]
+    },
+    "biochimie_et_biologie_moleculaire": {
+      "name": "Biochimie Et Biologie Moleculaire",
+      "color": "hsl(211 70% 50%)",
+      "files": [
+        "219_Pathologie_du_fer_chez_l_adulte_et_l_enfant.pdf",
+        "223_Dyslipidemies.pdf",
+        "267_Troubles_de_l_equilibre_acido_basique_et_desordres_hydro_electrolytiques.pdf",
+        "291_Cancer_cancerogenese_oncogenetique.pdf",
+        "367_Impact_de_l_environnement_sur_la_sante.pdf"
+      ]
+    },
+    "biologie_cellulaire": {
+      "name": "Biologie Cellulaire",
+      "color": "hsl(195 70% 50%)",
+      "files": [
+        "192_Pathologies_auto_immunes_aspects_epidemiologiques_diagnostiques_et_principes_de_traitement.pdf",
+        "196_Polyarthrite_rhumatoide.pdf",
+        "291_Cancer_cancerogenese_oncogenetique.pdf",
+        "293_Le_medecin_preleveur_de_cellules_et_ou_de_tissus_pour_des_examens_d_Anatomie_et_Cytologie_Pathologiques_connaitre_les_principes_de_realisation_transmission_et_utilisation_des_prelevements_a_visee_sanitaire_et_de_recherche.pdf",
+        "294_Traitement_des_cancers_principales_modalites_classes_therapeutiques_et_leurs_complications_majeures_La_decision_therapeutique_pluridisciplinaire_et_l_information_du_malade.pdf",
+        "306_Tumeurs_de_l_ovaire.pdf",
+        "310_Tumeurs_de_la_prostate.pdf"
+      ]
+    },
+    "cancerologie": {
+      "name": "Cancerologie",
+      "color": "hsl(179 70% 50%)",
+      "files": [
+        "292_Diagnostic_des_cancers_signes_d_appel_et_investigations_para_cliniques_caracterisation_du_stade_pronostic.pdf",
+        "293_Le_medecin_preleveur_de_cellules_et_ou_de_tissus_pour_des_examens_d_Anatomie_et_Cytologie_Pathologiques_connaitre_les_principes_de_realisation_transmission_et_utilisation_des_prelevements_a_visee_sanitaire_et_de_recherche.pdf",
+        "294_Traitement_des_cancers_principales_modalites_classes_therapeutiques_et_leurs_complications_majeures_La_decision_therapeutique_pluridisciplinaire_et_l_information_du_malade.pdf",
+        "295_Prise_en_charge_et_accompagnement_d_un_malade_atteint_de_cancer_a_tous_les_stades_de_la_maladie_dont_le_stade_de_soins_palliatifs_en_abordant_les_problematiques_techniques_relationnelles_sociales_et_ethiques.pdf",
+        "297_Cancer_de_l_enfant_particularites_epidemiologiques_diagnostiques_et_therapeutiques.pdf",
+        "312_Tumeurs_du_sein.pdf"
+      ]
+    },
+    "cardiologie": {
       "name": "Cardiologie",
-      "color": "#ef4444",
+      "color": "hsl(74 70% 50%)",
       "files": [
-        "1_Introduction_à_la_sémiologie_cardio-vasculaire.pdf",
-        "2_Souffles_et_murmures_cardio-vasculaires.pdf",
-        "3_Douleur_thoracique_aiguë_et_chronique.pdf",
-        "4_Dyspnée_aiguë_et_chronique.pdf",
-        "5_Œdème_aigu_du_poumon.pdf",
-        "6_Choc_cardiogénique.pdf",
-        "7_Syncope.pdf",
-        "8_Palpitations.pdf",
-        "9_HTA_de_l'adulte.pdf",
-        "10_HTA_de_l'enfant.pdf",
-        "11_HTA_et_grossesse.pdf",
-        "12_HTA_et_sujet_âgé.pdf",
-        "13_HTA_et_diabète.pdf",
-        "14_HTA_et_insuffisance_rénale.pdf",
-        "15_HTA_et_obésité.pdf",
-        "16_HTA_et_syndrome_métabolique.pdf",
-        "17_HTA_et_apnée_du_sommeil.pdf",
-        "18_HTA_et_grossesse.pdf",
-        "19_HTA_et_sujet_âgé.pdf",
-        "20_HTA_et_diabète.pdf"
+        "152_Endocardite_infectieuse.pdf",
+        "153_Surveillance_des_porteurs_de_protheses_valvulaires.pdf",
+        "222_Facteurs_de_risque_cardio_vasculaire_et_prevention.pdf",
+        "230_Douleur_thoracique_aigue.pdf",
+        "231_Electrocardiogramme_indications_et_interpretations.pdf",
+        "232_Fibrillation_atriale.pdf",
+        "233_Valvulopathies.pdf",
+        "234_Insuffisance_cardiaque_de_l_adulte.pdf",
+        "235_Pericardite_aigue.pdf",
+        "236_Troubles_de_la_conduction_intracardiaque.pdf",
+        "237_Palpitations.pdf",
+        "339_Syndromes_coronariens_aigus.pdf"
       ]
     },
-    "pneumology": {
-      "name": "Pneumologie",
-      "color": "#3b82f6",
+    "chirurgie_de_la_main": {
+      "name": "Chirurgie De La Main",
+      "color": "hsl(274 70% 50%)",
       "files": [
-        "21_Dyspnée_aiguë_et_chronique.pdf",
-        "22_Toux_aiguë_et_chronique.pdf",
-        "23_Hémoptysie.pdf",
-        "24_Douleur_thoracique_aiguë_et_chronique.pdf",
-        "25_Œdème_aigu_du_poumon.pdf",
-        "26_Choc_cardiogénique.pdf",
-        "27_Syncope.pdf",
-        "28_Palpitations.pdf",
-        "29_HTA_de_l'adulte.pdf",
-        "30_HTA_de_l'enfant.pdf"
+        "334_Prise_en_charge_immediate_pre_hospitaliere_et_a_l_arrivee_a_l_hopital_evaluation_des_complications_chez_un_brule_un_polytraumatise_un_traumatise_thoracique_un_traumatise_abdominal_un_traumatise_des_membres_et_ou_du_bassin_un_traumatise_du_rachis_ou_vertebro_medullaire_un_traumatise_cranien_ou_cranio_encephalique.pdf",
+        "349_Infection_aigue_des_parties_molles_abces_panaris_phlegmon_des_gaines.pdf",
+        "361_Lesions_peri_articulaires_et_ligamentaires_du_genou_de_la_cheville_et_de_l_epaule.pdf",
+        "362_Protheses_et_osteosyntheses.pdf",
+        "363_Fractures_frequentes_de_l_adulte_et_du_sujet_age.pdf",
+        "365_Surveillance_d_un_malade_sous_platre_resine.pdf"
       ]
     },
-    "neurology": {
-      "name": "Neurologie",
-      "color": "#8b5cf6",
+    "chirurgie_maxillo_faciale": {
+      "name": "Chirurgie Maxillo Faciale",
+      "color": "hsl(99 70% 50%)",
       "files": [
-        "299_Tumeurs_intracrâniennes.pdf",
-        "300_Tumeurs_du_col_utérin,_tumeur_du_corps_utérin.pdf",
-        "301_Tumeurs_du_colon_et_du_rectum.pdf",
-        "302_Tumeurs_cutanées,_épithéliales_et_mélaniques.pdf",
-        "303_Tumeurs_de_l'estomac.pdf",
-        "304_Tumeurs_du_foie,_primitives_et_secondaires.pdf",
-        "305_Tumeurs_de_l'œsophage.pdf",
-        "306_Tumeurs_de_l'ovaire.pdf",
-        "307_Tumeurs_des_os_primitives_et_secondaires.pdf",
-        "308_Tumeurs_du_pancréas.pdf",
-        "309_Tumeurs_du_poumon,_primitives_et_secondaires.pdf",
-        "310_Tumeurs_de_la_prostate.pdf",
-        "311_Tumeurs_du_rein_de_l'adulte.pdf",
-        "312_Tumeurs_du_sein.pdf",
-        "313_Tumeurs_du_testicule.pdf",
-        "314_Tumeurs_vésicales.pdf"
+        "101_Paralysie_faciale.pdf",
+        "155_Infections_cutaneo_muqueuses_et_des_phaneres_bacteriennes_et_mycosiques_de_l_adulte_et_de_l_enfant.pdf",
+        "298_Tumeurs_de_la_cavite_buccale_naso_sinusiennes_et_du_cavum_et_des_voies_aerodigestives_superieures.pdf",
+        "335_Orientation_diagnostique_et_conduite_a_tenir_devant_un_traumatisme_cranio_facial_et_oculaire.pdf",
+        "87_Epistaxis.pdf",
+        "90_Pathologie_des_glandes_salivaires.pdf"
       ]
     },
-    "oncology": {
-      "name": "Oncologie",
-      "color": "#f59e0b",
+    "chirurgie_orthopedique_et_traumatologique": {
+      "name": "Chirurgie Orthopedique Et Traumatologique",
+      "color": "hsl(84 70% 50%)",
       "files": [
-        "298_Tumeurs_de_la_cavité_buccale,_naso-sinusiennes_et_du_cavum,_et_des_voies_aérodigestives_supérieures.pdf",
-        "299_Tumeurs_intracrâniennes.pdf",
-        "300_Tumeurs_du_col_utérin,_tumeur_du_corps_utérin.pdf",
-        "301_Tumeurs_du_colon_et_du_rectum.pdf",
-        "302_Tumeurs_cutanées,_épithéliales_et_mélaniques.pdf",
-        "303_Tumeurs_de_l'estomac.pdf",
-        "304_Tumeurs_du_foie,_primitives_et_secondaires.pdf",
-        "305_Tumeurs_de_l'œsophage.pdf",
-        "306_Tumeurs_de_l'ovaire.pdf",
-        "307_Tumeurs_des_os_primitives_et_secondaires.pdf",
-        "308_Tumeurs_du_pancréas.pdf",
-        "309_Tumeurs_du_poumon,_primitives_et_secondaires.pdf",
-        "310_Tumeurs_de_la_prostate.pdf",
-        "311_Tumeurs_du_rein_de_l'adulte.pdf",
-        "312_Tumeurs_du_sein.pdf",
-        "313_Tumeurs_du_testicule.pdf",
-        "314_Tumeurs_vésicales.pdf"
+        "334_Prise_en_charge_immediate_pre_hospitaliere_et_a_l_arrivee_a_l_hopital_evaluation_des_complications_chez_un_brule_un_polytraumatise_un_traumatise_thoracique_un_traumatise_abdominal_un_traumatise_des_membres_et_ou_du_bassin_un_traumatise_du_rachis_ou_vertebro_medullaire_un_traumatise_cranien_ou_cranio_encephalique.pdf",
+        "349_Infection_aigue_des_parties_molles_abces_panaris_phlegmon_des_gaines.pdf",
+        "361_Lesions_peri_articulaires_et_ligamentaires_du_genou_de_la_cheville_et_de_l_epaule.pdf",
+        "362_Protheses_et_osteosyntheses.pdf",
+        "363_Fractures_frequentes_de_l_adulte_et_du_sujet_age.pdf",
+        "365_Surveillance_d_un_malade_sous_platre_resine.pdf"
       ]
     },
-    "dermatology": {
+    "chirurgie_pediatrique": {
+      "name": "Chirurgie Pediatrique",
+      "color": "hsl(78 70% 50%)",
+      "files": [
+        "354_Syndrome_occlusif_de_l_enfant_et_de_l_adulte.pdf",
+        "356_Appendicite_de_l_enfant_et_de_l_adulte.pdf",
+        "357_Peritonite_aigue_chez_l_enfant_et_chez_l_adulte.pdf",
+        "364_Fractures_chez_l_enfant_particularites_epidemiologiques_diagnostiques_et_therapeutiques.pdf",
+        "50_Pathologie_genito_scrotale_chez_le_garcon_et_chez_l_homme.pdf",
+        "51_Troubles_de_la_miction_chez_l_enfant.pdf"
+      ]
+    },
+    "chirurgie_plastique_reconstructive_et_esthetique": {
+      "name": "Chirurgie Plastique Reconstructive Et Esthetique",
+      "color": "hsl(128 70% 50%)",
+      "files": [
+        "155_Infections_cutaneo_muqueuses_et_des_phaneres_bacteriennes_et_mycosiques_de_l_adulte_et_de_l_enfant.pdf",
+        "302_Tumeurs_cutanees_epitheliales_et_melaniques.pdf"
+      ]
+    },
+    "chirurgie_thoracique_et_cardio_vasculaire": {
+      "name": "Chirurgie Thoracique Et Cardio Vasculaire",
+      "color": "hsl(13 70% 50%)",
+      "files": [
+        "152_Endocardite_infectieuse.pdf",
+        "153_Surveillance_des_porteurs_de_protheses_valvulaires.pdf",
+        "190_Fievre_prolongee.pdf",
+        "201_Transplantation_d_organes_aspects_epidemiologiques_et_immunologiques_principes_de_traitement_et_surveillance_complications_et_pronostic_aspects_ethiques_et_legaux_Prelevements_d_organes_et_legislation.pdf",
+        "203_Dyspnee_aigue_et_chronique.pdf",
+        "205_Hemoptysie.pdf",
+        "206_Epanchement_pleural_liquidien.pdf",
+        "207_Opacites_et_masses_intra_thoraciques_chez_l_enfant_et_chez_l_adulte.pdf",
+        "208_Insuffisance_respiratoire_chronique.pdf",
+        "224_Hypertension_arterielle_de_l_adulte_et_de_l_enfant.pdf",
+        "225_Arteriopathie_de_l_aorte_des_arteres_viscerales_et_des_membres_inferieurs_anevrysmes.pdf",
+        "226_Thrombose_veineuse_profonde_et_embolie_pulmonaire_voir_item_330.pdf",
+        "230_Douleur_thoracique_aigue.pdf",
+        "232_Fibrillation_atriale.pdf",
+        "233_Valvulopathies.pdf",
+        "234_Insuffisance_cardiaque_de_l_adulte.pdf",
+        "235_Pericardite_aigue.pdf",
+        "236_Troubles_de_la_conduction_intracardiaque.pdf",
+        "237_Palpitations.pdf",
+        "238_Souffle_cardiaque_chez_l_enfant.pdf",
+        "241_Goitre_nodules_thyroidiens_et_cancers_thyroidiens.pdf",
+        "305_Tumeurs_de_l_sophage.pdf",
+        "309_Tumeurs_du_poumon_primitives_et_secondaires.pdf",
+        "331_Arret_cardio_circulatoire.pdf",
+        "333_Situations_exceptionnelles.pdf",
+        "334_Prise_en_charge_immediate_pre_hospitaliere_et_a_l_arrivee_a_l_hopital_evaluation_des_complications_chez_un_brule_un_polytraumatise_un_traumatise_thoracique_un_traumatise_abdominal_un_traumatise_des_membres_et_ou_du_bassin_un_traumatise_du_rachis_ou_vertebro_medullaire_un_traumatise_cranien_ou_cranio_encephalique.pdf",
+        "339_Syndromes_coronariens_aigus.pdf",
+        "359_Detresse_et_insuffisance_respiratoire_aigue_du_nourrisson_de_l_enfant_et_de_l_adulte.pdf",
+        "360_Pneumothorax.pdf",
+        "75_Addiction_au_tabac.pdf"
+      ]
+    },
+    "chirurgie_vasculaire": {
+      "name": "Chirurgie Vasculaire",
+      "color": "hsl(328 70% 50%)",
+      "files": [
+        "153_Surveillance_des_porteurs_de_protheses_valvulaires.pdf",
+        "225_Arteriopathie_de_l_aorte_des_arteres_viscerales_et_des_membres_inferieurs_anevrysmes.pdf",
+        "328_Therapeutiques_non_medicamenteuses_et_dispositifs_medicaux.pdf",
+        "340_Accidents_vasculaires_cerebraux.pdf"
+      ]
+    },
+    "chirurgie_viscerale_et_digestive": {
+      "name": "Chirurgie Viscerale Et Digestive",
+      "color": "hsl(146 70% 50%)",
+      "files": [
+        "269_Douleurs_abdominales_aigues_chez_l_enfant_et_chez_l_adulte.pdf",
+        "287_Diverticulose_colique_et_diverticulite_aigue_du_sigmoide.pdf",
+        "288_Pathologie_hemorroidaire.pdf",
+        "289_Hernie_parietale_chez_l_enfant_et_l_adulte.pdf",
+        "354_Syndrome_occlusif_de_l_enfant_et_de_l_adulte.pdf",
+        "356_Appendicite_de_l_enfant_et_de_l_adulte.pdf",
+        "357_Peritonite_aigue_chez_l_enfant_et_chez_l_adulte.pdf"
+      ]
+    },
+    "dermatologie": {
       "name": "Dermatologie",
-      "color": "#10b981",
+      "color": "hsl(196 70% 50%)",
       "files": [
-        "302_Tumeurs_cutanées,_épithéliales_et_mélaniques.pdf",
-        "315_Lésions_élémentaires_de_la_peau.pdf",
-        "316_Dermatoses_inflammatoires.pdf",
-        "317_Dermatoses_infectieuses.pdf",
-        "318_Dermatoses_tumorales.pdf",
-        "319_Dermatoses_auto-immunes.pdf",
-        "320_Dermatoses_métaboliques.pdf"
+        "111_Dermatoses_faciales_acne_rosacee_dermatite_seborrheique.pdf",
+        "112_Dermatose_bulleuse_touchant_la_peau_et_ou_les_muqueuses_externes.pdf",
+        "113_Hemangiomes_et_malformations_vasculaires_cutanees.pdf",
+        "114_Exantheme_et_erythrodermie_de_l_adulte_et_de_l_enfant_voir_item_164.pdf",
+        "115_Toxidermies.pdf",
+        "116_Prurit.pdf",
+        "117_Psoriasis.pdf",
+        "155_Infections_cutaneo_muqueuses_et_des_phaneres_bacteriennes_et_mycosiques_de_l_adulte_et_de_l_enfant.pdf",
+        "162_Infections_sexuellement_transmissibles_IST_gonococcies_chlamydioses_syphilis_papillomavirus_humain_HPV_trichomonose.pdf",
+        "164_Exanthemes_febriles_de_l_enfant.pdf",
+        "171_Gale_et_pediculose.pdf",
+        "187_Hypersensibilites_et_allergies_cutaneomuqueuses_chez_l_enfant_et_l_adulte_Urticaire_dermatites_atopique_et_de_contact.pdf",
+        "215_Purpuras_chez_l_adulte_et_l_enfant.pdf",
+        "302_Tumeurs_cutanees_epitheliales_et_melaniques.pdf",
+        "350_Grosse_jambe_rouge_aigue.pdf"
       ]
     },
-    "gastroenterology": {
-      "name": "Gastro-entérologie",
-      "color": "#f97316",
+    "diabete_et_maladies_metabolique": {
+      "name": "Diabete Et Maladies Metabolique",
+      "color": "hsl(348 70% 50%)",
       "files": [
-        "301_Tumeurs_du_colon_et_du_rectum.pdf",
-        "303_Tumeurs_de_l'estomac.pdf",
-        "304_Tumeurs_du_foie,_primitives_et_secondaires.pdf",
-        "305_Tumeurs_de_l'œsophage.pdf",
-        "308_Tumeurs_du_pancréas.pdf",
-        "321_Douleur_abdominale_aiguë_et_chronique.pdf",
-        "322_Nausées_et_vomissements.pdf",
-        "323_Diarrhée_aiguë_et_chronique.pdf",
-        "324_Constipation.pdf",
-        "325_Hémorragie_digestive.pdf",
-        "326_Ictère.pdf",
-        "327_Ascite.pdf"
+        "124_Menopause_insuffisance_ovarienne_prematuree_andropause_deficit_androgenique_lie_a_l_age_Voir_item_330.pdf",
+        "126_Trouble_de_l_erection.pdf",
+        "128_Osteopathies_fragilisantes.pdf",
+        "221_Atherome_epidemiologie_et_physiopathologie_Le_malade_poly_atheromateux.pdf",
+        "222_Facteurs_de_risque_cardio_vasculaire_et_prevention.pdf",
+        "223_Dyslipidemies.pdf",
+        "240_Hypoglycemie_chez_l_adulte_et_l_enfant.pdf",
+        "241_Goitre_nodules_thyroidiens_et_cancers_thyroidiens.pdf",
+        "242_Hyperthyroidie.pdf",
+        "243_Hypothyroidie.pdf",
+        "244_Adenome_hypophysaire.pdf",
+        "245_Insuffisance_surrenale_chez_l_adulte_et_l_enfant.pdf",
+        "246_Gynecomastie.pdf",
+        "247_Diabete_sucre_de_type_1_et_2_de_l_enfant_et_de_l_adulte_Complications.pdf",
+        "253_Obesite_de_l_enfant_et_de_l_adulte_voir_item_71.pdf",
+        "255_Diabete_gestationnel.pdf",
+        "268_Hypercalcemie.pdf",
+        "36_Contraception_voir_item_330.pdf",
+        "38_Infertilite_du_couple_conduite_de_la_premiere_consultation.pdf",
+        "42_Amenorrhee.pdf"
       ]
     },
-    "endocrinology": {
+    "douleur": {
+      "name": "Douleur",
+      "color": "hsl(48 70% 50%)",
+      "files": [
+        "100_Cephalee_inhabituelle_aigue_et_chronique_chez_l_adulte_et_l_enfant.pdf",
+        "134_Bases_neurophysiologiques_mecanismes_physiopathologiques_d_une_douleur_aigue_et_d_une_douleur_chronique.pdf",
+        "135_Therapeutiques_antalgiques_medicamenteuses_et_non_medicamenteuses_voir_item_330.pdf",
+        "137_Douleur_chez_l_enfant_evaluation_et_traitements_antalgique.pdf",
+        "138_Douleur_chez_la_personne_vulnerable.pdf",
+        "199_Syndrome_douloureux_regional_complexe_ex_algodystrophie.pdf",
+        "40_Algies_pelviennes_chez_la_femme.pdf",
+        "96_Neuropathies_peripheriques.pdf",
+        "99_Migraine_nevralgie_du_trijumeau_et_algies_de_la_face.pdf"
+      ]
+    },
+    "endocrinologie": {
       "name": "Endocrinologie",
-      "color": "#ec4899",
+      "color": "hsl(49 70% 50%)",
       "files": [
-        "13_HTA_et_diabète.pdf",
-        "14_HTA_et_insuffisance_rénale.pdf",
-        "15_HTA_et_obésité.pdf",
-        "16_HTA_et_syndrome_métabolique.pdf",
-        "328_Diabète_de_type_1.pdf",
-        "329_Diabète_de_type_2.pdf",
-        "330_Diabète_et_grossesse.pdf",
-        "331_Complications_du_diabète.pdf",
-        "332_Thyroïdites.pdf",
-        "333_Hyperthyroïdie.pdf",
-        "334_Hypothyroïdie.pdf",
-        "335_Nodules_thyroïdiens.pdf",
-        "336_Adénomes_hypophysaires.pdf"
+        "124_Menopause_insuffisance_ovarienne_prematuree_andropause_deficit_androgenique_lie_a_l_age_Voir_item_330.pdf",
+        "126_Trouble_de_l_erection.pdf",
+        "128_Osteopathies_fragilisantes.pdf",
+        "221_Atherome_epidemiologie_et_physiopathologie_Le_malade_poly_atheromateux.pdf",
+        "222_Facteurs_de_risque_cardio_vasculaire_et_prevention.pdf",
+        "223_Dyslipidemies.pdf",
+        "240_Hypoglycemie_chez_l_adulte_et_l_enfant.pdf",
+        "241_Goitre_nodules_thyroidiens_et_cancers_thyroidiens.pdf",
+        "242_Hyperthyroidie.pdf",
+        "243_Hypothyroidie.pdf",
+        "244_Adenome_hypophysaire.pdf",
+        "245_Insuffisance_surrenale_chez_l_adulte_et_l_enfant.pdf",
+        "246_Gynecomastie.pdf",
+        "247_Diabete_sucre_de_type_1_et_2_de_l_enfant_et_de_l_adulte_Complications.pdf",
+        "253_Obesite_de_l_enfant_et_de_l_adulte_voir_item_71.pdf",
+        "255_Diabete_gestationnel.pdf",
+        "268_Hypercalcemie.pdf",
+        "36_Contraception_voir_item_330.pdf",
+        "38_Infertilite_du_couple_conduite_de_la_premiere_consultation.pdf",
+        "42_Amenorrhee.pdf"
       ]
     },
-    "nephrology": {
-      "name": "Néphrologie",
-      "color": "#06b6d4",
+    "gastroenterologie": {
+      "name": "Gastroenterologie",
+      "color": "hsl(37 70% 50%)",
       "files": [
-        "14_HTA_et_insuffisance_rénale.pdf",
-        "337_Insuffisance_rénale_aiguë.pdf",
-        "338_Insuffisance_rénale_chronique.pdf",
-        "339_Syndrome_néphrotique.pdf",
-        "340_Glomérulonéphrites.pdf",
-        "341_Pyelonéphrites.pdf",
-        "342_Lithiase_rénale.pdf",
-        "343_Hypertension_artérielle_rénovasculaire.pdf"
+        "167_Hepatites_virales.pdf",
+        "271_Reflux_gastro_sophagien_chez_le_nourrisson_chez_l_enfant_et_chez_l_adulte_Hernie_hiatale.pdf",
+        "272_Ulcere_gastrique_et_duodenal_Gastrite.pdf",
+        "273_Dysphagie.pdf",
+        "274_Vomissements_du_nourrisson_de_l_enfant_et_de_l_adulte.pdf",
+        "276_Hepatomegalie_et_masse_abdominale.pdf",
+        "277_Lithiase_biliaire_et_complications.pdf",
+        "278_Ictere_de_l_adulte_et_de_l_enfant.pdf",
+        "279_Cirrhose_et_complications.pdf",
+        "280_Ascite.pdf",
+        "281_Pancreatite_chronique.pdf",
+        "282_Maladies_inflammatoires_chroniques_de_l_intestin_MICI_chez_l_adulte.pdf",
+        "283_Constipation_chez_l_enfant_et_l_adulte.pdf",
+        "284_Colopathie_fonctionnelle.pdf",
+        "285_Diarrhee_chronique_chez_l_adulte_et_l_enfant.pdf",
+        "287_Diverticulose_colique_et_diverticulite_aigue_du_sigmoide.pdf",
+        "288_Pathologie_hemorroidaire.pdf",
+        "289_Hernie_parietale_chez_l_enfant_et_l_adulte.pdf",
+        "301_Tumeurs_du_colon_et_du_rectum.pdf",
+        "303_Tumeurs_de_l_estomac.pdf",
+        "304_Tumeurs_du_foie_primitives_et_secondaires.pdf",
+        "305_Tumeurs_de_l_sophage.pdf",
+        "308_Tumeurs_du_pancreas.pdf",
+        "355_Hemorragie_digestive.pdf",
+        "358_Pancreatite_aigue.pdf"
       ]
     },
-    "rheumatology": {
-      "name": "Rhumatologie",
-      "color": "#84cc16",
+    "genetique_medicale": {
+      "name": "Genetique Medicale",
+      "color": "hsl(82 70% 50%)",
       "files": [
-        "344_Douleur_articulaire_aiguë_et_chronique.pdf",
-        "345_Arthrites.pdf",
-        "346_Arthroses.pdf",
-        "347_Connectivites.pdf",
-        "348_Vascularites.pdf",
-        "349_Ostéoporose.pdf",
-        "350_Goutte.pdf",
-        "351_Chondrocalcinose.pdf"
+        "22_Maladies_rares.pdf",
+        "45_Specificites_des_maladies_genetiques_voir_item_9.pdf",
+        "46_Medecine_genomique.pdf"
       ]
     },
-    "psychiatry": {
+    "geriatrie": {
+      "name": "Geriatrie",
+      "color": "hsl(236 70% 50%)",
+      "files": [
+        "123_Vieillissement_normal_aspects_biologiques_fonctionnels_et_relationnels_Donnees_epidemiologiques_et_sociologiques_Prevention_du_vieillissement_pathologique.pdf",
+        "130_La_personne_agee_malade_particularites_semiologiques_psychologiques_et_therapeutiques_voir_item_322.pdf",
+        "131_Troubles_de_la_marche_et_de_l_equilibre_voir_item_109.pdf",
+        "132_Troubles_cognitifs_du_sujet_age_voir_item_108.pdf",
+        "252_Troubles_nutritionnels_chez_le_sujet_age.pdf"
+      ]
+    },
+    "gynecologie_medicale": {
+      "name": "Gynecologie Medicale",
+      "color": "hsl(288 70% 50%)",
+      "files": [
+        "124_Menopause_insuffisance_ovarienne_prematuree_andropause_deficit_androgenique_lie_a_l_age_Voir_item_330.pdf",
+        "300_Tumeurs_du_col_uterin_tumeur_du_corps_uterin.pdf",
+        "306_Tumeurs_de_l_ovaire.pdf",
+        "35_Anomalies_du_cycle_menstruel_Metrorragies.pdf",
+        "36_Contraception_voir_item_330.pdf",
+        "37_Interruption_volontaire_de_grossesse.pdf",
+        "38_Infertilite_du_couple_conduite_de_la_premiere_consultation.pdf",
+        "39_Assistance_medicale_a_la_procreation_principaux_aspects_biologiques_medicaux_et_ethiques.pdf",
+        "40_Algies_pelviennes_chez_la_femme.pdf",
+        "41_Endometriose.pdf",
+        "42_Amenorrhee.pdf",
+        "43_Hemorragie_genitale_chez_la_femme.pdf",
+        "44_Tumefaction_pelvienne_chez_la_femme.pdf",
+        "58_Sexualite_normale_et_ses_troubles.pdf"
+      ]
+    },
+    "gynecologie_obstetrique": {
+      "name": "Gynecologie Obstetrique",
+      "color": "hsl(315 70% 50%)",
+      "files": [
+        "161_Infections_urinaires_de_l_enfant_et_de_l_adulte.pdf",
+        "23_Grossesse_normale.pdf",
+        "24_Principales_complications_de_la_grossesse.pdf",
+        "255_Diabete_gestationnel.pdf",
+        "25_Grossesse_extra_uterine.pdf",
+        "26_Douleur_abdominale_aigue_chez_une_femme_enceinte.pdf",
+        "27_Prevention_des_risques_f_taux_infection_medicaments_toxiques_irradiation.pdf",
+        "28_Connaitre_les_particularites_de_l_infection_urinaire_au_cours_de_la_grossesse.pdf",
+        "29_Connaitre_les_principaux_risques_professionnels_pour_la_maternite_lies_au_travail_de_la_mere.pdf",
+        "300_Tumeurs_du_col_uterin_tumeur_du_corps_uterin.pdf",
+        "306_Tumeurs_de_l_ovaire.pdf",
+        "30_Prematurite_et_retard_de_croissance_intra_uterin_facteurs_de_risque_et_prevention.pdf",
+        "312_Tumeurs_du_sein.pdf",
+        "31_Accouchement_delivrance_et_suites_de_couches_normales.pdf",
+        "33_Allaitement_maternel.pdf",
+        "344_Prise_en_charge_d_une_patiente_atteinte_de_pre_eclampsie.pdf",
+        "34_Suites_de_couches_pathologiques_pathologie_maternelle_dans_les_40_jours.pdf",
+        "35_Anomalies_du_cycle_menstruel_Metrorragies.pdf",
+        "37_Interruption_volontaire_de_grossesse.pdf",
+        "38_Infertilite_du_couple_conduite_de_la_premiere_consultation.pdf",
+        "39_Assistance_medicale_a_la_procreation_principaux_aspects_biologiques_medicaux_et_ethiques.pdf",
+        "40_Algies_pelviennes_chez_la_femme.pdf",
+        "41_Endometriose.pdf",
+        "43_Hemorragie_genitale_chez_la_femme.pdf",
+        "44_Tumefaction_pelvienne_chez_la_femme.pdf"
+      ]
+    },
+    "hematologie": {
+      "name": "Hematologie",
+      "color": "hsl(86 70% 50%)",
+      "files": [
+        "212_Hemogramme_chez_l_adulte_et_l_enfant_indications_et_interpretation.pdf",
+        "216_Syndrome_hemorragique_d_origine_hematologique.pdf",
+        "220_Adenopathie_superficielle_de_l_adulte_et_de_l_enfant.pdf",
+        "275_Splenomegalie.pdf",
+        "296_Agranulocytose_medicamenteuse_conduite_a_tenir.pdf",
+        "315_Leucemies_aigues.pdf",
+        "316_Syndromes_myelodysplasiques.pdf",
+        "317_Syndromes_myeloproliferatifs.pdf",
+        "318_Leucemies_lymphoides_chroniques.pdf",
+        "319_Lymphomes_malins.pdf",
+        "320_Myelome_multiple_des_os.pdf",
+        "329_Connaitre_les_caracteristiques_des_produits_sanguins_labiles_PSL_et_leur_specificite.pdf"
+      ]
+    },
+    "humanites": {
+      "name": "Humanites",
+      "color": "hsl(254 70% 50%)",
+      "files": [
+        "10_Approches_transversales_du_corps.pdf",
+        "119_Soins_et_accompagnement_dans_la_maladie_chronique_et_le_handicap.pdf",
+        "11_Violences_et_sante.pdf",
+        "14_La_mort.pdf",
+        "8_Les_discriminations.pdf",
+        "9_Introduction_a_l_ethique_medicale.pdf"
+      ]
+    },
+    "immunologie": {
+      "name": "Immunologie",
+      "color": "hsl(109 70% 50%)",
+      "files": [
+        "169_Infections_a_VIH.pdf",
+        "185_Reaction_inflammatoire_aspects_biologiques_et_cliniques_Conduite_a_tenir.pdf",
+        "189_Deficit_immunitaire.pdf",
+        "191_Fievre_chez_un_patient_immunodeprime.pdf",
+        "192_Pathologies_auto_immunes_aspects_epidemiologiques_diagnostiques_et_principes_de_traitement.pdf",
+        "202_Biotherapies_et_therapies_ciblees.pdf"
+      ]
+    },
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique": {
+      "name": "Informatique Medicale Biomathematiques Methodes En Epidemiologie Statistique",
+      "color": "hsl(140 70% 50%)",
+      "files": [
+        "16_Organisation_du_systeme_de_soins_Sa_regulation_Les_indicateurs_Parcours_de_soins.pdf",
+        "17_Telemedecine_telesante_et_teleservices_en_sante.pdf",
+        "180_Risques_sanitaires_lies_aux_irradiations_Radioprotection.pdf",
+        "18_Sante_et_numerique.pdf",
+        "19_La_securite_sociale_L_assurance_maladie_Les_assurances_complementaires_La_complementaire_sante_solidaire_CSS_La_consommation_medicale_Protection_sociale_Consommation_medicale_et_economie_de_la_sante.pdf",
+        "20_La_methodologie_de_la_recherche_en_sante.pdf",
+        "21_Mesure_de_l_etat_de_sante_de_la_population.pdf",
+        "2_Les_valeurs_professionnelles_du_medecin_et_des_autres_professions_de_sante.pdf",
+        "323_Analyser_et_utiliser_les_resultats_des_etudes_cliniques_dans_la_perspective_du_bon_usage_analyse_critique_recherche_clinique_et_niveaux_de_preuve_voir_item_3.pdf",
+        "3_Le_raisonnement_et_la_decision_en_medecine_La_medecine_fondee_sur_les_preuves_Evidence_Based_Medicine_EBM_La_decision_medicale_partagee_La_controverse.pdf",
+        "5_Responsabilites_medicale_penale_civile_administrative_et_disciplinaire_La_gestion_des_erreurs_et_des_plaintes_l_alea_therapeutique.pdf",
+        "6_L_organisation_de_l_exercice_clinique_et_les_methodes_qui_permettent_de_securiser_le_parcours_du_patient.pdf"
+      ]
+    },
+    "maladies_infectieuses_et_tropicales": {
+      "name": "Maladies Infectieuses Et Tropicales",
+      "color": "hsl(99 70% 50%)",
+      "files": [
+        "145_Surveillance_des_maladies_infectieuses_transmissibles.pdf",
+        "146_Vaccinations.pdf",
+        "147_Fievre_aigue_chez_l_enfant_et_l_adulte.pdf",
+        "150_Otites_infectieuses_de_l_adulte_et_de_l_enfant.pdf",
+        "151_Meningites_meningoencephalites_abces_cerebral_chez_l_adulte_et_l_enfant.pdf",
+        "152_Endocardite_infectieuse.pdf",
+        "154_Infections_broncho_pulmonaires_communautaires_de_l_adulte_et_de_l_enfant.pdf",
+        "155_Infections_cutaneo_muqueuses_et_des_phaneres_bacteriennes_et_mycosiques_de_l_adulte_et_de_l_enfant.pdf",
+        "156_Infections_osteo_articulaires_IOA_de_l_enfant_et_de_l_adulte.pdf",
+        "157_Bacteriemie_Fongemie_de_l_adulte_et_de_l_enfant.pdf",
+        "158_Sepsis_et_choc_septique_de_l_enfant_et_de_l_adulte.pdf",
+        "159_Tuberculose_de_l_adulte_et_de_l_enfant.pdf",
+        "160_Tetanos.pdf",
+        "162_Infections_sexuellement_transmissibles_IST_gonococcies_chlamydioses_syphilis_papillomavirus_humain_HPV_trichomonose.pdf",
+        "163_Coqueluche.pdf",
+        "169_Infections_a_VIH.pdf",
+        "170_Paludisme.pdf",
+        "171_Gale_et_pediculose.pdf",
+        "172_Parasitoses_digestives_giardiose_amoebose_teniasis_ascaridiose_oxyurose_anguillulose_cryptosporidiose.pdf",
+        "173_Zoonoses.pdf",
+        "174_Pathologie_infectieuse_chez_les_migrants_adultes_et_enfants.pdf",
+        "175_Voyage_en_pays_tropical_de_l_adulte_et_de_l_enfant_conseils_avant_le_depart_pathologies_du_retour_fievre_diarrhee_manifestations_cutanees.pdf",
+        "176_Diarrhees_infectieuses_de_l_adulte_et_de_l_enfant.pdf",
+        "177_Prescription_et_surveillance_des_anti_infectieux_chez_l_adulte_et_l_enfant_voir_item_330.pdf",
+        "178_Risques_emergents_bioterrorisme_maladies_hautement_transmissibles.pdf",
+        "179_Risques_sanitaires_lies_a_l_eau_et_a_l_alimentation_Toxi_infections_alimentaires.pdf",
+        "366_Exposition_accidentelle_aux_liquides_biologiques_conduite_a_tenir.pdf"
+      ]
+    },
+    "medecine_d_urgence": {
+      "name": "Medecine D Urgence",
+      "color": "hsl(61 70% 50%)",
+      "files": [
+        "120_Complications_de_l_immobilite_et_du_decubitus_Prevention_et_prise_en_charge.pdf",
+        "134_Bases_neurophysiologiques_mecanismes_physiopathologiques_d_une_douleur_aigue_et_d_une_douleur_chronique.pdf",
+        "135_Therapeutiques_antalgiques_medicamenteuses_et_non_medicamenteuses_voir_item_330.pdf",
+        "136_Anesthesie_locale_locoregionale_et_generale.pdf",
+        "329_Connaitre_les_caracteristiques_des_produits_sanguins_labiles_PSL_et_leur_specificite.pdf",
+        "331_Arret_cardio_circulatoire.pdf",
+        "332_Etat_de_choc_Principales_etiologies_hypovolemique_septique_voir_item_158_cardio_genique_anaphylactique.pdf",
+        "333_Situations_exceptionnelles.pdf",
+        "334_Prise_en_charge_immediate_pre_hospitaliere_et_a_l_arrivee_a_l_hopital_evaluation_des_complications_chez_un_brule_un_polytraumatise_un_traumatise_thoracique_un_traumatise_abdominal_un_traumatise_des_membres_et_ou_du_bassin_un_traumatise_du_rachis_ou_vertebro_medullaire_un_traumatise_cranien_ou_cranio_encephalique.pdf",
+        "336_Coma_non_traumatique_chez_l_adulte_et_chez_l_enfant.pdf",
+        "337_Principales_intoxications_aigues.pdf",
+        "338_deme_de_Quincke_et_anaphylaxie.pdf",
+        "340_Accidents_vasculaires_cerebraux.pdf",
+        "341_Hemorragie_meningee.pdf",
+        "342_Malaise_perte_de_connaissance_crise_comitiale_chez_l_adulte_voir_item_105.pdf",
+        "344_Prise_en_charge_d_une_patiente_atteinte_de_pre_eclampsie.pdf",
+        "348_Insuffisance_renale_aigue_Anurie.pdf",
+        "349_Infection_aigue_des_parties_molles_abces_panaris_phlegmon_des_gaines.pdf",
+        "355_Hemorragie_digestive.pdf",
+        "357_Peritonite_aigue_chez_l_enfant_et_chez_l_adulte.pdf",
+        "358_Pancreatite_aigue.pdf",
+        "359_Detresse_et_insuffisance_respiratoire_aigue_du_nourrisson_de_l_enfant_et_de_l_adulte.pdf",
+        "360_Pneumothorax.pdf"
+      ]
+    },
+    "medecine_du_sport": {
+      "name": "Medecine Du Sport",
+      "color": "hsl(1 70% 50%)",
+      "files": [
+        "256_Aptitude_au_sport_chez_l_adulte_et_l_enfant_besoins_nutritionnels_chez_le_sportif_voir_item_80.pdf",
+        "80_Dopage_et_conduites_dopantes_voir_item_256.pdf"
+      ]
+    },
+    "medecine_du_travail": {
+      "name": "Medecine Du Travail",
+      "color": "hsl(188 70% 50%)",
+      "files": [
+        "181_La_securite_sanitaire_des_produits_destines_a_l_homme_La_veille_sanitaire_voir_item_325.pdf",
+        "182_Environnement_professionnel_et_sante_au_travail.pdf",
+        "183_Organisation_de_la_medecine_du_travail_Prevention_des_risques_professionnels.pdf",
+        "184_Accidents_du_travail_et_maladies_professionnelles_definition_et_enjeux.pdf",
+        "29_Connaitre_les_principaux_risques_professionnels_pour_la_maternite_lies_au_travail_de_la_mere.pdf"
+      ]
+    },
+    "medecine_et_biologie_du_developpement_et_de_la_reproduction": {
+      "name": "Medecine Et Biologie Du Developpement Et De La Reproduction",
+      "color": "hsl(75 70% 50%)",
+      "files": [
+        "38_Infertilite_du_couple_conduite_de_la_premiere_consultation.pdf",
+        "39_Assistance_medicale_a_la_procreation_principaux_aspects_biologiques_medicaux_et_ethiques.pdf"
+      ]
+    },
+    "medecine_generale": {
+      "name": "Medecine Generale",
+      "color": "hsl(316 70% 50%)",
+      "files": [
+        "110_Troubles_du_sommeil_de_l_enfant_et_de_l_adulte.pdf",
+        "133_Autonomie_et_dependance_chez_le_sujet_age.pdf",
+        "146_Vaccinations.pdf",
+        "148_Infections_naso_sinusiennes_de_l_adulte_et_de_l_enfant.pdf",
+        "149_Angines_de_l_adulte_et_de_l_enfant.pdf",
+        "166_Grippe.pdf",
+        "168_Infections_a_herpes_virus_du_sujet_immunocompetent.pdf",
+        "1_La_relation_medecin_malade_dans_le_cadre_du_colloque_singulier_ou_au_sein_d_une_equipe_le_cas_echeant_pluriprofessionnelle_La_communication_avec_le_patient_et_son_entourage_L_annonce_d_une_maladie_grave_ou_letale_ou_d_un_dommage_associe_aux_soins_La_formation_du_patient_La_personnalisation_de_la_prise_en_charge_medicale.pdf",
+        "221_Atherome_epidemiologie_et_physiopathologie_Le_malade_poly_atheromateux.pdf",
+        "222_Facteurs_de_risque_cardio_vasculaire_et_prevention.pdf",
+        "224_Hypertension_arterielle_de_l_adulte_et_de_l_enfant.pdf",
+        "23_Grossesse_normale.pdf",
+        "249_Modifications_therapeutiques_du_mode_de_vie_alimentation_et_activite_physique_chez_l_adulte_et_l_enfant.pdf",
+        "283_Constipation_chez_l_enfant_et_l_adulte.pdf",
+        "290_Epidemiologie_facteurs_de_risque_prevention_et_depistage_des_cancers.pdf",
+        "322_La_decision_therapeutique_personnalisee_bon_usage_dans_des_situations_a_risque.pdf",
+        "350_Grosse_jambe_rouge_aigue.pdf",
+        "3_Le_raisonnement_et_la_decision_en_medecine_La_medecine_fondee_sur_les_preuves_Evidence_Based_Medicine_EBM_La_decision_medicale_partagee_La_controverse.pdf",
+        "59_Sujets_en_situation_de_precarite.pdf",
+        "72_Troubles_a_symptomatologie_somatique_et_apparentes_a_tous_les_ages.pdf",
+        "75_Addiction_au_tabac.pdf"
+      ]
+    },
+    "medecine_intensive_reanimation": {
+      "name": "Medecine Intensive Reanimation",
+      "color": "hsl(292 70% 50%)",
+      "files": [
+        "120_Complications_de_l_immobilite_et_du_decubitus_Prevention_et_prise_en_charge.pdf",
+        "134_Bases_neurophysiologiques_mecanismes_physiopathologiques_d_une_douleur_aigue_et_d_une_douleur_chronique.pdf",
+        "135_Therapeutiques_antalgiques_medicamenteuses_et_non_medicamenteuses_voir_item_330.pdf",
+        "136_Anesthesie_locale_locoregionale_et_generale.pdf",
+        "143_Connaitre_les_aspects_specifiques_des_soins_palliatifs_en_reanimation.pdf",
+        "329_Connaitre_les_caracteristiques_des_produits_sanguins_labiles_PSL_et_leur_specificite.pdf",
+        "331_Arret_cardio_circulatoire.pdf",
+        "332_Etat_de_choc_Principales_etiologies_hypovolemique_septique_voir_item_158_cardio_genique_anaphylactique.pdf",
+        "333_Situations_exceptionnelles.pdf",
+        "334_Prise_en_charge_immediate_pre_hospitaliere_et_a_l_arrivee_a_l_hopital_evaluation_des_complications_chez_un_brule_un_polytraumatise_un_traumatise_thoracique_un_traumatise_abdominal_un_traumatise_des_membres_et_ou_du_bassin_un_traumatise_du_rachis_ou_vertebro_medullaire_un_traumatise_cranien_ou_cranio_encephalique.pdf",
+        "336_Coma_non_traumatique_chez_l_adulte_et_chez_l_enfant.pdf",
+        "337_Principales_intoxications_aigues.pdf",
+        "338_deme_de_Quincke_et_anaphylaxie.pdf",
+        "340_Accidents_vasculaires_cerebraux.pdf",
+        "341_Hemorragie_meningee.pdf",
+        "342_Malaise_perte_de_connaissance_crise_comitiale_chez_l_adulte_voir_item_105.pdf",
+        "344_Prise_en_charge_d_une_patiente_atteinte_de_pre_eclampsie.pdf",
+        "348_Insuffisance_renale_aigue_Anurie.pdf",
+        "349_Infection_aigue_des_parties_molles_abces_panaris_phlegmon_des_gaines.pdf",
+        "355_Hemorragie_digestive.pdf",
+        "357_Peritonite_aigue_chez_l_enfant_et_chez_l_adulte.pdf",
+        "358_Pancreatite_aigue.pdf",
+        "359_Detresse_et_insuffisance_respiratoire_aigue_du_nourrisson_de_l_enfant_et_de_l_adulte.pdf",
+        "360_Pneumothorax.pdf"
+      ]
+    },
+    "medecine_interne": {
+      "name": "Medecine Interne",
+      "color": "hsl(238 70% 50%)",
+      "files": [
+        "190_Fievre_prolongee.pdf",
+        "193_Connaitre_les_principaux_types_de_vascularite_systemique_les_organes_cibles_les_outils_diagnostiques_et_les_moyens_therapeutiques.pdf",
+        "194_Lupus_systemique_LS_Syndrome_des_anti_phospholipides_SAPL.pdf",
+        "195_Arterite_a_cellules_geantes.pdf",
+        "211_Sarcoidose.pdf",
+        "213_Anemie_chez_l_adulte_et_l_enfant.pdf",
+        "214_Thrombopenie_chez_l_adulte_et_l_enfant.pdf",
+        "215_Purpuras_chez_l_adulte_et_l_enfant.pdf",
+        "217_Syndrome_mononucleosique.pdf",
+        "218_Eosinophilie.pdf",
+        "239_Acrosyndromes_phenomene_de_Raynaud_erythermalgie_acrocyanose_engelures_ischemie_digitale.pdf",
+        "275_Splenomegalie.pdf",
+        "2_Les_valeurs_professionnelles_du_medecin_et_des_autres_professions_de_sante.pdf"
+      ]
+    },
+    "medecine_legale": {
+      "name": "Medecine Legale",
+      "color": "hsl(99 70% 50%)",
+      "files": [
+        "12_Violences_sexuelles.pdf",
+        "13_Certificats_medicaux_Deces_et_legislation.pdf",
+        "7_Les_droits_individuels_et_collectifs_du_patient.pdf"
+      ]
+    },
+    "medecine_nucleaire": {
+      "name": "Medecine Nucleaire",
+      "color": "hsl(73 70% 50%)",
+      "files": [
+        "180_Risques_sanitaires_lies_aux_irradiations_Radioprotection.pdf"
+      ]
+    },
+    "medecine_physique_et_de_readaptation": {
+      "name": "Medecine Physique Et De Readaptation",
+      "color": "hsl(188 70% 50%)",
+      "files": [
+        "118_La_personne_handicapee_bases_de_l_evaluation_fonctionnelle_et_therapeutique_voir_item_56.pdf",
+        "119_Soins_et_accompagnement_dans_la_maladie_chronique_et_le_handicap.pdf",
+        "121_Le_handicap_psychique_voir_item_56_et_118.pdf",
+        "122_Principales_techniques_de_reeducation_et_de_readaptation_voir_item_55.pdf",
+        "328_Therapeutiques_non_medicamenteuses_et_dispositifs_medicaux.pdf",
+        "56_L_enfant_handicape_orientation_et_prise_en_charge_voir_items_118_121.pdf",
+        "94_Rachialgie.pdf"
+      ]
+    },
+    "medecine_vasculaire": {
+      "name": "Medecine Vasculaire",
+      "color": "hsl(192 70% 50%)",
+      "files": [
+        "113_Hemangiomes_et_malformations_vasculaires_cutanees.pdf",
+        "153_Surveillance_des_porteurs_de_protheses_valvulaires.pdf",
+        "221_Atherome_epidemiologie_et_physiopathologie_Le_malade_poly_atheromateux.pdf",
+        "222_Facteurs_de_risque_cardio_vasculaire_et_prevention.pdf",
+        "223_Dyslipidemies.pdf",
+        "224_Hypertension_arterielle_de_l_adulte_et_de_l_enfant.pdf",
+        "225_Arteriopathie_de_l_aorte_des_arteres_viscerales_et_des_membres_inferieurs_anevrysmes.pdf",
+        "226_Thrombose_veineuse_profonde_et_embolie_pulmonaire_voir_item_330.pdf",
+        "227_Insuffisance_veineuse_chronique_Varices.pdf",
+        "228_Ulcere_de_jambe.pdf",
+        "229_Surveillance_et_complications_des_abords_veineux.pdf",
+        "239_Acrosyndromes_phenomene_de_Raynaud_erythermalgie_acrocyanose_engelures_ischemie_digitale.pdf",
+        "248_Prevention_primaire_par_la_nutrition_chez_l_adulte_et_l_enfant.pdf",
+        "330_Prescription_et_surveillance_des_classes_de_medicaments_les_plus_courantes_chez_l_adulte_et_chez_l_enfant_hors_anti_infectieux_voir_item_177_Connaitre_le_bon_usage_des_principales_classes_therapeutiques.pdf",
+        "335_Orientation_diagnostique_et_conduite_a_tenir_devant_un_traumatisme_cranio_facial_et_oculaire.pdf",
+        "340_Accidents_vasculaires_cerebraux.pdf",
+        "75_Addiction_au_tabac.pdf"
+      ]
+    },
+    "medecines_integratives_et_complementaires": {
+      "name": "Medecines Integratives Et Complementaires",
+      "color": "hsl(32 70% 50%)",
+      "files": [
+        "327_Principes_de_la_medecine_integrative_utilite_et_risques_des_interventions_non_medicamenteuses_et_des_therapies_complementaires.pdf"
+      ]
+    },
+    "nephrologie": {
+      "name": "Nephrologie",
+      "color": "hsl(100 70% 50%)",
+      "files": [
+        "201_Transplantation_d_organes_aspects_epidemiologiques_et_immunologiques_principes_de_traitement_et_surveillance_complications_et_pronostic_aspects_ethiques_et_legaux_Prelevements_d_organes_et_legislation.pdf",
+        "224_Hypertension_arterielle_de_l_adulte_et_de_l_enfant.pdf",
+        "257_demes_des_membres_inferieurs_localises_ou_generalises.pdf",
+        "258_Elevation_de_la_creatininemie.pdf",
+        "259_Proteinurie_et_syndrome_nephrotique_chez_l_adulte_et_de_l_enfant.pdf",
+        "260_Hematurie.pdf",
+        "261_Nephropathie_glomerulaire.pdf",
+        "262_Nephropathies_interstitielles.pdf",
+        "263_Nephropathies_vasculaires.pdf",
+        "264_Insuffisance_renale_chronique_chez_l_adulte_et_l_enfant.pdf",
+        "265_Lithiase_urinaire.pdf",
+        "266_Polykystose_renale.pdf",
+        "267_Troubles_de_l_equilibre_acido_basique_et_desordres_hydro_electrolytiques.pdf",
+        "268_Hypercalcemie.pdf",
+        "348_Insuffisance_renale_aigue_Anurie.pdf"
+      ]
+    },
+    "neurochirurgie": {
+      "name": "Neurochirurgie",
+      "color": "hsl(75 70% 50%)",
+      "files": [
+        "297_Cancer_de_l_enfant_particularites_epidemiologiques_diagnostiques_et_therapeutiques.pdf",
+        "299_Tumeurs_intracraniennes.pdf",
+        "334_Prise_en_charge_immediate_pre_hospitaliere_et_a_l_arrivee_a_l_hopital_evaluation_des_complications_chez_un_brule_un_polytraumatise_un_traumatise_thoracique_un_traumatise_abdominal_un_traumatise_des_membres_et_ou_du_bassin_un_traumatise_du_rachis_ou_vertebro_medullaire_un_traumatise_cranien_ou_cranio_encephalique.pdf",
+        "341_Hemorragie_meningee.pdf",
+        "93_Compression_medullaire_non_traumatique_et_syndrome_de_la_queue_de_cheval.pdf",
+        "95_Radiculalgie_et_syndrome_canalaire.pdf"
+      ]
+    },
+    "neurologie": {
+      "name": "Neurologie",
+      "color": "hsl(1 70% 50%)",
+      "files": [
+        "100_Cephalee_inhabituelle_aigue_et_chronique_chez_l_adulte_et_l_enfant.pdf",
+        "101_Paralysie_faciale.pdf",
+        "103_Vertige.pdf",
+        "104_Sclerose_en_plaques.pdf",
+        "105_Epilepsie_de_l_enfant_et_de_l_adulte.pdf",
+        "106_Maladie_de_Parkinson.pdf",
+        "107_Mouvements_anormaux.pdf",
+        "108_Confusion_demences_voir_item_132.pdf",
+        "109_Troubles_de_la_marche_et_de_l_equilibre.pdf",
+        "340_Accidents_vasculaires_cerebraux.pdf",
+        "343_Etat_confusionnel_et_trouble_de_conscience_chez_l_adulte_et_chez_l_enfant.pdf",
+        "91_Deficit_neurologique_recent_voir_item_340.pdf",
+        "92_Deficit_moteur_et_ou_sensitif_des_membres.pdf",
+        "93_Compression_medullaire_non_traumatique_et_syndrome_de_la_queue_de_cheval.pdf",
+        "96_Neuropathies_peripheriques.pdf",
+        "97_Polyradiculonevrite_aigue_inflammatoire_syndrome_de_Guillain_Barre.pdf",
+        "98_Myasthenie.pdf",
+        "99_Migraine_nevralgie_du_trijumeau_et_algies_de_la_face.pdf"
+      ]
+    },
+    "nutrition": {
+      "name": "Nutrition",
+      "color": "hsl(284 70% 50%)",
+      "files": [
+        "248_Prevention_primaire_par_la_nutrition_chez_l_adulte_et_l_enfant.pdf",
+        "250_Denutrition_chez_l_adulte_et_l_enfant.pdf",
+        "251_Amaigrissement_a_tous_les_ages.pdf",
+        "253_Obesite_de_l_enfant_et_de_l_adulte_voir_item_71.pdf",
+        "254_Besoins_nutritionnels_de_la_femme_enceinte.pdf"
+      ]
+    },
+    "ophtalmologie": {
+      "name": "Ophtalmologie",
+      "color": "hsl(316 70% 50%)",
+      "files": [
+        "102_Diplopie.pdf",
+        "52_Strabisme_et_amblyopie_de_l_enfant.pdf",
+        "81_Alteration_chronique_de_la_vision.pdf",
+        "82_Alteration_aigue_de_la_vision.pdf",
+        "83_Infections_et_inflammations_oculaires.pdf",
+        "84_Glaucomes.pdf",
+        "85_Troubles_de_la_refraction.pdf",
+        "86_Pathologie_des_paupieres.pdf"
+      ]
+    },
+    "orl_et_chirurgie_de_la_face_et_du_cou": {
+      "name": "Orl Et Chirurgie De La Face Et Du Cou",
+      "color": "hsl(238 70% 50%)",
+      "files": [
+        "103_Vertige.pdf",
+        "150_Otites_infectieuses_de_l_adulte_et_de_l_enfant.pdf",
+        "298_Tumeurs_de_la_cavite_buccale_naso_sinusiennes_et_du_cavum_et_des_voies_aerodigestives_superieures.pdf",
+        "87_Epistaxis.pdf",
+        "88_Trouble_aigu_de_la_parole_Dysphonie.pdf",
+        "89_Alteration_de_la_fonction_auditive.pdf",
+        "90_Pathologie_des_glandes_salivaires.pdf"
+      ]
+    },
+    "parasitologie": {
+      "name": "Parasitologie",
+      "color": "hsl(315 70% 50%)",
+      "files": [
+        "170_Paludisme.pdf",
+        "171_Gale_et_pediculose.pdf",
+        "172_Parasitoses_digestives_giardiose_amoebose_teniasis_ascaridiose_oxyurose_anguillulose_cryptosporidiose.pdf",
+        "173_Zoonoses.pdf",
+        "175_Voyage_en_pays_tropical_de_l_adulte_et_de_l_enfant_conseils_avant_le_depart_pathologies_du_retour_fievre_diarrhee_manifestations_cutanees.pdf",
+        "177_Prescription_et_surveillance_des_anti_infectieux_chez_l_adulte_et_l_enfant_voir_item_330.pdf"
+      ]
+    },
+    "pathologique": {
+      "name": "Pathologique",
+      "color": "hsl(218 70% 50%)",
+      "files": [
+        "293_Le_medecin_preleveur_de_cellules_et_ou_de_tissus_pour_des_examens_d_Anatomie_et_Cytologie_Pathologiques_connaitre_les_principes_de_realisation_transmission_et_utilisation_des_prelevements_a_visee_sanitaire_et_de_recherche.pdf"
+      ]
+    },
+    "pediatrie": {
+      "name": "Pediatrie",
+      "color": "hsl(231 70% 50%)",
+      "files": [
+        "100_Cephalee_inhabituelle_aigue_et_chronique_chez_l_adulte_et_l_enfant.pdf",
+        "105_Epilepsie_de_l_enfant_et_de_l_adulte.pdf",
+        "110_Troubles_du_sommeil_de_l_enfant_et_de_l_adulte.pdf",
+        "114_Exantheme_et_erythrodermie_de_l_adulte_et_de_l_enfant_voir_item_164.pdf",
+        "137_Douleur_chez_l_enfant_evaluation_et_traitements_antalgique.pdf",
+        "142_Connaitre_les_aspects_specifiques_des_soins_palliatifs_en_pediatrie.pdf",
+        "146_Vaccinations.pdf",
+        "147_Fievre_aigue_chez_l_enfant_et_l_adulte.pdf",
+        "148_Infections_naso_sinusiennes_de_l_adulte_et_de_l_enfant.pdf",
+        "149_Angines_de_l_adulte_et_de_l_enfant.pdf",
+        "150_Otites_infectieuses_de_l_adulte_et_de_l_enfant.pdf",
+        "151_Meningites_meningoencephalites_abces_cerebral_chez_l_adulte_et_l_enfant.pdf",
+        "154_Infections_broncho_pulmonaires_communautaires_de_l_adulte_et_de_l_enfant.pdf",
+        "155_Infections_cutaneo_muqueuses_et_des_phaneres_bacteriennes_et_mycosiques_de_l_adulte_et_de_l_enfant.pdf",
+        "156_Infections_osteo_articulaires_IOA_de_l_enfant_et_de_l_adulte.pdf",
+        "157_Bacteriemie_Fongemie_de_l_adulte_et_de_l_enfant.pdf",
+        "158_Sepsis_et_choc_septique_de_l_enfant_et_de_l_adulte.pdf",
+        "159_Tuberculose_de_l_adulte_et_de_l_enfant.pdf",
+        "161_Infections_urinaires_de_l_enfant_et_de_l_adulte.pdf",
+        "163_Coqueluche.pdf",
+        "164_Exanthemes_febriles_de_l_enfant.pdf",
+        "165_Oreillons.pdf",
+        "174_Pathologie_infectieuse_chez_les_migrants_adultes_et_enfants.pdf",
+        "175_Voyage_en_pays_tropical_de_l_adulte_et_de_l_enfant_conseils_avant_le_depart_pathologies_du_retour_fievre_diarrhee_manifestations_cutanees.pdf",
+        "176_Diarrhees_infectieuses_de_l_adulte_et_de_l_enfant.pdf",
+        "177_Prescription_et_surveillance_des_anti_infectieux_chez_l_adulte_et_l_enfant_voir_item_330.pdf",
+        "186_Hypersensibilites_et_allergies_chez_l_enfant_et_l_adulte_aspects_physiopathologiques_epidemiologiques_diagnostiques_et_principes_de_traitement.pdf",
+        "187_Hypersensibilites_et_allergies_cutaneomuqueuses_chez_l_enfant_et_l_adulte_Urticaire_dermatites_atopique_et_de_contact.pdf",
+        "188_Hypersensibilite_et_allergies_respiratoires_chez_l_enfant_et_chez_l_adulte_Asthme_rhinite.pdf",
+        "189_Deficit_immunitaire.pdf",
+        "190_Fievre_prolongee.pdf",
+        "203_Dyspnee_aigue_et_chronique.pdf",
+        "204_Toux_chez_l_enfant_et_chez_l_adulte_avec_le_traitement.pdf",
+        "207_Opacites_et_masses_intra_thoraciques_chez_l_enfant_et_chez_l_adulte.pdf",
+        "212_Hemogramme_chez_l_adulte_et_l_enfant_indications_et_interpretation.pdf",
+        "213_Anemie_chez_l_adulte_et_l_enfant.pdf",
+        "214_Thrombopenie_chez_l_adulte_et_l_enfant.pdf",
+        "215_Purpuras_chez_l_adulte_et_l_enfant.pdf",
+        "219_Pathologie_du_fer_chez_l_adulte_et_l_enfant.pdf",
+        "220_Adenopathie_superficielle_de_l_adulte_et_de_l_enfant.pdf",
+        "224_Hypertension_arterielle_de_l_adulte_et_de_l_enfant.pdf",
+        "238_Souffle_cardiaque_chez_l_enfant.pdf",
+        "240_Hypoglycemie_chez_l_adulte_et_l_enfant.pdf",
+        "245_Insuffisance_surrenale_chez_l_adulte_et_l_enfant.pdf",
+        "247_Diabete_sucre_de_type_1_et_2_de_l_enfant_et_de_l_adulte_Complications.pdf",
+        "250_Denutrition_chez_l_adulte_et_l_enfant.pdf",
+        "251_Amaigrissement_a_tous_les_ages.pdf",
+        "253_Obesite_de_l_enfant_et_de_l_adulte_voir_item_71.pdf",
+        "256_Aptitude_au_sport_chez_l_adulte_et_l_enfant_besoins_nutritionnels_chez_le_sportif_voir_item_80.pdf",
+        "259_Proteinurie_et_syndrome_nephrotique_chez_l_adulte_et_de_l_enfant.pdf",
+        "260_Hematurie.pdf",
+        "264_Insuffisance_renale_chronique_chez_l_adulte_et_l_enfant.pdf",
+        "269_Douleurs_abdominales_aigues_chez_l_enfant_et_chez_l_adulte.pdf",
+        "271_Reflux_gastro_sophagien_chez_le_nourrisson_chez_l_enfant_et_chez_l_adulte_Hernie_hiatale.pdf",
+        "274_Vomissements_du_nourrisson_de_l_enfant_et_de_l_adulte.pdf",
+        "278_Ictere_de_l_adulte_et_de_l_enfant.pdf",
+        "283_Constipation_chez_l_enfant_et_l_adulte.pdf",
+        "285_Diarrhee_chronique_chez_l_adulte_et_l_enfant.pdf",
+        "286_Diarrhee_aigue_et_deshydratation_chez_le_nourrisson_l_enfant_et_l_adulte.pdf",
+        "297_Cancer_de_l_enfant_particularites_epidemiologiques_diagnostiques_et_therapeutiques.pdf",
+        "30_Prematurite_et_retard_de_croissance_intra_uterin_facteurs_de_risque_et_prevention.pdf",
+        "315_Leucemies_aigues.pdf",
+        "329_Connaitre_les_caracteristiques_des_produits_sanguins_labiles_PSL_et_leur_specificite.pdf",
+        "32_Evaluation_et_soins_du_nouveau_ne_a_terme.pdf",
+        "331_Arret_cardio_circulatoire.pdf",
+        "332_Etat_de_choc_Principales_etiologies_hypovolemique_septique_voir_item_158_cardio_genique_anaphylactique.pdf",
+        "336_Coma_non_traumatique_chez_l_adulte_et_chez_l_enfant.pdf",
+        "337_Principales_intoxications_aigues.pdf",
+        "343_Etat_confusionnel_et_trouble_de_conscience_chez_l_adulte_et_chez_l_enfant.pdf",
+        "345_Malaise_grave_du_nourrisson_et_mort_inattendue_du_nourrisson.pdf",
+        "346_Convulsions_chez_le_nourrisson_et_chez_l_enfant.pdf",
+        "359_Detresse_et_insuffisance_respiratoire_aigue_du_nourrisson_de_l_enfant_et_de_l_adulte.pdf",
+        "45_Specificites_des_maladies_genetiques_voir_item_9.pdf",
+        "47_Suivi_d_un_nourrisson_d_un_enfant_et_d_un_adolescent_normal_Depistage_des_anomalies_orthopediques_des_troubles_visuels_auditifs_et_dentaires_Examens_de_sante_obligatoires_Medecine_scolaire_Mortalite_et_morbidite_infantiles.pdf",
+        "48_Alimentation_et_besoins_nutritionnels_du_nourrisson_et_de_l_enfant.pdf",
+        "49_Puberte_normale_et_pathologique.pdf",
+        "53_Retard_de_croissance_staturo_ponderale.pdf",
+        "54_Boiterie_chez_l_enfant.pdf",
+        "55_Developpement_psychomoteur_du_nourrisson_et_de_l_enfant_aspects_normaux_et_pathologiques_sommeil_alimentation_controles_sphincteriens_psychomotricite_langage_intelligence_L_installation_precoce_de_la_relation_parents_enfant_et_son_importance_Troubles_de_l_apprentissage_voir_item_122.pdf",
+        "56_L_enfant_handicape_orientation_et_prise_en_charge_voir_items_118_121.pdf",
+        "57_Maltraitance_et_enfants_en_danger_Protection_maternelle_et_infantile.pdf"
+      ]
+    },
+    "pharmacologie": {
+      "name": "Pharmacologie",
+      "color": "hsl(291 70% 50%)",
+      "files": [
+        "321_Principe_du_bon_usage_du_medicament_et_des_therapeutiques_non_medicamenteuses.pdf",
+        "322_La_decision_therapeutique_personnalisee_bon_usage_dans_des_situations_a_risque.pdf",
+        "323_Analyser_et_utiliser_les_resultats_des_etudes_cliniques_dans_la_perspective_du_bon_usage_analyse_critique_recherche_clinique_et_niveaux_de_preuve_voir_item_3.pdf",
+        "324_Education_therapeutique_observance_et_automedication.pdf",
+        "325_Identification_et_gestion_des_risques_lies_aux_medicaments_et_aux_biomateriaux_risque_iatrogene_erreur_medicamenteuse_voir_items_4_et_5.pdf",
+        "326_Cadre_reglementaire_de_la_prescription_therapeutique_et_recommandations_pour_le_bon_usage.pdf",
+        "330_Prescription_et_surveillance_des_classes_de_medicaments_les_plus_courantes_chez_l_adulte_et_chez_l_enfant_hors_anti_infectieux_voir_item_177_Connaitre_le_bon_usage_des_principales_classes_therapeutiques.pdf",
+        "74_Prescription_et_surveillance_des_psychotropes_voir_item_330.pdf"
+      ]
+    },
+    "pneumologie": {
+      "name": "Pneumologie",
+      "color": "hsl(108 70% 50%)",
+      "files": [
+        "110_Troubles_du_sommeil_de_l_enfant_et_de_l_adulte.pdf",
+        "154_Infections_broncho_pulmonaires_communautaires_de_l_adulte_et_de_l_enfant.pdf",
+        "159_Tuberculose_de_l_adulte_et_de_l_enfant.pdf",
+        "186_Hypersensibilites_et_allergies_chez_l_enfant_et_l_adulte_aspects_physiopathologiques_epidemiologiques_diagnostiques_et_principes_de_traitement.pdf",
+        "188_Hypersensibilite_et_allergies_respiratoires_chez_l_enfant_et_chez_l_adulte_Asthme_rhinite.pdf",
+        "203_Dyspnee_aigue_et_chronique.pdf",
+        "204_Toux_chez_l_enfant_et_chez_l_adulte_avec_le_traitement.pdf",
+        "205_Hemoptysie.pdf",
+        "206_Epanchement_pleural_liquidien.pdf",
+        "208_Insuffisance_respiratoire_chronique.pdf",
+        "209_Bronchopneumopathie_chronique_obstructive_chez_l_adulte.pdf",
+        "210_Pneumopathie_interstitielle_diffuse.pdf",
+        "211_Sarcoidose.pdf",
+        "226_Thrombose_veineuse_profonde_et_embolie_pulmonaire_voir_item_330.pdf",
+        "309_Tumeurs_du_poumon_primitives_et_secondaires.pdf",
+        "360_Pneumothorax.pdf",
+        "75_Addiction_au_tabac.pdf"
+      ]
+    },
+    "psychiatrie": {
       "name": "Psychiatrie",
-      "color": "#a855f7",
+      "color": "hsl(109 70% 50%)",
       "files": [
-        "352_Dépression.pdf",
-        "353_Troubles_bipolaires.pdf",
-        "354_Troubles_anxieux.pdf",
-        "355_Troubles_psychotiques.pdf",
-        "356_Troubles_de_la_personnalité.pdf",
-        "357_Troubles_du_comportement_alimentaire.pdf",
-        "358_Addictions.pdf",
-        "359_Troubles_du_sommeil.pdf"
+        "121_Le_handicap_psychique_voir_item_56_et_118.pdf",
+        "144_Deuil_normal_et_pathologique.pdf",
+        "15_Soins_psychiatriques_sans_consentement.pdf",
+        "351_Agitation_et_delire_aigu.pdf",
+        "352_Crise_d_angoisse_aigue_et_attaque_de_panique.pdf",
+        "353_Risque_et_conduite_suicidaires_chez_l_enfant_l_adolescent_et_l_adulte_identification_et_prise_en_charge.pdf",
+        "55_Developpement_psychomoteur_du_nourrisson_et_de_l_enfant_aspects_normaux_et_pathologiques_sommeil_alimentation_controles_sphincteriens_psychomotricite_langage_intelligence_L_installation_precoce_de_la_relation_parents_enfant_et_son_importance_Troubles_de_l_apprentissage_voir_item_122.pdf",
+        "58_Sexualite_normale_et_ses_troubles.pdf",
+        "60_Connaitre_les_facteurs_de_risque_prevention_depistage_des_troubles_psychiques_de_l_enfant_a_la_personne_agee.pdf",
+        "61_Connaitre_les_bases_des_classifications_des_troubles_mentaux_de_l_enfant_a_la_personne_agee.pdf",
+        "62_Decrire_l_organisation_de_l_offre_de_soins_en_psychiatrie_de_l_enfant_a_la_personne_agee.pdf",
+        "63_Troubles_schizophreniques_de_l_adolescent_et_de_l_adulte.pdf",
+        "64_Troubles_bipolaires_de_l_adolescent_et_de_l_adulte.pdf",
+        "65_Trouble_delirant_persistant.pdf",
+        "66_Diagnostiquer_un_trouble_depressif_un_trouble_anxieux_un_trouble_obsessionnel_compulsif_un_trouble_de_stress_post_traumatique_un_trouble_de_l_adaptation_un_trouble_de_la_personnalite.pdf",
+        "67_Troubles_du_neurodeveloppement_voir_items_55_118_121_122_138.pdf",
+        "68_Troubles_du_comportement_de_l_enfant_et_de_l_adolescent.pdf",
+        "69_Troubles_psychiques_de_la_grossesse_et_du_post_partum.pdf",
+        "70_Troubles_psychiques_du_sujet_age.pdf",
+        "71_Troubles_des_conduites_alimentaires_chez_l_adolescent_et_l_adulte_voir_item_253.pdf",
+        "73_Differents_types_de_techniques_psychotherapeutiques.pdf",
+        "74_Prescription_et_surveillance_des_psychotropes_voir_item_330.pdf"
       ]
     },
-    "pediatrics": {
-      "name": "Pédiatrie",
-      "color": "#fbbf24",
+    "radiologie": {
+      "name": "Radiologie",
+      "color": "hsl(335 70% 50%)",
       "files": [
-        "10_HTA_de_l'enfant.pdf",
-        "360_Croissance_et_développement.pdf",
-        "361_Maladies_infectieuses_pédiatriques.pdf",
-        "362_Maladies_génétiques.pdf",
-        "363_Maladies_rares.pdf",
-        "364_Prématurité.pdf",
-        "365_Nouveau-né_pathologique.pdf",
-        "366_Urgences_pédiatriques.pdf",
-        "367_Médecine_scolaire.pdf"
+        "180_Risques_sanitaires_lies_aux_irradiations_Radioprotection.pdf",
+        "207_Opacites_et_masses_intra_thoraciques_chez_l_enfant_et_chez_l_adulte.pdf",
+        "321_Principe_du_bon_usage_du_medicament_et_des_therapeutiques_non_medicamenteuses.pdf"
       ]
     },
-    "emergency": {
-      "name": "Médecine d'urgence",
-      "color": "#ef4444",
+    "rhumatologie": {
+      "name": "Rhumatologie",
+      "color": "hsl(216 70% 50%)",
       "files": [
-        "3_Douleur_thoracique_aiguë_et_chronique.pdf",
-        "4_Dyspnée_aiguë_et_chronique.pdf",
-        "5_Œdème_aigu_du_poumon.pdf",
-        "6_Choc_cardiogénique.pdf",
-        "7_Syncope.pdf",
-        "21_Douleur_abdominale_aiguë_et_chronique.pdf",
-        "366_Urgences_pédiatriques.pdf"
+        "128_Osteopathies_fragilisantes.pdf",
+        "129_Arthrose.pdf",
+        "196_Polyarthrite_rhumatoide.pdf",
+        "197_Spondyloarthrite.pdf",
+        "198_Arthropathies_microcristallines.pdf",
+        "200_Douleur_et_epanchement_articulaire_Arthrite_d_evolution_recente.pdf",
+        "268_Hypercalcemie.pdf",
+        "270_Douleurs_lombaires_aigues.pdf",
+        "307_Tumeurs_des_os_primitives_et_secondaires.pdf",
+        "95_Radiculalgie_et_syndrome_canalaire.pdf"
+      ]
+    },
+    "sante_publique": {
+      "name": "Sante Publique",
+      "color": "hsl(65 70% 50%)",
+      "files": [
+        "16_Organisation_du_systeme_de_soins_Sa_regulation_Les_indicateurs_Parcours_de_soins.pdf",
+        "17_Telemedecine_telesante_et_teleservices_en_sante.pdf",
+        "180_Risques_sanitaires_lies_aux_irradiations_Radioprotection.pdf",
+        "181_La_securite_sanitaire_des_produits_destines_a_l_homme_La_veille_sanitaire_voir_item_325.pdf",
+        "18_Sante_et_numerique.pdf",
+        "19_La_securite_sociale_L_assurance_maladie_Les_assurances_complementaires_La_complementaire_sante_solidaire_CSS_La_consommation_medicale_Protection_sociale_Consommation_medicale_et_economie_de_la_sante.pdf",
+        "20_La_methodologie_de_la_recherche_en_sante.pdf",
+        "21_Mesure_de_l_etat_de_sante_de_la_population.pdf",
+        "2_Les_valeurs_professionnelles_du_medecin_et_des_autres_professions_de_sante.pdf",
+        "323_Analyser_et_utiliser_les_resultats_des_etudes_cliniques_dans_la_perspective_du_bon_usage_analyse_critique_recherche_clinique_et_niveaux_de_preuve_voir_item_3.pdf",
+        "4_Qualite_et_securite_des_soins_La_securite_du_patient_La_gestion_des_risques_Les_evenements_indesirables_associes_aux_soins_EIAS_Demarche_qualite_et_evaluation_des_pratiques_professionnelles.pdf",
+        "5_Responsabilites_medicale_penale_civile_administrative_et_disciplinaire_La_gestion_des_erreurs_et_des_plaintes_l_alea_therapeutique.pdf",
+        "6_L_organisation_de_l_exercice_clinique_et_les_methodes_qui_permettent_de_securiser_le_parcours_du_patient.pdf"
+      ]
+    },
+    "soins_palliatifs": {
+      "name": "Soins Palliatifs",
+      "color": "hsl(276 70% 50%)",
+      "files": [
+        "135_Therapeutiques_antalgiques_medicamenteuses_et_non_medicamenteuses_voir_item_330.pdf",
+        "139_Soins_palliatifs_pluridisciplinaires_chez_un_malade_en_phase_palliative_ou_terminale_d_une_maladie_grave_chronique_ou_letale_1_Principaux_reperes_cliniques_Modalites_d_organisation_des_equipes_en_etablissement_de_sante_et_en_et_en_ambulatoire.pdf",
+        "140_Soins_palliatifs_pluridisciplinaires_chez_un_malade_en_phase_palliative_ou_terminale_d_une_maladie_grave_chronique_ou_letale_2_Accompagnement_de_la_personne_malade_et_de_son_entourage_Principaux_reperes_ethiques.pdf",
+        "141_Soins_palliatifs_pluridisciplinaires_chez_un_malade_en_phase_palliative_ou_terminale_d_une_maladie_grave_chronique_ou_letale_3_La_sedation_pour_detresse_en_phase_terminale_et_dans_des_situations_specifiques_et_complexes_en_fin_de_vie_Reponse_a_la_demande_d_euthanasie_ou_de_suicide_assiste.pdf",
+        "142_Connaitre_les_aspects_specifiques_des_soins_palliatifs_en_pediatrie.pdf",
+        "143_Connaitre_les_aspects_specifiques_des_soins_palliatifs_en_reanimation.pdf",
+        "144_Deuil_normal_et_pathologique.pdf",
+        "294_Traitement_des_cancers_principales_modalites_classes_therapeutiques_et_leurs_complications_majeures_La_decision_therapeutique_pluridisciplinaire_et_l_information_du_malade.pdf",
+        "295_Prise_en_charge_et_accompagnement_d_un_malade_atteint_de_cancer_a_tous_les_stades_de_la_maladie_dont_le_stade_de_soins_palliatifs_en_abordant_les_problematiques_techniques_relationnelles_sociales_et_ethiques.pdf",
+        "297_Cancer_de_l_enfant_particularites_epidemiologiques_diagnostiques_et_therapeutiques.pdf"
+      ]
+    },
+    "therapeutique": {
+      "name": "Therapeutique",
+      "color": "hsl(334 70% 50%)",
+      "files": [
+        "115_Toxidermies.pdf",
+        "321_Principe_du_bon_usage_du_medicament_et_des_therapeutiques_non_medicamenteuses.pdf",
+        "322_La_decision_therapeutique_personnalisee_bon_usage_dans_des_situations_a_risque.pdf",
+        "323_Analyser_et_utiliser_les_resultats_des_etudes_cliniques_dans_la_perspective_du_bon_usage_analyse_critique_recherche_clinique_et_niveaux_de_preuve_voir_item_3.pdf",
+        "324_Education_therapeutique_observance_et_automedication.pdf",
+        "325_Identification_et_gestion_des_risques_lies_aux_medicaments_et_aux_biomateriaux_risque_iatrogene_erreur_medicamenteuse_voir_items_4_et_5.pdf",
+        "326_Cadre_reglementaire_de_la_prescription_therapeutique_et_recommandations_pour_le_bon_usage.pdf",
+        "327_Principes_de_la_medecine_integrative_utilite_et_risques_des_interventions_non_medicamenteuses_et_des_therapies_complementaires.pdf",
+        "328_Therapeutiques_non_medicamenteuses_et_dispositifs_medicaux.pdf",
+        "330_Prescription_et_surveillance_des_classes_de_medicaments_les_plus_courantes_chez_l_adulte_et_chez_l_enfant_hors_anti_infectieux_voir_item_177_Connaitre_le_bon_usage_des_principales_classes_therapeutiques.pdf",
+        "4_Qualite_et_securite_des_soins_La_securite_du_patient_La_gestion_des_risques_Les_evenements_indesirables_associes_aux_soins_EIAS_Demarche_qualite_et_evaluation_des_pratiques_professionnelles.pdf",
+        "74_Prescription_et_surveillance_des_psychotropes_voir_item_330.pdf"
+      ]
+    },
+    "urologie": {
+      "name": "Urologie",
+      "color": "hsl(150 70% 50%)",
+      "files": [
+        "124_Menopause_insuffisance_ovarienne_prematuree_andropause_deficit_androgenique_lie_a_l_age_Voir_item_330.pdf",
+        "125_Troubles_de_la_miction_et_incontinence_urinaire_de_l_adulte_et_du_sujet_age.pdf",
+        "126_Trouble_de_l_erection.pdf",
+        "127_Hypertrophie_benigne_de_la_prostate.pdf",
+        "161_Infections_urinaires_de_l_enfant_et_de_l_adulte.pdf",
+        "260_Hematurie.pdf",
+        "265_Lithiase_urinaire.pdf",
+        "270_Douleurs_lombaires_aigues.pdf",
+        "28_Connaitre_les_particularites_de_l_infection_urinaire_au_cours_de_la_grossesse.pdf",
+        "310_Tumeurs_de_la_prostate.pdf",
+        "311_Tumeurs_du_rein_de_l_adulte.pdf",
+        "313_Tumeurs_du_testicule.pdf",
+        "314_Tumeurs_vesicales.pdf",
+        "347_Retention_aigue_d_urine.pdf",
+        "50_Pathologie_genito_scrotale_chez_le_garcon_et_chez_l_homme.pdf",
+        "51_Troubles_de_la_miction_chez_l_enfant.pdf",
+        "58_Sexualite_normale_et_ses_troubles.pdf"
       ]
     }
   }

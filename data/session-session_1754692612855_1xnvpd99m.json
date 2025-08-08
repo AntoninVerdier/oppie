@@ -1,0 +1,292 @@
+{
+  "sessionId": "session_1754692612855_1xnvpd99m",
+  "questions": [
+    {
+      "id": "qcm_session_1754692612855_1xnvpd99m_0",
+      "topic": "Évaluation du rapport bénéfice / risque et des essais randomisés",
+      "rationale": "Ce QCM couvre les aspects essentiels de l'évaluation du rapport bénéfice / risque des médicaments et des essais randomisés, mettant en lumière l'importance de l'évaluation continue du rapport bénéfice / risque et de la surveillance post-commercialisation des médicaments.",
+      "propositions": [
+        {
+          "statement": "Le rapport bénéfice / risque est évalué à toutes les étapes du développement et de la commercialisation d'un médicament.",
+          "isTrue": true,
+          "explanation": "Le rapport bénéfice / risque est une considération essentielle tout au long du processus de mise sur le marché d'un médicament."
+        },
+        {
+          "statement": "Un essai de non infériorité vise à démontrer que l'efficacité du traitement A est supérieure à celle du comparateur B.",
+          "isTrue": false,
+          "explanation": "Un essai de non infériorité vise à démontrer que l'efficacité du traitement A n'est pas 'trop inférieure' à celle du traitement B, même si elle lui est un peu inférieure."
+        },
+        {
+          "statement": "La pharmacovigilance se concentre sur la détection et l'évaluation des effets indésirables des médicaments après leur commercialisation.",
+          "isTrue": true,
+          "explanation": "La pharmacovigilance est essentielle pour surveiller et évaluer les effets indésirables des médicaments une fois qu'ils sont sur le marché."
+        },
+        {
+          "statement": "L'efficacité d'un traitement se mesure uniquement dans des essais cliniques et des études en laboratoire.",
+          "isTrue": false,
+          "explanation": "L'efficacité d'un traitement se mesure à la fois dans des essais cliniques et des études en laboratoire, ainsi que dans des situations réelles de prescription et d'utilisation."
+        },
+        {
+          "statement": "Un médicament efficace peut induire des effets indésirables graves, ce qui souligne l'importance d'évaluer le rapport bénéfice / risque.",
+          "isTrue": true,
+          "explanation": "Même un médicament efficace peut avoir des effets indésirables graves, ce qui nécessite une évaluation approfondie du rapport bénéfice / risque."
+        }
+      ],
+      "chunkId": "chunk_7",
+      "chunkHeading": "Biedermann T, Kuna P, Panzner P, et al. The SQ tree SLIT-tablet is highly effective and well tolerated: Results from a randomized,",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754692612855_1xnvpd99m_1",
+      "topic": "Évaluation thérapeutique et méta-analyses",
+      "rationale": "L'évaluation thérapeutique et les méta-analyses sont des outils importants pour prendre des décisions cliniques basées sur les meilleures données de la recherche clinique. Il est essentiel de comprendre le niveau de preuve, la démarche des méta-analyses et l'utilisation des Forest plot pour interpréter les résultats.",
+      "propositions": [
+        {
+          "statement": "Le niveau de preuve d'une étude dépend du résultat obtenu.",
+          "isTrue": false,
+          "explanation": "Le niveau de preuve d'une étude ne dépend pas du résultat, mais de l'adéquation du protocole, de l'existence de biais et de la puissance de l'étude."
+        },
+        {
+          "statement": "Une méta-analyse d'essais cliniques nécessite une revue systématique de la littérature.",
+          "isTrue": true,
+          "explanation": "Effectivement, une méta-analyse doit être précédée d'une revue systématique de la littérature pour identifier et sélectionner toutes les études éligibles."
+        },
+        {
+          "statement": "Un Forest plot est une représentation graphique synthétisant les effets rapportés dans chaque étude individuelle et l'effet combiné de la méta-analyse.",
+          "isTrue": true,
+          "explanation": "Oui, un Forest plot permet de visualiser les résultats de chaque étude ainsi que l'effet combiné de la méta-analyse."
+        },
+        {
+          "statement": "Une méta-analyse ne nécessite pas d'évaluer la présence de biais dans chaque étude identifiée.",
+          "isTrue": false,
+          "explanation": "Il est essentiel d'évaluer la présence de biais dans chaque étude pour garantir la qualité de la méta-analyse."
+        },
+        {
+          "statement": "Le critère de jugement d'une méta-analyse doit toujours être binaire.",
+          "isTrue": false,
+          "explanation": "Le critère de jugement peut être continu ou binaire, en fonction de l'objectif de l'étude."
+        }
+      ],
+      "chunkId": "chunk_4",
+      "chunkHeading": "Utiliser les résultats pour répondre à la question initiale posée.",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754692612855_1xnvpd99m_2",
+      "topic": "Évaluation des thérapeutiques en médecine",
+      "rationale": "L'évaluation des thérapeutiques en médecine nécessite une approche holistique prenant en compte divers aspects tels que le niveau de preuve, la pertinence clinique et les préférences du patient. Les méta-analyses d'essais cliniques requièrent une revue systématique de la littérature préalable pour agréger les résultats des études incluses. Il est essentiel de choisir la mesure d'association adaptée pour interpréter correctement les données, et le forest plot est un outil graphique utile pour visualiser les résultats d'une méta-analyse.",
+      "propositions": [
+        {
+          "statement": "L'évaluation thérapeutique prend en compte le niveau de preuve, la pertinence clinique et les préférences du patient.",
+          "isTrue": true,
+          "explanation": "L'évaluation thérapeutique doit intégrer ces 3 composantes pour prendre des décisions cliniques éclairées."
+        },
+        {
+          "statement": "Le niveau de preuve dépend uniquement du résultat de l'étude.",
+          "isTrue": false,
+          "explanation": "Le niveau de preuve est déterminé par l'adéquation du protocole, l'existence de biais et la puissance de l'étude, indépendamment du résultat."
+        },
+        {
+          "statement": "Une méta-analyse d'essais cliniques nécessite une revue systématique de la littérature en amont.",
+          "isTrue": true,
+          "explanation": "Avant de réaliser une méta-analyse, il est essentiel de mener une revue systématique pour identifier et sélectionner toutes les études pertinentes."
+        },
+        {
+          "statement": "La mesure d'association adaptée pour un critère continu est généralement le risque relatif.",
+          "isTrue": false,
+          "explanation": "Pour un critère continu, la mesure d'association adaptée est souvent la différence de moyenne, pas le risque relatif."
+        },
+        {
+          "statement": "Un forest plot permet de visualiser l'effet combiné des études incluses dans une méta-analyse.",
+          "isTrue": true,
+          "explanation": "Le forest plot présente les résultats de chaque étude individuelle ainsi que l'effet combiné de la méta-analyse pour une visualisation claire des données."
+        }
+      ],
+      "chunkId": "chunk_4",
+      "chunkHeading": "Utiliser les résultats pour répondre à la question initiale posée.",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754692612855_1xnvpd99m_3",
+      "topic": "Évaluation thérapeutique et méta-analyses",
+      "rationale": "L'évaluation thérapeutique repose sur la combinaison de l'expérience clinique, des données de recherche et des préférences du patient. Le niveau de preuve ne dépend pas du résultat de l'étude. Les méta-analyses nécessitent une revue systématique et l'agrégation des résultats des études. Les Forest plots sont utilisés pour visualiser les effets des études individuelles et combinées.",
+      "propositions": [
+        {
+          "statement": "L'évaluation thérapeutique prend en compte l'expérience clinique du praticien, les meilleures données de la recherche clinique et les préférences du patient.",
+          "isTrue": true,
+          "explanation": "C'est la combinaison de ces trois composantes qui permet de prendre des décisions cliniques éclairées."
+        },
+        {
+          "statement": "Le niveau de preuve d'une étude dépend du résultat obtenu, favorisant les études positives.",
+          "isTrue": false,
+          "explanation": "Le niveau de preuve ne dépend pas du résultat de l'étude, une étude bien conduite aura le même niveau de preuve qu'elle soit positive ou négative."
+        },
+        {
+          "statement": "Une méta-analyse d'essais cliniques nécessite une revue systématique de la littérature et l'agrégation des résultats de chaque étude pour calculer un effet combiné.",
+          "isTrue": true,
+          "explanation": "C'est la méthode utilisée pour synthétiser quantitativement l'effet d'une intervention à partir de plusieurs études."
+        },
+        {
+          "statement": "Les méta-analyses ne prennent en compte que les études publiées et excluent celles non publiées pour éviter les biais.",
+          "isTrue": false,
+          "explanation": "Les méta-analyses doivent idéalement prendre en compte les études publiées et non publiées pour éviter le biais de publication."
+        },
+        {
+          "statement": "Un Forest plot est une représentation graphique des effets rapportés dans chaque étude individuelle ainsi que l'effet combiné de la méta-analyse.",
+          "isTrue": true,
+          "explanation": "C'est un outil visuel essentiel pour comprendre l'effet d'une intervention à partir de plusieurs études."
+        }
+      ],
+      "chunkId": "chunk_4",
+      "chunkHeading": "Utiliser les résultats pour répondre à la question initiale posée.",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754692612855_1xnvpd99m_4",
+      "topic": "Évaluation thérapeutique et méta-analyses",
+      "rationale": "La pertinence clinique d'une étude dépend de plusieurs facteurs, le niveau de preuve n'est pas influencé par le résultat. Une méta-analyse nécessite une revue systématique de la littérature préalable. L'effet combiné n'est pas une simple moyenne des résultats. Le Forest plot permet une visualisation claire des effets des études incluses.",
+      "propositions": [
+        {
+          "statement": "La pertinence clinique d'une étude dépend uniquement de son niveau de preuve.",
+          "isTrue": false,
+          "explanation": "La pertinence clinique d'une étude dépend de plusieurs facteurs, dont le niveau de preuve mais aussi la méthodologie utilisée et la validité des résultats."
+        },
+        {
+          "statement": "Le niveau de preuve d'une étude dépend du résultat obtenu.",
+          "isTrue": false,
+          "explanation": "Le niveau de preuve d'une étude ne dépend pas du résultat obtenu, mais de l'adéquation du protocole à la question posée, de l'existence de biais et de la puissance de l'étude."
+        },
+        {
+          "statement": "Une méta-analyse d'essais cliniques nécessite une revue systématique de la littérature préalable.",
+          "isTrue": true,
+          "explanation": "Avant de réaliser une méta-analyse, il est nécessaire de mener une revue systématique de la littérature pour identifier et sélectionner toutes les études éligibles."
+        },
+        {
+          "statement": "L'effet combiné dans une méta-analyse est calculé en prenant la moyenne des résultats de chaque étude incluse.",
+          "isTrue": false,
+          "explanation": "L'effet combiné dans une méta-analyse est calculé en agrégeant les résultats de chaque étude et en calculant un effet combiné avec une mesure d'association adaptée."
+        },
+        {
+          "statement": "Un Forest plot permet de visualiser l'effet combiné de la méta-analyse ainsi que les effets rapportés dans chaque étude individuelle.",
+          "isTrue": true,
+          "explanation": "Le Forest plot est une représentation graphique synthétisant les effets rapportés dans chaque étude individuelle ainsi que l'effet combiné de la méta-analyse."
+        }
+      ],
+      "chunkId": "chunk_4",
+      "chunkHeading": "Utiliser les résultats pour répondre à la question initiale posée.",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754692612855_1xnvpd99m_5",
+      "topic": "Évaluation du rapport bénéfice / risque",
+      "rationale": "L'évaluation du rapport bénéfice / risque d'un médicament est un processus complexe qui implique la prise en compte de multiples facteurs à différentes étapes, allant du développement à la surveillance post-commercialisation. Il ne se limite pas à l'efficacité du médicament, mais intègre également les effets indésirables potentiels et les considérations de santé publique.",
+      "propositions": [
+        {
+          "statement": "Le rapport bénéfice / risque d'un médicament est évalué uniquement au stade du développement du médicament.",
+          "isTrue": false,
+          "explanation": "Le rapport bénéfice / risque est évalué à toutes les étapes du développement et de la commercialisation du médicament, y compris après l'enregistrement."
+        },
+        {
+          "statement": "La décision de traiter un patient dépend uniquement de l'efficacité du médicament.",
+          "isTrue": false,
+          "explanation": "La décision de traiter un patient dépend du rapport bénéfice / risque, qui prend en compte à la fois l'efficacité et les effets indésirables potentiels."
+        },
+        {
+          "statement": "La pharmacovigilance est une étape importante dans l'évaluation du rapport bénéfice / risque d'un médicament.",
+          "isTrue": true,
+          "explanation": "La pharmacovigilance permet de surveiller les effets indésirables d'un médicament une fois qu'il est sur le marché, contribuant ainsi à l'évaluation continue du rapport bénéfice / risque."
+        },
+        {
+          "statement": "L'évaluation du niveau de risque acceptable dans le rapport bénéfice / risque concerne uniquement les patients individuels.",
+          "isTrue": false,
+          "explanation": "L'évaluation du niveau de risque acceptable concerne également la santé des populations et les décisions de santé publique."
+        },
+        {
+          "statement": "L'efficacité d'un traitement en situation réelle de prescription et d'utilisation est définie comme son effet dans des essais cliniques.",
+          "isTrue": false,
+          "explanation": "L'efficacité d'un traitement en situation réelle (efficience) diffère de son efficacité dans les essais cliniques, car elle tient compte de son utilisation réelle et de son impact sur le service rendu à la population."
+        }
+      ],
+      "chunkId": "chunk_7",
+      "chunkHeading": "Biedermann T, Kuna P, Panzner P, et al. The SQ tree SLIT-tablet is highly effective and well tolerated: Results from a randomized,",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754692612855_1xnvpd99m_6",
+      "topic": "Évaluation thérapeutique et méta-analyse",
+      "rationale": "L'évaluation thérapeutique englobe plusieurs aspects tels que l'amélioration de l'état de santé, les événements indésirables, le rapport bénéfices/risques, etc. Le niveau de preuve ne dépend pas du résultat de l'étude. Une méta-analyse nécessite une revue systématique de la littérature. Un forest plot représente les effets de chaque étude en plus de l'effet combiné. Les méta-analyses sont utiles non seulement sur le plan statistique, mais aussi sur le plan clinique pour les recommandations en pratique clinique.",
+      "propositions": [
+        {
+          "statement": "L'évaluation thérapeutique prend en compte uniquement le coût de la thérapie.",
+          "isTrue": false,
+          "explanation": "L'évaluation thérapeutique inclut également l'amélioration de l'état de santé des patients, les événements indésirables, le rapport bénéfices/risques, etc."
+        },
+        {
+          "statement": "Le niveau de preuve d'une étude dépend du résultat obtenu.",
+          "isTrue": false,
+          "explanation": "Le niveau de preuve d'une étude ne dépend pas du résultat obtenu, mais de l'adéquation du protocole, de l'existence de biais et de la puissance de l'étude."
+        },
+        {
+          "statement": "Une méta-analyse d'essais cliniques nécessite une revue systématique de la littérature.",
+          "isTrue": true,
+          "explanation": "Avant de réaliser une méta-analyse, il est nécessaire de procéder à une revue systématique de la littérature pour identifier et sélectionner toutes les études éligibles."
+        },
+        {
+          "statement": "Un forest plot représente uniquement l'effet combiné de la méta-analyse.",
+          "isTrue": false,
+          "explanation": "En plus de l'effet combiné, un forest plot représente également les effets rapportés dans chaque étude individuelle."
+        },
+        {
+          "statement": "Les méta-analyses d'essais cliniques sont uniquement utiles pour la recommandation en pratique clinique sur le plan statistique.",
+          "isTrue": false,
+          "explanation": "Les méta-analyses d'essais cliniques sont également utiles sur le plan clinique pour évaluer l'efficacité et la tolérance d'une intervention dans une indication donnée."
+        }
+      ],
+      "chunkId": "chunk_4",
+      "chunkHeading": "Utiliser les résultats pour répondre à la question initiale posée.",
+      "pageRange": "Page 1-1"
+    },
+    {
+      "id": "qcm_session_1754692612855_1xnvpd99m_7",
+      "topic": "Compréhension du rapport bénéfice / risque et des essais randomisés",
+      "rationale": "Le rapport bénéfice / risque est un aspect crucial de l'utilisation des médicaments, impliquant des évaluations à différentes étapes. Les essais de non infériorité visent à démontrer une efficacité comparable. La pharmacovigilance surveille les effets indésirables post-commercialisation, et l'efficacité en situation réelle peut varier. Les décideurs en santé publique sont également concernés par l'évaluation du risque acceptable.",
+      "propositions": [
+        {
+          "statement": "Le rapport bénéfice / risque d'un médicament est évalué uniquement au stade du développement du médicament.",
+          "isTrue": false,
+          "explanation": "Le rapport bénéfice / risque est évalué à toutes les étapes du développement et de la commercialisation du médicament."
+        },
+        {
+          "statement": "Un essai de non infériorité vise à montrer que l'efficacité du traitement A est supérieure à celle du traitement B.",
+          "isTrue": false,
+          "explanation": "Un essai de non infériorité vise à montrer que l'efficacité du traitement A n’est pas 'trop inférieure' de celle du traitement B, même si elle lui est un peu inférieure."
+        },
+        {
+          "statement": "La pharmacovigilance se concentre sur la surveillance des effets indésirables des médicaments après leur mise sur le marché.",
+          "isTrue": true,
+          "explanation": "La pharmacovigilance se concentre sur la surveillance des effets indésirables des médicaments après leur mise sur le marché."
+        },
+        {
+          "statement": "L'efficacité d'un traitement en situation réelle de prescription est toujours équivalente à son efficacité démontrée dans des essais cliniques.",
+          "isTrue": false,
+          "explanation": "L'efficacité d'un traitement en situation réelle de prescription peut différer de son efficacité démontrée dans des essais cliniques en laboratoire."
+        },
+        {
+          "statement": "L'évaluation du niveau de risque acceptable dans le rapport bénéfice / risque est uniquement pertinente pour le clinicien.",
+          "isTrue": false,
+          "explanation": "L'évaluation du niveau de risque acceptable dans le rapport bénéfice / risque concerne également les décideurs en santé publique."
+        }
+      ],
+      "chunkId": "chunk_7",
+      "chunkHeading": "Biedermann T, Kuna P, Panzner P, et al. The SQ tree SLIT-tablet is highly effective and well tolerated: Results from a randomized,",
+      "pageRange": "Page 1-1"
+    }
+  ],
+  "usedChunks": [
+    1,
+    0
+  ],
+  "currentIndex": 7,
+  "total": 8,
+  "contextSnippet": "1. Biedermann T, Kuna P, Panzner P, et al. The SQ tree SLIT-tablet is highly effective and well tolerated: Results from a randomized,\ndouble-blind, placebo-controlled phase III trial. J Allergy Clin Immunol. 2019 Mar;143(3):1058-1066.e6.\nConnaître la notion de rapport bénéfice / risque OIC-323-23-A\nRapport bénéfice / risque\n- Ratio entre lʼefficacité et les effets indésirables potentiels.\n- Toute administration de médicament expose au risque dʼeffets indésirables.\n- Un médicament efficace peut induire des effets indésirables graves.\n- À lʼéchelon du clinicien :\nInformations à délivrer, éléments de discussion avec le patient et son entourage.\nDécision de traiter, décision de ne pas traiter.\nModalités de surveillance (clinique, biologique, imagerie).\nBilan dʼévaluation pour décision de prolonger ou arrêter le traitement.\n- À lʼéchelon du décideur en santé publique :\nEffets sur la santé des populations.\nÉvaluation du niveau de risque acceptable.\nApport dans la maladie dʼintérêt (SMR).\nCom"
+}

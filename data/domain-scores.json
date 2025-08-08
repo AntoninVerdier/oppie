@@ -19,7 +19,37 @@
       "answeredQuestions": 3,
       "averageScore": 0.2333333333333333,
       "timestamp": "2025-08-08T20:38:51.416Z"
+    },
+    {
+      "domain": "sante_publique",
+      "sessionId": "session_1754692612855_1xnvpd99m",
+      "filename": "323_Analyser_et_utiliser_les_résultats_des_études_cliniques_dans_la_perspective_du_bon_usage_-_analyse_critique,_recherche_clinique_et_niveaux_de_preuve_(voir_item_3).pdf",
+      "score": 0.7,
+      "totalQuestions": 3,
+      "answeredQuestions": 3,
+      "averageScore": 0.2333333333333333,
+      "timestamp": "2025-08-08T22:37:59.913Z"
+    },
+    {
+      "domain": "bacteriologie_virologie_hygiene_hospitaliere",
+      "sessionId": "session_1754692883032_cluo7qjkj",
+      "filename": "349_Infection_aiguë_des_parties_molles_(abcès,_panaris,_phlegmon_des_gaines).pdf",
+      "score": 1,
+      "totalQuestions": 4,
+      "answeredQuestions": 4,
+      "averageScore": 0.25,
+      "timestamp": "2025-08-08T22:43:19.863Z"
+    },
+    {
+      "domain": "neurochirurgie",
+      "sessionId": "session_1754693019923_u4lzrchja",
+      "filename": "299_Tumeurs_intracrâniennes.pdf",
+      "score": 0.5,
+      "totalQuestions": 3,
+      "answeredQuestions": 3,
+      "averageScore": 0.16666666666666666,
+      "timestamp": "2025-08-08T22:44:52.815Z"
     }
   ],
-  "lastUpdated": "2025-08-08T20:38:51.416Z"
+  "lastUpdated": "2025-08-08T22:44:52.815Z"
 }

@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754692154208_o215x51qm",
+  "questions": [
+    {
+      "id": "qcm_session_1754692154208_o215x51qm_0",
+      "topic": "Méthodologie de la recherche en santé",
+      "rationale": "Ce QCM couvre divers aspects de la méthodologie de la recherche en santé, en mettant l'accent sur la réglementation, les tests statistiques, l'ajustement, les facteurs de risque et la prévalence, fournissant ainsi une vue d'ensemble complète de ces concepts clés.",
+      "propositions": [
+        {
+          "statement": "La réglementation de la recherche en santé est une étape facultative dans le processus de recherche.",
+          "isTrue": false,
+          "explanation": "La réglementation de la recherche en santé est une étape obligatoire pour garantir l'éthique et la validité des études."
+        },
+        {
+          "statement": "Les tests statistiques ne sont pas nécessaires pour interpréter les résultats d'une recherche en santé.",
+          "isTrue": false,
+          "explanation": "Les tests statistiques sont essentiels pour évaluer la significativité des résultats et prendre des décisions basées sur des données fiables."
+        },
+        {
+          "statement": "L'ajustement est une notion importante pour interpréter les résultats d'une étude en santé.",
+          "isTrue": true,
+          "explanation": "L'ajustement permet de prendre en compte les variables de confusion et d'obtenir des résultats plus précis."
+        },
+        {
+          "statement": "Les facteurs de risque et les facteurs étiologiques sont des termes interchangeables en recherche en santé.",
+          "isTrue": false,
+          "explanation": "Les facteurs de risque et les facteurs étiologiques sont des concepts distincts avec des implications différentes dans l'étude des maladies."
+        },
+        {
+          "statement": "La prévalence est une mesure de fréquence qui représente le nombre de nouveaux cas d'une maladie dans une population donnée sur une période spécifique.",
+          "isTrue": true,
+          "explanation": "La prévalence est le nombre total de cas existants d'une maladie dans une population à un moment donné."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "",
+      "pageRange": ""
+    }
+  ],
+  "usedChunks": [
+    0
+  ],
+  "currentIndex": 0,
+  "total": 8,
+  "contextSnippet": "30/07/2025, 16:34Fiche LiSA:La méthodologie de la recherche en santé — LiSA\nPage 1 of 23https://livret.uness.fr/lisa/2025/Fiche_LiSA:La_méthodologie_de_la_recherche_en_santé\nLa méthodologie de la recherche en santé IC-20\nDéfinition et organisation de la recherche en santé\nLa méthodologie de la recherche en santé\nLa réglementation de la recherche en santé\nJustification et problématique de recherche\nHypothèses de recherche\nMéthodes adaptées à un objectif de recherche\nModalités d'échantillonnage\nRecueil des données\nPertinence des données recueillies\nProbabilités, variables aléatoires, lois de probabilités\nAnalyses descriptives : savoir calculer les paramètres statistiques\nTe s t s   s t a t i s t i q u e s : principes des tests d'hypothèse\nDonnées de survie\nConnaître la notion et le rôle de l'ajustement. Savoir interpréteret lire un résultat ajusté\nMettre en œuvre les bonnes pratiques d'usage de l'informatique de santé pour aider la recherche clinique et en\nparticulier les essais clinique"
+}

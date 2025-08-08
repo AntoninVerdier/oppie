@@ -1,0 +1,1453 @@
+{
+  "1": [
+    "medecine_generale"
+  ],
+  "2": [
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique",
+    "sante_publique",
+    "medecine_interne"
+  ],
+  "3": [
+    "medecine_generale",
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique"
+  ],
+  "4": [
+    "therapeutique",
+    "sante_publique"
+  ],
+  "5": [
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique",
+    "sante_publique"
+  ],
+  "6": [
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique",
+    "sante_publique"
+  ],
+  "7": [
+    "medecine_legale"
+  ],
+  "8": [
+    "humanites"
+  ],
+  "9": [
+    "humanites"
+  ],
+  "10": [
+    "humanites"
+  ],
+  "11": [
+    "humanites"
+  ],
+  "12": [
+    "medecine_legale"
+  ],
+  "13": [
+    "medecine_legale"
+  ],
+  "14": [
+    "humanites"
+  ],
+  "15": [
+    "psychiatrie"
+  ],
+  "16": [
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique",
+    "sante_publique"
+  ],
+  "17": [
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique",
+    "sante_publique"
+  ],
+  "18": [
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique",
+    "sante_publique"
+  ],
+  "19": [
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique",
+    "sante_publique"
+  ],
+  "20": [
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique",
+    "sante_publique"
+  ],
+  "21": [
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique",
+    "sante_publique"
+  ],
+  "22": [
+    "genetique_medicale"
+  ],
+  "23": [
+    "medecine_generale",
+    "gynecologie_obstetrique"
+  ],
+  "24": [
+    "gynecologie_obstetrique"
+  ],
+  "25": [
+    "gynecologie_obstetrique"
+  ],
+  "26": [
+    "gynecologie_obstetrique"
+  ],
+  "27": [
+    "gynecologie_obstetrique"
+  ],
+  "28": [
+    "gynecologie_obstetrique",
+    "urologie"
+  ],
+  "29": [
+    "gynecologie_obstetrique",
+    "medecine_du_travail"
+  ],
+  "30": [
+    "gynecologie_obstetrique",
+    "pediatrie"
+  ],
+  "31": [
+    "gynecologie_obstetrique"
+  ],
+  "32": [
+    "pediatrie"
+  ],
+  "33": [
+    "gynecologie_obstetrique"
+  ],
+  "34": [
+    "gynecologie_obstetrique"
+  ],
+  "35": [
+    "gynecologie_medicale",
+    "gynecologie_obstetrique"
+  ],
+  "36": [
+    "gynecologie_medicale",
+    "endocrinologie",
+    "diabete_et_maladies_metabolique"
+  ],
+  "37": [
+    "gynecologie_obstetrique",
+    "gynecologie_medicale"
+  ],
+  "38": [
+    "gynecologie_obstetrique",
+    "medecine_et_biologie_du_developpement_et_de_la_reproduction",
+    "gynecologie_medicale",
+    "endocrinologie",
+    "diabete_et_maladies_metabolique"
+  ],
+  "39": [
+    "gynecologie_obstetrique",
+    "medecine_et_biologie_du_developpement_et_de_la_reproduction",
+    "gynecologie_medicale"
+  ],
+  "40": [
+    "gynecologie_medicale",
+    "douleur",
+    "gynecologie_obstetrique"
+  ],
+  "41": [
+    "gynecologie_medicale",
+    "gynecologie_obstetrique"
+  ],
+  "42": [
+    "gynecologie_medicale",
+    "endocrinologie",
+    "diabete_et_maladies_metabolique"
+  ],
+  "43": [
+    "gynecologie_obstetrique",
+    "gynecologie_medicale"
+  ],
+  "44": [
+    "gynecologie_obstetrique",
+    "gynecologie_medicale"
+  ],
+  "45": [
+    "genetique_medicale",
+    "pediatrie"
+  ],
+  "46": [
+    "genetique_medicale"
+  ],
+  "47": [
+    "pediatrie"
+  ],
+  "48": [
+    "pediatrie"
+  ],
+  "49": [
+    "pediatrie"
+  ],
+  "50": [
+    "urologie",
+    "chirurgie_pediatrique"
+  ],
+  "51": [
+    "chirurgie_pediatrique",
+    "urologie"
+  ],
+  "52": [
+    "ophtalmologie"
+  ],
+  "53": [
+    "pediatrie"
+  ],
+  "54": [
+    "pediatrie"
+  ],
+  "55": [
+    "pediatrie",
+    "psychiatrie"
+  ],
+  "56": [
+    "pediatrie",
+    "medecine_physique_et_de_readaptation"
+  ],
+  "57": [
+    "pediatrie"
+  ],
+  "58": [
+    "gynecologie_medicale",
+    "urologie",
+    "psychiatrie"
+  ],
+  "59": [
+    "medecine_generale"
+  ],
+  "60": [
+    "psychiatrie"
+  ],
+  "61": [
+    "psychiatrie"
+  ],
+  "62": [
+    "psychiatrie"
+  ],
+  "63": [
+    "psychiatrie"
+  ],
+  "64": [
+    "psychiatrie"
+  ],
+  "65": [
+    "psychiatrie"
+  ],
+  "66": [
+    "psychiatrie"
+  ],
+  "67": [
+    "psychiatrie"
+  ],
+  "68": [
+    "psychiatrie"
+  ],
+  "69": [
+    "psychiatrie"
+  ],
+  "70": [
+    "psychiatrie"
+  ],
+  "71": [
+    "psychiatrie",
+    "addictologie"
+  ],
+  "72": [
+    "medecine_generale"
+  ],
+  "73": [
+    "psychiatrie"
+  ],
+  "74": [
+    "therapeutique",
+    "pharmacologie",
+    "psychiatrie"
+  ],
+  "75": [
+    "addictologie",
+    "medecine_vasculaire",
+    "pneumologie",
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "medecine_generale"
+  ],
+  "76": [
+    "addictologie"
+  ],
+  "77": [
+    "addictologie"
+  ],
+  "78": [
+    "addictologie"
+  ],
+  "79": [
+    "addictologie"
+  ],
+  "80": [
+    "medecine_du_sport",
+    "addictologie"
+  ],
+  "81": [
+    "ophtalmologie"
+  ],
+  "82": [
+    "ophtalmologie"
+  ],
+  "83": [
+    "ophtalmologie"
+  ],
+  "84": [
+    "ophtalmologie"
+  ],
+  "85": [
+    "ophtalmologie"
+  ],
+  "86": [
+    "ophtalmologie"
+  ],
+  "87": [
+    "orl_et_chirurgie_de_la_face_et_du_cou",
+    "chirurgie_maxillo_faciale"
+  ],
+  "88": [
+    "orl_et_chirurgie_de_la_face_et_du_cou"
+  ],
+  "89": [
+    "orl_et_chirurgie_de_la_face_et_du_cou"
+  ],
+  "90": [
+    "orl_et_chirurgie_de_la_face_et_du_cou",
+    "chirurgie_maxillo_faciale"
+  ],
+  "91": [
+    "neurologie"
+  ],
+  "92": [
+    "neurologie"
+  ],
+  "93": [
+    "neurologie",
+    "neurochirurgie"
+  ],
+  "94": [
+    "medecine_physique_et_de_readaptation"
+  ],
+  "95": [
+    "rhumatologie",
+    "neurochirurgie"
+  ],
+  "96": [
+    "neurologie",
+    "douleur"
+  ],
+  "97": [
+    "neurologie"
+  ],
+  "98": [
+    "neurologie"
+  ],
+  "99": [
+    "neurologie",
+    "douleur"
+  ],
+  "100": [
+    "neurologie",
+    "pediatrie",
+    "douleur"
+  ],
+  "101": [
+    "neurologie",
+    "chirurgie_maxillo_faciale"
+  ],
+  "102": [
+    "ophtalmologie"
+  ],
+  "103": [
+    "orl_et_chirurgie_de_la_face_et_du_cou",
+    "neurologie"
+  ],
+  "104": [
+    "neurologie"
+  ],
+  "105": [
+    "neurologie",
+    "pediatrie"
+  ],
+  "106": [
+    "neurologie"
+  ],
+  "107": [
+    "neurologie"
+  ],
+  "108": [
+    "neurologie"
+  ],
+  "109": [
+    "neurologie"
+  ],
+  "110": [
+    "medecine_generale",
+    "pneumologie",
+    "pediatrie"
+  ],
+  "111": [
+    "dermatologie"
+  ],
+  "112": [
+    "dermatologie"
+  ],
+  "113": [
+    "dermatologie",
+    "medecine_vasculaire"
+  ],
+  "114": [
+    "dermatologie",
+    "pediatrie"
+  ],
+  "115": [
+    "dermatologie",
+    "therapeutique"
+  ],
+  "116": [
+    "dermatologie"
+  ],
+  "117": [
+    "dermatologie"
+  ],
+  "118": [
+    "medecine_physique_et_de_readaptation"
+  ],
+  "119": [
+    "medecine_physique_et_de_readaptation",
+    "humanites"
+  ],
+  "120": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire"
+  ],
+  "121": [
+    "psychiatrie",
+    "medecine_physique_et_de_readaptation"
+  ],
+  "122": [
+    "medecine_physique_et_de_readaptation"
+  ],
+  "123": [
+    "geriatrie"
+  ],
+  "124": [
+    "gynecologie_medicale",
+    "endocrinologie",
+    "diabete_et_maladies_metabolique",
+    "urologie"
+  ],
+  "125": [
+    "urologie"
+  ],
+  "126": [
+    "urologie",
+    "endocrinologie",
+    "diabete_et_maladies_metabolique"
+  ],
+  "127": [
+    "urologie"
+  ],
+  "128": [
+    "rhumatologie",
+    "endocrinologie",
+    "diabete_et_maladies_metabolique"
+  ],
+  "129": [
+    "rhumatologie"
+  ],
+  "130": [
+    "geriatrie"
+  ],
+  "131": [
+    "geriatrie"
+  ],
+  "132": [
+    "geriatrie"
+  ],
+  "133": [
+    "medecine_generale"
+  ],
+  "134": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "douleur"
+  ],
+  "135": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "douleur",
+    "soins_palliatifs"
+  ],
+  "136": [
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence"
+  ],
+  "137": [
+    "pediatrie",
+    "douleur"
+  ],
+  "138": [
+    "douleur"
+  ],
+  "139": [
+    "soins_palliatifs"
+  ],
+  "140": [
+    "soins_palliatifs"
+  ],
+  "141": [
+    "soins_palliatifs"
+  ],
+  "142": [
+    "soins_palliatifs",
+    "pediatrie"
+  ],
+  "143": [
+    "soins_palliatifs",
+    "medecine_intensive_reanimation"
+  ],
+  "144": [
+    "psychiatrie",
+    "soins_palliatifs"
+  ],
+  "145": [
+    "bacteriologie_virologie_hygiene_hospitaliere",
+    "maladies_infectieuses_et_tropicales"
+  ],
+  "146": [
+    "bacteriologie_virologie_hygiene_hospitaliere",
+    "medecine_generale",
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "147": [
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "148": [
+    "medecine_generale",
+    "pediatrie"
+  ],
+  "149": [
+    "medecine_generale",
+    "pediatrie"
+  ],
+  "150": [
+    "orl_et_chirurgie_de_la_face_et_du_cou",
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "151": [
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "152": [
+    "maladies_infectieuses_et_tropicales",
+    "cardiologie",
+    "chirurgie_thoracique_et_cardio_vasculaire"
+  ],
+  "153": [
+    "cardiologie",
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "chirurgie_vasculaire",
+    "medecine_vasculaire"
+  ],
+  "154": [
+    "pneumologie",
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "155": [
+    "dermatologie",
+    "maladies_infectieuses_et_tropicales",
+    "chirurgie_plastique_reconstructive_et_esthetique",
+    "chirurgie_maxillo_faciale",
+    "pediatrie"
+  ],
+  "156": [
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "157": [
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "158": [
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "159": [
+    "maladies_infectieuses_et_tropicales",
+    "pneumologie",
+    "pediatrie",
+    "bacteriologie_virologie_hygiene_hospitaliere"
+  ],
+  "160": [
+    "bacteriologie_virologie_hygiene_hospitaliere",
+    "maladies_infectieuses_et_tropicales"
+  ],
+  "161": [
+    "urologie",
+    "gynecologie_obstetrique",
+    "pediatrie"
+  ],
+  "162": [
+    "dermatologie",
+    "maladies_infectieuses_et_tropicales"
+  ],
+  "163": [
+    "bacteriologie_virologie_hygiene_hospitaliere",
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "164": [
+    "pediatrie",
+    "dermatologie"
+  ],
+  "165": [
+    "bacteriologie_virologie_hygiene_hospitaliere",
+    "pediatrie"
+  ],
+  "166": [
+    "medecine_generale"
+  ],
+  "167": [
+    "gastroenterologie"
+  ],
+  "168": [
+    "medecine_generale"
+  ],
+  "169": [
+    "maladies_infectieuses_et_tropicales",
+    "immunologie"
+  ],
+  "170": [
+    "parasitologie",
+    "maladies_infectieuses_et_tropicales"
+  ],
+  "171": [
+    "parasitologie",
+    "maladies_infectieuses_et_tropicales",
+    "dermatologie"
+  ],
+  "172": [
+    "parasitologie",
+    "maladies_infectieuses_et_tropicales"
+  ],
+  "173": [
+    "parasitologie",
+    "maladies_infectieuses_et_tropicales"
+  ],
+  "174": [
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "175": [
+    "parasitologie",
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "176": [
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "177": [
+    "bacteriologie_virologie_hygiene_hospitaliere",
+    "parasitologie",
+    "maladies_infectieuses_et_tropicales",
+    "pediatrie"
+  ],
+  "178": [
+    "maladies_infectieuses_et_tropicales",
+    "bacteriologie_virologie_hygiene_hospitaliere"
+  ],
+  "179": [
+    "maladies_infectieuses_et_tropicales"
+  ],
+  "180": [
+    "radiologie",
+    "medecine_nucleaire",
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique",
+    "sante_publique"
+  ],
+  "181": [
+    "sante_publique",
+    "medecine_du_travail"
+  ],
+  "182": [
+    "medecine_du_travail"
+  ],
+  "183": [
+    "medecine_du_travail"
+  ],
+  "184": [
+    "medecine_du_travail"
+  ],
+  "185": [
+    "immunologie"
+  ],
+  "186": [
+    "allergologie",
+    "pneumologie",
+    "pediatrie"
+  ],
+  "187": [
+    "allergologie",
+    "dermatologie",
+    "pediatrie"
+  ],
+  "188": [
+    "pneumologie",
+    "pediatrie"
+  ],
+  "189": [
+    "immunologie",
+    "pediatrie"
+  ],
+  "190": [
+    "medecine_interne",
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "pediatrie"
+  ],
+  "191": [
+    "immunologie"
+  ],
+  "192": [
+    "immunologie",
+    "biologie_cellulaire"
+  ],
+  "193": [
+    "medecine_interne"
+  ],
+  "194": [
+    "medecine_interne"
+  ],
+  "195": [
+    "medecine_interne"
+  ],
+  "196": [
+    "rhumatologie",
+    "biologie_cellulaire"
+  ],
+  "197": [
+    "rhumatologie"
+  ],
+  "198": [
+    "allergologie",
+    "rhumatologie"
+  ],
+  "199": [
+    "douleur"
+  ],
+  "200": [
+    "rhumatologie"
+  ],
+  "201": [
+    "nephrologie",
+    "chirurgie_thoracique_et_cardio_vasculaire"
+  ],
+  "202": [
+    "immunologie"
+  ],
+  "203": [
+    "pneumologie",
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "pediatrie"
+  ],
+  "204": [
+    "pneumologie",
+    "pediatrie"
+  ],
+  "205": [
+    "pneumologie",
+    "chirurgie_thoracique_et_cardio_vasculaire"
+  ],
+  "206": [
+    "pneumologie",
+    "chirurgie_thoracique_et_cardio_vasculaire"
+  ],
+  "207": [
+    "radiologie",
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "pediatrie"
+  ],
+  "208": [
+    "pneumologie",
+    "chirurgie_thoracique_et_cardio_vasculaire"
+  ],
+  "209": [
+    "pneumologie"
+  ],
+  "210": [
+    "pneumologie"
+  ],
+  "211": [
+    "medecine_interne",
+    "pneumologie"
+  ],
+  "212": [
+    "hematologie",
+    "pediatrie"
+  ],
+  "213": [
+    "medecine_interne",
+    "pediatrie"
+  ],
+  "214": [
+    "medecine_interne",
+    "pediatrie"
+  ],
+  "215": [
+    "medecine_interne",
+    "dermatologie",
+    "pediatrie"
+  ],
+  "216": [
+    "hematologie"
+  ],
+  "217": [
+    "medecine_interne"
+  ],
+  "218": [
+    "medecine_interne"
+  ],
+  "219": [
+    "biochimie_et_biologie_moleculaire",
+    "pediatrie"
+  ],
+  "220": [
+    "hematologie",
+    "pediatrie"
+  ],
+  "221": [
+    "medecine_vasculaire",
+    "medecine_generale",
+    "endocrinologie",
+    "diabete_et_maladies_metabolique"
+  ],
+  "222": [
+    "medecine_vasculaire",
+    "cardiologie",
+    "medecine_generale",
+    "endocrinologie",
+    "diabete_et_maladies_metabolique"
+  ],
+  "223": [
+    "endocrinologie",
+    "diabete_et_maladies_metabolique",
+    "biochimie_et_biologie_moleculaire",
+    "medecine_vasculaire"
+  ],
+  "224": [
+    "medecine_vasculaire",
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "medecine_generale",
+    "pediatrie",
+    "nephrologie"
+  ],
+  "225": [
+    "medecine_vasculaire",
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "chirurgie_vasculaire"
+  ],
+  "226": [
+    "medecine_vasculaire",
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "pneumologie"
+  ],
+  "227": [
+    "medecine_vasculaire"
+  ],
+  "228": [
+    "medecine_vasculaire"
+  ],
+  "229": [
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "medecine_vasculaire"
+  ],
+  "230": [
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "cardiologie"
+  ],
+  "231": [
+    "cardiologie"
+  ],
+  "232": [
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "cardiologie"
+  ],
+  "233": [
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "cardiologie"
+  ],
+  "234": [
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "cardiologie"
+  ],
+  "235": [
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "cardiologie"
+  ],
+  "236": [
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "cardiologie"
+  ],
+  "237": [
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "cardiologie"
+  ],
+  "238": [
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "pediatrie"
+  ],
+  "239": [
+    "medecine_vasculaire",
+    "medecine_interne"
+  ],
+  "240": [
+    "endocrinologie",
+    "diabete_et_maladies_metabolique",
+    "pediatrie"
+  ],
+  "241": [
+    "endocrinologie",
+    "diabete_et_maladies_metabolique",
+    "chirurgie_thoracique_et_cardio_vasculaire"
+  ],
+  "242": [
+    "endocrinologie",
+    "diabete_et_maladies_metabolique"
+  ],
+  "243": [
+    "endocrinologie",
+    "diabete_et_maladies_metabolique"
+  ],
+  "244": [
+    "endocrinologie",
+    "diabete_et_maladies_metabolique"
+  ],
+  "245": [
+    "endocrinologie",
+    "diabete_et_maladies_metabolique",
+    "pediatrie"
+  ],
+  "246": [
+    "endocrinologie",
+    "diabete_et_maladies_metabolique"
+  ],
+  "247": [
+    "endocrinologie",
+    "diabete_et_maladies_metabolique",
+    "pediatrie"
+  ],
+  "248": [
+    "medecine_vasculaire",
+    "nutrition"
+  ],
+  "249": [
+    "medecine_generale"
+  ],
+  "250": [
+    "nutrition",
+    "pediatrie"
+  ],
+  "251": [
+    "nutrition",
+    "pediatrie"
+  ],
+  "252": [
+    "geriatrie"
+  ],
+  "253": [
+    "endocrinologie",
+    "diabete_et_maladies_metabolique",
+    "nutrition",
+    "pediatrie"
+  ],
+  "254": [
+    "nutrition"
+  ],
+  "255": [
+    "endocrinologie",
+    "diabete_et_maladies_metabolique",
+    "gynecologie_obstetrique"
+  ],
+  "256": [
+    "medecine_du_sport",
+    "pediatrie"
+  ],
+  "257": [
+    "nephrologie"
+  ],
+  "258": [
+    "nephrologie"
+  ],
+  "259": [
+    "nephrologie",
+    "pediatrie"
+  ],
+  "260": [
+    "urologie",
+    "nephrologie",
+    "pediatrie"
+  ],
+  "261": [
+    "nephrologie"
+  ],
+  "262": [
+    "nephrologie"
+  ],
+  "263": [
+    "nephrologie"
+  ],
+  "264": [
+    "nephrologie",
+    "pediatrie"
+  ],
+  "265": [
+    "urologie",
+    "nephrologie"
+  ],
+  "266": [
+    "nephrologie"
+  ],
+  "267": [
+    "biochimie_et_biologie_moleculaire",
+    "nephrologie"
+  ],
+  "268": [
+    "rhumatologie",
+    "nephrologie",
+    "endocrinologie",
+    "diabete_et_maladies_metabolique"
+  ],
+  "269": [
+    "chirurgie_viscerale_et_digestive",
+    "pediatrie"
+  ],
+  "270": [
+    "rhumatologie",
+    "urologie"
+  ],
+  "271": [
+    "gastroenterologie",
+    "pediatrie"
+  ],
+  "272": [
+    "gastroenterologie"
+  ],
+  "273": [
+    "gastroenterologie"
+  ],
+  "274": [
+    "gastroenterologie",
+    "pediatrie"
+  ],
+  "275": [
+    "medecine_interne",
+    "hematologie"
+  ],
+  "276": [
+    "gastroenterologie"
+  ],
+  "277": [
+    "gastroenterologie"
+  ],
+  "278": [
+    "gastroenterologie",
+    "pediatrie"
+  ],
+  "279": [
+    "gastroenterologie"
+  ],
+  "280": [
+    "gastroenterologie"
+  ],
+  "281": [
+    "gastroenterologie"
+  ],
+  "282": [
+    "gastroenterologie"
+  ],
+  "283": [
+    "medecine_generale",
+    "gastroenterologie",
+    "pediatrie"
+  ],
+  "284": [
+    "gastroenterologie"
+  ],
+  "285": [
+    "gastroenterologie",
+    "pediatrie"
+  ],
+  "286": [
+    "pediatrie"
+  ],
+  "287": [
+    "chirurgie_viscerale_et_digestive",
+    "gastroenterologie"
+  ],
+  "288": [
+    "chirurgie_viscerale_et_digestive",
+    "gastroenterologie"
+  ],
+  "289": [
+    "chirurgie_viscerale_et_digestive",
+    "gastroenterologie"
+  ],
+  "290": [
+    "medecine_generale"
+  ],
+  "291": [
+    "biochimie_et_biologie_moleculaire",
+    "biologie_cellulaire"
+  ],
+  "292": [
+    "cancerologie"
+  ],
+  "293": [
+    "pathologique",
+    "biologie_cellulaire",
+    "cancerologie"
+  ],
+  "294": [
+    "cancerologie",
+    "biologie_cellulaire",
+    "soins_palliatifs"
+  ],
+  "295": [
+    "cancerologie",
+    "soins_palliatifs"
+  ],
+  "296": [
+    "hematologie"
+  ],
+  "297": [
+    "pediatrie",
+    "neurochirurgie",
+    "cancerologie",
+    "soins_palliatifs"
+  ],
+  "298": [
+    "orl_et_chirurgie_de_la_face_et_du_cou",
+    "chirurgie_maxillo_faciale"
+  ],
+  "299": [
+    "neurochirurgie"
+  ],
+  "300": [
+    "gynecologie_obstetrique",
+    "gynecologie_medicale"
+  ],
+  "301": [
+    "gastroenterologie"
+  ],
+  "302": [
+    "dermatologie",
+    "chirurgie_plastique_reconstructive_et_esthetique"
+  ],
+  "303": [
+    "gastroenterologie"
+  ],
+  "304": [
+    "gastroenterologie"
+  ],
+  "305": [
+    "gastroenterologie",
+    "chirurgie_thoracique_et_cardio_vasculaire"
+  ],
+  "306": [
+    "gynecologie_obstetrique",
+    "biologie_cellulaire",
+    "gynecologie_medicale"
+  ],
+  "307": [
+    "rhumatologie"
+  ],
+  "308": [
+    "gastroenterologie"
+  ],
+  "309": [
+    "pneumologie",
+    "chirurgie_thoracique_et_cardio_vasculaire"
+  ],
+  "310": [
+    "urologie",
+    "biologie_cellulaire"
+  ],
+  "311": [
+    "urologie"
+  ],
+  "312": [
+    "gynecologie_obstetrique",
+    "cancerologie"
+  ],
+  "313": [
+    "urologie"
+  ],
+  "314": [
+    "urologie"
+  ],
+  "315": [
+    "hematologie",
+    "pediatrie"
+  ],
+  "316": [
+    "hematologie"
+  ],
+  "317": [
+    "hematologie"
+  ],
+  "318": [
+    "hematologie"
+  ],
+  "319": [
+    "hematologie"
+  ],
+  "320": [
+    "hematologie"
+  ],
+  "321": [
+    "therapeutique",
+    "radiologie",
+    "pharmacologie"
+  ],
+  "322": [
+    "medecine_generale",
+    "pharmacologie",
+    "therapeutique"
+  ],
+  "323": [
+    "therapeutique",
+    "pharmacologie",
+    "informatique_medicale_biomathematiques_methodes_en_epidemiologie_statistique",
+    "sante_publique"
+  ],
+  "324": [
+    "therapeutique",
+    "pharmacologie"
+  ],
+  "325": [
+    "therapeutique",
+    "pharmacologie"
+  ],
+  "326": [
+    "therapeutique",
+    "pharmacologie"
+  ],
+  "327": [
+    "medecines_integratives_et_complementaires",
+    "therapeutique"
+  ],
+  "328": [
+    "medecine_physique_et_de_readaptation",
+    "therapeutique",
+    "chirurgie_vasculaire"
+  ],
+  "329": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "hematologie",
+    "pediatrie"
+  ],
+  "330": [
+    "therapeutique",
+    "pharmacologie",
+    "medecine_vasculaire"
+  ],
+  "331": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "pediatrie",
+    "chirurgie_thoracique_et_cardio_vasculaire"
+  ],
+  "332": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "pediatrie"
+  ],
+  "333": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "chirurgie_thoracique_et_cardio_vasculaire"
+  ],
+  "334": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "neurochirurgie",
+    "chirurgie_orthopedique_et_traumatologique",
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "chirurgie_de_la_main"
+  ],
+  "335": [
+    "chirurgie_maxillo_faciale",
+    "medecine_vasculaire"
+  ],
+  "336": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "pediatrie"
+  ],
+  "337": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "pediatrie"
+  ],
+  "338": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire"
+  ],
+  "339": [
+    "cardiologie",
+    "chirurgie_thoracique_et_cardio_vasculaire"
+  ],
+  "340": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "neurologie",
+    "medecine_vasculaire",
+    "chirurgie_vasculaire"
+  ],
+  "341": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "neurochirurgie"
+  ],
+  "342": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire"
+  ],
+  "343": [
+    "neurologie",
+    "pediatrie"
+  ],
+  "344": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "gynecologie_obstetrique"
+  ],
+  "345": [
+    "pediatrie"
+  ],
+  "346": [
+    "pediatrie"
+  ],
+  "347": [
+    "urologie"
+  ],
+  "348": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "nephrologie"
+  ],
+  "349": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "chirurgie_orthopedique_et_traumatologique",
+    "chirurgie_de_la_main",
+    "bacteriologie_virologie_hygiene_hospitaliere"
+  ],
+  "350": [
+    "medecine_generale",
+    "dermatologie"
+  ],
+  "351": [
+    "psychiatrie"
+  ],
+  "352": [
+    "psychiatrie"
+  ],
+  "353": [
+    "psychiatrie"
+  ],
+  "354": [
+    "chirurgie_viscerale_et_digestive",
+    "chirurgie_pediatrique"
+  ],
+  "355": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "gastroenterologie"
+  ],
+  "356": [
+    "chirurgie_viscerale_et_digestive",
+    "chirurgie_pediatrique"
+  ],
+  "357": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "chirurgie_viscerale_et_digestive",
+    "chirurgie_pediatrique"
+  ],
+  "358": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "gastroenterologie"
+  ],
+  "359": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "pediatrie"
+  ],
+  "360": [
+    "medecine_intensive_reanimation",
+    "medecine_d_urgence",
+    "anesthesie_reanimation_medecine_peri_operatoire",
+    "chirurgie_thoracique_et_cardio_vasculaire",
+    "pneumologie"
+  ],
+  "361": [
+    "chirurgie_orthopedique_et_traumatologique",
+    "chirurgie_de_la_main"
+  ],
+  "362": [
+    "chirurgie_orthopedique_et_traumatologique",
+    "chirurgie_de_la_main"
+  ],
+  "363": [
+    "chirurgie_orthopedique_et_traumatologique",
+    "chirurgie_de_la_main"
+  ],
+  "364": [
+    "chirurgie_pediatrique"
+  ],
+  "365": [
+    "chirurgie_orthopedique_et_traumatologique",
+    "chirurgie_de_la_main"
+  ],
+  "366": [
+    "maladies_infectieuses_et_tropicales"
+  ],
+  "367": [
+    "biochimie_et_biologie_moleculaire"
+  ]
+}

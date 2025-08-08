@@ -1,0 +1,152 @@
+{
+  "sessionId": "session_1754692883032_cluo7qjkj",
+  "questions": [
+    {
+      "id": "qcm_session_1754692883032_cluo7qjkj_0",
+      "topic": "Prise en charge d'un abcès et d'un panaris",
+      "rationale": "La prise en charge des abcès et des panaris nécessite des approches spécifiques pour assurer la guérison et éviter les complications graves.",
+      "propositions": [
+        {
+          "statement": "L'antibiothérapie est rarement nécessaire dans la prise en charge d'un abcès collecté",
+          "isTrue": true,
+          "explanation": "Dans la plupart des cas, la prise en charge d'un abcès collecté est avant tout chirurgicale."
+        },
+        {
+          "statement": "Un abcès profond nécessite toujours une fermeture cutanée après l'incision et le drainage",
+          "isTrue": false,
+          "explanation": "Il n'y a pas de fermeture cutanée dans la prise en charge d'un abcès."
+        },
+        {
+          "statement": "Pour éviter une contamination collective, les patients travaillant dans le secteur alimentaire doivent être évités du lieu de travail jusqu'à guérison",
+          "isTrue": true,
+          "explanation": "Cela permet de prévenir la propagation de l'infection."
+        },
+        {
+          "statement": "Un abcès non collecté nécessite systématiquement une prescription d'antibiotiques",
+          "isTrue": false,
+          "explanation": "Dans la phase inflammatoire, une surveillance peut être suffisante sans recours systématique aux antibiotiques."
+        },
+        {
+          "statement": "La prise en charge d'un panaris inclut l'incision de la tuméfaction, l'exérèse des tissus infectés et nécrotiques, et le lavage de la zone",
+          "isTrue": true,
+          "explanation": "Ces étapes sont essentielles pour traiter efficacement un panaris."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Section 2",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754692883032_cluo7qjkj_1",
+      "topic": "Infections aiguës des parties molles",
+      "rationale": "Ce QCM couvre divers aspects des infections des parties molles, incluant la définition des termes, les bactéries responsables, les spécificités des morsures, le mode d'inoculation et les caractéristiques du panaris. Les explications détaillées permettent de mieux comprendre chaque proposition.",
+      "propositions": [
+        {
+          "statement": "Le panaris est une infection spécifique de la main et de son anatomie.",
+          "isTrue": true,
+          "explanation": "Le panaris est une infection aiguë des parties molles d'un doigt."
+        },
+        {
+          "statement": "Le panaris anthracoïde est profond et affecte la pulpe du doigt.",
+          "isTrue": false,
+          "explanation": "Le panaris anthracoïde est superficiel et centré sur un poil au dos d'une phalange."
+        },
+        {
+          "statement": "Le staphylococcus aureus est la bactérie la plus souvent responsable des infections des parties molles.",
+          "isTrue": true,
+          "explanation": "Le staphylococcus aureus est responsable dans 60% des cas."
+        },
+        {
+          "statement": "La morsure par un chat conduit généralement à une infection causée par Pasteurella multocida.",
+          "isTrue": true,
+          "explanation": "Pasteurella multocida est le germe le plus fréquent pour les morsures par chat."
+        },
+        {
+          "statement": "L'inoculation directe est le mode le moins fréquent de contamination des infections des parties molles.",
+          "isTrue": false,
+          "explanation": "L'inoculation directe est le mode le plus fréquent, secondaire à une plaie, un traumatisme pénétrant ou à une morsure."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754692883032_cluo7qjkj_2",
+      "topic": "Infection aiguë des parties molles - QCM",
+      "rationale": "Ce QCM couvre différents aspects des infections aiguës des parties molles, des abcès aux phlegmons des gaines. Il aborde également les bactéries responsables, les spécificités des morsures, et les phases évolutives des infections. Les justifications détaillées permettent une meilleure compréhension des réponses.",
+      "propositions": [
+        {
+          "statement": "Un abcès est défini comme une accumulation localisée de pus dans une cavité par le développement de l'infection, dont les parois sont faites du tissu voisin modifié et refoulé.",
+          "isTrue": true,
+          "explanation": "Cette définition correspond à celle d'un abcès."
+        },
+        {
+          "statement": "Le panaris est une infection aiguë des parties molles d'un doigt localisée uniquement en zone pulpaire.",
+          "isTrue": false,
+          "explanation": "Le panaris peut également être localisé en péri-unguéale ou à la face dorsale d'une phalange."
+        },
+        {
+          "statement": "Le staphylococcus aureus est la bactérie la plus souvent responsable des infections des parties molles de la main, dans environ 60% des cas.",
+          "isTrue": true,
+          "explanation": "Effectivement, le staphylococcus aureus est le germe le plus fréquent dans ces cas."
+        },
+        {
+          "statement": "Les morsures animales sont généralement associées à une infection monomicrobienne.",
+          "isTrue": false,
+          "explanation": "Les morsures animales sont le plus souvent associées à une infection polymicrobienne."
+        },
+        {
+          "statement": "La phase d'invasion d'une infection des parties molles est caractérisée par des signes inflammatoires locaux tels que douleur, rougeur, chaleur et œdème.",
+          "isTrue": true,
+          "explanation": "La phase d'invasion est asymptomatique, c'est la phase inflammatoire qui est caractérisée par ces signes."
+        }
+      ],
+      "chunkId": "chunk_0",
+      "chunkHeading": "Section 1",
+      "pageRange": "Pages 1-0"
+    },
+    {
+      "id": "qcm_session_1754692883032_cluo7qjkj_3",
+      "topic": "Evaluation des abcès et panaris",
+      "rationale": "Ce QCM évalue la prise en charge des abcès et panaris en mettant en avant des nuances importantes. Il aborde la nécessité d'une antibiothérapie pour les abcès non collectés, les indications d'hospitalisation incluant la fasciite nécrosante, le drainage des abcès profonds, l'éviction du lieu de travail pour certains patients, et le caractère non systématiquement chirurgical d'un phlegmon des gaines.",
+      "propositions": [
+        {
+          "statement": "Un abcès non collecté nécessite toujours une antibiothérapie.",
+          "isTrue": false,
+          "explanation": "Dans le cas d'un abcès non collecté, une surveillance et une éventuelle prescription d'antibiotiques peuvent être discutées, mais une antibiothérapie n'est pas toujours nécessaire."
+        },
+        {
+          "statement": "La fasciite nécrosante est une indication d'hospitalisation.",
+          "isTrue": true,
+          "explanation": "La fasciite nécrosante survient dans un tableau bruyant d'infection sévère chez des patients à risques et peut nécessiter des soins de réanimation, ce qui en fait une indication d'hospitalisation."
+        },
+        {
+          "statement": "Un abcès profond nécessite systématiquement un drainage.",
+          "isTrue": true,
+          "explanation": "En cas d'abcès profond, un méchage ou un drainage est associé à la prise en charge pour favoriser l'évacuation du pus et la guérison."
+        },
+        {
+          "statement": "Un patient travaillant dans le secteur alimentaire doit être évacué du lieu de travail en cas d'abcès.",
+          "isTrue": true,
+          "explanation": "Pour les patients travaillant dans le secteur alimentaire, une éviction du lieu de travail jusqu'à guérison est essentielle pour éviter une contamination collective."
+        },
+        {
+          "statement": "Un phlegmon des gaines est toujours une indication chirurgicale.",
+          "isTrue": false,
+          "explanation": "Un phlegmon des gaines peut nécessiter une prise en charge médico-chirurgicale, mais ce n'est pas toujours une indication chirurgicale selon les critères de gravité et les signes locaux."
+        }
+      ],
+      "chunkId": "chunk_1",
+      "chunkHeading": "Section 2",
+      "pageRange": "Pages 1-0"
+    }
+  ],
+  "usedChunks": [
+    1,
+    0
+  ],
+  "currentIndex": 3,
+  "total": 4,
+  "contextSnippet": "le de demander des examens complémentaires biologiques ou dʼimagerie pour confirmer le diagnostic.\nDes radiographies de face et de profil doivent être demandé pour documenter la porte dʼentrée (recherche de corps étranger) et\néliminer une complication osseuse (ostéite), en particulier devant une évolution lente et chez le sujet à risque.\nSavoir évoquer le diagnostic de phlegmon des gaines OIC-349-10-A\nUn phlegmon est évoqué devant un doigt chaud, oedématié, douloureux à la mobilisation (douleur à l'extension passive).\nLa douleur caractéristique se situe au niveau du cul de sac de la gaine (projection de lʼarticulation métacarpo-phalangienne en face\npalmaire pour les doigts médians, au pli du poignet pour le pouce et le 5eme doigt).\nOn distingue classiquement 3 présentations cliniques :\nDouleur typique sans attitude vicieuse du doigt\nDouleur avec « doigt en crochet » : signe de gravité\nDouleur avec perte de lʼattitude « en crochet » : signe de rupture tendineuse\nConnaître les critères c"
+}

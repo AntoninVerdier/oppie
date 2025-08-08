@@ -27,6 +27,7 @@ vercel --prod
 
 Make sure to set these in Vercel dashboard:
 - `OPENAI_API_KEY`: Your OpenAI API key
+- `KV_REST_API_URL`, `KV_REST_API_TOKEN` (when using Vercel KV)
 
 ## Custom Domain Setup
 
@@ -53,3 +54,4 @@ npm run build
 - **Build errors**: Check `vercel.json` configuration
 - **API errors**: Verify `OPENAI_API_KEY` is set
 - **Domain issues**: Check DNS settings in your domain provider
+- **Read-only FS errors (EROFS)**: Ensure Vercel KV is connected; persistence uses KV in production

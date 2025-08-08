@@ -24,6 +24,16 @@ export default function QuizStepPage() {
   const [hasInteracted, setHasInteracted] = useState<boolean>(false);
   const questionRef = useRef<GeneratedQuestion | null>(null);
 
+  // Reset lock and UI state when navigating between steps
+  useEffect(() => {
+    questionRef.current = null;
+    initializedQidRef.current = null;
+    setQuestion(null);
+    setAnswers([]);
+    setValidated(false);
+    setHasInteracted(false);
+  }, [idx]);
+
   useEffect(() => {
     const sid = search.get("sid") || sessionStorage.getItem("oppie-session-id");
     if (!sid) {
@@ -44,22 +54,15 @@ export default function QuizStepPage() {
         // NEVER update question once it's been set - only set it once
         if (!questionRef.current && j.question) {
           setQuestion(j.question);
+          setAnswers(Array(j.question.propositions.length).fill(false));
           questionRef.current = j.question;
+          initializedQidRef.current = j.question.id || null;
+          setInitializedQid(j.question.id || null);
           console.log('🔒 Question set and locked forever');
         }
         setTotal(j.total);
         setAvailable(j.available);
         setStatus(j.status);
-        // Only reset question ref when we detect a NEW question ID
-        if (j.question?.id && j.question.id !== initializedQidRef.current) {
-          setAnswers(Array(j.question.propositions.length).fill(false));
-          setInitializedQid(j.question.id);
-          initializedQidRef.current = j.question.id;
-          setValidated(false);
-          setHasInteracted(false); // Reset interaction flag for new question
-          questionRef.current = null; // Reset question ref for new question
-          console.log('🔄 New question detected, resetting question ref');
-        }
         // persist question into local quiz store for summary later - NEVER UPDATE EXISTING
         try {
           const raw = sessionStorage.getItem("oppie-quiz");
@@ -94,22 +97,15 @@ export default function QuizStepPage() {
         // NEVER update question once it's been set - only set it once
         if (!questionRef.current && j.question) {
           setQuestion(j.question);
+          setAnswers(Array(j.question.propositions.length).fill(false));
           questionRef.current = j.question;
+          initializedQidRef.current = j.question.id || null;
+          setInitializedQid(j.question.id || null);
           console.log('🔒 Question set and locked forever');
         }
         setTotal(j.total);
         setAvailable(j.available);
         setStatus(j.status);
-        // Only reset question ref when we detect a NEW question ID
-        if (j.question?.id && j.question.id !== initializedQidRef.current) {
-          setAnswers(Array(j.question.propositions.length).fill(false));
-          setInitializedQid(j.question.id);
-          initializedQidRef.current = j.question.id;
-          setValidated(false);
-          setHasInteracted(false); // Reset interaction flag for new question
-          questionRef.current = null; // Reset question ref for new question
-          console.log('🔄 New question detected, resetting question ref');
-        }
         if (j.status !== "completed" && j.available < j.total) {
           // keep generation moving in the background
           fetch(`/api/generate/continue`, { method: "POST", body: JSON.stringify({ sessionId }) }).catch(() => {});

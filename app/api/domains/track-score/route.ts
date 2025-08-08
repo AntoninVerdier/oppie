@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getDomainsForFile, addDomainScoreAsync } from "@/lib/domains";
+import { getDomainsForFile, addDomainScoreAsync, ensureDomainsExist } from "@/lib/domains";
 
 export async function POST(request: NextRequest) {
   try {
@@ -17,6 +17,9 @@ export async function POST(request: NextRequest) {
       console.log(`No domains found for file: ${filename}`);
       return NextResponse.json({ message: "No domains mapped for this file" });
     }
+
+    // Ensure newly discovered domains exist in mapping (creates with generated colors)
+    ensureDomainsExist(domains);
 
     // Add score for each domain this file belongs to (KV-safe)
     await Promise.all(domains.map((domain) => addDomainScoreAsync({

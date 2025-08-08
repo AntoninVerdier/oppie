@@ -1,0 +1,46 @@
+{
+  "sessionId": "session_1754692126835_sopfi1u0u",
+  "questions": [
+    {
+      "id": "qcm_session_1754692126835_sopfi1u0u_0",
+      "topic": "Fractures diaphysaires des membres et complications associées",
+      "rationale": "Ce QCM aborde différents types de fractures diaphysaires des membres et les complications qui peuvent en découler, mettant en lumière l'importance de la prise en charge adéquate pour éviter ces problèmes.",
+      "propositions": [
+        {
+          "statement": "Une fracture métaphyso-diaphysaire de l’humérus proximal droit spiroïde avec 2 ailes de papillon est déplacée.",
+          "isTrue": true,
+          "explanation": "Cette description correspond à une fracture diaphysaire."
+        },
+        {
+          "statement": "Une fracture transversale du 1/3 moyen de la diaphyse des 2 os de l’avant-bras gauche est bien alignée.",
+          "isTrue": false,
+          "explanation": "La fracture est déplacée avec une translation médiale."
+        },
+        {
+          "statement": "Une fracture transversale du 1/3 moyen de la jambe droite (fibula + tibia) est déplacée avec une translation latérale.",
+          "isTrue": true,
+          "explanation": "Cette fracture présente une translation latérale."
+        },
+        {
+          "statement": "Une fracture diaphysaire oblique du fémur droit sous une prothèse de hanche est bien axée.",
+          "isTrue": false,
+          "explanation": "La fracture est décrite comme oblique avec une prothèse de hanche."
+        },
+        {
+          "statement": "Les complications locorégionales des fractures comprennent des lésions nerveuses et vasculaires, ainsi que le syndrome des loges.",
+          "isTrue": true,
+          "explanation": "Les complications incluent ces éléments et nécessitent une surveillance adéquate."
+        }
+      ],
+      "chunkId": "chunk_9",
+      "chunkHeading": "Section 10",
+      "pageRange": "Pages 1-0"
+    }
+  ],
+  "usedChunks": [
+    9
+  ],
+  "currentIndex": 0,
+  "total": 8,
+  "contextSnippet": "?\n(« découverte d’une anomalie osseuse et articulaire à l’examen d’imagerie médicale »)\ne\n\n30/07/2025, 16:33Fiche LiSA:Prise en charge immédiate pré-hospitalière et à l'arriv...aumatisé abdominal, un traumatisé des membres et/ou du ... — LiSA\nPage 21 of 38https://livret.uness.fr/lisa/2025/Fiche_LiSA:Prise_en_charge_immé..._un_traumatisé_abdominal,_un_traumatisé_des_membres_et/ou_du_...\nFracture métaphyso-\ndiaphysaire de l’humérus\nproximal droit spiroïde avec 2\nailes de papillon, déplacée.\nFracture transversale du 1/3\nmoyen de la diaphyse des 2\nos de l’avant-bras gauche\ndéplacée avec une translation\nmédiale\nFracture transversale du 1/3 moyen de\njambe droite (fibula + tibia) déplacée avec\nune translation latérale\nIdentifier une fracture diaphysaire des os longs OIC-334-39-B\n(« découverte d’une anomalie osseuse et articulaire à l’examen d’imagerie médicale »)\n\n30/07/2025, 16:33Fiche LiSA:Prise en charge immédiate pré-hospitalière et à l'arriv...aumatisé abdominal, un traumatisé des membre"
+}
