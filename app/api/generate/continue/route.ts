@@ -288,10 +288,20 @@ EXEMPLE DE FORMAT EXACT:
     
     // Mark session as failed if we can't continue
     try {
-      session.status = "failed";
-      session.error = error.message || "Failed to continue generation";
-      sessions[sessionIndex] = session;
-      fs.writeFileSync(sessionsPath, JSON.stringify(sessions, null, 2));
+      // Reload sessions to get current state
+      const sessionsPath = path.join(process.cwd(), "data", "sessions.json");
+      let sessions = [];
+      try {
+        sessions = JSON.parse(fs.readFileSync(sessionsPath, "utf8"));
+        const sessionIndex = sessions.findIndex((s: any) => s.id === sessionId);
+        if (sessionIndex !== -1) {
+          sessions[sessionIndex].status = "failed";
+          sessions[sessionIndex].error = error.message || "Failed to continue generation";
+          fs.writeFileSync(sessionsPath, JSON.stringify(sessions, null, 2));
+        }
+      } catch (updateError) {
+        console.error("Failed to update session status:", updateError);
+      }
     } catch (updateError) {
       console.error("Failed to update session status:", updateError);
     }
