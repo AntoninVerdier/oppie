@@ -43,9 +43,10 @@ export async function GET(req: NextRequest) {
     }
     
     if (!q) {
-      // Best-effort: kick background generation server-side
+      // Best-effort: kick background generation server-side using absolute origin
       try {
-        await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/generate/continue`, {
+        const origin = new URL(req.url).origin;
+        await fetch(`${origin}/api/generate/continue`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ sessionId })

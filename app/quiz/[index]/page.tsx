@@ -127,12 +127,15 @@ export default function QuizStepPage() {
           fetch(`/api/generate/continue`, { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sessionId }) }).catch(() => {});
         }
       } else if (r.status === 404) {
-        // If server signals completed or failed, stop waiting and route accordingly
+        // If processing, we can also client-kick background generation (defensive)
         try {
           const j = await r.json();
           if (j?.status === 'failed') {
             router.replace('/');
             return;
+          }
+          if (j?.status === 'processing') {
+            fetch(`/api/generate/continue`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sessionId }) }).catch(() => {});
           }
         } catch {}
         // keep waiting otherwise
