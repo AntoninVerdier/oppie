@@ -18,6 +18,16 @@ export async function GET(req: NextRequest) {
     const q = j.questions?.[idx];
     const available = j.questions?.length || 0;
     const total = j.total || j.numQuestions;
+
+    // Determine status from sessions registry if available
+    let status: "processing" | "completed" | "failed" = available >= total ? "completed" : "processing";
+    try {
+      const sessions = await loadSessions();
+      const sIdx = sessions.findIndex((s: any) => s.id === sessionId);
+      if (sIdx !== -1 && sessions[sIdx]?.status) {
+        status = sessions[sIdx].status;
+      }
+    } catch {}
     
     // Auto-complete if generation finished but status not updated
     if (available >= total) {
@@ -32,8 +42,8 @@ export async function GET(req: NextRequest) {
       } catch {}
     }
     
-    if (!q) return NextResponse.json({ available, total, status: available >= total ? "completed" : "processing" }, { status: 404 });
-    return NextResponse.json({ question: q, available, total, status: available >= total ? "completed" : "processing" });
+    if (!q) return NextResponse.json({ available, total, status }, { status: 404 });
+    return NextResponse.json({ question: q, available, total, status });
   } catch (e: any) {
     return NextResponse.json({ error: e?.message || "Internal error" }, { status: 500 });
   }

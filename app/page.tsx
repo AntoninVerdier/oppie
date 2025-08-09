@@ -66,6 +66,12 @@ export default function HomePage() {
         sessionStorage.removeItem("oppie-steps");
         sessionStorage.removeItem("oppie-summary");
       } catch {}
+      // Persist first question immediately to avoid waiting on /api/generate/get
+      try {
+        if (json?.question) {
+          sessionStorage.setItem("oppie-quiz", JSON.stringify([json.question]));
+        }
+      } catch {}
       sessionStorage.setItem("oppie-session-id", json.sessionId);
       sessionStorage.setItem("oppie-session", JSON.stringify({
         sessionId: json.sessionId,

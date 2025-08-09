@@ -238,6 +238,14 @@ export async function POST(request: NextRequest) {
 
     // Generate random chunk order for even coverage
     const chunkOrder = generateRandomChunkOrder(pdfData.chunks.length, numQuestions);
+    // Pick the first chunk with meaningful content to avoid empty prompts
+    function pickFirstValidIndex(order: number[], chunks: typeof pdfData.chunks): number {
+      for (const i of order) {
+        const c = chunks[i]?.content?.trim() || "";
+        if (c.length > 150) return i;
+      }
+      return order[0];
+    }
     
     // Create session
     const sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
@@ -262,7 +270,7 @@ export async function POST(request: NextRequest) {
     await saveSessions(sessions);
 
     // Generate first QCM from the first chunk in random order
-    const firstChunkIndex = chunkOrder[0];
+    const firstChunkIndex = pickFirstValidIndex(chunkOrder, pdfData.chunks);
     const firstChunk = pdfData.chunks[firstChunkIndex];
     
     const openai = new OpenAI({
@@ -302,7 +310,21 @@ GÉNÈRE UN SEUL QCM avec exactement 5 propositions Vrai/Faux selon ces critère
 
 IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`;
 
-    // Add timeout and retry logic
+    // Debug: log prompt metadata (not full content)
+    try {
+      console.log(
+        "OPENAI_PROMPT_START",
+        JSON.stringify({
+          sessionId,
+          firstChunkIndex,
+          heading: firstChunk.heading,
+          contentLen: firstChunk.content?.length || 0,
+          contentSample: firstChunk.content?.slice(0, 180) || "",
+        })
+      );
+    } catch {}
+
+    // Add timeout and retry logic (force JSON with response_format)
     let response;
     let retries = 0;
     const maxRetries = 3;
@@ -313,9 +335,13 @@ IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`
         const completion = await Promise.race([
           openai.chat.completions.create({
             model: "gpt-3.5-turbo",
-            messages: [{ role: "user", content: prompt }],
-            temperature: 0.7,
-            max_tokens: 2000,
+            messages: [
+              { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
+              { role: "user", content: prompt }
+            ],
+            temperature: 0.5,
+            max_tokens: 1800,
+            response_format: { type: "json_object" },
           }),
           new Promise<never>((_, reject) => 
             setTimeout(() => reject(new Error("Request timeout")), timeout)
@@ -323,6 +349,12 @@ IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`
         ]) as any;
 
         response = completion.choices[0]?.message?.content?.trim();
+        try {
+          console.log(
+            "OPENAI_RESPONSE_START",
+            JSON.stringify({ sessionId, len: response?.length || 0, sample: response?.slice(0, 180) || "" })
+          );
+        } catch {}
         if (!response) throw new Error("Empty response from OpenAI");
         break; // Success, exit retry loop
       } catch (error: any) {
@@ -371,9 +403,13 @@ EXEMPLE DE FORMAT EXACT:
           const retryCompletion = await Promise.race([
             openai.chat.completions.create({
               model: "gpt-3.5-turbo",
-              messages: [{ role: "user", content: retryPrompt }],
+              messages: [
+                { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
+                { role: "user", content: retryPrompt }
+              ],
               temperature: 0.3,
               max_tokens: 1500,
+              response_format: { type: "json_object" },
             }),
             new Promise<never>((_, reject) => 
               setTimeout(() => reject(new Error("Retry request timeout")), timeout)

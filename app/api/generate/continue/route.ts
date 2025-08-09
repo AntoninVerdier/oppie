@@ -143,16 +143,20 @@ IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`
     let response;
     let retries = 0;
     const maxRetries = 3;
-    const timeout = 30000; // 30 seconds timeout
+    const timeout = 25000; // 25 seconds timeout to surface retries faster
 
     while (retries < maxRetries) {
       try {
         const completion = await Promise.race([
           openai.chat.completions.create({
             model: "gpt-3.5-turbo",
-            messages: [{ role: "user", content: prompt }],
-            temperature: 0.7,
-            max_tokens: 2000,
+            messages: [
+              { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
+              { role: "user", content: prompt }
+            ],
+            temperature: 0.5,
+            max_tokens: 1800,
+            response_format: { type: "json_object" },
           }),
           new Promise((_, reject) => 
             setTimeout(() => reject(new Error("Request timeout")), timeout)
@@ -170,8 +174,8 @@ IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`
           throw new Error(`Failed after ${maxRetries} attempts: ${error.message}`);
         }
         
-        // Wait before retry (exponential backoff)
-        await new Promise(resolve => setTimeout(resolve, 1000 * retries));
+        // Wait before retry (exponential backoff) — cap at 4s
+        await new Promise(resolve => setTimeout(resolve, Math.min(4000, 1000 * retries)));
       }
     }
 
@@ -208,9 +212,13 @@ EXEMPLE DE FORMAT EXACT:
           const retryCompletion = await Promise.race([
             openai.chat.completions.create({
               model: "gpt-3.5-turbo",
-              messages: [{ role: "user", content: retryPrompt }],
+              messages: [
+                { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
+                { role: "user", content: retryPrompt }
+              ],
               temperature: 0.3,
               max_tokens: 1500,
+              response_format: { type: "json_object" },
             }),
             new Promise((_, reject) => 
               setTimeout(() => reject(new Error("Retry request timeout")), timeout)

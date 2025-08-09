@@ -27,3 +27,4 @@ coverage/
 # Misc
 yarn.lock
 pnpm-lock.yaml
+.vercel

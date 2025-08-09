@@ -41,6 +41,22 @@ export default function QuizStepPage() {
       return;
     }
     setSessionId(sid);
+
+    // Optimistic: if we already have this question in sessionStorage, render it immediately
+    try {
+      const raw = sessionStorage.getItem("oppie-quiz");
+      if (raw) {
+        const arr: GeneratedQuestion[] = JSON.parse(raw);
+        const pre = arr[idx];
+        if (pre && !questionRef.current) {
+          setQuestion(pre);
+          setAnswers(Array(pre.propositions.length).fill(false));
+          questionRef.current = pre;
+          initializedQidRef.current = pre.id || null;
+          setInitializedQid(pre.id || null);
+        }
+      }
+    } catch {}
   }, [search, router]);
 
   useEffect(() => {
@@ -76,12 +92,12 @@ export default function QuizStepPage() {
         } catch {}
         // kick background generation
         if (j.status !== "completed") {
-          fetch(`/api/generate/continue`, { method: "POST", body: JSON.stringify({ sessionId }) }).catch(() => {});
+          fetch(`/api/generate/continue`, { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sessionId }) }).catch(() => {});
         }
       } else if (res.status === 404) {
         // question not yet available: ensure background generation runs
         setQuestion(null);
-        const cont = await fetch(`/api/generate/continue`, { method: "POST", body: JSON.stringify({ sessionId }) });
+        const cont = await fetch(`/api/generate/continue`, { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sessionId }) });
         // ignore result; we'll poll below
       } else {
         // error, go home
@@ -108,10 +124,18 @@ export default function QuizStepPage() {
         setStatus(j.status);
         if (j.status !== "completed" && j.available < j.total) {
           // keep generation moving in the background
-          fetch(`/api/generate/continue`, { method: "POST", body: JSON.stringify({ sessionId }) }).catch(() => {});
+          fetch(`/api/generate/continue`, { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sessionId }) }).catch(() => {});
         }
       } else if (r.status === 404) {
-        // keep waiting
+        // If server signals completed or failed, stop waiting and route accordingly
+        try {
+          const j = await r.json();
+          if (j?.status === 'failed') {
+            router.replace('/');
+            return;
+          }
+        } catch {}
+        // keep waiting otherwise
       }
     }, 2500);
     return () => { cancelled = true; clearInterval(iv); };
