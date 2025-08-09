@@ -42,7 +42,17 @@ export async function GET(req: NextRequest) {
       } catch {}
     }
     
-    if (!q) return NextResponse.json({ available, total, status }, { status: 404 });
+    if (!q) {
+      // Best-effort: kick background generation server-side
+      try {
+        await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/generate/continue`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sessionId })
+        }).catch(() => {});
+      } catch {}
+      return NextResponse.json({ available, total, status }, { status: 404 });
+    }
     return NextResponse.json({ question: q, available, total, status });
   } catch (e: any) {
     return NextResponse.json({ error: e?.message || "Internal error" }, { status: 500 });

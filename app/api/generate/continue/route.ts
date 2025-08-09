@@ -43,10 +43,30 @@ function normalizeResponse(parsed: any, sessionId: string, questionIndex: number
 }
 
 export async function POST(request: NextRequest) {
-  let sessionId: string;
+  let sessionId: string | null = null;
   try {
-    const body = await request.json();
-    sessionId = body.sessionId;
+    // Accept JSON, then form-data, then query param
+    try {
+      const contentType = request.headers.get('content-type') || '';
+      if (contentType.includes('application/json')) {
+        const body = await request.json().catch(() => ({} as any));
+        sessionId = body?.sessionId ?? null;
+      }
+    } catch {}
+    if (!sessionId) {
+      try {
+        const form = await request.formData();
+        const sid = form.get('sessionId');
+        if (typeof sid === 'string' && sid.trim()) sessionId = sid;
+      } catch {}
+    }
+    if (!sessionId) {
+      try {
+        const { searchParams } = new URL(request.url);
+        const sid = searchParams.get('sessionId');
+        if (sid) sessionId = sid;
+      } catch {}
+    }
     if (!sessionId) {
       return NextResponse.json({ error: "Session ID required" }, { status: 400 });
     }
