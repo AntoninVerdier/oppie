@@ -296,12 +296,23 @@ EXEMPLE DE FORMAT EXACT:
     sessions[sessionIndex] = session;
     await saveSessions(sessions);
 
-    return NextResponse.json({
+    const payload = {
       status: session.status,
       available: session.available,
       total: session.total,
       question
-    });
+    };
+    // If still not complete, chain another background generation
+    if (session.available < session.total) {
+      try {
+        fetch(`/api/generate/continue`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sessionId })
+        }).catch(() => {});
+      } catch {}
+    }
+    return NextResponse.json(payload);
 
   } catch (error: any) {
     console.error("Error in generate/continue:", error);

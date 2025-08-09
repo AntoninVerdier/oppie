@@ -468,6 +468,16 @@ EXEMPLE DE FORMAT EXACT:
     sessions[0] = sessionData;
     await saveSessions(sessions);
 
+    // Best-effort: kick background generation for next questions
+    try {
+      const origin = new URL(request.url).origin;
+      fetch(`${origin}/api/generate/continue`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sessionId })
+      }).catch(() => {});
+    } catch {}
+
     return NextResponse.json({
       sessionId,
       question,
