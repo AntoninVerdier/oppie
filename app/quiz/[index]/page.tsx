@@ -76,6 +76,7 @@ export default function QuizStepPage() {
           setInitializedQid(j.question.id || null);
           console.log('🔒 Question set and locked forever');
         }
+        // If a question is already locked, never clear/replace it
         setTotal(j.total);
         setAvailable(j.available);
         setStatus(j.status);
@@ -96,7 +97,10 @@ export default function QuizStepPage() {
         }
       } else if (res.status === 404) {
         // question not yet available: ensure background generation runs
-        setQuestion(null);
+        // Do NOT clear an already displayed question to avoid flicker
+        if (!questionRef.current) {
+          setQuestion(null);
+        }
         const cont = await fetch(`/api/generate/continue`, { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sessionId }) });
         // ignore result; we'll poll below
       } else {
@@ -119,6 +123,7 @@ export default function QuizStepPage() {
           setInitializedQid(j.question.id || null);
           console.log('🔒 Question set and locked forever');
         }
+        // If a question is already locked, never clear/replace it
         setTotal(j.total);
         setAvailable(j.available);
         setStatus(j.status);
