@@ -28,18 +28,25 @@ export async function GET(req: NextRequest) {
     let status: "processing" | "completed" | "failed" = available >= total ? "completed" : "processing";
     try {
       const sessions = await loadSessions();
-      const sIdx = sessions.findIndex((s: any) => s.id === sessionId);
+      let sIdx = sessions.findIndex((s: any) => s.id === sessionId);
       if (sIdx !== -1 && sessions[sIdx]?.status) {
         status = sessions[sIdx].status;
+      } else {
+        // Synthesize registry entry if missing (KV eventual consistency)
+        sessions.unshift({ id: sessionId, filename: j.filename, total, available, status, createdAt: new Date().toISOString(), chunkOrder: j.chunkOrder || [], usedChunks: j.usedChunks || [] });
+        await saveSessions(sessions);
       }
     } catch {}
     
-    // Auto-complete if generation finished but status not updated
+    // Auto-complete if generation finished but status not updated. Also synthesize registry if missing.
     if (available >= total) {
       try {
         const sessions = await loadSessions();
-        const sessionIndex = sessions.findIndex((s: any) => s.id === sessionId);
-        if (sessionIndex !== -1) {
+        let sessionIndex = sessions.findIndex((s: any) => s.id === sessionId);
+        if (sessionIndex === -1) {
+          sessions.unshift({ id: sessionId, filename: j.filename, total, available, status: "completed", createdAt: new Date().toISOString(), chunkOrder: j.chunkOrder || [], usedChunks: j.usedChunks || [] });
+          await saveSessions(sessions);
+        } else {
           sessions[sessionIndex].status = "completed";
           sessions[sessionIndex].available = total;
           await saveSessions(sessions);

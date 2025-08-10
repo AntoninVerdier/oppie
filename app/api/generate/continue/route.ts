@@ -46,12 +46,34 @@ export async function POST(req: NextRequest) {
   localLocks.add(sessionId);
 
   try {
-    const sessions = await loadSessions();
-    const i = sessions.findIndex((s: any) => s.id === sessionId);
-    if (i === -1) return NextResponse.json({ error: "Session not found" }, { status: 404 });
+    let sessions = await loadSessions();
+    let i = sessions.findIndex((s: any) => s.id === sessionId);
+
+    let file = await readSessionFile(sessionId);
+    if (i === -1) {
+      // Fallback: synthesize meta from session file if registry missing (KV eventual consistency)
+      if (!file) {
+        return NextResponse.json({ error: "Session file missing" }, { status: 404 });
+      }
+      const synthesized = {
+        id: sessionId,
+        filename: file.filename,
+        tone: file.tone || "concis",
+        createdAt: new Date().toISOString(),
+        status: (file.questions?.length || 0) >= (file.total || 0) ? "completed" : "processing",
+        total: file.total || 8,
+        available: file.questions?.length || 0,
+        chunks: file.chunks || [],
+        chunkOrder: file.chunkOrder || [],
+        usedChunks: file.usedChunks || [],
+      } as any;
+      sessions = [synthesized, ...sessions];
+      await saveSessions(sessions);
+      i = 0;
+    }
 
     const meta = sessions[i];
-    const file = await readSessionFile(sessionId);
+    if (!file) file = await readSessionFile(sessionId);
     if (!file) return NextResponse.json({ error: "Session file missing" }, { status: 404 });
 
     const usedChunks: number[] = file.usedChunks || meta.usedChunks || [];
