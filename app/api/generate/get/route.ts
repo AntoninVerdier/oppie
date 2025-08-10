@@ -1,76 +1,51 @@
 import { NextRequest, NextResponse } from "next/server";
-import { readSessionFile, loadSessions, saveSessions } from "@/lib/storage";
+import { readSessionFile } from "@/lib/storage";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
-function getOrigin(req: NextRequest) {
-  const envUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "";
-  return envUrl || new URL(req.url).origin;
-}
-
-export async function GET(req: NextRequest) {
+export async function GET(request: NextRequest) {
   try {
-    const { searchParams } = new URL(req.url);
+    const { searchParams } = new URL(request.url);
     const sessionId = searchParams.get("id") || searchParams.get("sid") || searchParams.get("sessionId");
-    const indexStr = searchParams.get("index");
-    if (!sessionId || !indexStr) return NextResponse.json({ error: "Missing id or index" }, { status: 400 });
-    const idx = parseInt(indexStr, 10);
-    if (Number.isNaN(idx) || idx < 0) return NextResponse.json({ error: "Bad index" }, { status: 400 });
-    
-    const j = await readSessionFile(sessionId);
-    if (!j) return NextResponse.json({ error: "Session not found" }, { status: 404 });
-    const q = j.questions?.[idx];
-    const available = j.questions?.length || 0;
-    const total = j.total || j.numQuestions;
+    const index = parseInt(searchParams.get("index") || "0");
 
-    // Determine status from sessions registry if available
-    let status: "processing" | "completed" | "failed" = available >= total ? "completed" : "processing";
-    try {
-      const sessions = await loadSessions();
-      let sIdx = sessions.findIndex((s: any) => s.id === sessionId);
-      if (sIdx !== -1 && sessions[sIdx]?.status) {
-        status = sessions[sIdx].status;
-      } else {
-        // Synthesize registry entry if missing (KV eventual consistency)
-        sessions.unshift({ id: sessionId, filename: j.filename, total, available, status, createdAt: new Date().toISOString(), chunkOrder: j.chunkOrder || [], usedChunks: j.usedChunks || [] });
-        await saveSessions(sessions);
-      }
-    } catch {}
-    
-    // Auto-complete if generation finished but status not updated. Also synthesize registry if missing.
-    if (available >= total) {
-      try {
-        const sessions = await loadSessions();
-        let sessionIndex = sessions.findIndex((s: any) => s.id === sessionId);
-        if (sessionIndex === -1) {
-          sessions.unshift({ id: sessionId, filename: j.filename, total, available, status: "completed", createdAt: new Date().toISOString(), chunkOrder: j.chunkOrder || [], usedChunks: j.usedChunks || [] });
-          await saveSessions(sessions);
-        } else {
-          sessions[sessionIndex].status = "completed";
-          sessions[sessionIndex].available = total;
-          await saveSessions(sessions);
-        }
-      } catch {}
+    if (!sessionId) {
+      return NextResponse.json({ error: "Session ID required" }, { status: 400 });
     }
-    
-    if (!q) {
-      // Best-effort: kick background generation server-side using absolute origin
-      try {
-        const origin = getOrigin(req);
-        const priority = available < 3 ? "high" : "normal"; // Priority for first 3 QCMs
-        fetch(`${origin}/api/generate/continue`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ sessionId, priority }),
-          keepalive: true
-        }).catch(() => {});
-      } catch {}
-      return NextResponse.json({ available, total, status }, { status: 404 });
+
+    // Read session file
+    const sessionData = await readSessionFile(sessionId);
+    if (!sessionData) {
+      return NextResponse.json({ error: "Session not found" }, { status: 404 });
     }
-    return NextResponse.json({ question: q, available, total, status });
-  } catch (e: any) {
-    return NextResponse.json({ error: e?.message || "Internal error" }, { status: 500 });
+
+    const { questions, available, total, status } = sessionData;
+
+    if (!questions || !Array.isArray(questions)) {
+      return NextResponse.json({ error: "No questions found" }, { status: 404 });
+    }
+
+    if (index >= questions.length) {
+      return NextResponse.json({ error: "Question index out of range" }, { status: 404 });
+    }
+
+    const question = questions[index];
+    if (!question) {
+      return NextResponse.json({ error: "Question not found" }, { status: 404 });
+    }
+
+    return NextResponse.json({
+      question,
+      available,
+      total,
+      status,
+      index
+    });
+
+  } catch (error: any) {
+    console.error("Error in generate/get:", error);
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
 
