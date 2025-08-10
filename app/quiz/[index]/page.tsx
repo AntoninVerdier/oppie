@@ -24,6 +24,15 @@ export default function QuizStepPage() {
   const [hasInteracted, setHasInteracted] = useState<boolean>(false);
   const questionRef = useRef<GeneratedQuestion | null>(null);
   const generationInFlightRef = useRef<boolean>(false); // Avoid concurrent /continue calls
+  // Debug / instrumentation
+  const [debug, setDebug] = useState<boolean>(false);
+  const [metrics, setMetrics] = useState<{
+    getCalls: number;
+    continueCalls: number;
+    lastGetAt: string | null;
+    lastContinueAt: string | null;
+    lastQuestionSetAt: string | null;
+  }>({ getCalls: 0, continueCalls: 0, lastGetAt: null, lastContinueAt: null, lastQuestionSetAt: null });
   
   // Derived progression state
   const isTotalKnown = total > 0;
@@ -77,11 +86,16 @@ export default function QuizStepPage() {
         method: "POST", 
         headers: { 'Content-Type': 'application/json' }, 
         body: JSON.stringify({ sessionId }) 
-      }).catch(() => {}).finally(() => { generationInFlightRef.current = false; });
+      }).catch(() => {})
+        .finally(() => { 
+          generationInFlightRef.current = false; 
+          setMetrics(m => ({ ...m, continueCalls: m.continueCalls + 1, lastContinueAt: new Date().toISOString() }));
+        });
     }
 
     async function fetchQuestion() {
-      const res = await fetch(`/api/generate/get?id=${sessionId}&index=${idx}`);
+    const res = await fetch(`/api/generate/get?id=${sessionId}&index=${idx}`);
+    setMetrics(m => ({ ...m, getCalls: m.getCalls + 1, lastGetAt: new Date().toISOString() }));
       if (cancelled) return;
       if (res.ok) {
         const j = await res.json();
@@ -93,6 +107,7 @@ export default function QuizStepPage() {
           initializedQidRef.current = j.question.id || null;
           setInitializedQid(j.question.id || null);
           console.log('🔒 Question set and locked forever');
+      setMetrics(m => ({ ...m, lastQuestionSetAt: new Date().toISOString() }));
         }
         // If a question is already locked, never clear/replace it
         setTotal(j.total);
@@ -128,7 +143,8 @@ export default function QuizStepPage() {
     }
     fetchQuestion();
     const iv = setInterval(async () => {
-      const r = await fetch(`/api/generate/get?id=${sessionId}&index=${idx}`);
+    const r = await fetch(`/api/generate/get?id=${sessionId}&index=${idx}`);
+    setMetrics(m => ({ ...m, getCalls: m.getCalls + 1, lastGetAt: new Date().toISOString() }));
       if (cancelled) return;
       if (r.ok) {
         const j = await r.json();
@@ -140,6 +156,7 @@ export default function QuizStepPage() {
           initializedQidRef.current = j.question.id || null;
           setInitializedQid(j.question.id || null);
           console.log('🔒 Question set and locked forever');
+      setMetrics(m => ({ ...m, lastQuestionSetAt: new Date().toISOString() }));
         }
         // If a question is already locked, never clear/replace it
         setTotal(j.total);
@@ -283,6 +300,35 @@ export default function QuizStepPage() {
 
   return (
     <main className="min-h-screen px-6 py-10 mx-auto max-w-3xl">
+      <div className="fixed top-3 right-3 z-50 flex flex-col items-end gap-2">
+        <button onClick={() => setDebug(d => !d)} className="rounded-md bg-slate-800 border border-slate-600 text-xs px-2 py-1 text-slate-200 hover:bg-slate-700">{debug ? '❌ Debug' : '🐞 Debug'}</button>
+        {debug && (
+          <div className="w-[300px] max-h-[60vh] overflow-auto rounded-lg border border-slate-600 bg-slate-900/95 backdrop-blur p-3 text-[11px] text-slate-200 shadow-xl">
+            <div className="font-semibold mb-1">Debug QCM</div>
+            <div className="space-y-1">
+              <div><span className="text-slate-400">Session:</span> {sessionId}</div>
+              <div><span className="text-slate-400">Index:</span> {idx}</div>
+              <div><span className="text-slate-400">Question ID:</span> {question?.id || '—'}</div>
+              <div><span className="text-slate-400">InitializedQidRef:</span> {initializedQidRef.current || '—'}</div>
+              <div><span className="text-slate-400">Total (target):</span> {total || '…'}</div>
+              <div><span className="text-slate-400">Available (generated):</span> {available}</div>
+              <div><span className="text-slate-400">Status:</span> {status}</div>
+              <div><span className="text-slate-400">Validated:</span> {String(validated)}</div>
+              <div><span className="text-slate-400">HasInteracted:</span> {String(hasInteracted)}</div>
+              <div className="h-px bg-slate-700 my-1" />
+              <div><span className="text-slate-400">Get calls:</span> {metrics.getCalls}</div>
+              <div><span className="text-slate-400">Continue calls:</span> {metrics.continueCalls}</div>
+              <div><span className="text-slate-400">Last GET:</span> {metrics.lastGetAt || '—'}</div>
+              <div><span className="text-slate-400">Last CONTINUE:</span> {metrics.lastContinueAt || '—'}</div>
+              <div><span className="text-slate-400">Last Q set:</span> {metrics.lastQuestionSetAt || '—'}</div>
+              <div className="h-px bg-slate-700 my-1" />
+              <div><span className="text-slate-400">CanAdvance:</span> {String(canAdvance)}</div>
+              <div><span className="text-slate-400">NextIdxReady:</span> {String(idx + 1 < available)}</div>
+              <div><span className="text-slate-400">IsLast:</span> {String(isLast)}</div>
+            </div>
+          </div>
+        )}
+      </div>
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-semibold">QCM {idx + 1}/{total || "…"}</h1>
         <div className="text-xs text-slate-400">{status === "completed" ? "Génération terminée" : `Génération en cours… (${available}/${total || "?"})`}</div>
