@@ -9,6 +9,11 @@ import { loadSessions, saveSessions, writeSessionFile } from "@/lib/storage";
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
+function getOrigin(req: NextRequest) {
+  const envUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "";
+  return envUrl || new URL(req.url).origin;
+}
+
 // Enhanced PDF parsing with headings and color detection
 async function parsePDFWithStructure(filePath: string) {
   const pdfParse = require("pdf-parse/lib/pdf-parse.js");
@@ -458,6 +463,10 @@ EXEMPLE DE FORMAT EXACT:
       usedChunks: [firstChunkIndex],
       currentIndex: 0,
       total: numQuestions,
+      tone,
+      filename,
+      chunks: pdfData.chunks,
+      chunkOrder,
       contextSnippet: firstChunk.content.substring(0, 1000)
     };
     await writeSessionFile(sessionId, sessionFileData);
@@ -467,6 +476,17 @@ EXEMPLE DE FORMAT EXACT:
     sessionData.usedChunks = [firstChunkIndex];
     sessions[0] = sessionData;
     await saveSessions(sessions);
+
+    // Kick background generation immediately after first persist
+    try {
+      const origin = getOrigin(request);
+      fetch(`${origin}/api/generate/continue`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sessionId }),
+        keepalive: true
+      }).catch(() => {});
+    } catch {}
 
     return NextResponse.json({
       sessionId,
