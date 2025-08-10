@@ -14,13 +14,20 @@ async function getKV() {
   return mod.kv;
 }
 
-// Generic JSON helpers for KV
+// Generic JSON helpers for KV (handle both raw JSON objects and stringified values)
 async function kvGetJson<T>(key: string, fallback: T): Promise<T> {
   try {
     const kv = await getKV();
-    const value = await kv.get<string>(key);
-    if (!value) return fallback;
-    return JSON.parse(value) as T;
+    const value = await kv.get<any>(key);
+    if (value === null || value === undefined) return fallback;
+    if (typeof value === "string") {
+      try {
+        return JSON.parse(value) as T;
+      } catch {
+        return fallback;
+      }
+    }
+    return value as T;
   } catch {
     return fallback;
   }
@@ -28,7 +35,8 @@ async function kvGetJson<T>(key: string, fallback: T): Promise<T> {
 
 async function kvSetJson<T>(key: string, value: T): Promise<void> {
   const kv = await getKV();
-  await kv.set(key, JSON.stringify(value));
+  // Store as structured JSON; the client will return the same shape on get
+  await kv.set(key, value as any);
 }
 
 function isVercelProd(): boolean {
