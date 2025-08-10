@@ -23,6 +23,7 @@ export default function QuizStepPage() {
   const initializedQidRef = useRef<string | null>(null);
   const [hasInteracted, setHasInteracted] = useState<boolean>(false);
   const questionRef = useRef<GeneratedQuestion | null>(null);
+  const generationInFlightRef = useRef<boolean>(false); // Avoid concurrent /continue calls
 
   // Reset lock and UI state when navigating between steps
   useEffect(() => {
@@ -62,6 +63,16 @@ export default function QuizStepPage() {
   useEffect(() => {
     if (!sessionId) return;
     let cancelled = false;
+    function triggerBackgroundGeneration() {
+      if (generationInFlightRef.current) return; // throttle
+      generationInFlightRef.current = true;
+      fetch(`/api/generate/continue`, { 
+        method: "POST", 
+        headers: { 'Content-Type': 'application/json' }, 
+        body: JSON.stringify({ sessionId }) 
+      }).catch(() => {}).finally(() => { generationInFlightRef.current = false; });
+    }
+
     async function fetchQuestion() {
       const res = await fetch(`/api/generate/get?id=${sessionId}&index=${idx}`);
       if (cancelled) return;
@@ -91,9 +102,9 @@ export default function QuizStepPage() {
             sessionStorage.setItem("oppie-quiz", JSON.stringify(arr));
           }
         } catch {}
-        // kick background generation
+        // kick background generation (throttled)
         if (j.status !== "completed") {
-          fetch(`/api/generate/continue`, { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sessionId }) }).catch(() => {});
+          triggerBackgroundGeneration();
         }
       } else if (res.status === 404) {
         // question not yet available: ensure background generation runs
@@ -101,7 +112,7 @@ export default function QuizStepPage() {
         if (!questionRef.current) {
           setQuestion(null);
         }
-        const cont = await fetch(`/api/generate/continue`, { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sessionId }) });
+  triggerBackgroundGeneration();
         // ignore result; we'll poll below
       } else {
         // error, go home
@@ -128,8 +139,8 @@ export default function QuizStepPage() {
         setAvailable(j.available);
         setStatus(j.status);
         if (j.status !== "completed" && j.available < j.total) {
-          // keep generation moving in the background
-          fetch(`/api/generate/continue`, { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sessionId }) }).catch(() => {});
+          // keep generation moving in the background (throttled)
+          triggerBackgroundGeneration();
         }
       } else if (r.status === 404) {
         // If processing, we can also client-kick background generation (defensive)
@@ -140,7 +151,7 @@ export default function QuizStepPage() {
             return;
           }
           if (j?.status === 'processing') {
-            fetch(`/api/generate/continue`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sessionId }) }).catch(() => {});
+            triggerBackgroundGeneration();
           }
         } catch {}
         // keep waiting otherwise
