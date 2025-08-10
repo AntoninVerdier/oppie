@@ -4,10 +4,15 @@ import { readSessionFile, loadSessions, saveSessions } from "@/lib/storage";
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
+function getOrigin(req: NextRequest) {
+  const envUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "";
+  return envUrl || new URL(req.url).origin;
+}
+
 export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
-    const sessionId = searchParams.get("id");
+    const sessionId = searchParams.get("id") || searchParams.get("sid") || searchParams.get("sessionId");
     const indexStr = searchParams.get("index");
     if (!sessionId || !indexStr) return NextResponse.json({ error: "Missing id or index" }, { status: 400 });
     const idx = parseInt(indexStr, 10);
@@ -45,11 +50,12 @@ export async function GET(req: NextRequest) {
     if (!q) {
       // Best-effort: kick background generation server-side using absolute origin
       try {
-        const origin = new URL(req.url).origin;
-        await fetch(`${origin}/api/generate/continue`, {
+        const origin = getOrigin(req);
+        fetch(`${origin}/api/generate/continue`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ sessionId })
+          body: JSON.stringify({ sessionId }),
+          keepalive: true
         }).catch(() => {});
       } catch {}
       return NextResponse.json({ available, total, status }, { status: 404 });

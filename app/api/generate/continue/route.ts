@@ -1,134 +1,96 @@
 import { NextRequest, NextResponse } from "next/server";
 import OpenAI from "openai";
-import fs from "fs";
+import { randomUUID } from "crypto";
+import { GeneratedQuestion } from "@/types/qcm";
 import { loadSessions, saveSessions, readSessionFile, writeSessionFile } from "@/lib/storage";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
-function normalizeResponse(parsed: any, sessionId: string, questionIndex: number): any {
-  const normalized = {
-    topic: String(parsed.topic || parsed.Topic || "").trim(),
-    propositions: Array.isArray(parsed.propositions) ? parsed.propositions.slice(0, 5).map((p: any) => ({
-      statement: String(p.statement || p.Statement || "").trim(),
-      isTrue: Boolean(p.isTrue),
-      explanation: String(p.explanation || p.Explanation || "").trim()
-    })) : [],
-    rationale: String(parsed.rationale || parsed.Rationale || "").trim()
-  };
-
-  // Ensure exactly 5 propositions
-  while (normalized.propositions.length < 5) {
-    normalized.propositions.push({
-      statement: "Proposition supplémentaire",
-      isTrue: false,
-      explanation: "Proposition générée automatiquement"
-    });
-  }
-
-  // Ensure at least one true answer
-  const trueCount = normalized.propositions.filter((p: any) => p.isTrue).length;
-  if (trueCount === 0) {
-    // Force at least one proposition to be true
-    normalized.propositions[0].isTrue = true;
-    normalized.propositions[0].explanation = "Correction automatique: Au moins une réponse doit être vraie.";
-  }
-
-  return {
-    id: `qcm_${sessionId}_${questionIndex}`,
-    topic: normalized.topic,
-    rationale: normalized.rationale,
-    propositions: normalized.propositions
-  };
+function getOrigin(req: NextRequest) {
+  const envUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "";
+  return envUrl || new URL(req.url).origin;
 }
 
-export async function POST(request: NextRequest) {
-  let sessionId: string | null = null;
+async function getSessionId(req: NextRequest): Promise<string | null> {
+  const { searchParams } = new URL(req.url);
+  const qp = searchParams.get("id") || searchParams.get("sid") || searchParams.get("sessionId");
+  if (qp) return qp;
+
   try {
-    // Accept JSON, then form-data, then query param
-    try {
-      const contentType = request.headers.get('content-type') || '';
-      if (contentType.includes('application/json')) {
-        const body = await request.json().catch(() => ({} as any));
-        sessionId = body?.sessionId ?? null;
-      }
-    } catch {}
-    if (!sessionId) {
-      try {
-        const form = await request.formData();
-        const sid = form.get('sessionId');
-        if (typeof sid === 'string' && sid.trim()) sessionId = sid;
-      } catch {}
+    const clone = req.clone();
+    const ct = clone.headers.get("content-type") || "";
+    if (ct.includes("application/json")) {
+      const j = await clone.json().catch(() => ({}));
+      if (j?.sessionId || j?.id || j?.sid) return (j.sessionId || j.id || j.sid) as string;
     }
-    if (!sessionId) {
-      try {
-        const { searchParams } = new URL(request.url);
-        const sid = searchParams.get('sessionId');
-        if (sid) sessionId = sid;
-      } catch {}
+    if (ct.includes("multipart/form-data")) {
+      const fd = await req.formData();
+      const v = (fd.get("sessionId") || fd.get("id") || fd.get("sid")) as string | null;
+      if (v) return v;
     }
-    if (!sessionId) {
-      return NextResponse.json({ error: "Session ID required" }, { status: 400 });
-    }
+  } catch {}
+  return null;
+}
 
-    // Load session data (KV or file)
-    let sessions = await loadSessions();
-    const sessionIndex = sessions.findIndex((s: any) => s.id === sessionId);
-    if (sessionIndex === -1) {
-      return NextResponse.json({ error: "Session not found" }, { status: 404 });
-    }
+// Minimal per-instance lock
+const localLocks = new Set<string>();
 
-    const session = sessions[sessionIndex];
-    
-    // Load session file (KV or file)
-    const sessionFileData = await readSessionFile(sessionId);
-    if (!sessionFileData) {
-      return NextResponse.json({ error: "Session file not found" }, { status: 404 });
-    }
+export async function POST(req: NextRequest) {
+  const sessionId = await getSessionId(req);
+  if (!sessionId) return NextResponse.json({ error: "Missing sessionId" }, { status: 400 });
 
-    // Check if we need to generate more questions
-    if (sessionFileData.questions.length >= session.total) {
-      // Mark as completed
-      session.status = "completed";
-      session.available = session.total;
-      sessions[sessionIndex] = session;
+  if (localLocks.has(sessionId)) {
+    return NextResponse.json({ status: "busy" }, { status: 202 });
+  }
+  localLocks.add(sessionId);
+
+  try {
+    const sessions = await loadSessions();
+    const i = sessions.findIndex((s: any) => s.id === sessionId);
+    if (i === -1) return NextResponse.json({ error: "Session not found" }, { status: 404 });
+
+    const meta = sessions[i];
+    const file = await readSessionFile(sessionId);
+    if (!file) return NextResponse.json({ error: "Session file missing" }, { status: 404 });
+
+    const usedChunks: number[] = file.usedChunks || meta.usedChunks || [];
+    const chunkOrder: number[] = meta.chunkOrder || [];
+    const total: number = meta.total ?? file.total ?? 8;
+
+    if (usedChunks.length >= Math.min(total, chunkOrder.length)) {
+      meta.status = "completed";
+      meta.available = file.questions?.length || usedChunks.length;
+      sessions[i] = meta;
       await saveSessions(sessions);
-      return NextResponse.json({ status: "completed" });
+      return NextResponse.json({ status: "done", generated: 0, available: usedChunks.length });
     }
 
-    // Find next unused chunk
-    let nextChunkIndex = session.chunkOrder[sessionFileData.questions.length];
-    let reuseChunk = false;
-    
-    if (nextChunkIndex === undefined) {
-      // We've used all chunks, but need more questions
-      // Reuse a random chunk and ask for different questions
-      const usedChunks = sessionFileData.usedChunks;
-      const randomUsedIndex = Math.floor(Math.random() * usedChunks.length);
-      nextChunkIndex = usedChunks[randomUsedIndex];
-      reuseChunk = true;
-      
-      console.log(`Reusing chunk ${nextChunkIndex} for additional QCM generation`);
-    }
+    const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-    const nextChunk = session.chunks[nextChunkIndex];
-    if (!nextChunk) {
-      return NextResponse.json({ error: "Chunk not found" }, { status: 400 });
-    }
+    const startedAt = Date.now();
+    const TIME_BUDGET_MS = 45_000;   // ~45s budget
+    const MAX_PER_CALL = 3;          // generate up to 3 per kick
+    let generated = 0;
 
-    // Generate QCM for this chunk
-    const openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
-    });
+    while (generated < MAX_PER_CALL && (Date.now() - startedAt) < TIME_BUDGET_MS) {
+      const nextIndex = chunkOrder.find((ix) => !usedChunks.includes(ix));
+      if (nextIndex === undefined) break;
 
-    const prompt = `Tu es un expert en génération de QCM pour des étudiants en médecine. 
+      const chunk = (meta.chunks || [])[nextIndex];
+      if (!chunk || !chunk.content || chunk.content.trim().length < 50) {
+        usedChunks.push(nextIndex);
+        meta.usedChunks = usedChunks;
+        sessions[i] = meta;
+        await saveSessions(sessions);
+        continue;
+      }
 
-CONTEXTE: ${nextChunk.heading}
-CONTENU: ${nextChunk.content.substring(0, 3000)}${nextChunk.content.length > 3000 ? '...' : ''}
+      const tone = meta.tone || "concis";
+      const prompt = `Tu es un expert en génération de QCM pour des étudiants en médecine. 
 
-${reuseChunk ? `⚠️ ATTENTION: Ce contenu a déjà été utilisé pour générer un QCM précédent. 
-IMPORTANT: Génère un QCM COMPLÈTEMENT DIFFÉRENT avec des questions, propositions et justifications 
-totalement nouvelles. Évite absolument de répéter les mêmes sujets ou formulations.` : ''}
+CONTEXTE: ${chunk.heading}
+CONTENU: ${chunk.content.substring(0, 3000)}${chunk.content.length > 3000 ? '...' : ''}
 
 GÉNÈRE UN SEUL QCM avec exactement 5 propositions Vrai/Faux selon ces critères stricts:
 
@@ -151,190 +113,131 @@ GÉNÈRE UN SEUL QCM avec exactement 5 propositions Vrai/Faux selon ces critère
 - Inclut des pièges, exceptions, cas particuliers
 - Propositions claires et non ambiguës
 - Justifications détaillées et pédagogiques
-${reuseChunk ? '- OBLIGATOIRE: Questions et propositions COMPLÈTEMENT DIFFÉRENTES des QCM précédents' : ''}
 
-3. STYLE: ${session.tone === "concis" ? "Concis et direct" : "Détaillé et explicatif"}
+3. STYLE: ${tone === "concis" ? "Concis et direct" : "Détaillé et explicatif"}
 
-4. COUVERTURE: Focus uniquement sur le contenu de cette section (${nextChunk.heading})
+4. COUVERTURE: Focus uniquement sur le contenu de cette section (${chunk.heading})
 
 IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`;
 
-    // Add timeout and retry logic
-    let response;
-    let retries = 0;
-    const maxRetries = 3;
-    const timeout = 25000; // 25 seconds timeout to surface retries faster
+      let raw: string | undefined;
 
-    while (retries < maxRetries) {
-      try {
-        const completion = await Promise.race([
-          openai.chat.completions.create({
-            model: "gpt-3.5-turbo",
-            messages: [
-              { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
-              { role: "user", content: prompt }
-            ],
-            temperature: 0.5,
-            max_tokens: 1800,
-            response_format: { type: "json_object" },
-          }),
-          new Promise((_, reject) => 
-            setTimeout(() => reject(new Error("Request timeout")), timeout)
-          )
-        ]) as any;
+      for (let attempt = 0; attempt < 2; attempt++) {
+        const comp = await openai.chat.completions.create({
+          model: process.env.OPENAI_QCM_MODEL || "gpt-4o-mini",
+          messages: [
+            { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
+            { role: "user", content: prompt }
+          ],
+          temperature: 0.5,
+          max_tokens: 1800,
+          response_format: { type: "json_object" },
+        });
 
-        response = completion.choices[0]?.message?.content?.trim();
-        if (!response) throw new Error("Empty response from OpenAI");
-        break; // Success, exit retry loop
-      } catch (error: any) {
-        retries++;
-        console.error(`Generation attempt ${retries} failed:`, error.message);
-        
-        if (retries >= maxRetries) {
-          throw new Error(`Failed after ${maxRetries} attempts: ${error.message}`);
-        }
-        
-        // Wait before retry (exponential backoff) — cap at 4s
-        await new Promise(resolve => setTimeout(resolve, Math.min(4000, 1000 * retries)));
-      }
-    }
+        raw = comp.choices[0]?.message?.content?.trim();
+        if (!raw) throw new Error("OpenAI empty response");
 
-    // Parse and validate response
-    let parsed;
-    try {
-      // Try to extract JSON from response
-      const jsonMatch = response.match(/\{[\s\S]*\}/);
-      const jsonStr = jsonMatch ? jsonMatch[0] : response;
-      parsed = JSON.parse(jsonStr);
-    } catch {
-      // Retry with stricter instructions
-      const retryPrompt = `${prompt}
-
-ERREUR: La réponse n'était pas un JSON valide. 
-
-RÈGLES STRICTES:
-1. Réponds UNIQUEMENT avec du JSON valide
-2. Pas de texte avant ou après le JSON
-3. Utilise des guillemets doubles pour les chaînes
-4. Pas de virgules trailing
-5. Pas de commentaires
-
-EXEMPLE DE FORMAT EXACT:
-{"topic":"Exemple","propositions":[{"statement":"A","isTrue":true,"explanation":"B"},{"statement":"C","isTrue":false,"explanation":"D"}],"rationale":"E"}`;
-
-      // Retry with timeout and retry logic
-      let retryResponse;
-      let retryAttempts = 0;
-      const maxRetryAttempts = 2;
-
-      while (retryAttempts < maxRetryAttempts) {
         try {
-          const retryCompletion = await Promise.race([
-            openai.chat.completions.create({
-              model: "gpt-3.5-turbo",
-              messages: [
-                { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
-                { role: "user", content: retryPrompt }
-              ],
-              temperature: 0.3,
-              max_tokens: 1500,
-              response_format: { type: "json_object" },
-            }),
-            new Promise((_, reject) => 
-              setTimeout(() => reject(new Error("Retry request timeout")), timeout)
-            )
-          ]) as any;
+          const json = JSON.parse((raw.match(/\{[\s\S]*\}/) || [raw])[0]);
+          const normalized = normalize(json);
+          if (!normalized) throw new Error("Invalid payload shape");
 
-          retryResponse = retryCompletion.choices[0]?.message?.content?.trim();
-          if (!retryResponse) throw new Error("Empty retry response from OpenAI");
-          break; // Success, exit retry loop
-        } catch (error: any) {
-          retryAttempts++;
-          console.error(`Retry attempt ${retryAttempts} failed:`, error.message);
-          
-          if (retryAttempts >= maxRetryAttempts) {
-            throw new Error(`Retry failed after ${maxRetryAttempts} attempts: ${error.message}`);
-          }
-          
-          // Wait before retry
-          await new Promise(resolve => setTimeout(resolve, 1000 * retryAttempts));
+          const question: GeneratedQuestion = {
+            ...normalized,
+            id: `qcm_${sessionId}_${(file.questions?.length ?? 0)}`,
+            chunkId: chunk.id,
+            chunkHeading: chunk.heading,
+            pageRange: chunk.pageRange
+          };
+
+          const updatedFile = {
+            ...file,
+            questions: [...(file.questions || []), question],
+            usedChunks: [...usedChunks, nextIndex],
+            currentIndex: (file.currentIndex ?? 0),
+            total: total,
+          };
+          await writeSessionFile(sessionId, updatedFile);
+
+          // reflect local state
+          file.questions = updatedFile.questions;
+          file.usedChunks = updatedFile.usedChunks;
+
+          usedChunks.push(nextIndex);
+          meta.usedChunks = usedChunks;
+          meta.available = (meta.available || 0) + 1;
+          meta.status = usedChunks.length >= Math.min(total, chunkOrder.length) ? "completed" : "processing";
+          sessions[i] = meta;
+          await saveSessions(sessions);
+
+          generated++;
+          break;
+        } catch (e) {
+          if (attempt === 0) continue; // retry once
+          usedChunks.push(nextIndex);
+          meta.usedChunks = usedChunks;
+          sessions[i] = meta;
+          await saveSessions(sessions);
         }
       }
-
-      const jsonMatch = retryResponse.match(/\{[\s\S]*\}/);
-      const jsonStr = jsonMatch ? jsonMatch[0] : retryResponse;
-      parsed = JSON.parse(jsonStr);
     }
 
-    const normalized = normalizeResponse(parsed, sessionId, sessionFileData.questions.length);
-    if (!normalized) {
-      return NextResponse.json({ error: "Invalid payload shape" }, { status: 500 });
+    const done = usedChunks.length >= Math.min(total, (meta.chunkOrder || []).length) || (file.questions?.length || 0) >= total;
+    if (done) {
+      meta.status = "completed";
+      meta.available = file.questions?.length || usedChunks.length;
+      sessions[i] = meta;
+      await saveSessions(sessions);
     }
 
-    // Add chunk metadata to the question
-    const question = {
-      ...normalized,
-      chunkId: nextChunk.id,
-      chunkHeading: nextChunk.heading,
-      pageRange: nextChunk.pageRange
-    };
-
-    // Add question to session file
-    sessionFileData.questions.push(question);
-    if (!reuseChunk) {
-      sessionFileData.usedChunks.push(nextChunkIndex);
-    }
-    sessionFileData.currentIndex = sessionFileData.questions.length - 1;
-    await writeSessionFile(sessionId, sessionFileData);
-
-    // Update global session status
-    session.available = sessionFileData.questions.length;
-    session.usedChunks = sessionFileData.usedChunks;
-    if (session.available >= session.total) {
-      session.status = "completed";
-    }
-    sessions[sessionIndex] = session;
-    await saveSessions(sessions);
-
-    const payload = {
-      status: session.status,
-      available: session.available,
-      total: session.total,
-      question
-    };
-    // If still not complete, chain another background generation
-    if (session.available < session.total) {
-      try {
-        fetch(`/api/generate/continue`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ sessionId })
-        }).catch(() => {});
-      } catch {}
-    }
-    return NextResponse.json(payload);
-
-  } catch (error: any) {
-    console.error("Error in generate/continue:", error);
-    
-    // Mark session as failed if we can't continue
-    try {
-      let sessions = await loadSessions();
-      const idx = sessions.findIndex((s: any) => s.id === sessionId);
-      if (idx !== -1) {
-        sessions[idx].status = "failed";
-        sessions[idx].error = error.message || "Failed to continue generation";
-        await saveSessions(sessions);
-      }
-    } catch (updateError) {
-      console.error("Failed to update session status:", updateError);
-    }
-    
-    return NextResponse.json(
-      { error: error.message || "Failed to continue generation" },
-      { status: 500 }
-    );
+    return NextResponse.json({
+      status: done ? "done" : "processing",
+      generated,
+      available: file.questions?.length || usedChunks.length,
+      total
+    });
+  } catch (e: any) {
+    console.error("continue error", e);
+    return NextResponse.json({ error: e.message || "continue failed" }, { status: 500 });
+  } finally {
+    localLocks.delete(sessionId);
   }
+}
+
+function normalize(parsed: any) {
+  const normalized = {
+    topic: String(parsed.topic || parsed.Topic || "").trim(),
+    propositions: Array.isArray(parsed.propositions)
+      ? parsed.propositions.slice(0, 5).map((p: any) => ({
+          statement: String(p.statement || p.Statement || "").trim(),
+          isTrue: Boolean(p.isTrue),
+          explanation: String(p.explanation || p.Explanation || "").trim()
+        }))
+      : [],
+    rationale: String(parsed.rationale || parsed.Rationale || "").trim()
+  };
+
+  while (normalized.propositions.length < 5) {
+    normalized.propositions.push({
+      statement: "Proposition supplémentaire",
+      isTrue: false,
+      explanation: "Proposition générée automatiquement"
+    });
+  }
+  if (!normalized.topic || normalized.propositions.length !== 5) return null;
+
+  const trueCount = normalized.propositions.filter((p: any) => p.isTrue).length;
+  if (trueCount === 0) {
+    normalized.propositions[0].isTrue = true;
+    normalized.propositions[0].explanation = "Correction automatique: Au moins une réponse doit être vraie.";
+  }
+
+  return {
+    id: randomUUID(),
+    topic: normalized.topic,
+    rationale: normalized.rationale,
+    propositions: normalized.propositions
+  };
 }
 
 
