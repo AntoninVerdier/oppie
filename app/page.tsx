@@ -13,6 +13,7 @@ export default function HomePage() {
   const [error, setError] = useState<string | null>(null);
   const [sessions, setSessions] = useState<any[]>([]);
   const [domainStats, setDomainStats] = useState<any[]>([]);
+  const [currentModel, setCurrentModel] = useState<string>("");
   const { register, handleSubmit, setValue, watch } = useForm();
   const tone = watch("tone");
   const numQuestions = watch("numQuestions");
@@ -87,10 +88,13 @@ export default function HomePage() {
   }
 
   useEffect(() => {
+    // Load sessions and model only once
     fetch("/api/sessions").then(r => r.json()).then(setSessions).catch(() => setSessions([]));
+    fetch("/api/debug/model").then(r => r.json()).then(data => setCurrentModel(data.model)).catch(() => setCurrentModel(""));
+    
+    // Only update domain stats periodically (for the evolution chart)
     fetch("/api/domains/stats").then(r => r.json()).then(data => setDomainStats(data.stats || [])).catch(() => setDomainStats([]));
     const iv = setInterval(() => {
-      fetch("/api/sessions").then(r => r.json()).then(setSessions).catch(() => {});
       fetch("/api/domains/stats").then(r => r.json()).then(data => setDomainStats(data.stats || [])).catch(() => {});
     }, 5000);
     return () => clearInterval(iv);
@@ -107,6 +111,14 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen w-full">
+      {/* Debug chip - top right */}
+      {currentModel && (
+        <div className="fixed top-4 right-4 z-50">
+          <div className="bg-slate-800/80 backdrop-blur-sm border border-slate-600 rounded-full px-3 py-1 text-xs text-slate-300">
+            Model: {currentModel}
+          </div>
+        </div>
+      )}
       <section className="mx-auto max-w-6xl px-6 pt-10">
         <div className="flex items-end justify-between">
           <div>
