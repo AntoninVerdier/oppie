@@ -40,6 +40,17 @@ export async function POST(req: NextRequest) {
   const sessionId = await getSessionId(req);
   if (!sessionId) return NextResponse.json({ error: "Missing sessionId" }, { status: 400 });
 
+  // Check for priority flag
+  let priority = "normal";
+  try {
+    const clone = req.clone();
+    const ct = clone.headers.get("content-type") || "";
+    if (ct.includes("application/json")) {
+      const j = await clone.json().catch(() => ({}));
+      priority = j?.priority || "normal";
+    }
+  } catch {}
+
   if (localLocks.has(sessionId)) {
     return NextResponse.json({ status: "busy" }, { status: 202 });
   }
@@ -91,8 +102,9 @@ export async function POST(req: NextRequest) {
     const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
     const startedAt = Date.now();
-    const TIME_BUDGET_MS = Number(process.env.QCM_TIME_BUDGET_MS || 30_000);   // default ~30s budget
-    const MAX_PER_CALL = Number(process.env.QCM_PER_CALL || 5);                // default up to 5 per kick
+    const isPriority = priority === "high";
+    const TIME_BUDGET_MS = isPriority ? 15_000 : Number(process.env.QCM_TIME_BUDGET_MS || 30_000);   // faster for priority
+    const MAX_PER_CALL = isPriority ? 2 : Number(process.env.QCM_PER_CALL || 5);                    // fewer for priority
     let generated = 0;
 
     while (generated < MAX_PER_CALL && (Date.now() - startedAt) < TIME_BUDGET_MS) {
@@ -223,10 +235,11 @@ IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`
     if (!done) {
       try {
         const origin = getOrigin(req);
+        const nextPriority = isPriority && generated < 2 ? "high" : "normal"; // Keep priority for first 2 QCMs
         fetch(`${origin}/api/generate/continue`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ sessionId }),
+          body: JSON.stringify({ sessionId, priority: nextPriority }),
           keepalive: true
         }).catch(() => {});
       } catch {}

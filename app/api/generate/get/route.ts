@@ -58,10 +58,11 @@ export async function GET(req: NextRequest) {
       // Best-effort: kick background generation server-side using absolute origin
       try {
         const origin = getOrigin(req);
+        const priority = available < 3 ? "high" : "normal"; // Priority for first 3 QCMs
         fetch(`${origin}/api/generate/continue`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ sessionId }),
+          body: JSON.stringify({ sessionId, priority }),
           keepalive: true
         }).catch(() => {});
       } catch {}

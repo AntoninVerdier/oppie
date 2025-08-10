@@ -483,7 +483,7 @@ EXEMPLE DE FORMAT EXACT:
       fetch(`${origin}/api/generate/continue`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ sessionId }),
+        body: JSON.stringify({ sessionId, priority: "high" }),
         keepalive: true
       }).catch(() => {});
     } catch {}
