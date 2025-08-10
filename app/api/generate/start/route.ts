@@ -327,7 +327,7 @@ Style: ${tone === "concis" ? "Concis" : "Détaillé"}`;
       try {
         const completion = await Promise.race([
           openai.chat.completions.create({
-            model: process.env.OPENAI_QCM_MODEL || "gpt-4o-mini",
+            model: process.env.OPENAI_QCM_MODEL || "gpt-5-nano",
             messages: [
               { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
               { role: "user", content: prompt }
@@ -395,7 +395,7 @@ EXEMPLE DE FORMAT EXACT:
         try {
           const retryCompletion = await Promise.race([
             openai.chat.completions.create({
-              model: process.env.OPENAI_QCM_MODEL || "gpt-4o-mini",
+              model: process.env.OPENAI_QCM_MODEL || "gpt-5-nano",
               messages: [
                 { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
                 { role: "user", content: retryPrompt }
