@@ -87,6 +87,7 @@ export async function POST(req: NextRequest) {
         { role: "system", content: system },
         { role: "user", content: user }
       ],
+      max_completion_tokens: 1800,
       response_format: { type: "json_object" }
     });
 

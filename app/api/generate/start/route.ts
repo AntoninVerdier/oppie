@@ -345,7 +345,7 @@ IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`
               { role: "user", content: prompt }
             ],
             temperature: 0.5,
-            max_tokens: 1800,
+            max_completion_tokens: 1800,
             response_format: { type: "json_object" },
           }),
           new Promise<never>((_, reject) => 
@@ -413,7 +413,7 @@ EXEMPLE DE FORMAT EXACT:
                 { role: "user", content: retryPrompt }
               ],
               temperature: 0.3,
-              max_tokens: 1500,
+              max_completion_tokens: 1500,
               response_format: { type: "json_object" },
             }),
             new Promise<never>((_, reject) => 

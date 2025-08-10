@@ -39,7 +39,7 @@ export default function QuizStepPage() {
   const isLast = isTotalKnown && (idx + 1) >= total;
   const nextIndex = idx + 1;
   const nextIsReady = nextIndex < available; // next question already generated
-  const canAdvance = validated && (nextIsReady || (isLast && status === 'completed'));
+  const canAdvance = validated && (nextIsReady || isLast);
 
   // Reset lock and UI state when navigating between steps
   useEffect(() => {
