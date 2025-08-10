@@ -82,7 +82,7 @@ export async function POST(req: NextRequest) {
 
     const completion = await client.chat.completions.create({
       model: process.env.OPENAI_QCM_MODEL || "gpt-3.5-turbo",
-      temperature: 0.3,
+      temperature: 1,
       messages: [
         { role: "system", content: system },
         { role: "user", content: user }

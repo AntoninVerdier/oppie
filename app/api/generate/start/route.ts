@@ -344,7 +344,7 @@ IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`
               { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
               { role: "user", content: prompt }
             ],
-            temperature: 0.5,
+            temperature: 1,
             max_completion_tokens: 1800,
             response_format: { type: "json_object" },
           }),
@@ -412,7 +412,7 @@ EXEMPLE DE FORMAT EXACT:
                 { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
                 { role: "user", content: retryPrompt }
               ],
-              temperature: 0.3,
+              temperature: 1,
               max_completion_tokens: 1500,
               response_format: { type: "json_object" },
             }),
