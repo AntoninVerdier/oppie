@@ -77,7 +77,7 @@ export async function POST(req: NextRequest) {
     if (!file) return NextResponse.json({ error: "Session file missing" }, { status: 404 });
 
     const usedChunks: number[] = file.usedChunks || meta.usedChunks || [];
-    const chunkOrder: number[] = meta.chunkOrder || [];
+    const chunkOrder: number[] = file.chunkOrder || meta.chunkOrder || [];
     const total: number = meta.total ?? file.total ?? 8;
 
     if (usedChunks.length >= Math.min(total, chunkOrder.length)) {
@@ -99,7 +99,7 @@ export async function POST(req: NextRequest) {
       const nextIndex = chunkOrder.find((ix) => !usedChunks.includes(ix));
       if (nextIndex === undefined) break;
 
-      const chunk = (meta.chunks || [])[nextIndex];
+      const chunk = (file.chunks || meta.chunks || [])[nextIndex];
       if (!chunk || !chunk.content || chunk.content.trim().length < 50) {
         usedChunks.push(nextIndex);
         meta.usedChunks = usedChunks;
