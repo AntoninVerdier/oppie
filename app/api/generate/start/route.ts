@@ -339,7 +339,7 @@ IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`
       try {
         const completion = await Promise.race([
           openai.chat.completions.create({
-            model: "gpt-3.5-turbo",
+            model: process.env.OPENAI_QCM_MODEL || "gpt-3.5-turbo",
             messages: [
               { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
               { role: "user", content: prompt }
@@ -407,7 +407,7 @@ EXEMPLE DE FORMAT EXACT:
         try {
           const retryCompletion = await Promise.race([
             openai.chat.completions.create({
-              model: "gpt-3.5-turbo",
+              model: process.env.OPENAI_QCM_MODEL || "gpt-3.5-turbo",
               messages: [
                 { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
                 { role: "user", content: retryPrompt }
