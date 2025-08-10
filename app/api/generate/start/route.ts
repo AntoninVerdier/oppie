@@ -282,38 +282,26 @@ export async function POST(request: NextRequest) {
       apiKey: process.env.OPENAI_API_KEY,
     });
 
-    const prompt = `Tu es un expert en génération de QCM pour des étudiants en médecine. 
+    const prompt = `Génère un QCM médical basé sur ce contenu:
 
-CONTEXTE: ${firstChunk.heading}
-CONTENU: ${firstChunk.content.substring(0, 3000)}${firstChunk.content.length > 3000 ? '...' : ''}
+Titre: ${firstChunk.heading}
+Contenu: ${firstChunk.content.substring(0, 2000)}${firstChunk.content.length > 2000 ? '...' : ''}
 
-GÉNÈRE UN SEUL QCM avec exactement 5 propositions Vrai/Faux selon ces critères stricts:
+Crée exactement 5 propositions Vrai/Faux avec cette structure JSON:
 
-1. STRUCTURE OBLIGATOIRE (JSON valide):
 {
   "topic": "Titre du QCM",
   "propositions": [
-    {"statement": "Proposition A", "isTrue": true, "explanation": "Justification détaillée"},
-    {"statement": "Proposition B", "isTrue": false, "explanation": "Justification détaillée"},
-    {"statement": "Proposition C", "isTrue": true, "explanation": "Justification détaillée"},
-    {"statement": "Proposition D", "isTrue": false, "explanation": "Justification détaillée"},
-    {"statement": "Proposition E", "isTrue": true, "explanation": "Justification détaillée"}
+    {"statement": "Proposition 1", "isTrue": true, "explanation": "Justification"},
+    {"statement": "Proposition 2", "isTrue": false, "explanation": "Justification"},
+    {"statement": "Proposition 3", "isTrue": true, "explanation": "Justification"},
+    {"statement": "Proposition 4", "isTrue": false, "explanation": "Justification"},
+    {"statement": "Proposition 5", "isTrue": true, "explanation": "Justification"}
   ],
-  "rationale": "Justification globale du QCM couvrant tous les aspects"
+  "rationale": "Explication globale"
 }
 
-2. CRITÈRES DE QUALITÉ:
-- Questions complexes et nuancées, pas triviaux
-- Couvre des subtopics variés du contenu fourni
-- Inclut des pièges, exceptions, cas particuliers
-- Propositions claires et non ambiguës
-- Justifications détaillées et pédagogiques
-
-3. STYLE: ${tone === "concis" ? "Concis et direct" : "Détaillé et explicatif"}
-
-4. COUVERTURE: Focus uniquement sur le contenu de cette section (${firstChunk.heading})
-
-IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`;
+Style: ${tone === "concis" ? "Concis" : "Détaillé"}`;
 
     // Debug: log prompt metadata (not full content)
     try {
@@ -339,7 +327,7 @@ IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`
       try {
         const completion = await Promise.race([
           openai.chat.completions.create({
-            model: process.env.OPENAI_QCM_MODEL || "gpt-3.5-turbo",
+            model: process.env.OPENAI_QCM_MODEL || "gpt-4o-mini",
             messages: [
               { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
               { role: "user", content: prompt }
@@ -407,7 +395,7 @@ EXEMPLE DE FORMAT EXACT:
         try {
           const retryCompletion = await Promise.race([
             openai.chat.completions.create({
-              model: process.env.OPENAI_QCM_MODEL || "gpt-3.5-turbo",
+              model: process.env.OPENAI_QCM_MODEL || "gpt-4o-mini",
               messages: [
                 { role: "system", content: "Tu produis strictement du JSON valide et rien d'autre." },
                 { role: "user", content: retryPrompt }
