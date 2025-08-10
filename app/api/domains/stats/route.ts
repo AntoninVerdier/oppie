@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAllDomainStatsAsync, getDomainEvolutionAsync } from "@/lib/domains";
 
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
