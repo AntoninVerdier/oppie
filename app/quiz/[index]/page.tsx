@@ -24,6 +24,13 @@ export default function QuizStepPage() {
   const [hasInteracted, setHasInteracted] = useState<boolean>(false);
   const questionRef = useRef<GeneratedQuestion | null>(null);
   const generationInFlightRef = useRef<boolean>(false); // Avoid concurrent /continue calls
+  
+  // Derived progression state
+  const isTotalKnown = total > 0;
+  const isLast = isTotalKnown && (idx + 1) >= total;
+  const nextIndex = idx + 1;
+  const nextIsReady = nextIndex < available; // next question already generated
+  const canAdvance = validated && (nextIsReady || (isLast && status === 'completed'));
 
   // Reset lock and UI state when navigating between steps
   useEffect(() => {
@@ -387,18 +394,21 @@ export default function QuizStepPage() {
           )}
           {validated && (
             <div className="mt-5 flex flex-col items-end gap-2">
-              {status !== "completed" && (
-                <div className="text-xs text-slate-400 animate-pulse">Génération des QCM en cours… Veuillez patienter.</div>
+              {!isLast && !nextIsReady && (
+                <div className="text-xs text-slate-400 animate-pulse">Préparation du QCM suivant… ({available}/{isTotalKnown ? total : '…'})</div>
               )}
-              <button 
-                onClick={next} 
+              {isLast && status !== 'completed' && (
+                <div className="text-xs text-slate-400 animate-pulse">Génération des derniers QCM… ({available}/{isTotalKnown ? total : '…'})</div>
+              )}
+              <button
+                onClick={next}
+                disabled={!canAdvance}
                 className={clsx(
                   "rounded-xl bg-violet-600 text-white px-4 py-2",
-                  status !== "completed" && "opacity-50 cursor-not-allowed"
+                  !canAdvance && "opacity-50 cursor-not-allowed"
                 )}
-                disabled={status !== "completed"}
               >
-                {idx + 1 >= (total || 0) ? "Terminer la session" : "QCM suivant"}
+                {isLast ? "Terminer la session" : "QCM suivant"}
               </button>
             </div>
           )}
