@@ -91,8 +91,8 @@ export async function POST(req: NextRequest) {
     const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
     const startedAt = Date.now();
-    const TIME_BUDGET_MS = 45_000;   // ~45s budget
-    const MAX_PER_CALL = 3;          // generate up to 3 per kick
+    const TIME_BUDGET_MS = Number(process.env.QCM_TIME_BUDGET_MS || 30_000);   // default ~30s budget
+    const MAX_PER_CALL = Number(process.env.QCM_PER_CALL || 5);                // default up to 5 per kick
     let generated = 0;
 
     while (generated < MAX_PER_CALL && (Date.now() - startedAt) < TIME_BUDGET_MS) {
@@ -112,7 +112,7 @@ export async function POST(req: NextRequest) {
       const prompt = `Tu es un expert en génération de QCM pour des étudiants en médecine. 
 
 CONTEXTE: ${chunk.heading}
-CONTENU: ${chunk.content.substring(0, 3000)}${chunk.content.length > 3000 ? '...' : ''}
+CONTENU: ${chunk.content.substring(0, 2000)}${chunk.content.length > 2000 ? '...' : ''}
 
 GÉNÈRE UN SEUL QCM avec exactement 5 propositions Vrai/Faux selon ces critères stricts:
 
@@ -152,7 +152,7 @@ IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`
             { role: "user", content: prompt }
           ],
           temperature: 0.5,
-          max_tokens: 1800,
+          max_tokens: 1000,
           response_format: { type: "json_object" },
         });
 
@@ -212,12 +212,27 @@ IMPORTANT: Réponds UNIQUEMENT avec le JSON valide, sans texte avant ou après.`
       await saveSessions(sessions);
     }
 
-    return NextResponse.json({
+    const resBody = {
       status: done ? "done" : "processing",
       generated,
       available: file.questions?.length || usedChunks.length,
       total
-    });
+    };
+
+    // If still processing, immediately kick another background run (self-chain)
+    if (!done) {
+      try {
+        const origin = getOrigin(req);
+        fetch(`${origin}/api/generate/continue`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sessionId }),
+          keepalive: true
+        }).catch(() => {});
+      } catch {}
+    }
+
+    return NextResponse.json(resBody);
   } catch (e: any) {
     console.error("continue error", e);
     return NextResponse.json({ error: e.message || "continue failed" }, { status: 500 });
