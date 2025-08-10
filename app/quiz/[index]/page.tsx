@@ -375,8 +375,20 @@ export default function QuizStepPage() {
             </div>
           )}
           {validated && (
-            <div className="mt-5 flex justify-end">
-              <button onClick={next} className="rounded-xl bg-violet-600 text-white px-4 py-2">{idx + 1 >= (total || 0) ? "Terminer la session" : "QCM suivant"}</button>
+            <div className="mt-5 flex flex-col items-end gap-2">
+              {status !== "completed" && (
+                <div className="text-xs text-slate-400 animate-pulse">Génération des QCM en cours… Veuillez patienter.</div>
+              )}
+              <button 
+                onClick={next} 
+                className={clsx(
+                  "rounded-xl bg-violet-600 text-white px-4 py-2",
+                  status !== "completed" && "opacity-50 cursor-not-allowed"
+                )}
+                disabled={status !== "completed"}
+              >
+                {idx + 1 >= (total || 0) ? "Terminer la session" : "QCM suivant"}
+              </button>
             </div>
           )}
         </div>
