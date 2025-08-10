@@ -18,7 +18,7 @@ async function parsePDF(filePath: string) {
 }
 
 // Simple chunking by tokens
-function chunkText(text: string, maxTokens: number = 2000): string[] {
+function chunkText(text: string, maxTokens: number = 1500): string[] {
   const words = text.split(/\s+/);
   const chunks: string[] = [];
   let currentChunk: string[] = [];
@@ -48,9 +48,9 @@ async function generateQCM(chunk: string, tone: string): Promise<GeneratedQuesti
     apiKey: process.env.OPENAI_API_KEY,
   });
 
-  const prompt = `Génère un QCM médical basé sur ce contenu:
+       const prompt = `Génère un QCM médical basé sur ce contenu:
 
-${chunk.substring(0, 1500)}
+${chunk.substring(0, 1000)}
 
 Crée exactement 5 propositions Vrai/Faux avec cette structure JSON:
 
@@ -75,8 +75,8 @@ Style: ${tone === "concis" ? "Concis" : "Détaillé"}`;
         { role: "system", content: "Tu produis strictement du JSON valide." },
         { role: "user", content: prompt }
       ],
-      temperature: 1,
-      max_completion_tokens: 1000,
+             temperature: 1,
+       max_completion_tokens: 800,
       response_format: { type: "json_object" },
     });
 
@@ -143,8 +143,8 @@ export async function POST(request: NextRequest) {
     
     // Generate first 2 QCMs
     for (let i = 0; i < Math.min(2, numQuestions); i++) {
-      const chunkIndex = i % chunks.length;
-      const qcm = await generateQCM(chunks[chunkIndex], tone);
+           const chunkIndex = i % chunks.length;
+     const qcm = await generateQCM(chunks[chunkIndex].substring(0, 1200), tone);
       if (qcm) {
         questions.push(qcm);
       }

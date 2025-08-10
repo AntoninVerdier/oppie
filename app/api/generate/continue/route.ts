@@ -13,9 +13,9 @@ async function generateQCM(chunk: string, tone: string): Promise<GeneratedQuesti
     apiKey: process.env.OPENAI_API_KEY,
   });
 
-  const prompt = `Génère un QCM médical basé sur ce contenu:
+     const prompt = `Génère un QCM médical basé sur ce contenu:
 
-${chunk.substring(0, 1500)}
+${chunk.substring(0, 1000)}
 
 Crée exactement 5 propositions Vrai/Faux avec cette structure JSON:
 
@@ -40,8 +40,8 @@ Style: ${tone === "concis" ? "Concis" : "Détaillé"}`;
         { role: "system", content: "Tu produis strictement du JSON valide." },
         { role: "user", content: prompt }
       ],
-      temperature: 1,
-      max_completion_tokens: 1000,
+             temperature: 1,
+       max_completion_tokens: 800,
       response_format: { type: "json_object" },
     });
 
@@ -107,15 +107,15 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "No more QCMs to generate" }, { status: 400 });
     }
 
-    // Generate QCMs in batches of 5 (or remaining amount)
-    const batchSize = Math.min(5, total - available);
+         // Generate QCMs in batches of 2 (or remaining amount)
+     const batchSize = Math.min(2, total - available);
     const newQuestions: GeneratedQuestion[] = [];
 
     for (let i = 0; i < batchSize; i++) {
-      const chunkIndex = (available + i) % chunks.length;
-      const chunk = chunks[chunkIndex];
-      
-      const qcm = await generateQCM(chunk, tone);
+             const chunkIndex = (available + i) % chunks.length;
+       const chunk = chunks[chunkIndex];
+       
+       const qcm = await generateQCM(chunk.substring(0, 1200), tone);
       if (qcm) {
         newQuestions.push(qcm);
       }
