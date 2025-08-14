@@ -125,6 +125,7 @@ export default function HomePage() {
             <h1 className="text-3xl font-semibold gradient-violet">Bienvenue</h1>
             <p className="text-slate-400 mt-1">Générez des QCM depuis vos PDF et suivez vos performances.</p>
           </div>
+          
         </div>
 
         {/* Dashboard grid */}
@@ -234,7 +235,7 @@ export default function HomePage() {
                   <li>• Valider chaque QCM pour voir corrections et justifications</li>
                   <li>• Terminer la session pour accéder au bilan</li>
                   <li>• <Link href="/domains" className="text-mint-400 hover:text-mint-300">Voir l'évolution par domaine</Link></li>
-                  <li>• <Link href="/flashcards" className="text-violet-400 hover:text-violet-300">Accéder aux flashcards</Link></li>
+                  
                 </ul>
               </div>
               <div className="rounded-lg border border-slate-800 bg-slate-900/70 p-5">
@@ -295,6 +296,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      
     </main>
   );
 }

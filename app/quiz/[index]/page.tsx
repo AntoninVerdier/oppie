@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { GeneratedQuestion } from "@/types/qcm";
+import { BookOpen } from "lucide-react";
 import clsx from "clsx";
 
 type Answer = boolean;
@@ -33,6 +34,7 @@ export default function QuizStepPage() {
     lastContinueAt: string | null;
     lastQuestionSetAt: string | null;
   }>({ getCalls: 0, continueCalls: 0, lastGetAt: null, lastContinueAt: null, lastQuestionSetAt: null });
+  
   
   // Derived progression state
   const isTotalKnown = total > 0;
@@ -74,6 +76,8 @@ export default function QuizStepPage() {
         }
       }
     } catch {}
+
+    
   }, [search, router]);
 
   useEffect(() => {
@@ -296,6 +300,8 @@ export default function QuizStepPage() {
     }
   }
 
+  
+
   if (!sessionId) return null;
 
   return (
@@ -401,7 +407,10 @@ export default function QuizStepPage() {
                     )}
                   </div>
                   {isValidated && (
-                    <p className={clsx("text-xs mt-2 pl-5", isHitTrue ? "text-emerald-900" : isMissTrue ? "text-amber-900" : isFalsePositive ? "text-rose-900" : "text-slate-300")}>{p.explanation}</p>
+                    <div className="mt-2 pl-5">
+                      <p className={clsx("text-xs", isHitTrue ? "text-emerald-900" : isMissTrue ? "text-amber-900" : isFalsePositive ? "text-rose-900" : "text-slate-300")}>{p.explanation}</p>
+                      
+                    </div>
                   )}
                 </li>
               );
@@ -460,6 +469,8 @@ export default function QuizStepPage() {
           )}
         </div>
       )}
+
+      
     </main>
   );
 }
