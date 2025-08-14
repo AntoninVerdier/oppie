@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr">
       <body className={`text-slate-100 antialiased bg-slate-900 ${pixel.className}`}>
-        <header className="sticky top-0 z-30 backdrop-blur bg-slate-900/60 border-b border-slate-800">
+        <header className="sticky top-0 z-40 backdrop-blur bg-slate-900/60 border-b border-slate-800">
           <div className="mx-auto max-w-6xl px-6 h-14 flex items-center justify-between">
             <Link href="/" className="font-semibold text-xl tracking-wide gradient-violet">Oppie</Link>
             <nav className="flex items-center gap-4 text-slate-300 text-sm">

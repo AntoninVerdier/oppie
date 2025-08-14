@@ -111,11 +111,11 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen w-full">
-      {/* Debug chip - top right */}
+      {/* Debug chip - moved to bottom right to avoid overlapping header */}
       {currentModel && currentModel !== "Not set" && (
-        <div className="fixed top-4 right-4 z-50 pointer-events-none">
+        <div className="fixed bottom-4 right-4 z-30 pointer-events-none">
           <div
-            className="bg-slate-800/80 backdrop-blur-sm border border-slate-600 rounded-full px-3 py-1 text-xs text-slate-300 max-w-[80vw] sm:max-w-sm overflow-hidden whitespace-nowrap text-ellipsis"
+            className="bg-slate-800/70 backdrop-blur-sm border border-slate-600/60 rounded-full px-3 py-1 text-[11px] text-slate-300 max-w-[80vw] sm:max-w-sm overflow-hidden whitespace-nowrap text-ellipsis shadow-md"
             title={currentModel}
           >
             Model: {currentModel}
