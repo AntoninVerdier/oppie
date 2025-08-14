@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { FlashcardDeck, FlashcardDeckMeta } from "@/types/flashcards";
 
 // Lazy-load @vercel/kv after ensuring env var compatibility with Marketplace (Upstash) names
 async function getKV() {
@@ -120,6 +121,55 @@ export async function saveDomainScoresKV(scores: DomainScores): Promise<void> {
   }
   const scoresPath = path.join(process.cwd(), "data", "domain-scores.json");
   fs.writeFileSync(scoresPath, JSON.stringify(toSave, null, 2));
+}
+
+// ----- Flashcards storage -----
+const FLASHCARDS_LIST_KEY = "flashcards:decks:list";
+
+export async function loadFlashcardDecksMeta(): Promise<FlashcardDeckMeta[]> {
+  if (isVercelProd()) {
+    return kvGetJson<FlashcardDeckMeta[]>(FLASHCARDS_LIST_KEY, []);
+  }
+  try {
+    const p = path.join(process.cwd(), "data", "flashcards-decks.json");
+    const raw = fs.readFileSync(p, "utf8");
+    const list = JSON.parse(raw);
+    return Array.isArray(list) ? list : [];
+  } catch {
+    return [];
+  }
+}
+
+export async function saveFlashcardDecksMeta(list: FlashcardDeckMeta[]): Promise<void> {
+  if (isVercelProd()) {
+    await kvSetJson(FLASHCARDS_LIST_KEY, list);
+    return;
+  }
+  const p = path.join(process.cwd(), "data", "flashcards-decks.json");
+  fs.writeFileSync(p, JSON.stringify(list, null, 2));
+}
+
+export async function readFlashcardDeck(deckId: string): Promise<FlashcardDeck | null> {
+  if (isVercelProd()) {
+    return kvGetJson<FlashcardDeck | null>(`flashcards:deck:${deckId}`, null);
+  }
+  try {
+    const p = path.join(process.cwd(), "data", `flashcards-deck-${deckId}.json`);
+    const raw = fs.readFileSync(p, "utf8");
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+export async function writeFlashcardDeck(deck: FlashcardDeck): Promise<void> {
+  if (isVercelProd()) {
+    await kvSetJson(`flashcards:deck:${deck.id}`, deck);
+    // Also ensure meta entry updated separately by API
+    return;
+  }
+  const p = path.join(process.cwd(), "data", `flashcards-deck-${deck.id}.json`);
+  fs.writeFileSync(p, JSON.stringify(deck, null, 2));
 }
 
 

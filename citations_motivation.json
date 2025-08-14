@@ -1,0 +1,2518 @@
+{
+  "meta": {
+    "generated_at": "2025-08-14T21:24:39.572404Z",
+    "language": "fr",
+    "count": 500,
+    "categories": [
+      "violente",
+      "gentille",
+      "provocante",
+      "sombre",
+      "méchante",
+      "belle",
+      "crash"
+    ]
+  },
+  "quotes": [
+    {
+      "id": "41f2d13c-44ed-4127-a9a1-77f1f53e7bdc",
+      "text": "L'orgueil protège la vérité, sinon, accepte la facture.",
+      "category": "gentille"
+    },
+    {
+      "id": "5f26676f-447f-4c4a-9c38-cac75b69ad09",
+      "text": "Ton talent affaiblit les bases, et signe-le de ta sueur.",
+      "category": "violente"
+    },
+    {
+      "id": "6c9698aa-ae2f-4e6d-900c-43f400b23261",
+      "text": "On choisit les résultats, et ferme la porte derrière toi.",
+      "category": "provocante"
+    },
+    {
+      "id": "40f5b166-610e-451f-8d2e-6b1bd0df2566",
+      "text": "Tu affaiblit les progrès, — choisis ton camp.",
+      "category": "belle"
+    },
+    {
+      "id": "f7dfd4e4-94fb-4cfa-a9a1-fea966c83259",
+      "text": "On défait les progrès, et ferme la porte derrière toi.",
+      "category": "méchante"
+    },
+    {
+      "id": "358bae6a-2f35-43d2-af4a-6d4dd6b32e5d",
+      "text": "La discipline fabrique la clarté, avec élégance ou pas du tout.",
+      "category": "crash"
+    },
+    {
+      "id": "a24a5b94-354d-4ea9-8ef0-aaba417e9ba9",
+      "text": "Tes excuses fabrique les priorités, sinon, accepte la facture.",
+      "category": "violente"
+    },
+    {
+      "id": "dd2df427-0dae-41b7-b82d-19131e5949ca",
+      "text": "Personne affaiblit les résultats, sinon, accepte la facture.",
+      "category": "gentille"
+    },
+    {
+      "id": "bcc9e0ff-5cf8-4317-bd05-24075fd69b9e",
+      "text": "Ton talent ignore les actes, avec élégance ou pas du tout.",
+      "category": "méchante"
+    },
+    {
+      "id": "63732770-a445-44cb-8dc1-c8857dbaba94",
+      "text": "Les objectifs sans échéance sont des contes pour adultes.",
+      "category": "provocante"
+    },
+    {
+      "id": "8cd0678a-95b8-4a40-868e-d5a564ba2c59",
+      "text": "L'orgueil ignore les échéances, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "e7520b8b-0780-44ba-9e22-d1fb336b9f9d",
+      "text": "Le courage ignore la suite, sinon, accepte la facture.",
+      "category": "gentille"
+    },
+    {
+      "id": "e14d283b-8db0-44d4-90cf-a6a6d9dcd1ca",
+      "text": "Personne fabrique la constance, et ferme la porte derrière toi.",
+      "category": "crash"
+    },
+    {
+      "id": "c456d72b-378d-4c5d-b002-5d828fb6e7b4",
+      "text": "Le courage paye la constance, avant que d'autres n'en profitent.",
+      "category": "sombre"
+    },
+    {
+      "id": "1de0493f-018a-48eb-b630-cf957d64a397",
+      "text": "Tu fabrique les priorités, et cesse de t'excuser.",
+      "category": "sombre"
+    },
+    {
+      "id": "a1be5dfd-83b0-410e-9ce2-cdf3a3598050",
+      "text": "Ton talent affaiblit la clarté, sinon, accepte la facture.",
+      "category": "méchante"
+    },
+    {
+      "id": "463ff373-9ce3-454c-8306-585310593151",
+      "text": "Le courage amplifie les résultats, ou passe ton tour.",
+      "category": "gentille"
+    },
+    {
+      "id": "ce5c6567-292f-4793-8dd9-d4ce022ee833",
+      "text": "Les occasions expirées ne reviennent pas sous un autre nom.",
+      "category": "sombre"
+    },
+    {
+      "id": "f8ea0157-5df8-4e6c-b036-8970190bf126",
+      "text": "Ton talent fabrique les bases, ou passe ton tour.",
+      "category": "provocante"
+    },
+    {
+      "id": "af2fb215-b09e-4cda-bde5-5f9dc76c9dfd",
+      "text": "On choisit les actes, avant que d'autres n'en profitent.",
+      "category": "méchante"
+    },
+    {
+      "id": "013f5bb0-bffe-4ca0-8248-3d24e478d6ef",
+      "text": "La peur accélère les priorités, sans applaudissements.",
+      "category": "provocante"
+    },
+    {
+      "id": "ebca33b3-9f16-47aa-9f67-8781566b1550",
+      "text": "La peur ne négocie pas les échéances, sans applaudissements.",
+      "category": "gentille"
+    },
+    {
+      "id": "3ff713aa-c3fe-464c-9485-419dd6391c19",
+      "text": "La peur fabrique les priorités, et signe-le de ta sueur.",
+      "category": "gentille"
+    },
+    {
+      "id": "6eca5c25-6dad-46f1-9e93-6d90a65582ff",
+      "text": "On ne négocie pas la clarté, ou passe ton tour.",
+      "category": "sombre"
+    },
+    {
+      "id": "8923498b-4cf0-4a86-acce-71c191595607",
+      "text": "Ton avenir fabrique la vérité, sinon, accepte la facture.",
+      "category": "belle"
+    },
+    {
+      "id": "11fe1732-2fbf-42c7-87e2-63c655dc0f27",
+      "text": "Tu défait les progrès, avec élégance ou pas du tout.",
+      "category": "provocante"
+    },
+    {
+      "id": "ed3f92a3-476e-4710-9663-e8f9f2f2ceee",
+      "text": "Ton talent n'attend la constance, sans permission.",
+      "category": "crash"
+    },
+    {
+      "id": "3aec56d1-8f70-4a96-b4f0-70ff4ed9fbde",
+      "text": "La peur protège l'exigence, ou passe ton tour.",
+      "category": "violente"
+    },
+    {
+      "id": "13a9c776-418f-4e1c-a1da-3aa34ec404a1",
+      "text": "Ton talent ralentit les priorités, et ferme la porte derrière toi.",
+      "category": "violente"
+    },
+    {
+      "id": "c5237661-0b40-4adf-994f-053ce5be64e7",
+      "text": "On choisit la vérité, sans permission.",
+      "category": "violente"
+    },
+    {
+      "id": "84a3940d-ab7a-43f9-8f0b-d29433b27ef7",
+      "text": "Ton confort ne négocie pas les bases, — choisis ton camp.",
+      "category": "violente"
+    },
+    {
+      "id": "10a7efc3-a5bf-4b34-bd51-c1c4d632596c",
+      "text": "Ton plan A étouffe sous tes scrolls.",
+      "category": "provocante"
+    },
+    {
+      "id": "1c4db4b0-a35d-4dd5-abdf-14e587496eff",
+      "text": "La peur n'attend les résultats, avec élégance ou pas du tout.",
+      "category": "belle"
+    },
+    {
+      "id": "b062e505-cfcf-451f-bd42-f9076d45457d",
+      "text": "On paye les priorités, et signe-le de ta sueur.",
+      "category": "belle"
+    },
+    {
+      "id": "ca7a7a7e-ce22-4e05-aca8-5d343d95d52d",
+      "text": "Le courage révèle la clarté, avec élégance ou pas du tout.",
+      "category": "violente"
+    },
+    {
+      "id": "342a505e-767a-40e3-8bc3-957341261fa8",
+      "text": "Ton talent défait la clarté, ou passe ton tour.",
+      "category": "sombre"
+    },
+    {
+      "id": "bc45032d-fad3-411e-8ffc-d19ac4c4d8ce",
+      "text": "Ton talent défait les bases, sans permission.",
+      "category": "violente"
+    },
+    {
+      "id": "eb550302-aec2-46c8-9840-aa9412d1c2ad",
+      "text": "Le temps affaiblit les priorités, sans applaudissements.",
+      "category": "provocante"
+    },
+    {
+      "id": "16e8b2a4-208b-4fb6-b5c4-f703034beed3",
+      "text": "Personne accélère la constance, et ferme la porte derrière toi.",
+      "category": "crash"
+    },
+    {
+      "id": "fae01dd0-730d-48bc-9fb0-74a0b6426e7d",
+      "text": "Ton confort amplifie les bases, et cesse de t'excuser.",
+      "category": "sombre"
+    },
+    {
+      "id": "4d16635f-2fe7-4827-97a5-8feb106be3b3",
+      "text": "L'orgueil ignore la constance, sans permission.",
+      "category": "méchante"
+    },
+    {
+      "id": "7b53487e-c46f-4ed0-b249-add925b94df5",
+      "text": "Les constellations aiment les marcheurs têtus.",
+      "category": "belle"
+    },
+    {
+      "id": "cdf0e160-29d8-4a8e-ab5e-280fa65c356e",
+      "text": "Ton talent ralentit la constance, avec élégance ou pas du tout.",
+      "category": "méchante"
+    },
+    {
+      "id": "9de2320e-3ab7-425f-9f0a-2f33525fdb18",
+      "text": "Personne ne négocie pas les résultats, sans applaudissements.",
+      "category": "sombre"
+    },
+    {
+      "id": "61e6c320-82d2-4411-b0ef-7eed47e3049c",
+      "text": "On révèle la vérité, et cesse de t'excuser.",
+      "category": "méchante"
+    },
+    {
+      "id": "9aec6c8b-cf6b-4b78-84d0-7c54709cdfd3",
+      "text": "Tu affaiblit l'exigence, ou passe ton tour.",
+      "category": "crash"
+    },
+    {
+      "id": "bf021622-c0c4-4f79-950a-f9afa243adc5",
+      "text": "On réclame les résultats, sinon, accepte la facture.",
+      "category": "provocante"
+    },
+    {
+      "id": "82560d2b-2500-4ec6-8759-fdf8430b5a77",
+      "text": "Le temps n'attend les échéances, sinon, accepte la facture.",
+      "category": "provocante"
+    },
+    {
+      "id": "d0f0b920-d4ba-43ef-836e-cdf7d2234bff",
+      "text": "On ralentit la constance, sans permission.",
+      "category": "belle"
+    },
+    {
+      "id": "3ebf8f52-189a-4f54-bb51-e6956e2ff620",
+      "text": "Ton avenir ne négocie pas la suite, ou passe ton tour.",
+      "category": "sombre"
+    },
+    {
+      "id": "596abf87-13e5-4f20-9cf4-f655d151b522",
+      "text": "Le temps t'avale chaque minute que tu gaspilles.",
+      "category": "violente"
+    },
+    {
+      "id": "99b556ff-4fed-4793-9c64-ee58697ccaf5",
+      "text": "Tes habitudes accélère la constance, et cesse de t'excuser.",
+      "category": "gentille"
+    },
+    {
+      "id": "7fd0825a-cd54-40da-9a66-41849e64b854",
+      "text": "Les cicatrices brodent la carte de tes victoires.",
+      "category": "belle"
+    },
+    {
+      "id": "d9f1839d-2274-47b9-92c2-87345f85300a",
+      "text": "La peur accélère la suite, et signe-le de ta sueur.",
+      "category": "sombre"
+    },
+    {
+      "id": "dbfd7e22-d01f-4d9a-945e-892c862e593c",
+      "text": "L'orgueil fabrique les bases, ou passe ton tour.",
+      "category": "crash"
+    },
+    {
+      "id": "80a24c7d-c04a-4d72-94dd-8c19c0b26230",
+      "text": "Le temps défait les actes, sinon, accepte la facture.",
+      "category": "crash"
+    },
+    {
+      "id": "dd188734-86c1-4102-8048-61431b4a214d",
+      "text": "On paye les bases, ou passe ton tour.",
+      "category": "violente"
+    },
+    {
+      "id": "b1ae8440-a2df-4870-807e-b33be0c8fa82",
+      "text": "Ton avenir affaiblit la suite, et signe-le de ta sueur.",
+      "category": "méchante"
+    },
+    {
+      "id": "75981fdf-8da1-4317-9052-9427013e7d0f",
+      "text": "Ton avenir amplifie la vérité, et ferme la porte derrière toi.",
+      "category": "belle"
+    },
+    {
+      "id": "3b6f3b26-4048-4533-bbda-302b412d491d",
+      "text": "Ton confort n'attend l'exigence, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "c2793a58-aee0-4a7f-9afb-1fd1c167bde1",
+      "text": "Personne révèle l'exigence, avant que d'autres n'en profitent.",
+      "category": "belle"
+    },
+    {
+      "id": "3d77fba4-16b1-4b77-b0db-b307f9288d06",
+      "text": "Tes excuses défait les actes, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "a992beba-8988-41a0-b8f9-e25b2412c957",
+      "text": "Le temps n'attend les résultats, avant que d'autres n'en profitent.",
+      "category": "violente"
+    },
+    {
+      "id": "f880ee56-cb3d-45b5-93f1-56677a7f6538",
+      "text": "La peur paye la direction, et cesse de t'excuser.",
+      "category": "provocante"
+    },
+    {
+      "id": "650a31e5-129e-4ee1-b067-62340264900e",
+      "text": "L'orgueil affaiblit la clarté, sans applaudissements.",
+      "category": "provocante"
+    },
+    {
+      "id": "f1e27fae-963d-4ba3-ac18-69d890927c46",
+      "text": "Ton futur n'aime pas les procrastinateurs polis.",
+      "category": "provocante"
+    },
+    {
+      "id": "7d544061-2063-4cdf-ae33-b9abd7331458",
+      "text": "Personne choisit les priorités, sans permission.",
+      "category": "méchante"
+    },
+    {
+      "id": "289dc4ae-56ce-4b0d-9ada-438ca4035346",
+      "text": "Ton confort révèle les bases, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "50c42f41-737f-48b0-8d95-7b128268efda",
+      "text": "Tu ralentit la suite, ou passe ton tour.",
+      "category": "gentille"
+    },
+    {
+      "id": "d460b430-0f49-4f30-a2a9-ddc0797d2c01",
+      "text": "Ton regard sait déjà ouvrir des saisons.",
+      "category": "belle"
+    },
+    {
+      "id": "e5535ab8-9757-4d1b-a72a-bbe5d2bff90a",
+      "text": "Ton confort révèle les résultats, et cesse de t'excuser.",
+      "category": "provocante"
+    },
+    {
+      "id": "3aaf5035-ea4c-42df-bc6e-8fc265433658",
+      "text": "On ignore l'exigence, — choisis ton camp.",
+      "category": "violente"
+    },
+    {
+      "id": "f3202e7e-9e1f-4a44-ad45-aebc50c3e242",
+      "text": "La discipline défait la suite, avant que d'autres n'en profitent.",
+      "category": "belle"
+    },
+    {
+      "id": "a0df1ae5-d42d-4d77-add5-78f54727d7c1",
+      "text": "Rien ne change si rien ne change.",
+      "category": "crash"
+    },
+    {
+      "id": "fdc3541d-b7b4-4be0-b1a1-c6317d3a954f",
+      "text": "On ne négocie pas les progrès, et cesse de t'excuser.",
+      "category": "sombre"
+    },
+    {
+      "id": "2bb97a21-bcf8-4fa9-8e23-ddb6a60e8ad9",
+      "text": "La peur amplifie la direction, avant que d'autres n'en profitent.",
+      "category": "crash"
+    },
+    {
+      "id": "c561050a-cc83-4f3e-8076-403d984224f8",
+      "text": "Tes habitudes choisit les échéances, ou passe ton tour.",
+      "category": "gentille"
+    },
+    {
+      "id": "4b72ab7a-6867-4a5e-9b1f-b185ef720915",
+      "text": "Ton ambition voudrait un corps de métier, pas un canapé.",
+      "category": "méchante"
+    },
+    {
+      "id": "d14edae0-4ab4-49b2-9688-0a2fb38e3440",
+      "text": "Tu réclame la suite, avec élégance ou pas du tout.",
+      "category": "sombre"
+    },
+    {
+      "id": "fff091a4-5bf5-4f17-a46b-c789e5e11361",
+      "text": "L'orgueil accélère la vérité, — choisis ton camp.",
+      "category": "gentille"
+    },
+    {
+      "id": "709f4dde-669b-4765-95af-eef60b67c25a",
+      "text": "Ton courage discret compte plus que tu ne crois.",
+      "category": "gentille"
+    },
+    {
+      "id": "6a251679-87e9-45aa-ae2f-f92ac339d7db",
+      "text": "Tes habitudes protège la direction, sans applaudissements.",
+      "category": "crash"
+    },
+    {
+      "id": "b8c9a50a-699c-4c1f-b965-0f4a19d3d312",
+      "text": "Le temps ne négocie pas les résultats, sinon, accepte la facture.",
+      "category": "violente"
+    },
+    {
+      "id": "e586795e-0d4d-49b5-8623-34f588598ddc",
+      "text": "Le temps choisit les progrès, avant que d'autres n'en profitent.",
+      "category": "sombre"
+    },
+    {
+      "id": "fced679b-e936-4abf-841a-d078340b8f5e",
+      "text": "Tu n'attend la vérité, et ferme la porte derrière toi.",
+      "category": "violente"
+    },
+    {
+      "id": "bb4fe37c-b4a5-47b1-ad92-1653910048ec",
+      "text": "Tu amplifie la vérité, sans applaudissements.",
+      "category": "crash"
+    },
+    {
+      "id": "15099cb7-6ddb-49fd-a387-d612cbd2078f",
+      "text": "Tes excuses paye la constance, sans permission.",
+      "category": "crash"
+    },
+    {
+      "id": "e1739e87-c456-4c4a-bffb-5531e3156b05",
+      "text": "Tu accélère les échéances, sans permission.",
+      "category": "violente"
+    },
+    {
+      "id": "8d2499ea-53b3-49ff-97a0-c293b86eb8dc",
+      "text": "Tes habitudes affaiblit les échéances, sans applaudissements.",
+      "category": "provocante"
+    },
+    {
+      "id": "4084409a-52b8-4c21-a4a7-1330a213a658",
+      "text": "Personne fabrique les résultats, avant que d'autres n'en profitent.",
+      "category": "gentille"
+    },
+    {
+      "id": "02d3367d-7bec-4618-82bf-4da05ee0165c",
+      "text": "Le temps paye la suite, et signe-le de ta sueur.",
+      "category": "provocante"
+    },
+    {
+      "id": "5ec00ff0-1230-4c1c-902f-bb480f0f8a74",
+      "text": "Tu confonds sécurité et lente agonie.",
+      "category": "sombre"
+    },
+    {
+      "id": "13fbe10b-318d-46e0-a6f4-5449445751e6",
+      "text": "Personne amplifie les échéances, avec élégance ou pas du tout.",
+      "category": "violente"
+    },
+    {
+      "id": "75f0f2d8-7ab2-4607-a384-ec30154fd5ac",
+      "text": "Tes excuses défait les bases, sinon, accepte la facture.",
+      "category": "belle"
+    },
+    {
+      "id": "d9c927c2-648e-4df3-9201-d712fcc5d344",
+      "text": "La discipline fabrique les priorités, ou passe ton tour.",
+      "category": "méchante"
+    },
+    {
+      "id": "7197832d-8d58-40d4-a66c-d36f61914d4d",
+      "text": "La peur ralentit la direction, et cesse de t'excuser.",
+      "category": "belle"
+    },
+    {
+      "id": "0e874747-24fa-4dcf-b390-8ce3fc7012a8",
+      "text": "On révèle l'exigence, ou passe ton tour.",
+      "category": "gentille"
+    },
+    {
+      "id": "e0802232-9350-443d-9c62-c42ab1aff771",
+      "text": "On affaiblit les progrès, avec élégance ou pas du tout.",
+      "category": "violente"
+    },
+    {
+      "id": "c8f5a0a6-30e0-4e67-b28f-b758681541e7",
+      "text": "On protège l'exigence, ou passe ton tour.",
+      "category": "sombre"
+    },
+    {
+      "id": "411e2051-cb2d-44ca-b3aa-cdda61058a9e",
+      "text": "Ton confort défait la clarté, et signe-le de ta sueur.",
+      "category": "violente"
+    },
+    {
+      "id": "7d0c7a15-bc56-4711-9d93-57553c8980c8",
+      "text": "Ton avenir fabrique la direction, et ferme la porte derrière toi.",
+      "category": "crash"
+    },
+    {
+      "id": "73b68781-79d9-4e4c-bd91-e0aaeaecaa9f",
+      "text": "Tu fais de ton mieux, et c'est déjà immense.",
+      "category": "gentille"
+    },
+    {
+      "id": "e3d37ccf-9349-43d5-a98e-f6d365a2f908",
+      "text": "Tes excuses accélère les priorités, et ferme la porte derrière toi.",
+      "category": "provocante"
+    },
+    {
+      "id": "b432991b-8ff0-4ba5-ab31-36f5b7128634",
+      "text": "Personne défait les résultats, sans applaudissements.",
+      "category": "belle"
+    },
+    {
+      "id": "e0eba6ba-17e0-47ce-9261-8562fd661568",
+      "text": "Le temps polit ce que la peur raye.",
+      "category": "belle"
+    },
+    {
+      "id": "73df48cb-2f43-4252-b0b8-39de067cbbf7",
+      "text": "Ton confort affaiblit la suite, ou passe ton tour.",
+      "category": "gentille"
+    },
+    {
+      "id": "fde2ee13-0cd0-460d-bae6-3fca7cf857b7",
+      "text": "Tes excuses ignore les résultats, et signe-le de ta sueur.",
+      "category": "gentille"
+    },
+    {
+      "id": "9889312c-0d10-4f95-88e8-f62775d8ee05",
+      "text": "Le temps ignore l'exigence, ou passe ton tour.",
+      "category": "gentille"
+    },
+    {
+      "id": "88eb89be-4e00-4637-bfc9-1d69c1ffee19",
+      "text": "Ton talent paye les bases, avant que d'autres n'en profitent.",
+      "category": "belle"
+    },
+    {
+      "id": "3cbeb80a-e0d9-4963-a100-817347716c5d",
+      "text": "La peur révèle la clarté, sans permission.",
+      "category": "sombre"
+    },
+    {
+      "id": "2cb2a1d1-7906-460a-bc5e-a76521d8c479",
+      "text": "Tu n'es pas seul·e : avance avec douceur.",
+      "category": "gentille"
+    },
+    {
+      "id": "8964570e-93eb-4cf0-b0e1-2ac980f51d8b",
+      "text": "Les promesses non tenues rouillent l'estime.",
+      "category": "sombre"
+    },
+    {
+      "id": "73f6ba3e-c4dc-4763-b16b-1a0ee232ebfa",
+      "text": "Tes habitudes amplifie la clarté, et cesse de t'excuser.",
+      "category": "méchante"
+    },
+    {
+      "id": "df170f1c-f35f-4a20-a943-c79fc53e269c",
+      "text": "Le temps ne rembourse aucun prêt d'attention.",
+      "category": "sombre"
+    },
+    {
+      "id": "694556fa-84e3-4c78-87bb-b3f1e5e29ce6",
+      "text": "Ton avenir paye les échéances, sinon, accepte la facture.",
+      "category": "provocante"
+    },
+    {
+      "id": "7ba95950-f628-4cf1-ab1c-40087452bb88",
+      "text": "Chaque souffle est un vote pour demain.",
+      "category": "belle"
+    },
+    {
+      "id": "339c95d4-9da6-41f0-838d-3aa2012d3c34",
+      "text": "Tu as survécu à tout ce que tu craignais : bravo.",
+      "category": "gentille"
+    },
+    {
+      "id": "9ed060e1-f61d-42aa-937c-bd092d3d75a0",
+      "text": "Tes excuses ignore la vérité, — choisis ton camp.",
+      "category": "crash"
+    },
+    {
+      "id": "5b92cfeb-ccf5-4aba-a60a-bc8e8d331c71",
+      "text": "La peur ralentit la direction, sinon, accepte la facture.",
+      "category": "provocante"
+    },
+    {
+      "id": "50ab5f3e-02f7-4746-b70e-0ae58754153e",
+      "text": "Ton confort amplifie la vérité, et cesse de t'excuser.",
+      "category": "crash"
+    },
+    {
+      "id": "2aa36702-3011-46ec-9d0f-47b9dc5ad853",
+      "text": "Ton avenir ne négocie pas l'exigence, sans permission.",
+      "category": "violente"
+    },
+    {
+      "id": "6fd532e7-51c2-44c0-b649-4f16818df863",
+      "text": "Ton confort te scie les jambes sans douleur.",
+      "category": "violente"
+    },
+    {
+      "id": "2dcdc46f-63f0-44f9-81bc-d5ba7896d19c",
+      "text": "Le courage révèle la constance, et ferme la porte derrière toi.",
+      "category": "méchante"
+    },
+    {
+      "id": "5ee23590-37a6-49d0-9a99-a8c8830716ee",
+      "text": "Ton talent protège la clarté, et ferme la porte derrière toi.",
+      "category": "provocante"
+    },
+    {
+      "id": "8162239b-600c-46ad-ab63-81cd109bcc84",
+      "text": "Le courage sent souvent la pluie avant le soleil.",
+      "category": "belle"
+    },
+    {
+      "id": "755f11b1-744a-4715-a278-3e9b985afb01",
+      "text": "Ton confort protège l'exigence, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "ef3559bd-f2b7-4826-b069-aa7cf6c34175",
+      "text": "Tes excuses pèsent plus que tes actes.",
+      "category": "méchante"
+    },
+    {
+      "id": "146152d7-a2f5-4ed6-91be-3f2ec70d9fe8",
+      "text": "Tes habitudes protège l'exigence, ou passe ton tour.",
+      "category": "crash"
+    },
+    {
+      "id": "614fe3d5-d418-483a-9569-5434c7924e40",
+      "text": "Tes habitudes accélère l'exigence, sans applaudissements.",
+      "category": "crash"
+    },
+    {
+      "id": "1dd7fbe4-7724-4939-aeac-839856f0dc9a",
+      "text": "Personne défait l'exigence, sans permission.",
+      "category": "sombre"
+    },
+    {
+      "id": "0720bee9-c277-496b-bc01-349d27e45925",
+      "text": "Ton avenir protège les actes, avant que d'autres n'en profitent.",
+      "category": "crash"
+    },
+    {
+      "id": "e9423c14-5085-4975-a434-cf50258c8077",
+      "text": "Tu marches vers l'oubli en regardant ton téléphone.",
+      "category": "violente"
+    },
+    {
+      "id": "84dfddcd-8e58-4cd9-848f-58fbae64eaa5",
+      "text": "Tes excuses protège la constance, sans applaudissements.",
+      "category": "méchante"
+    },
+    {
+      "id": "59a102cc-fcb4-4f3d-9e7b-8bb9ad8cb382",
+      "text": "Tu as le droit d'apprendre lentement.",
+      "category": "gentille"
+    },
+    {
+      "id": "8f6ba8d3-aed7-4a90-b29b-0a5399a6e499",
+      "text": "Tu défait la vérité, et ferme la porte derrière toi.",
+      "category": "belle"
+    },
+    {
+      "id": "a63729ea-4e85-46e4-9d88-4d62930900db",
+      "text": "Un petit pas honnête vaut une course vide.",
+      "category": "gentille"
+    },
+    {
+      "id": "e2397279-011c-4918-822d-4735d87c2e84",
+      "text": "Ton confort amplifie la vérité, et ferme la porte derrière toi.",
+      "category": "provocante"
+    },
+    {
+      "id": "412d2b6e-3130-4dc8-8bf4-ecc0f595969e",
+      "text": "Ton talent ne négocie pas l'exigence, avant que d'autres n'en profitent.",
+      "category": "sombre"
+    },
+    {
+      "id": "af02e618-dd0a-4f2e-83cc-d7a525d9b78f",
+      "text": "Le courage amplifie les échéances, et ferme la porte derrière toi.",
+      "category": "belle"
+    },
+    {
+      "id": "1d533361-fffc-4c01-bd34-3af476514bf8",
+      "text": "La peur protège les actes, et ferme la porte derrière toi.",
+      "category": "provocante"
+    },
+    {
+      "id": "ee0ea9ab-e632-4cc8-877f-e2d7b01f82a7",
+      "text": "Ton talent défait les actes, — choisis ton camp.",
+      "category": "gentille"
+    },
+    {
+      "id": "da69c072-f795-4a0d-8806-a16dfc17b9ab",
+      "text": "Tes excuses protège la direction, et cesse de t'excuser.",
+      "category": "sombre"
+    },
+    {
+      "id": "10816e27-fb5d-42a9-a6c0-ef22765bb941",
+      "text": "Tes habitudes affaiblit les échéances, sans applaudissements.",
+      "category": "crash"
+    },
+    {
+      "id": "f2bd3beb-d145-4cb5-a828-62d7e37f5a7a",
+      "text": "Ton confort défait la suite, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "0ecc5c00-1732-4cce-82c2-87f2621da23a",
+      "text": "Ton confort accélère les progrès, et cesse de t'excuser.",
+      "category": "gentille"
+    },
+    {
+      "id": "03607db7-ba62-48a7-8894-676eea9a7546",
+      "text": "La discipline protège les résultats, ou passe ton tour.",
+      "category": "crash"
+    },
+    {
+      "id": "3c4746b0-0b36-48b7-bffc-f9582f8cf20b",
+      "text": "Ton talent ignore les échéances, sans permission.",
+      "category": "sombre"
+    },
+    {
+      "id": "fcc0e5b3-4961-4da6-a238-1896d34df0d0",
+      "text": "Tu peux commencer petit et penser grand.",
+      "category": "gentille"
+    },
+    {
+      "id": "bd0f07f9-6138-484b-aca1-354ab7c68eb7",
+      "text": "Ton avenir choisit la constance, — choisis ton camp.",
+      "category": "provocante"
+    },
+    {
+      "id": "64c26fa6-6551-424b-9107-840b41f3d0b8",
+      "text": "Le courage affaiblit les priorités, — choisis ton camp.",
+      "category": "belle"
+    },
+    {
+      "id": "27cd7255-5e79-4518-8b53-c5747d885ec4",
+      "text": "On choisit les progrès, avec élégance ou pas du tout.",
+      "category": "crash"
+    },
+    {
+      "id": "af08913e-701c-4768-958f-a80512ebde8a",
+      "text": "Ton talent révèle les progrès, sinon, accepte la facture.",
+      "category": "gentille"
+    },
+    {
+      "id": "b01e8076-8e79-4143-b9a6-11d62d97cd02",
+      "text": "Tu fabrique la vérité, avec élégance ou pas du tout.",
+      "category": "provocante"
+    },
+    {
+      "id": "351c9c86-fda4-4fbb-bfa1-7d57545b731f",
+      "text": "La discipline ralentit la direction, sans permission.",
+      "category": "méchante"
+    },
+    {
+      "id": "acadd5d3-c70f-42f1-9840-d2f85836916f",
+      "text": "Ton talent amplifie les priorités, sans permission.",
+      "category": "sombre"
+    },
+    {
+      "id": "d521000b-2a2d-486b-84ed-634e768348e7",
+      "text": "Le temps révèle l'exigence, ou passe ton tour.",
+      "category": "crash"
+    },
+    {
+      "id": "89ccd323-9f4e-4e5e-b3f1-d131f79aefd1",
+      "text": "On accélère les échéances, sinon, accepte la facture.",
+      "category": "sombre"
+    },
+    {
+      "id": "cc892328-5688-409b-b3f8-70ed4cac1c4a",
+      "text": "Tes excuses ralentit la constance, et cesse de t'excuser.",
+      "category": "gentille"
+    },
+    {
+      "id": "a2d55254-4ed0-4f00-8490-de5dbe5cee81",
+      "text": "Demander de l'aide est une forme de force.",
+      "category": "gentille"
+    },
+    {
+      "id": "8968d97e-29fe-4142-8492-2346d89eef71",
+      "text": "Tes excuses ignore les progrès, ou passe ton tour.",
+      "category": "violente"
+    },
+    {
+      "id": "66bd9d1f-abfd-441f-8a62-f3c70d316728",
+      "text": "Ton confort paye la constance, — choisis ton camp.",
+      "category": "sombre"
+    },
+    {
+      "id": "d156216f-4825-4753-aeb7-5b9a3478af5b",
+      "text": "Ton avenir affaiblit les résultats, ou passe ton tour.",
+      "category": "sombre"
+    },
+    {
+      "id": "ab39012f-cbd1-4176-a02b-d50e9a49f037",
+      "text": "Tu défait la vérité, sinon, accepte la facture.",
+      "category": "sombre"
+    },
+    {
+      "id": "247c3922-cb78-49d8-8512-fb2fb5e50aa5",
+      "text": "On affaiblit la constance, et signe-le de ta sueur.",
+      "category": "gentille"
+    },
+    {
+      "id": "a6b1b0b2-1f2a-47f2-aa07-97807a5382d8",
+      "text": "La discipline ralentit la clarté, et signe-le de ta sueur.",
+      "category": "crash"
+    },
+    {
+      "id": "41cacb00-3fb7-4bde-9f81-e2f669917ded",
+      "text": "Tu ralentit la direction, sinon, accepte la facture.",
+      "category": "crash"
+    },
+    {
+      "id": "d3b188f9-7702-4bb7-9c09-83dcd3166c42",
+      "text": "Ton confort ignore la direction, sinon, accepte la facture.",
+      "category": "gentille"
+    },
+    {
+      "id": "114db57a-7820-453d-b58f-3ec755769930",
+      "text": "La médiocrité s'installe par gentle livraison quotidienne.",
+      "category": "sombre"
+    },
+    {
+      "id": "b1145ff7-af40-4c48-a40e-6f2f73c0edbc",
+      "text": "Tes habitudes défait les échéances, — choisis ton camp.",
+      "category": "belle"
+    },
+    {
+      "id": "3b16f4f7-8884-4b91-b314-9df66e552fa1",
+      "text": "La discipline n'attend la suite, avant que d'autres n'en profitent.",
+      "category": "méchante"
+    },
+    {
+      "id": "e800bfb6-ecf0-441b-b0e0-01837ad4114b",
+      "text": "Tes excuses défait la direction, et cesse de t'excuser.",
+      "category": "crash"
+    },
+    {
+      "id": "715c1307-cd65-423f-a291-adaeaaf3640e",
+      "text": "On protège les échéances, sinon, accepte la facture.",
+      "category": "sombre"
+    },
+    {
+      "id": "fba8613c-85ab-4eb7-90ea-138317f72066",
+      "text": "On n'attend les progrès, ou passe ton tour.",
+      "category": "belle"
+    },
+    {
+      "id": "3a0fa457-94a7-48a7-bacb-0d9cf1490309",
+      "text": "Personne affaiblit les actes, — choisis ton camp.",
+      "category": "méchante"
+    },
+    {
+      "id": "949c47f3-1b19-4897-a4e2-45c593dec009",
+      "text": "Tes excuses protège la clarté, sinon, accepte la facture.",
+      "category": "belle"
+    },
+    {
+      "id": "0b7a5cee-a7ad-42ff-b30f-cfae06e18eac",
+      "text": "Le courage ralentit les progrès, — choisis ton camp.",
+      "category": "gentille"
+    },
+    {
+      "id": "a6b78305-ce26-4c67-9689-47cd03a91cca",
+      "text": "Ton confort choisit les échéances, et signe-le de ta sueur.",
+      "category": "gentille"
+    },
+    {
+      "id": "9499e223-a94f-4b11-9a05-99440e6af48e",
+      "text": "Le courage amplifie la suite, et ferme la porte derrière toi.",
+      "category": "méchante"
+    },
+    {
+      "id": "b8b8ddcb-ee10-4a5c-a499-d8458e60a6ca",
+      "text": "Le silence protège les graines de ton futur.",
+      "category": "belle"
+    },
+    {
+      "id": "7d451fa7-7cc8-48b2-972d-426e8ecd435f",
+      "text": "Tes rêves se refroidissent quand tu t'attardes.",
+      "category": "sombre"
+    },
+    {
+      "id": "f0171989-04f4-4e69-aeb6-d42fe834a711",
+      "text": "On défait la constance, sans permission.",
+      "category": "provocante"
+    },
+    {
+      "id": "69385451-bedb-4d33-8c63-675f4932252b",
+      "text": "Ton confort révèle la suite, avant que d'autres n'en profitent.",
+      "category": "sombre"
+    },
+    {
+      "id": "247299fd-4361-44a0-aafc-5f7829ffc128",
+      "text": "La peur te dresse une laisse invisible : romps-la.",
+      "category": "violente"
+    },
+    {
+      "id": "e30b7b28-ab52-4b49-ae1b-e3373615668a",
+      "text": "Ton confort ne négocie pas la vérité, avant que d'autres n'en profitent.",
+      "category": "provocante"
+    },
+    {
+      "id": "138866b8-7067-4f0b-9c39-7e2b00458042",
+      "text": "On défait la constance, et cesse de t'excuser.",
+      "category": "gentille"
+    },
+    {
+      "id": "b94f46d3-4cac-4519-a2bc-c003f52d0433",
+      "text": "Ton talent choisit les priorités, et ferme la porte derrière toi.",
+      "category": "belle"
+    },
+    {
+      "id": "a93dfdcb-0a90-4096-8929-7c1f731f17f4",
+      "text": "Le courage amplifie la clarté, sans permission.",
+      "category": "gentille"
+    },
+    {
+      "id": "fbbf1d47-933c-43b6-b2ea-5c60706be4c3",
+      "text": "La peur affaiblit la clarté, sinon, accepte la facture.",
+      "category": "gentille"
+    },
+    {
+      "id": "f5ea6bc1-ca11-463a-8011-28297dd4d10d",
+      "text": "Ton talent défait les progrès, sans permission.",
+      "category": "provocante"
+    },
+    {
+      "id": "d2a79a24-737c-4f1b-8af0-f492a861e06d",
+      "text": "L'orgueil choisit les actes, ou passe ton tour.",
+      "category": "gentille"
+    },
+    {
+      "id": "45517d6f-a533-4581-aaba-473f7c86075d",
+      "text": "On défait l'exigence, ou passe ton tour.",
+      "category": "crash"
+    },
+    {
+      "id": "75e91c76-569b-4be6-aab5-a907bb9a4d45",
+      "text": "Ton talent fabrique la suite, et signe-le de ta sueur.",
+      "category": "violente"
+    },
+    {
+      "id": "12080320-00a6-4162-a6b9-29189ec8c012",
+      "text": "Ton talent paye les échéances, et ferme la porte derrière toi.",
+      "category": "méchante"
+    },
+    {
+      "id": "44cd1949-68bb-43de-8a44-7acb58ec23e7",
+      "text": "La peur affaiblit les bases, avant que d'autres n'en profitent.",
+      "category": "gentille"
+    },
+    {
+      "id": "5992a136-b706-4f3d-99e3-2d4202342fc0",
+      "text": "Ton confort ne négocie pas l'exigence, et ferme la porte derrière toi.",
+      "category": "sombre"
+    },
+    {
+      "id": "08d7ed4d-1dae-4404-bb0c-818964460626",
+      "text": "Le courage protège la clarté, et ferme la porte derrière toi.",
+      "category": "crash"
+    },
+    {
+      "id": "2422af9a-25e8-4b7c-84a9-d7ef217c8e39",
+      "text": "La peur fabrique les bases, sans applaudissements.",
+      "category": "sombre"
+    },
+    {
+      "id": "a57d11ba-74fb-4b31-ad90-682ccd39084f",
+      "text": "On ralentit les priorités, et ferme la porte derrière toi.",
+      "category": "violente"
+    },
+    {
+      "id": "da28a6f0-c7fa-4ef1-8cbc-0db722608f44",
+      "text": "Tes excuses défait les priorités, ou passe ton tour.",
+      "category": "belle"
+    },
+    {
+      "id": "d9bbfa8a-4381-47ce-9fd8-8af6fc94b1cd",
+      "text": "Tu dilapides ta vie à coups de 'demain'.",
+      "category": "violente"
+    },
+    {
+      "id": "dc0b4d0b-e9e9-4f22-9b48-fd1728b00e6b",
+      "text": "On protège les bases, sans applaudissements.",
+      "category": "gentille"
+    },
+    {
+      "id": "48317f80-3cfa-4dd7-a37f-1645f52db9d7",
+      "text": "Tu n'attend les progrès, sinon, accepte la facture.",
+      "category": "sombre"
+    },
+    {
+      "id": "f0753d69-b580-4a06-881f-70d21651bfc0",
+      "text": "Le courage protège les résultats, et signe-le de ta sueur.",
+      "category": "belle"
+    },
+    {
+      "id": "25ed1b79-7d1e-4a9a-9c57-d9f7c8268e17",
+      "text": "Tu fabrique les priorités, ou passe ton tour.",
+      "category": "méchante"
+    },
+    {
+      "id": "08e46b1e-5b74-4fc1-baea-2d91fd4a514a",
+      "text": "Tes habitudes protège les progrès, ou passe ton tour.",
+      "category": "violente"
+    },
+    {
+      "id": "1106a639-910d-41c6-b433-abb9b35985a1",
+      "text": "Ton talent choisit les échéances, avant que d'autres n'en profitent.",
+      "category": "belle"
+    },
+    {
+      "id": "5e47428a-f611-4315-b23d-5f6a53db2dae",
+      "text": "Tes excuses paye les priorités, et cesse de t'excuser.",
+      "category": "violente"
+    },
+    {
+      "id": "eb7cbcc1-087a-4751-895a-553d03111822",
+      "text": "Le chemin pardonne rarement l'inaction prolongée.",
+      "category": "sombre"
+    },
+    {
+      "id": "289c0cf9-e880-415a-8e0b-907d9d45483f",
+      "text": "Ton confort ralentit les échéances, — choisis ton camp.",
+      "category": "sombre"
+    },
+    {
+      "id": "85ba69d2-ecb5-4ac7-8840-15f9e0ead4e4",
+      "text": "Tes habitudes ignore les bases, sans applaudissements.",
+      "category": "méchante"
+    },
+    {
+      "id": "ba83951c-9f28-4dfd-ae34-b5631ab01981",
+      "text": "Tes habitudes amplifie les résultats, et ferme la porte derrière toi.",
+      "category": "gentille"
+    },
+    {
+      "id": "7cfbe334-5505-4248-ac49-2e70e220c39b",
+      "text": "On réclame les bases, et signe-le de ta sueur.",
+      "category": "gentille"
+    },
+    {
+      "id": "ae63b98d-af0e-4702-b19a-77afbc9a311c",
+      "text": "L'aube n'interroge pas tes chutes, elle te propose une page.",
+      "category": "belle"
+    },
+    {
+      "id": "a1052e99-318d-4f9a-bd0e-1a0df6102ce0",
+      "text": "Ton confort fabrique les échéances, sans permission.",
+      "category": "sombre"
+    },
+    {
+      "id": "c0554a73-df85-4334-b1c4-0d6074954ead",
+      "text": "On ne négocie pas la suite, et signe-le de ta sueur.",
+      "category": "belle"
+    },
+    {
+      "id": "f6b60156-8122-43bc-a78c-85ca1a7b03c7",
+      "text": "Moins de discours, plus de traces.",
+      "category": "crash"
+    },
+    {
+      "id": "49d961ae-7d86-41eb-8d60-89350057ec62",
+      "text": "Ton talent ralentit les résultats, et signe-le de ta sueur.",
+      "category": "violente"
+    },
+    {
+      "id": "aa4f7fe9-18a7-43d2-8266-3df0ca0e0836",
+      "text": "Personne ralentit l'exigence, sinon, accepte la facture.",
+      "category": "sombre"
+    },
+    {
+      "id": "e1910de8-c556-4b1b-bf02-2c42d234fa49",
+      "text": "Le temps réclame la suite, et ferme la porte derrière toi.",
+      "category": "provocante"
+    },
+    {
+      "id": "2838ada1-7cd0-4596-9da3-e7e522d5e11b",
+      "text": "Le courage révèle les progrès, sinon, accepte la facture.",
+      "category": "belle"
+    },
+    {
+      "id": "2870b2d4-23be-4c63-986b-8b4efeebfa47",
+      "text": "Le courage accélère les actes, avant que d'autres n'en profitent.",
+      "category": "sombre"
+    },
+    {
+      "id": "037084e8-b012-4f8b-8267-a3384a443f60",
+      "text": "Ton talent affaiblit les actes, ou passe ton tour.",
+      "category": "crash"
+    },
+    {
+      "id": "a32806ff-471c-4402-9b22-fe58c68b59f7",
+      "text": "On accélère les actes, sans applaudissements.",
+      "category": "méchante"
+    },
+    {
+      "id": "59d7fd33-4619-4e96-be5f-62b049901744",
+      "text": "La peur révèle les résultats, sinon, accepte la facture.",
+      "category": "provocante"
+    },
+    {
+      "id": "e7dec7c0-9b27-4f0a-89e5-08fb069dbca2",
+      "text": "Ton confort choisit les actes, sinon, accepte la facture.",
+      "category": "crash"
+    },
+    {
+      "id": "a019dd59-0ac9-46fb-a465-8c3e68914e9c",
+      "text": "Ton confort révèle l'exigence, et signe-le de ta sueur.",
+      "category": "belle"
+    },
+    {
+      "id": "6d8e3f11-3a08-44dd-be8c-9076bbfeea11",
+      "text": "Tu protège la constance, et ferme la porte derrière toi.",
+      "category": "méchante"
+    },
+    {
+      "id": "a8134f82-afd4-4528-afa0-7a00cd629b0d",
+      "text": "Tes excuses réclame les échéances, — choisis ton camp.",
+      "category": "sombre"
+    },
+    {
+      "id": "861c69bb-b642-417d-ab1e-ac32cc8c77a1",
+      "text": "Tes excuses accélère la constance, et ferme la porte derrière toi.",
+      "category": "provocante"
+    },
+    {
+      "id": "dccd0b2c-f984-4994-946f-b8dd876eeee4",
+      "text": "Le temps fabrique la direction, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "7c33f7a0-511c-44c0-989f-42922160675e",
+      "text": "L'orgueil ignore les échéances, avec élégance ou pas du tout.",
+      "category": "crash"
+    },
+    {
+      "id": "7fd897a6-b45a-4f4a-ab16-383b04bb62ce",
+      "text": "La discipline réclame les progrès, ou passe ton tour.",
+      "category": "belle"
+    },
+    {
+      "id": "7530a106-45cc-46fb-9439-b7ba34e62a6b",
+      "text": "Tes excuses n'attend la clarté, sans applaudissements.",
+      "category": "méchante"
+    },
+    {
+      "id": "0c505c13-be8d-4c77-8eb3-df366a4c8a41",
+      "text": "Le courage ignore les résultats, et cesse de t'excuser.",
+      "category": "belle"
+    },
+    {
+      "id": "14827f47-a1f4-4fb6-8ca6-36b024f3412e",
+      "text": "On ignore les priorités, et signe-le de ta sueur.",
+      "category": "crash"
+    },
+    {
+      "id": "59d4a95e-6329-4c10-a6b0-31dc1890c285",
+      "text": "On fabrique les échéances, sans permission.",
+      "category": "sombre"
+    },
+    {
+      "id": "41d54679-5113-46a0-90d5-f13db974dcfe",
+      "text": "Ton talent réclame les priorités, et ferme la porte derrière toi.",
+      "category": "violente"
+    },
+    {
+      "id": "30454751-fe69-4f03-a282-54c64c37974b",
+      "text": "La peur défait l'exigence, — choisis ton camp.",
+      "category": "belle"
+    },
+    {
+      "id": "db8067f1-8740-4054-8111-ef3a9f13795e",
+      "text": "Tes excuses ne négocie pas la direction, — choisis ton camp.",
+      "category": "méchante"
+    },
+    {
+      "id": "7dca233e-456c-4505-b6a3-4408a2ed4bf6",
+      "text": "Tes habitudes protège les bases, sinon, accepte la facture.",
+      "category": "méchante"
+    },
+    {
+      "id": "4c18e2d6-dff7-4cac-a2d9-9ed8834be5b8",
+      "text": "Ton confort ralentit les échéances, sinon, accepte la facture.",
+      "category": "sombre"
+    },
+    {
+      "id": "92e1dd83-fa7b-4e7d-81aa-b81dfd01c4a7",
+      "text": "Ton confort protège les échéances, sans permission.",
+      "category": "provocante"
+    },
+    {
+      "id": "30be2458-8cf4-4dc9-b369-83da96fec803",
+      "text": "Tes habitudes réclame la clarté, sans applaudissements.",
+      "category": "crash"
+    },
+    {
+      "id": "3931f6ce-c69b-4a0d-a853-06ba221b611d",
+      "text": "On ralentit les résultats, et ferme la porte derrière toi.",
+      "category": "crash"
+    },
+    {
+      "id": "ee4558f4-b6cb-40a2-9010-5513d901d6db",
+      "text": "La discipline révèle la vérité, et cesse de t'excuser.",
+      "category": "crash"
+    },
+    {
+      "id": "127d1c0e-fd08-412a-979d-63087a0c6ba5",
+      "text": "Personne réclame la direction, sans applaudissements.",
+      "category": "crash"
+    },
+    {
+      "id": "d90b36fe-e8a3-4899-a601-686e16e35d19",
+      "text": "Tu t'offusques vite, tu agis lentement.",
+      "category": "méchante"
+    },
+    {
+      "id": "d4285a24-5310-4139-b15a-78ca156c4c23",
+      "text": "Ton futur hurle pendant que tu chuchotes.",
+      "category": "violente"
+    },
+    {
+      "id": "3f5eb625-fec9-4dbc-8db8-3c016cc35498",
+      "text": "Le succès aime les horaires.",
+      "category": "crash"
+    },
+    {
+      "id": "ff4da624-cda5-49e3-9860-acf57d59d04f",
+      "text": "Ton talent révèle la constance, ou passe ton tour.",
+      "category": "violente"
+    },
+    {
+      "id": "c9c47d8c-3346-4719-9403-c5eae75431cf",
+      "text": "Tu accélère la vérité, et ferme la porte derrière toi.",
+      "category": "méchante"
+    },
+    {
+      "id": "6b7e658a-6a39-4ca3-8307-3611dfc6f959",
+      "text": "On révèle la vérité, sinon, accepte la facture.",
+      "category": "provocante"
+    },
+    {
+      "id": "9b401952-8fd6-463d-b4e7-8663e9abd441",
+      "text": "Tu n'attend les progrès, — choisis ton camp.",
+      "category": "violente"
+    },
+    {
+      "id": "e215f4ed-de22-4a30-9364-cf4919870b3b",
+      "text": "L'orgueil protège les bases, avant que d'autres n'en profitent.",
+      "category": "violente"
+    },
+    {
+      "id": "4b424b5f-3463-4f61-830c-fbc5c541d9aa",
+      "text": "Tes habitudes fabrique les priorités, et ferme la porte derrière toi.",
+      "category": "sombre"
+    },
+    {
+      "id": "6be01847-e22d-4166-b940-27ad4bd11d46",
+      "text": "Ton talent ralentit les résultats, avant que d'autres n'en profitent.",
+      "category": "gentille"
+    },
+    {
+      "id": "5ae1ac97-ef01-4cac-8b9e-8ea262118fe6",
+      "text": "Tes excuses ralentit les actes, — choisis ton camp.",
+      "category": "méchante"
+    },
+    {
+      "id": "2a970792-456a-4200-8882-384149316713",
+      "text": "Le temps réclame la suite, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "010fed82-507e-4549-a6e2-d0f2018b3ffe",
+      "text": "La discipline paye l'exigence, — choisis ton camp.",
+      "category": "violente"
+    },
+    {
+      "id": "d96e9c34-baa6-48f6-9149-ef4a48d36e55",
+      "text": "On ne négocie pas les priorités, avant que d'autres n'en profitent.",
+      "category": "sombre"
+    },
+    {
+      "id": "00889528-dcb0-4e7e-8191-e13c50e2ddd8",
+      "text": "Le temps réclame les actes, sans applaudissements.",
+      "category": "méchante"
+    },
+    {
+      "id": "01c04e46-825c-4956-a6e8-bf3d8862b184",
+      "text": "Ton talent affaiblit la constance, avant que d'autres n'en profitent.",
+      "category": "provocante"
+    },
+    {
+      "id": "5af0d7e2-ef96-498d-995f-f31ad1042bc5",
+      "text": "Ton focus fuit où va ton attention.",
+      "category": "crash"
+    },
+    {
+      "id": "ba035e57-c965-409d-8fb8-c90fb48bcf38",
+      "text": "La vie n'épargne pas ceux qui s'épargnent.",
+      "category": "sombre"
+    },
+    {
+      "id": "ebaad476-7eb8-46b9-bbec-b0c2f9699f2b",
+      "text": "On ignore les bases, sans permission.",
+      "category": "méchante"
+    },
+    {
+      "id": "ae6e3cdb-4d3f-46c3-bfa2-ed33c924d0ce",
+      "text": "Ton talent ralentit la suite, sans applaudissements.",
+      "category": "sombre"
+    },
+    {
+      "id": "75bade8c-4e82-48ad-85df-7acf35531a28",
+      "text": "Le temps révèle la vérité, sans permission.",
+      "category": "méchante"
+    },
+    {
+      "id": "1bc25424-1509-445c-a461-5eb5b62a0a81",
+      "text": "Le courage défait la suite, sinon, accepte la facture.",
+      "category": "méchante"
+    },
+    {
+      "id": "c8b64893-3046-4378-b2a2-d90db9c862dd",
+      "text": "Ton confort révèle les bases, avec élégance ou pas du tout.",
+      "category": "violente"
+    },
+    {
+      "id": "49f8952f-bb84-4c68-bd9e-e83ffe39a592",
+      "text": "L'orgueil ralentit les échéances, avec élégance ou pas du tout.",
+      "category": "provocante"
+    },
+    {
+      "id": "0ffb9e56-610c-4df8-81bf-eb31426a3cd4",
+      "text": "Ton confort affaiblit l'exigence, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "81f0f8c7-2c01-4e7b-84c9-daf90fa51031",
+      "text": "La peur protège l'exigence, et ferme la porte derrière toi.",
+      "category": "crash"
+    },
+    {
+      "id": "cf3547b8-f0e8-4a0c-85b6-c1be00551f87",
+      "text": "Ton confort révèle les échéances, ou passe ton tour.",
+      "category": "gentille"
+    },
+    {
+      "id": "5b42c096-af43-44e9-a736-85eb76daff4c",
+      "text": "Ton avenir affaiblit l'exigence, avant que d'autres n'en profitent.",
+      "category": "sombre"
+    },
+    {
+      "id": "7b4bd9be-819b-43f8-ba17-5cd3b7fec719",
+      "text": "Le temps fabrique les priorités, sinon, accepte la facture.",
+      "category": "violente"
+    },
+    {
+      "id": "c4dd2f4b-59ea-406d-968e-b28436102ec7",
+      "text": "Tes habitudes ralentit la suite, avant que d'autres n'en profitent.",
+      "category": "gentille"
+    },
+    {
+      "id": "19676cf5-f442-4ffb-9c7f-455e74606407",
+      "text": "Tu accélère les échéances, sinon, accepte la facture.",
+      "category": "gentille"
+    },
+    {
+      "id": "716b8ce7-8aca-426b-bdd7-98be12dea101",
+      "text": "La discipline protège les résultats, et signe-le de ta sueur.",
+      "category": "sombre"
+    },
+    {
+      "id": "d936a41f-b96a-4d6c-af41-5eb78370613d",
+      "text": "La discipline protège les priorités, sinon, accepte la facture.",
+      "category": "provocante"
+    },
+    {
+      "id": "a225c9f4-2000-47eb-9e09-1a4862b51ea7",
+      "text": "Choisis la difficulté utile, pas le drame inutile.",
+      "category": "crash"
+    },
+    {
+      "id": "39321a1d-a718-436c-a072-d61f5a31b2b9",
+      "text": "On ignore les priorités, avant que d'autres n'en profitent.",
+      "category": "belle"
+    },
+    {
+      "id": "767c11d7-0bce-4e31-b2e3-c84b69af7974",
+      "text": "Tu veux la médaille, tu refuses la sueur.",
+      "category": "méchante"
+    },
+    {
+      "id": "393b42a3-884f-4483-82c5-dd89f44ef3e4",
+      "text": "Le temps protège les échéances, sans applaudissements.",
+      "category": "belle"
+    },
+    {
+      "id": "85043170-b42c-4bf3-98c7-df3ca45ccb70",
+      "text": "L'orgueil réclame les bases, et ferme la porte derrière toi.",
+      "category": "sombre"
+    },
+    {
+      "id": "e97d9895-4f80-4a60-a3f2-73846282f9b3",
+      "text": "Tu fabrique la suite, et ferme la porte derrière toi.",
+      "category": "violente"
+    },
+    {
+      "id": "77b45786-202a-4430-81db-65d0c8cd9de0",
+      "text": "L'orgueil défait la clarté, sans permission.",
+      "category": "provocante"
+    },
+    {
+      "id": "8aece999-c65b-44f0-877c-f0367087f3ec",
+      "text": "Tu ralentit les priorités, avec élégance ou pas du tout.",
+      "category": "provocante"
+    },
+    {
+      "id": "8b034928-232f-4af0-b83e-6a8550972232",
+      "text": "Le temps amplifie la clarté, et ferme la porte derrière toi.",
+      "category": "belle"
+    },
+    {
+      "id": "a55c9ee6-c208-4fce-8583-0ec3fb3680cf",
+      "text": "La peur accélère la suite, et signe-le de ta sueur.",
+      "category": "belle"
+    },
+    {
+      "id": "379abeb7-21d3-4096-9d0c-34c74023e3ef",
+      "text": "Ton avenir réclame la constance, et signe-le de ta sueur.",
+      "category": "belle"
+    },
+    {
+      "id": "a8ef8483-d266-4a7b-906d-604c8d750c03",
+      "text": "On défait la clarté, sans permission.",
+      "category": "gentille"
+    },
+    {
+      "id": "f6bc02b3-d517-43c3-884b-6d46ab9b811c",
+      "text": "Le courage amplifie les actes, et cesse de t'excuser.",
+      "category": "méchante"
+    },
+    {
+      "id": "66c43d6e-9d9e-4528-9568-292039982ace",
+      "text": "Ton talent fabrique la clarté, et ferme la porte derrière toi.",
+      "category": "violente"
+    },
+    {
+      "id": "5fb809ab-704d-4537-9c5f-1ca51ee5bfe1",
+      "text": "Le temps protège la vérité, sinon, accepte la facture.",
+      "category": "violente"
+    },
+    {
+      "id": "6b61f15e-17a7-4b6c-a424-f1a7415403b6",
+      "text": "On protège les priorités, sans applaudissements.",
+      "category": "provocante"
+    },
+    {
+      "id": "8fc8797e-0794-47f7-b710-6f7ff451a1a6",
+      "text": "Tes habitudes affaiblit la constance, sans permission.",
+      "category": "gentille"
+    },
+    {
+      "id": "a02f5534-46ee-46b1-8f0a-7cfd3b6d7b94",
+      "text": "Tes promesses doivent apprendre à transpirer.",
+      "category": "provocante"
+    },
+    {
+      "id": "f3e29e0c-2701-4c81-930a-859f62f1686b",
+      "text": "Personne affaiblit l'exigence, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "17ea29f2-6837-4879-9d69-8dd3c31849f7",
+      "text": "Ton talent accélère les bases, — choisis ton camp.",
+      "category": "méchante"
+    },
+    {
+      "id": "f0c5f881-ea60-411a-8774-3c2e41b68584",
+      "text": "Ton confort ne négocie pas la constance, sans permission.",
+      "category": "sombre"
+    },
+    {
+      "id": "feae4b86-e660-423f-98d9-fc108ff72e73",
+      "text": "On ne négocie pas la suite, avant que d'autres n'en profitent.",
+      "category": "belle"
+    },
+    {
+      "id": "e9be9327-949a-4716-9270-27f1bc00ed18",
+      "text": "Tu ignore la constance, ou passe ton tour.",
+      "category": "crash"
+    },
+    {
+      "id": "39ddf7dc-103e-4244-b375-c60a34a48324",
+      "text": "Tu choisit la constance, avec élégance ou pas du tout.",
+      "category": "sombre"
+    },
+    {
+      "id": "bc09ab10-8e20-4424-a43d-4d13de7ea8b6",
+      "text": "Tu collectionnes les intentions comme des trophées en carton.",
+      "category": "méchante"
+    },
+    {
+      "id": "68c6047d-1484-41af-ac17-58d31bd022bc",
+      "text": "Le temps ne négocie pas l'exigence, sans applaudissements.",
+      "category": "crash"
+    },
+    {
+      "id": "f3033878-e269-4ff9-a280-889f8a0ea862",
+      "text": "Personne amplifie les résultats, avant que d'autres n'en profitent.",
+      "category": "violente"
+    },
+    {
+      "id": "91603f5d-d528-4652-bd1c-9b40c8ae736d",
+      "text": "La discipline fabrique les progrès, avant que d'autres n'en profitent.",
+      "category": "provocante"
+    },
+    {
+      "id": "6ea90f73-5157-4e1b-9a33-7e1bd824871e",
+      "text": "Ton confort révèle les progrès, sinon, accepte la facture.",
+      "category": "belle"
+    },
+    {
+      "id": "a1950001-1cbf-4b1b-8bf6-e272e1ad8a65",
+      "text": "Le courage protège les actes, sans permission.",
+      "category": "gentille"
+    },
+    {
+      "id": "2a1370c4-87f8-4e56-a1c5-2b7b5a03380b",
+      "text": "Tes excuses affaiblit les progrès, sans applaudissements.",
+      "category": "méchante"
+    },
+    {
+      "id": "5c5e49ca-5c0f-42c4-af6c-791921f295cc",
+      "text": "La peur amplifie les résultats, — choisis ton camp.",
+      "category": "provocante"
+    },
+    {
+      "id": "7701b93b-b9ca-454d-99f5-3dd92aef5a44",
+      "text": "Ton talent révèle l'exigence, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "5aecf4a1-57c0-465b-9fbc-1714807b68f0",
+      "text": "Tes habitudes réclame la constance, et signe-le de ta sueur.",
+      "category": "méchante"
+    },
+    {
+      "id": "3875c8b9-79da-42a3-8763-4927c29ef9a2",
+      "text": "Ton confort révèle l'exigence, et ferme la porte derrière toi.",
+      "category": "méchante"
+    },
+    {
+      "id": "a2f5a0ea-f827-4a2e-99b1-9cfc8745ff6e",
+      "text": "Ton talent n'attend la direction, ou passe ton tour.",
+      "category": "crash"
+    },
+    {
+      "id": "409b8510-583b-46d4-8f45-51d9f22999a1",
+      "text": "Le courage amplifie l'exigence, sans permission.",
+      "category": "provocante"
+    },
+    {
+      "id": "58812ee3-ce6f-497f-bd19-f09b0fcfe47d",
+      "text": "Tu paye les bases, sans applaudissements.",
+      "category": "crash"
+    },
+    {
+      "id": "ff8fa726-ec77-46e1-b322-40865bfac79b",
+      "text": "La discipline affaiblit les priorités, ou passe ton tour.",
+      "category": "méchante"
+    },
+    {
+      "id": "f2f3490d-962a-4494-9377-1b19f5670620",
+      "text": "Ton confort protège l'exigence, ou passe ton tour.",
+      "category": "méchante"
+    },
+    {
+      "id": "613737c2-61a5-41f2-a9f0-2f62ade9daa7",
+      "text": "On réclame la suite, — choisis ton camp.",
+      "category": "sombre"
+    },
+    {
+      "id": "c4af96c8-c6e7-483b-bcb8-57a1cc74b8d8",
+      "text": "Le temps ignore l'exigence, sans permission.",
+      "category": "crash"
+    },
+    {
+      "id": "63265652-255f-42d5-8dba-f96874fc9eeb",
+      "text": "Tu ralentit les échéances, — choisis ton camp.",
+      "category": "belle"
+    },
+    {
+      "id": "fae4b1a9-6a0b-43fc-a872-a2bedda2c892",
+      "text": "L'orgueil amplifie les bases, sinon, accepte la facture.",
+      "category": "belle"
+    },
+    {
+      "id": "5c575744-8780-42d0-8e18-9c56b6e81e27",
+      "text": "Tu veux la clé ? Fabrique la serrure.",
+      "category": "provocante"
+    },
+    {
+      "id": "44fe1cbf-839c-4823-a059-64558d76e223",
+      "text": "Ta lumière n'a pas besoin d'excuses.",
+      "category": "belle"
+    },
+    {
+      "id": "c0072bd1-27fd-4118-9983-0143e2c9a4f3",
+      "text": "Tes excuses protège la clarté, avec élégance ou pas du tout.",
+      "category": "provocante"
+    },
+    {
+      "id": "0f7f8449-0c32-42c4-8fdc-8a345e325bd6",
+      "text": "L'orgueil paye l'exigence, et cesse de t'excuser.",
+      "category": "provocante"
+    },
+    {
+      "id": "771e5a41-7f0b-4439-a121-064f9dd0e19b",
+      "text": "Tes habitudes paye la constance, avec élégance ou pas du tout.",
+      "category": "violente"
+    },
+    {
+      "id": "bc556fd9-ab84-4db8-b27b-ab65cd2a44e0",
+      "text": "Ton ego fait du bruit, tes résultats chuchotent.",
+      "category": "méchante"
+    },
+    {
+      "id": "89767567-c8ab-49cd-8022-f6a40615f31c",
+      "text": "On ralentit la constance, et signe-le de ta sueur.",
+      "category": "méchante"
+    },
+    {
+      "id": "333ac55d-b112-47ec-9985-98b9f6e004a5",
+      "text": "Ton confort défait la vérité, — choisis ton camp.",
+      "category": "belle"
+    },
+    {
+      "id": "4a04e743-a7f9-4cd7-820e-2f45d520a17b",
+      "text": "Ton talent défait la vérité, — choisis ton camp.",
+      "category": "sombre"
+    },
+    {
+      "id": "cbe028d1-9a74-4e1e-863b-c2c06c80f1eb",
+      "text": "La peur révèle les échéances, sans permission.",
+      "category": "méchante"
+    },
+    {
+      "id": "64b1082d-571f-410f-acf6-d8497b8bc912",
+      "text": "Tu défait la suite, sans permission.",
+      "category": "belle"
+    },
+    {
+      "id": "9d6102b1-5f96-4a4a-9ef7-c2840c7e28f4",
+      "text": "Tes habitudes fabrique les actes, — choisis ton camp.",
+      "category": "belle"
+    },
+    {
+      "id": "e6465a8e-75a7-42ba-9d79-9daf4f719316",
+      "text": "Tes excuses accélère les priorités, avant que d'autres n'en profitent.",
+      "category": "crash"
+    },
+    {
+      "id": "4f9b544c-1731-4784-9f3b-6e56275b4fa6",
+      "text": "La discipline choisit les bases, — choisis ton camp.",
+      "category": "sombre"
+    },
+    {
+      "id": "244f8e79-005c-4fc1-84bb-0b636bc74430",
+      "text": "Tes excuses paye les échéances, et ferme la porte derrière toi.",
+      "category": "provocante"
+    },
+    {
+      "id": "0a0cfc77-dcc2-47a0-8519-e602443bd5d8",
+      "text": "Ton courage a mis le mode avion.",
+      "category": "méchante"
+    },
+    {
+      "id": "d608c4b7-0794-4b89-99d0-7329101e07ef",
+      "text": "Le courage paye les priorités, et signe-le de ta sueur.",
+      "category": "provocante"
+    },
+    {
+      "id": "82115646-4b10-4a69-b270-17f108919af6",
+      "text": "La peur amplifie l'exigence, et cesse de t'excuser.",
+      "category": "gentille"
+    },
+    {
+      "id": "729bbdd7-85f8-4b78-8389-c07190853b63",
+      "text": "Ton talent n'attend la direction, ou passe ton tour.",
+      "category": "belle"
+    },
+    {
+      "id": "ab0f6f25-6550-4f87-964b-a9e27dea280b",
+      "text": "Tu choisit la clarté, sans permission.",
+      "category": "crash"
+    },
+    {
+      "id": "eb298b18-8c8d-4211-90e3-a676d490d194",
+      "text": "La discipline défait les résultats, sans applaudissements.",
+      "category": "belle"
+    },
+    {
+      "id": "056e5858-c30c-4a98-823b-583ab713dc6e",
+      "text": "Ton talent ralentit les bases, — choisis ton camp.",
+      "category": "crash"
+    },
+    {
+      "id": "5db746cb-c226-4ebe-870f-4adbe1a52553",
+      "text": "Ton talent défait la vérité, et cesse de t'excuser.",
+      "category": "crash"
+    },
+    {
+      "id": "19c5f6d3-3a65-4983-90a4-60c127792977",
+      "text": "Le courage réclame les échéances, ou passe ton tour.",
+      "category": "crash"
+    },
+    {
+      "id": "daab8b2f-e09d-4a0a-a563-89ec044a6590",
+      "text": "Ton talent accélère les bases, avec élégance ou pas du tout.",
+      "category": "méchante"
+    },
+    {
+      "id": "e5e61e12-1a4d-49fe-846e-c64479ab70b8",
+      "text": "Ton avenir ralentit l'exigence, sans applaudissements.",
+      "category": "crash"
+    },
+    {
+      "id": "3d8cf3cb-e3a0-42e0-a5d4-473f44f54829",
+      "text": "Tes habitudes révèle la constance, et ferme la porte derrière toi.",
+      "category": "provocante"
+    },
+    {
+      "id": "69b8dfa8-a15f-46e0-bdea-4ae2f23c880b",
+      "text": "Ton avenir paye les priorités, et ferme la porte derrière toi.",
+      "category": "méchante"
+    },
+    {
+      "id": "060af08b-1b92-45a7-868a-366014d8af43",
+      "text": "La discipline choisit les priorités, et ferme la porte derrière toi.",
+      "category": "méchante"
+    },
+    {
+      "id": "6d2e83f6-7ffa-435c-ada3-3f5d89cb9353",
+      "text": "Tes habitudes ignore la constance, avant que d'autres n'en profitent.",
+      "category": "provocante"
+    },
+    {
+      "id": "40f83d67-a3ac-40d8-bf33-9aefaefd30b9",
+      "text": "La peur ignore la suite, avant que d'autres n'en profitent.",
+      "category": "provocante"
+    },
+    {
+      "id": "cba06599-0616-4e30-b2d4-e9a79adffb40",
+      "text": "On amplifie la clarté, avant que d'autres n'en profitent.",
+      "category": "crash"
+    },
+    {
+      "id": "ab1d30e5-4417-4864-8050-e6d5136f5405",
+      "text": "Personne fabrique les progrès, sinon, accepte la facture.",
+      "category": "gentille"
+    },
+    {
+      "id": "67f43df8-832a-45f2-8432-1ed1c52a8d01",
+      "text": "Tu t'endors sur des victoires imaginaires.",
+      "category": "méchante"
+    },
+    {
+      "id": "cec8793f-9eb9-401f-bd91-6e91e320be40",
+      "text": "Ton confort paye les priorités, avec élégance ou pas du tout.",
+      "category": "crash"
+    },
+    {
+      "id": "24d779eb-c533-4309-86d8-efe025677082",
+      "text": "La discipline paye les actes, et signe-le de ta sueur.",
+      "category": "gentille"
+    },
+    {
+      "id": "0e9cd81f-2149-48e5-b28d-8b40427b819d",
+      "text": "La discipline révèle la direction, avant que d'autres n'en profitent.",
+      "category": "méchante"
+    },
+    {
+      "id": "3132b0cb-34d5-482e-97d9-3bc8dfbc6c45",
+      "text": "Le courage protège la clarté, avec élégance ou pas du tout.",
+      "category": "gentille"
+    },
+    {
+      "id": "7e9cbe8d-5a8d-4f7a-bdd3-1b33abdaa276",
+      "text": "Tes habitudes ignore les échéances, sans applaudissements.",
+      "category": "gentille"
+    },
+    {
+      "id": "d7d3a874-41a3-46c6-a68f-c8575b6d5aeb",
+      "text": "Tes habitudes ralentit les actes, sinon, accepte la facture.",
+      "category": "gentille"
+    },
+    {
+      "id": "35cd774b-2ad4-44d3-81a8-192f964abafa",
+      "text": "On amplifie les priorités, avant que d'autres n'en profitent.",
+      "category": "gentille"
+    },
+    {
+      "id": "17f7e6a7-92a3-42a6-af99-a73c82f2e7c0",
+      "text": "Tu nourris tes doutes, ils te dévorent en retour.",
+      "category": "violente"
+    },
+    {
+      "id": "8ab0288a-f4c0-4e05-ab4c-f9efb56bdcb6",
+      "text": "Tu amplifie la direction, ou passe ton tour.",
+      "category": "gentille"
+    },
+    {
+      "id": "196b8bca-132e-466d-969a-de9da9336814",
+      "text": "Ton talent n'attend les échéances, sinon, accepte la facture.",
+      "category": "gentille"
+    },
+    {
+      "id": "7b496293-dedf-48e3-90a2-a1eb92c22d03",
+      "text": "Personne n'attend la constance, et ferme la porte derrière toi.",
+      "category": "crash"
+    },
+    {
+      "id": "980910b2-060a-4fd5-a9fc-d0f606317559",
+      "text": "Le temps affaiblit les actes, ou passe ton tour.",
+      "category": "belle"
+    },
+    {
+      "id": "82c05ce5-922f-473b-9dcd-55dd5cada721",
+      "text": "Ton confort ralentit la vérité, avant que d'autres n'en profitent.",
+      "category": "belle"
+    },
+    {
+      "id": "43272888-6c3e-4636-b855-bdecfc3f1919",
+      "text": "Ton confort choisit la constance, et ferme la porte derrière toi.",
+      "category": "gentille"
+    },
+    {
+      "id": "73475390-9054-4e82-8199-eedceb1f42a5",
+      "text": "Ton talent ralentit l'exigence, et signe-le de ta sueur.",
+      "category": "crash"
+    },
+    {
+      "id": "9e7d175f-b8d7-4cd3-985f-31a2730ec84f",
+      "text": "L'orgueil fabrique les actes, et signe-le de ta sueur.",
+      "category": "sombre"
+    },
+    {
+      "id": "9b5b7bba-670b-42f5-a7e9-70c7daebaf42",
+      "text": "Personne ne négocie pas la direction, avec élégance ou pas du tout.",
+      "category": "violente"
+    },
+    {
+      "id": "facca16b-2ed0-4a94-a28e-9d4cb1825715",
+      "text": "La peur choisit l'exigence, sans applaudissements.",
+      "category": "crash"
+    },
+    {
+      "id": "3e2449c0-e7e8-4015-a1c9-27b35064b1f4",
+      "text": "La peur fabrique les priorités, et ferme la porte derrière toi.",
+      "category": "méchante"
+    },
+    {
+      "id": "60e84e90-28d3-4ec6-a65a-92f65e91feb7",
+      "text": "Le courage défait la direction, sans permission.",
+      "category": "violente"
+    },
+    {
+      "id": "d2380239-bbb3-499b-9d95-c63a8809cbe2",
+      "text": "Le courage révèle la clarté, — choisis ton camp.",
+      "category": "gentille"
+    },
+    {
+      "id": "e7837813-c095-42ab-bf3f-6963b7a692ec",
+      "text": "Le courage fabrique la vérité, et signe-le de ta sueur.",
+      "category": "belle"
+    },
+    {
+      "id": "6786daa9-b590-45d4-82ed-3b559b5c3536",
+      "text": "Ton avenir paye les résultats, avant que d'autres n'en profitent.",
+      "category": "gentille"
+    },
+    {
+      "id": "65bef6d2-9cb0-457e-92e9-312c3234cd47",
+      "text": "Tu ralentit les échéances, sans applaudissements.",
+      "category": "belle"
+    },
+    {
+      "id": "dc095e3b-c02a-4381-928c-a333f486f9e8",
+      "text": "Personne ne négocie pas la direction, ou passe ton tour.",
+      "category": "belle"
+    },
+    {
+      "id": "77f43a52-468b-4195-9543-ce80d30b10a2",
+      "text": "Le temps amplifie les progrès, ou passe ton tour.",
+      "category": "sombre"
+    },
+    {
+      "id": "d6c86503-c3d8-4ea8-9622-e9c0961f72aa",
+      "text": "Fais le travail ou accepte le résultat.",
+      "category": "crash"
+    },
+    {
+      "id": "e8111e0a-0881-45f8-9c6d-288a30452cbb",
+      "text": "Personne amplifie les résultats, et ferme la porte derrière toi.",
+      "category": "méchante"
+    },
+    {
+      "id": "5f2da359-ff2a-4209-b78a-caf4400b752e",
+      "text": "La peur accélère les échéances, ou passe ton tour.",
+      "category": "provocante"
+    },
+    {
+      "id": "b5f371ad-37a8-4873-8b5f-8b439bdbd0c7",
+      "text": "Le temps ignore les échéances, sans permission.",
+      "category": "méchante"
+    },
+    {
+      "id": "f0e0dd1f-876b-40b8-8780-4395b8a7a9ee",
+      "text": "La peur fabrique les bases, et ferme la porte derrière toi.",
+      "category": "violente"
+    },
+    {
+      "id": "b67f1c9e-fdb8-4f95-97a2-d603f611222a",
+      "text": "La discipline ignore la direction, avec élégance ou pas du tout.",
+      "category": "gentille"
+    },
+    {
+      "id": "6f624765-cee7-4acf-b1ba-090a6988de82",
+      "text": "Chaque excuse enterre tes chances d'un coup de pelle.",
+      "category": "violente"
+    },
+    {
+      "id": "0dace1cc-f934-43cd-b7ca-0c72d90a23fd",
+      "text": "La discipline n'attend la direction, — choisis ton camp.",
+      "category": "violente"
+    },
+    {
+      "id": "1939e593-1045-47e0-8260-cbf97e53e4f5",
+      "text": "La discipline est moins chère que le regret.",
+      "category": "crash"
+    },
+    {
+      "id": "e851369d-0497-4734-b8a2-1f02f9babd03",
+      "text": "Ton avenir n'attend les progrès, et cesse de t'excuser.",
+      "category": "belle"
+    },
+    {
+      "id": "3ae06f27-c2a3-486d-9fa3-0c6781b589e9",
+      "text": "La discipline ralentit la constance, avant que d'autres n'en profitent.",
+      "category": "crash"
+    },
+    {
+      "id": "8fe91169-a209-4bf5-89fd-4be5c254f8a6",
+      "text": "Ton talent affaiblit la suite, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "4eb067cb-069e-45e0-9717-01e7e102ab6e",
+      "text": "La peur choisit les priorités, avec élégance ou pas du tout.",
+      "category": "sombre"
+    },
+    {
+      "id": "e0adf8c2-6bb2-4d3a-b087-6e03799ef97f",
+      "text": "Ton confort amplifie la vérité, ou passe ton tour.",
+      "category": "gentille"
+    },
+    {
+      "id": "e150c17e-e820-4703-bbe2-2bf395faba9d",
+      "text": "La discipline accélère la vérité, sans permission.",
+      "category": "sombre"
+    },
+    {
+      "id": "98d55290-9806-48b6-b7ac-695ea751f6b2",
+      "text": "Même la nuit applaudit ceux qui persistent.",
+      "category": "belle"
+    },
+    {
+      "id": "3589dc5d-50d9-4f99-be75-a9c70c07f72d",
+      "text": "Ton confort ignore les résultats, ou passe ton tour.",
+      "category": "violente"
+    },
+    {
+      "id": "994b0e08-8b91-4f71-81fd-06350fdd8ef1",
+      "text": "L'orgueil n'attend les résultats, sans applaudissements.",
+      "category": "sombre"
+    },
+    {
+      "id": "242257de-6eb2-4050-a6a8-63c2fc702274",
+      "text": "Ton talent amplifie les bases, ou passe ton tour.",
+      "category": "violente"
+    },
+    {
+      "id": "510bdacf-7e88-42f6-bbef-6b2a345645df",
+      "text": "Tes habitudes affaiblit les échéances, et signe-le de ta sueur.",
+      "category": "provocante"
+    },
+    {
+      "id": "9f2b3748-3075-461d-ab4a-405300f87206",
+      "text": "Tes excuses amplifie les bases, sinon, accepte la facture.",
+      "category": "crash"
+    },
+    {
+      "id": "a145af5d-c9c9-4f0d-9f90-9045b225268b",
+      "text": "Tes habitudes réclame la vérité, avant que d'autres n'en profitent.",
+      "category": "crash"
+    },
+    {
+      "id": "a11e9c3f-f4f4-41f4-9046-eac338db434a",
+      "text": "Tu révèle la constance, — choisis ton camp.",
+      "category": "provocante"
+    },
+    {
+      "id": "1a4e8aef-590a-4264-94e8-5530f97f8f0b",
+      "text": "Ton talent révèle la vérité, avant que d'autres n'en profitent.",
+      "category": "méchante"
+    },
+    {
+      "id": "9e353ed3-32ed-454d-978d-715083f67b85",
+      "text": "Ton confort fabrique l'exigence, et ferme la porte derrière toi.",
+      "category": "provocante"
+    },
+    {
+      "id": "3c5035ab-8207-4ce6-ac39-447d57fcf083",
+      "text": "Tu ignore les priorités, ou passe ton tour.",
+      "category": "méchante"
+    },
+    {
+      "id": "8e9ac706-30de-4d04-9d8f-bbf15dd3efd7",
+      "text": "On accélère les priorités, et cesse de t'excuser.",
+      "category": "belle"
+    },
+    {
+      "id": "fa17cf8d-6ee8-4377-b1b3-45976ac28b4a",
+      "text": "Ton 'bientôt' est un cimetière de projets.",
+      "category": "méchante"
+    },
+    {
+      "id": "dbbdb123-2127-4c6f-9a14-956cf2c406b2",
+      "text": "Ton confort ignore les échéances, et cesse de t'excuser.",
+      "category": "provocante"
+    },
+    {
+      "id": "45f654ec-5728-4134-8c24-c5ca7009a72a",
+      "text": "Tu mérites tes deuxièmes chances.",
+      "category": "gentille"
+    },
+    {
+      "id": "4f53f726-5af5-48c8-b174-0fa830598705",
+      "text": "Ton confort ralentit la direction, sans permission.",
+      "category": "provocante"
+    },
+    {
+      "id": "a9939ba1-bea1-4082-804f-d1c7542b04f1",
+      "text": "Arrête de négocier avec l'oreiller.",
+      "category": "provocante"
+    },
+    {
+      "id": "861b4eff-6f37-4803-aec5-f00ace0f5705",
+      "text": "Ton talent défait les priorités, avec élégance ou pas du tout.",
+      "category": "violente"
+    },
+    {
+      "id": "8347d1da-815e-44f9-bc33-a5b7ddc7570b",
+      "text": "Ton talent affaiblit les actes, ou passe ton tour.",
+      "category": "provocante"
+    },
+    {
+      "id": "98eb05c7-b231-4f60-b68f-12df309e910d",
+      "text": "Tu appelles prudence ce qui ressemble à la peur.",
+      "category": "méchante"
+    },
+    {
+      "id": "c1c9cce1-d466-4228-bccc-da41cbc8c93f",
+      "text": "Tu fabrique les résultats, sans applaudissements.",
+      "category": "belle"
+    },
+    {
+      "id": "c433bd40-8caa-4dc2-8b15-4fd4ec85c58f",
+      "text": "Tu protège les bases, avec élégance ou pas du tout.",
+      "category": "violente"
+    },
+    {
+      "id": "23db47c9-2cee-4549-a4e2-70011eabc5bb",
+      "text": "Ton avenir choisit l'exigence, ou passe ton tour.",
+      "category": "crash"
+    },
+    {
+      "id": "213779a6-6780-4b42-876e-88e446bc4ffa",
+      "text": "Le temps défait la suite, et cesse de t'excuser.",
+      "category": "méchante"
+    },
+    {
+      "id": "16f762c9-eb44-41cb-9094-e62bf289503b",
+      "text": "Tes habitudes réclame l'exigence, et signe-le de ta sueur.",
+      "category": "méchante"
+    },
+    {
+      "id": "b15dd74a-b7f9-42f9-9773-fa5cc0fa71ab",
+      "text": "Tes excuses ignore les actes, et cesse de t'excuser.",
+      "category": "gentille"
+    },
+    {
+      "id": "96dee60e-f7b9-45f4-9cb0-8289bbce578c",
+      "text": "La discipline ignore les résultats, sans applaudissements.",
+      "category": "crash"
+    },
+    {
+      "id": "7b626f83-c2ef-4b0b-9680-86f11e37c2a1",
+      "text": "Tes excuses protège les résultats, sans applaudissements.",
+      "category": "méchante"
+    },
+    {
+      "id": "964c3d5d-a5c7-4d1e-891c-1e2ff41248f8",
+      "text": "La discipline réclame la suite, ou passe ton tour.",
+      "category": "provocante"
+    },
+    {
+      "id": "0a2de049-5c5c-41ab-bdcc-0461e3cf985d",
+      "text": "Les regrets tiennent éveillés plus que le café.",
+      "category": "sombre"
+    },
+    {
+      "id": "15da3682-2619-445d-981a-315d420c94b8",
+      "text": "La discipline choisit les bases, sans permission.",
+      "category": "gentille"
+    },
+    {
+      "id": "98653180-9e52-4acb-9857-792f25012505",
+      "text": "Ton confort protège les actes, et signe-le de ta sueur.",
+      "category": "sombre"
+    },
+    {
+      "id": "1563fbf5-31f6-467f-9d55-d2516b247b57",
+      "text": "Personne accélère les bases, avec élégance ou pas du tout.",
+      "category": "sombre"
+    },
+    {
+      "id": "ee3ad341-14e7-4fa5-9828-c155fbe8b698",
+      "text": "Le courage affaiblit la constance, et ferme la porte derrière toi.",
+      "category": "provocante"
+    },
+    {
+      "id": "168cff62-6ba9-4524-8271-565d49f82030",
+      "text": "La peur ralentit la clarté, et ferme la porte derrière toi.",
+      "category": "sombre"
+    },
+    {
+      "id": "73b447bc-3385-4fcc-979a-926d3d1e5340",
+      "text": "L'oubli n'a pas de rancune, seulement de la place.",
+      "category": "sombre"
+    },
+    {
+      "id": "67d5f3a5-93c3-421b-b8bc-2411b49e92ea",
+      "text": "Le temps accélère la direction, ou passe ton tour.",
+      "category": "belle"
+    },
+    {
+      "id": "667e648e-8b62-40cd-a311-10002674f01f",
+      "text": "La peur choisit l'exigence, sinon, accepte la facture.",
+      "category": "belle"
+    },
+    {
+      "id": "51ac5a40-8b6a-44ec-9399-243498904868",
+      "text": "Ton talent amplifie les actes, ou passe ton tour.",
+      "category": "gentille"
+    },
+    {
+      "id": "e7d8a516-8ebd-4c34-85cb-149590cee11a",
+      "text": "Ton avenir n'attend la direction, ou passe ton tour.",
+      "category": "violente"
+    },
+    {
+      "id": "46e58165-b7a5-45cf-8796-491daef9a3ea",
+      "text": "Ton confort ne négocie pas les actes, sans applaudissements.",
+      "category": "gentille"
+    },
+    {
+      "id": "38f7e815-619e-4d24-9087-879e94906508",
+      "text": "Le courage ralentit les bases, sans applaudissements.",
+      "category": "violente"
+    },
+    {
+      "id": "fbc9f1d4-16fc-4664-88e6-25910b640e3d",
+      "text": "Le temps ignore la vérité, avant que d'autres n'en profitent.",
+      "category": "gentille"
+    },
+    {
+      "id": "fdd1cc9b-dfd3-4b87-b384-50694c955469",
+      "text": "Ton talent révèle les échéances, — choisis ton camp.",
+      "category": "belle"
+    },
+    {
+      "id": "ddb4d61f-2ec7-46f2-a28d-5d0c7a9df725",
+      "text": "Ton avenir choisit la clarté, — choisis ton camp.",
+      "category": "gentille"
+    },
+    {
+      "id": "3e7079c5-a308-40a8-8439-f1bddadb09b9",
+      "text": "Respire : chaque jour te laisse une porte ouverte.",
+      "category": "gentille"
+    },
+    {
+      "id": "5455f40b-4523-49bd-8c35-c8b3d9bc2329",
+      "text": "Ton problème n'est pas le temps, c'est l'emploi du temps.",
+      "category": "provocante"
+    },
+    {
+      "id": "e293e8d3-e0bc-4688-984a-8a994ea22e02",
+      "text": "Tes habitudes ignore la suite, et signe-le de ta sueur.",
+      "category": "méchante"
+    },
+    {
+      "id": "c4ffabe1-dcb7-4e01-851a-38bb4507f2c3",
+      "text": "Tu ne négocie pas la vérité, et signe-le de ta sueur.",
+      "category": "provocante"
+    },
+    {
+      "id": "c6971b72-aec9-4a66-985e-62f45352b60a",
+      "text": "Le temps n'attend la suite, sans applaudissements.",
+      "category": "gentille"
+    },
+    {
+      "id": "d3a40ed5-e2b2-4fc2-a4a7-1ed98c6363f1",
+      "text": "Tu es en réunion avec l'excuse permanente ? Raccroche.",
+      "category": "provocante"
+    },
+    {
+      "id": "5132fe2a-2081-4f6a-bdf5-f0eebb39fbd4",
+      "text": "Personne n'attend les échéances, ou passe ton tour.",
+      "category": "belle"
+    },
+    {
+      "id": "52f0a0b8-e95a-4381-b18d-b2f42568fa8f",
+      "text": "Tes habitudes défait la vérité, avant que d'autres n'en profitent.",
+      "category": "crash"
+    },
+    {
+      "id": "2ddd8da1-1616-411e-ad1d-d9a3542d26ea",
+      "text": "Ton confort ne négocie pas la direction, sinon, accepte la facture.",
+      "category": "méchante"
+    },
+    {
+      "id": "4430b9cc-e35e-4097-a7a7-3193edfba589",
+      "text": "Tes excuses accélère la suite, — choisis ton camp.",
+      "category": "provocante"
+    },
+    {
+      "id": "f7757d9f-aa05-46b9-aa50-2f26f2a0a0cd",
+      "text": "L'orgueil révèle l'exigence, sans applaudissements.",
+      "category": "méchante"
+    },
+    {
+      "id": "abde124a-8669-4b42-960a-88804d8f34e6",
+      "text": "Tes excuses réclame la direction, — choisis ton camp.",
+      "category": "sombre"
+    },
+    {
+      "id": "9114ba74-e472-4052-ad11-2744a0e1cb3a",
+      "text": "Ton talent n'attend les résultats, et ferme la porte derrière toi.",
+      "category": "crash"
+    },
+    {
+      "id": "b91132ba-b2ae-4c59-aac3-e2ce043bb318",
+      "text": "Tes excuses protège les échéances, ou passe ton tour.",
+      "category": "belle"
+    },
+    {
+      "id": "8fea81aa-f2e7-4d18-85fe-ab6890b456c9",
+      "text": "Ta paresse t'enchaîne avec un sourire poli.",
+      "category": "violente"
+    },
+    {
+      "id": "a4e108ba-d7c2-4bf1-b242-1c08bbf596f6",
+      "text": "Le temps ralentit les priorités, avant que d'autres n'en profitent.",
+      "category": "provocante"
+    },
+    {
+      "id": "d24d7830-1c8b-4512-8343-ce2bb11ede1b",
+      "text": "Personne affaiblit la vérité, et cesse de t'excuser.",
+      "category": "belle"
+    },
+    {
+      "id": "8dca462d-d72c-43fe-86e1-2e1c7a21ae2d",
+      "text": "Le monde n'attend pas, il te dépasse.",
+      "category": "violente"
+    },
+    {
+      "id": "9492be1b-3a54-475c-a682-4f0ff073026f",
+      "text": "L'orgueil fabrique la constance, sans applaudissements.",
+      "category": "méchante"
+    },
+    {
+      "id": "55a95d9e-a747-4cb6-9213-7a30fc2bf20d",
+      "text": "L'orgueil protège l'exigence, avec élégance ou pas du tout.",
+      "category": "sombre"
+    },
+    {
+      "id": "f07c8c5e-306c-4c2a-8f01-ead7408887e3",
+      "text": "Tu réclame la vérité, sans applaudissements.",
+      "category": "sombre"
+    },
+    {
+      "id": "98ca083f-cef0-410b-a369-e4f7846e93e2",
+      "text": "Tes habitudes fabrique la constance, et cesse de t'excuser.",
+      "category": "sombre"
+    },
+    {
+      "id": "f6732c26-2bd2-4ae2-beaa-c6f24711fb67",
+      "text": "Ton confort défait les progrès, avec élégance ou pas du tout.",
+      "category": "provocante"
+    },
+    {
+      "id": "e4a73b43-ed44-4495-8554-d5c3d5e5f238",
+      "text": "Ton talent ralentit la direction, avant que d'autres n'en profitent.",
+      "category": "sombre"
+    },
+    {
+      "id": "d8dc7d3d-b9d6-433c-9a87-c2fe2acc221c",
+      "text": "La discipline amplifie les progrès, et signe-le de ta sueur.",
+      "category": "méchante"
+    },
+    {
+      "id": "25ca9d61-fbab-4867-a125-682fb2dc0800",
+      "text": "Le courage protège la constance, avec élégance ou pas du tout.",
+      "category": "provocante"
+    },
+    {
+      "id": "0ea69aac-7d81-49bd-9ba5-8d51a2fa9f1e",
+      "text": "Tu affaiblit la vérité, sinon, accepte la facture.",
+      "category": "provocante"
+    },
+    {
+      "id": "89c83ed6-d623-450c-a3e9-2feba7fb1b0e",
+      "text": "Tu réclame la vérité, et cesse de t'excuser.",
+      "category": "crash"
+    },
+    {
+      "id": "e1d04fbb-3917-49fc-91b4-baee0baef035",
+      "text": "Tu n'attend les priorités, et ferme la porte derrière toi.",
+      "category": "provocante"
+    },
+    {
+      "id": "793b2d8d-4f9b-48aa-b202-12025576af4b",
+      "text": "Ton confort ralentit les bases, ou passe ton tour.",
+      "category": "belle"
+    },
+    {
+      "id": "23ddc569-1ad4-4649-a98a-b29ebfdd4b43",
+      "text": "Pas d'effort, pas d'extra.",
+      "category": "crash"
+    },
+    {
+      "id": "57e28425-cada-4b97-9de6-e9b39d482e79",
+      "text": "Le courage ralentit la direction, et cesse de t'excuser.",
+      "category": "crash"
+    },
+    {
+      "id": "7d0b8d37-3fb2-456b-84b9-e54132005dc7",
+      "text": "Ton confort te parle : coupe le micro.",
+      "category": "provocante"
+    },
+    {
+      "id": "de4f3351-1483-411c-8d0a-19c76395b905",
+      "text": "Le temps choisit les progrès, et signe-le de ta sueur.",
+      "category": "méchante"
+    },
+    {
+      "id": "00077f37-6be2-49c6-bd47-c8f96b61c8b2",
+      "text": "Tes habitudes réclame la constance, et signe-le de ta sueur.",
+      "category": "violente"
+    },
+    {
+      "id": "9d477425-751e-43db-8e34-279a6663aba1",
+      "text": "On paye la vérité, et cesse de t'excuser.",
+      "category": "sombre"
+    },
+    {
+      "id": "8a910184-e376-42bb-8606-8f229f71c0b1",
+      "text": "Tes habitudes défait les progrès, sans applaudissements.",
+      "category": "gentille"
+    },
+    {
+      "id": "8739349a-e5fd-462c-8c15-4add4c24097c",
+      "text": "Si tu veux un miracle, sors la pelle.",
+      "category": "provocante"
+    },
+    {
+      "id": "21a7f008-136e-4d24-b293-8b589daba530",
+      "text": "Personne paye la direction, sinon, accepte la facture.",
+      "category": "sombre"
+    },
+    {
+      "id": "ab05ea4b-9c74-4e93-87d2-10f96cda7864",
+      "text": "Ce que tu tolères devient ta norme.",
+      "category": "crash"
+    },
+    {
+      "id": "2a20f14b-730e-4df3-8e05-ae649cb87547",
+      "text": "Tes habitudes amplifie les progrès, ou passe ton tour.",
+      "category": "méchante"
+    },
+    {
+      "id": "37dea1aa-ee22-4f50-a736-2d3b36ba6eb8",
+      "text": "L'orgueil n'attend l'exigence, sans permission.",
+      "category": "méchante"
+    },
+    {
+      "id": "91ffe8bd-f42f-4c60-a26f-f12e644487c0",
+      "text": "La peur ne négocie pas la suite, sans permission.",
+      "category": "sombre"
+    },
+    {
+      "id": "68a5102a-9677-4d15-9a39-62facdb22a38",
+      "text": "La discipline fabrique les progrès, avec élégance ou pas du tout.",
+      "category": "violente"
+    },
+    {
+      "id": "3383ec1f-bfe6-475f-b11d-b6dc6d1a6860",
+      "text": "Le temps fabrique la clarté, — choisis ton camp.",
+      "category": "belle"
+    },
+    {
+      "id": "0af80bd2-c3c6-412a-95d5-1ef9ca579869",
+      "text": "Le courage choisit les échéances, et signe-le de ta sueur.",
+      "category": "crash"
+    },
+    {
+      "id": "3aecf82b-01c9-42b1-8914-343dd1f59bb2",
+      "text": "Ton confort protège les priorités, avec élégance ou pas du tout.",
+      "category": "belle"
+    },
+    {
+      "id": "14c21e6f-4c82-4927-91d8-31e7a3234627",
+      "text": "Ton confort ne négocie pas les progrès, avant que d'autres n'en profitent.",
+      "category": "belle"
+    },
+    {
+      "id": "12d9858c-292b-43d2-bd15-8769e6f89c7e",
+      "text": "Personne amplifie les progrès, ou passe ton tour.",
+      "category": "gentille"
+    },
+    {
+      "id": "61f4e454-833e-4356-8b19-d8e5ed6ea7cc",
+      "text": "Ton confort ne négocie pas les résultats, sans applaudissements.",
+      "category": "belle"
+    },
+    {
+      "id": "68660080-b50c-4ff7-a5ce-81edee3917cd",
+      "text": "Le courage réclame la suite, avant que d'autres n'en profitent.",
+      "category": "provocante"
+    },
+    {
+      "id": "5819aa61-0ed4-4675-b85e-8bb05b68d925",
+      "text": "Le courage défait les bases, avec élégance ou pas du tout.",
+      "category": "provocante"
+    },
+    {
+      "id": "db9b3fdf-353b-4092-857c-eda6eda73616",
+      "text": "La peur n'attend les résultats, sans permission.",
+      "category": "belle"
+    },
+    {
+      "id": "e9884027-6a81-401c-bb86-950edbd6f4b6",
+      "text": "Ton confort ignore la vérité, sans permission.",
+      "category": "gentille"
+    },
+    {
+      "id": "48e2e749-c8c6-44a8-a482-a45fba3d81b4",
+      "text": "Personne accélère la direction, ou passe ton tour.",
+      "category": "méchante"
+    },
+    {
+      "id": "854125eb-5e4c-4a61-9d9c-484e8611e61d",
+      "text": "Ton confort paye les bases, et signe-le de ta sueur.",
+      "category": "violente"
+    },
+    {
+      "id": "a61aa851-5b51-43d0-adc0-f6c3ce3bbeb9",
+      "text": "Les priorités se voient dans le calendrier.",
+      "category": "crash"
+    }
+  ]
+}

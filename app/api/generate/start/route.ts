@@ -10,8 +10,10 @@ export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 // Simple PDF parsing
-async function parsePDF(filePath: string) {
-  const pdfParse = require("pdf-parse/lib/pdf-parse.js");
+async function parsePDF(filePath: string): Promise<string> {
+  const pdfParse = (await import("pdf-parse/lib/pdf-parse.js")).default as (
+    dataBuffer: Buffer
+  ) => Promise<{ text: string }>;
   const dataBuffer = fs.readFileSync(filePath);
   const data = await pdfParse(dataBuffer);
   return data.text;
@@ -83,7 +85,11 @@ Style: ${tone === "concis" ? "Concis" : "Détaillé"}`;
     const response = completion.choices[0]?.message?.content?.trim();
     if (!response) return null;
 
-    const parsed = JSON.parse(response);
+    const parsed: {
+      topic: string;
+      propositions: Array<{ statement: string; isTrue: boolean; explanation: string }>;
+      rationale?: string;
+    } = JSON.parse(response);
     
     // Validate structure
     if (!parsed.topic || !parsed.propositions || !Array.isArray(parsed.propositions) || parsed.propositions.length !== 5) {
@@ -91,15 +97,15 @@ Style: ${tone === "concis" ? "Concis" : "Détaillé"}`;
     }
 
     // Ensure at least one true answer
-    const trueCount = parsed.propositions.filter((p: any) => p.isTrue).length;
+    const trueCount = parsed.propositions.filter((p) => p.isTrue).length;
     if (trueCount === 0) {
       parsed.propositions[0].isTrue = true;
     }
 
-         return {
+     return {
        id: randomUUID(),
        topic: parsed.topic,
-       propositions: parsed.propositions.map((p: any) => ({
+       propositions: parsed.propositions.map((p) => ({
          id: randomUUID(),
          statement: p.statement,
          isTrue: p.isTrue,
@@ -203,9 +209,10 @@ export async function POST(request: NextRequest) {
       total: numQuestions
     });
 
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Error in generate/start:", error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    const message = error instanceof Error ? error.message : "Unknown error";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
 
