@@ -234,6 +234,7 @@ export default function HomePage() {
                   <li>• Valider chaque QCM pour voir corrections et justifications</li>
                   <li>• Terminer la session pour accéder au bilan</li>
                   <li>• <Link href="/domains" className="text-mint-400 hover:text-mint-300">Voir l'évolution par domaine</Link></li>
+                  <li>• <Link href="/flashcards" className="text-violet-400 hover:text-violet-300">Accéder aux flashcards</Link></li>
                 </ul>
               </div>
               <div className="rounded-lg border border-slate-800 bg-slate-900/70 p-5">
