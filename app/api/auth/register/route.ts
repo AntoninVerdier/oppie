@@ -11,8 +11,8 @@ export async function POST(req: NextRequest) {
   try {
     const json = await req.json().catch(()=> ({}));
     const { email, password } = schema.parse(json);
-    const user = createUser(email, password);
-    const sess = createSession(user, req.headers.get('user-agent')||undefined, req.headers.get('x-forwarded-for')||undefined);
+    const user = await createUser(email, password);
+    const sess = await createSession(user, req.headers.get('user-agent')||undefined, req.headers.get('x-forwarded-for')||undefined);
     const res = NextResponse.json({ user: { id: user.id, email: user.email } });
     res.headers.set('Set-Cookie', `oppie_session=${encodeURIComponent(sess.token)}; Path=/; HttpOnly; SameSite=Strict; Max-Age=2592000`);
     return res;

@@ -7,7 +7,7 @@ export const runtime = "nodejs";
 
 export async function GET(request: Request) {
   try {
-  const user = requireAuth(request as any);
+  const user = await requireAuth(request as any);
   if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
   const list = (await loadSessions()).filter(s => s.userId === user.id);
     if (!Array.isArray(list)) return NextResponse.json([]);

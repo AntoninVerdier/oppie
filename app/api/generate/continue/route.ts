@@ -82,7 +82,7 @@ Style: ${tone === "concis" ? "Concis" : "Détaillé"}`;
 export async function POST(request: NextRequest) {
   try {
     // Get sessionId from request
-  const user = requireAuth(request as any);
+  const user = await requireAuth(request as any);
   if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
   let sessionId: string;
     try {

@@ -7,7 +7,7 @@ export const runtime = "nodejs";
 
 export async function GET(request: NextRequest) {
   try {
-    const user = requireAuth(request as any);
+    const user = await requireAuth(request as any);
     if (!user) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
     const { searchParams } = new URL(request.url);
     const sessionId = searchParams.get("id") || searchParams.get("sid") || searchParams.get("sessionId");

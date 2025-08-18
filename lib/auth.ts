@@ -3,9 +3,49 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import path from 'path';
 import { SessionRecord, UserRecord } from '@/types/auth';
 
+// --- KV helpers (mirror lib/storage.ts logic) ---
+async function getKV() {
+  if (!process.env.KV_REST_API_URL && process.env.UPSTASH_REDIS_REST_URL) {
+    process.env.KV_REST_API_URL = process.env.UPSTASH_REDIS_REST_URL;
+  }
+  if (!process.env.KV_REST_API_TOKEN && process.env.UPSTASH_REDIS_REST_TOKEN) {
+    process.env.KV_REST_API_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN;
+  }
+  const mod = await import('@vercel/kv');
+  return mod.kv;
+}
+
+function isVercelProd(): boolean {
+  return Boolean(
+    process.env.VERCEL ||
+    process.env.KV_REST_API_URL ||
+    process.env.UPSTASH_REDIS_REST_URL
+  );
+}
+
+async function kvGetJson<T>(key: string, fallback: T): Promise<T> {
+  try {
+    const kv = await getKV();
+    const value = await kv.get<any>(key);
+    if (value === null || value === undefined) return fallback;
+    if (typeof value === 'string') {
+      try { return JSON.parse(value) as T; } catch { return fallback; }
+    }
+    return value as T;
+  } catch {
+    return fallback;
+  }
+}
+
+async function kvSetJson<T>(key: string, value: T): Promise<void> {
+  const kv = await getKV();
+  await kv.set(key, value as any);
+}
+
+// --- File paths for local dev fallback ---
 const DATA_DIR = path.join(process.cwd(), 'data');
 const USERS_FILE = path.join(DATA_DIR, 'users.json');
-// Use a distinct file for auth cookie sessions to avoid clashing with app sessions
+// Distinct file for auth cookie sessions to avoid clashing with app sessions
 const AUTH_SESSIONS_FILE = path.join(DATA_DIR, 'auth-sessions.json');
 
 function ensureFiles() {
@@ -14,10 +54,39 @@ function ensureFiles() {
   if (!existsSync(AUTH_SESSIONS_FILE)) writeFileSync(AUTH_SESSIONS_FILE, '[]', 'utf8');
 }
 
-function loadUsers(): UserRecord[] { ensureFiles(); try { return JSON.parse(readFileSync(USERS_FILE, 'utf8')); } catch { return []; } }
-function saveUsers(list: UserRecord[]) { ensureFiles(); writeFileSync(USERS_FILE, JSON.stringify(list, null, 2), 'utf8'); }
-function loadSessions(): SessionRecord[] { ensureFiles(); try { return JSON.parse(readFileSync(AUTH_SESSIONS_FILE, 'utf8')); } catch { return []; } }
-function saveSessions(list: SessionRecord[]) { ensureFiles(); writeFileSync(AUTH_SESSIONS_FILE, JSON.stringify(list, null, 2), 'utf8'); }
+async function loadUsers(): Promise<UserRecord[]> {
+  if (isVercelProd()) {
+    return kvGetJson<UserRecord[]>('auth:users', []);
+  }
+  ensureFiles();
+  try { return JSON.parse(readFileSync(USERS_FILE, 'utf8')); } catch { return []; }
+}
+
+async function saveUsers(list: UserRecord[]) {
+  if (isVercelProd()) {
+    await kvSetJson('auth:users', list);
+    return;
+  }
+  ensureFiles();
+  writeFileSync(USERS_FILE, JSON.stringify(list, null, 2), 'utf8');
+}
+
+async function loadSessions(): Promise<SessionRecord[]> {
+  if (isVercelProd()) {
+    return kvGetJson<SessionRecord[]>('auth:sessions', []);
+  }
+  ensureFiles();
+  try { return JSON.parse(readFileSync(AUTH_SESSIONS_FILE, 'utf8')); } catch { return []; }
+}
+
+async function saveSessions(list: SessionRecord[]) {
+  if (isVercelProd()) {
+    await kvSetJson('auth:sessions', list);
+    return;
+  }
+  ensureFiles();
+  writeFileSync(AUTH_SESSIONS_FILE, JSON.stringify(list, null, 2), 'utf8');
+}
 
 export function hashPassword(password: string) {
   const salt = randomUUID().replace(/-/g,'');
@@ -37,20 +106,35 @@ export function verifyPassword(password: string, stored: string): boolean {
 
 function sha256(str: string) { return createHash('sha256').update(str).digest('hex'); }
 
-export function findUserByEmail(email: string) {
-  const users = loadUsers();
+export function findUserByEmailSync(email: string): UserRecord | null {
+  // For compatibility in Node-only contexts, read synchronously from file if not prod
+  if (!isVercelProd()) {
+    try {
+      ensureFiles();
+      const users: UserRecord[] = JSON.parse(readFileSync(USERS_FILE, 'utf8'));
+      return users.find(u => u.email.toLowerCase() === email.toLowerCase()) || null;
+    } catch { return null; }
+  }
+  // In prod, consumers should use the async wrapper
+  return null;
+}
+
+export async function findUserByEmail(email: string): Promise<UserRecord | null> {
+  const users = await loadUsers();
   return users.find(u => u.email.toLowerCase() === email.toLowerCase()) || null;
 }
 
-export function createUser(email: string, password: string): UserRecord {
-  const users = loadUsers();
+export async function createUser(email: string, password: string): Promise<UserRecord> {
+  const users = await loadUsers();
   if (users.some(u => u.email.toLowerCase() === email.toLowerCase())) throw new Error('Email déjà utilisé');
   const user: UserRecord = { id: randomUUID(), email, passwordHash: hashPassword(password), roles: ['user'], createdAt: new Date().toISOString(), stats: { sessionsCount: 0, averageScore: 0 } };
-  users.push(user); saveUsers(users); return user;
+  users.push(user);
+  await saveUsers(users);
+  return user;
 }
 
-export function createSession(user: UserRecord, userAgent?: string, ip?: string): SessionRecord {
-  const sessions = loadSessions();
+export async function createSession(user: UserRecord, userAgent?: string, ip?: string): Promise<SessionRecord> {
+  const sessions = await loadSessions();
   const perUser = sessions.filter(s => s.userId === user.id).slice(-19); // keep last 19
   const others = sessions.filter(s => s.userId !== user.id);
   const token = randomUUID() + randomUUID().replace(/-/g,'');
@@ -62,28 +146,30 @@ export function createSession(user: UserRecord, userAgent?: string, ip?: string)
     userAgentHash: userAgent ? sha256(userAgent) : undefined,
     ipHash: ip ? sha256(ip) : undefined,
   };
-  others.push(...perUser, rec); saveSessions(others);
+  others.push(...perUser, rec);
+  await saveSessions(others);
   return rec;
 }
 
-export function getSession(token: string, userAgent?: string, ip?: string): UserRecord | null {
+export async function getSession(token: string, userAgent?: string, ip?: string): Promise<UserRecord | null> {
   if (!token) return null;
-  const sessions = loadSessions();
+  const sessions = await loadSessions();
   const rec = sessions.find(s => s.token === token);
   if (!rec) return null;
   if (Date.parse(rec.expiresAt) < Date.now()) return null;
   if (rec.userAgentHash && userAgent && rec.userAgentHash !== sha256(userAgent)) return null;
   if (rec.ipHash && ip && rec.ipHash !== sha256(ip)) return null;
-  const user = loadUsers().find(u => u.id === rec.userId) || null;
+  const users = await loadUsers();
+  const user = users.find(u => u.id === rec.userId) || null;
   return user || null;
 }
 
-export function invalidateSession(token: string) {
-  const sessions = loadSessions().filter(s => s.token !== token);
-  saveSessions(sessions);
+export async function invalidateSession(token: string) {
+  const sessions = (await loadSessions()).filter(s => s.token !== token);
+  await saveSessions(sessions);
 }
 
-export function requireAuth(req: Request): UserRecord | null {
+export async function requireAuth(req: Request): Promise<UserRecord | null> {
   const cookie = req.headers.get('cookie') || '';
   const match = cookie.match(/oppie_session=([^;]+)/);
   const token = match ? decodeURIComponent(match[1]) : '';

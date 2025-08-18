@@ -15,7 +15,7 @@ export const runtime = "nodejs";
 // GET /api/flashcards?deckId=... -> deck details, otherwise list meta
 export async function GET(req: NextRequest) {
   try {
-    const user = requireAuth(req as any);
+    const user = await requireAuth(req as any);
     if (!user) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
     const { searchParams } = new URL(req.url);
     const deckId = searchParams.get("deckId");
@@ -37,7 +37,7 @@ export async function GET(req: NextRequest) {
 // Actions by "op" field
 export async function POST(req: NextRequest) {
   try {
-    const user = requireAuth(req as any);
+    const user = await requireAuth(req as any);
     if (!user) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
     const body = await req.json();
     const op = body?.op as string;
