@@ -16,6 +16,7 @@ export function middleware(req: NextRequest) {
   // Allow public auth + login page
   if (url.pathname === '/login' || url.pathname.startsWith('/api/auth/')) return NextResponse.next();
   if (url.pathname.startsWith('/_next') || url.pathname.startsWith('/favicon') ) return NextResponse.next();
+  if (url.pathname === '/manifest.json' || url.pathname.startsWith('/apple-touch-') || url.pathname.startsWith('/icon')) return NextResponse.next();
   // Check cookie
   const cookie = req.cookies.get('oppie_session')?.value || '';
   // Edge runtime: cannot access fs; perform lightweight presence check only.

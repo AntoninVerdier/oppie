@@ -1,14 +1,14 @@
-import { requireAuth } from "@/lib/auth";
-import { NextRequest } from "next/server";
+import { cookies, headers } from "next/headers";
 import Link from "next/link";
+import { getSession } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 
 export default async function AccountPage() {
-  // This is a server component; we can't access the request directly here.
-  // Use a nested route handler to fetch user info instead.
-  const me = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/auth/me`, { cache: 'no-store' }).then(r => r.json()).catch(() => ({ user: null }));
-  const user = me?.user;
+  const token = cookies().get('oppie_session')?.value || '';
+  const ua = headers().get('user-agent') || undefined;
+  const ip = (headers().get('x-forwarded-for') || '').split(',')[0] || undefined;
+  const user = token ? await getSession(decodeURIComponent(token), ua, ip) : null;
   return (
     <main className="min-h-screen w-full">
       <section className="mx-auto max-w-3xl px-6 pt-10">

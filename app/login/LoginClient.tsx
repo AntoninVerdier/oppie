@@ -11,16 +11,32 @@ export default function LoginClient() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const search = useSearchParams();
-  const next = search.get('next') || '/';
+  const nextRaw = search.get('next') || '/';
+  const nextPath = nextRaw.startsWith('/') ? nextRaw : '/';
+  const isAssetOrUnsafe =
+    nextPath === '/login' ||
+    nextPath.startsWith('/_next') ||
+    nextPath.startsWith('/api/') ||
+    /\.(png|jpe?g|gif|svg|webp|ico|json)$/i.test(nextPath) ||
+    nextPath.startsWith('/apple-touch-') ||
+    nextPath.startsWith('/icon');
+  const next = isAssetOrUnsafe ? '/' : nextPath;
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true); setError(null);
     try {
-      const res = await fetch(`/api/auth/${mode}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, password }) });
+      const res = await fetch(`/api/auth/${mode}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify({ email, password })
+      });
       const j = await res.json();
       if (!res.ok) throw new Error(j.error||'Erreur');
       router.replace(next);
+      // Hard fallback in case SPA nav happens before cookie is applied
+      setTimeout(() => { try { window.location.pathname = next; } catch {} }, 100);
     } catch (e:any) {
       setError(e.message);
     } finally {

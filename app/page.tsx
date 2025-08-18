@@ -89,14 +89,20 @@ export default function HomePage() {
 
   useEffect(() => {
     // Load sessions and model only once
-    fetch("/api/sessions").then(r => r.json()).then(setSessions).catch(() => setSessions([]));
+    fetch("/api/sessions")
+      .then(async (r) => (r.ok ? await r.json() : []))
+      .then((data) => setSessions(Array.isArray(data) ? data : []))
+      .catch(() => setSessions([]));
     fetch("/api/debug/model").then(r => r.json()).then(data => setCurrentModel(data.model)).catch(() => setCurrentModel(""));
-    
+
     // Only update domain stats periodically (for the evolution chart)
-    fetch("/api/domains/stats").then(r => r.json()).then(data => setDomainStats(data.stats || [])).catch(() => setDomainStats([]));
-    const iv = setInterval(() => {
-      fetch("/api/domains/stats").then(r => r.json()).then(data => setDomainStats(data.stats || [])).catch(() => {});
-    }, 5000);
+    const loadStats = () =>
+      fetch("/api/domains/stats")
+        .then(r => r.json())
+        .then(data => setDomainStats(Array.isArray(data?.stats) ? data.stats : []))
+        .catch(() => setDomainStats([]));
+    loadStats();
+    const iv = setInterval(loadStats, 5000);
     return () => clearInterval(iv);
   }, []);
 
@@ -236,11 +242,11 @@ export default function HomePage() {
               <QuoteCard />
               <div className="rounded-lg border border-slate-800 bg-slate-900/70 p-5">
                 <h3 className="text-lg mb-2">Sessions récentes</h3>
-                {sessions.length === 0 ? (
+                {(!Array.isArray(sessions) || sessions.length === 0) ? (
                   <p className="text-sm text-slate-400">Aucune session récente trouvée.</p>
                 ) : (
                   <ul className="divide-y divide-slate-800 text-sm">
-                    {sessions.slice(0, 5).map((s) => (
+                    {(Array.isArray(sessions) ? sessions.slice(0, 5) : []).map((s) => (
                       <li key={s.id} className="py-2 flex items-center justify-between">
                         <div className="min-w-0 pr-3">
                           <div className="truncate text-slate-200 text-xs">{s.filename}</div>

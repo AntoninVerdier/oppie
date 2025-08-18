@@ -9,7 +9,7 @@ export default function ClientUserMenu() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    fetch("/api/auth/me", { cache: "no-store" })
+    fetch("/api/auth/me", { cache: "no-store", credentials: 'include' })
       .then((r) => (r.ok ? r.json() : null))
       .then((j) => setMe(j?.user || null))
       .catch(() => setMe(null));
