@@ -111,10 +111,13 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen w-full">
-      {/* Debug chip - top right */}
-      {currentModel && (
-        <div className="fixed top-4 right-4 z-50">
-          <div className="bg-slate-800/80 backdrop-blur-sm border border-slate-600 rounded-full px-3 py-1 text-xs text-slate-300">
+      {/* Debug chip - moved to bottom right to avoid overlapping header */}
+      {currentModel && currentModel !== "Not set" && (
+        <div className="fixed bottom-4 right-4 z-30 pointer-events-none">
+          <div
+            className="bg-slate-800/70 backdrop-blur-sm border border-slate-600/60 rounded-full px-3 py-1 text-[11px] text-slate-300 max-w-[80vw] sm:max-w-sm overflow-hidden whitespace-nowrap text-ellipsis shadow-md"
+            title={currentModel}
+          >
             Model: {currentModel}
           </div>
         </div>
@@ -124,6 +127,9 @@ export default function HomePage() {
           <div>
             <h1 className="text-3xl font-semibold gradient-violet">Bienvenue</h1>
             <p className="text-slate-400 mt-1">Générez des QCM depuis vos PDF et suivez vos performances.</p>
+          </div>
+          <div>
+            <Link href="/flashcards" className="inline-flex items-center gap-2 rounded-full bg-violet-600 text-white px-4 py-2 hover:bg-violet-700 transition border border-violet-400/30 shadow-[0_0_10px_rgba(139,92,246,0.3)]">Flashcards</Link>
           </div>
         </div>
 
@@ -227,15 +233,7 @@ export default function HomePage() {
           {/* Side widgets - Top right */}
           <div className="col-span-12 lg:col-span-5 grid gap-5">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <div className="rounded-lg border border-slate-800 bg-slate-900/70 p-5">
-                <h3 className="text-lg mb-2">Raccourcis</h3>
-                <ul className="text-sm text-slate-300 space-y-2">
-                  <li>• Générer rapidement: Importer un PDF et cliquer Générer</li>
-                  <li>• Valider chaque QCM pour voir corrections et justifications</li>
-                  <li>• Terminer la session pour accéder au bilan</li>
-                  <li>• <Link href="/domains" className="text-mint-400 hover:text-mint-300">Voir l'évolution par domaine</Link></li>
-                </ul>
-              </div>
+              <QuoteCard />
               <div className="rounded-lg border border-slate-800 bg-slate-900/70 p-5">
                 <h3 className="text-lg mb-2">Sessions récentes</h3>
                 {sessions.length === 0 ? (
@@ -256,6 +254,12 @@ export default function HomePage() {
                   </ul>
                 )}
               </div>
+            </div>
+            {/* New: Flashcards access */}
+            <div className="rounded-lg border border-slate-800 bg-slate-900/70 p-5">
+              <h3 className="text-lg mb-2">Flashcards</h3>
+              <p className="text-sm text-slate-400 mb-3">Créez des decks, ajoutez des cartes et révisez rapidement.</p>
+              <Link href="/flashcards" className="inline-flex items-center gap-2 rounded-md bg-violet-600 text-white px-4 py-2 hover:bg-violet-700 transition">Ouvrir les flashcards</Link>
             </div>
           </div>
 
@@ -294,7 +298,25 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      
     </main>
+  );
+}
+
+function QuoteCard() {
+  const [quote, setQuote] = useState<{ text: string; category?: string } | null>(null);
+  useEffect(() => {
+    fetch('/api/quote')
+      .then(r => r.json())
+      .then(setQuote)
+      .catch(() => setQuote(null));
+  }, []);
+  return (
+    <div className="rounded-lg border border-slate-800 bg-slate-900/70 p-5">
+      <h3 className="text-lg mb-2">Citation du jour</h3>
+      <p className="text-sm text-slate-300 whitespace-pre-wrap">{quote?.text || "Respire. Avance d'un pas."}</p>
+      {quote?.category && <div className="mt-2 text-xs text-slate-500">— {quote.category}</div>}
+    </div>
   );
 }
 

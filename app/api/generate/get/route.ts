@@ -1,11 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readSessionFile } from "@/lib/storage";
+import { requireAuth } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 export async function GET(request: NextRequest) {
   try {
+    const user = requireAuth(request as any);
+    if (!user) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
     const { searchParams } = new URL(request.url);
     const sessionId = searchParams.get("id") || searchParams.get("sid") || searchParams.get("sessionId");
     const index = parseInt(searchParams.get("index") || "0");
@@ -16,7 +19,7 @@ export async function GET(request: NextRequest) {
 
     // Read session file
     const sessionData = await readSessionFile(sessionId);
-    if (!sessionData) {
+    if (!sessionData || (sessionData as any).userId !== user.id) {
       return NextResponse.json({ error: "Session not found" }, { status: 404 });
     }
 

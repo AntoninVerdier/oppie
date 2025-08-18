@@ -3,6 +3,7 @@ import OpenAI from "openai";
 import { randomUUID } from "crypto";
 import { GeneratedQuestion } from "@/types/qcm";
 import { loadSessions, saveSessions, readSessionFile, writeSessionFile } from "@/lib/storage";
+import { requireAuth } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -81,7 +82,9 @@ Style: ${tone === "concis" ? "Concis" : "Détaillé"}`;
 export async function POST(request: NextRequest) {
   try {
     // Get sessionId from request
-    let sessionId: string;
+  const user = requireAuth(request as any);
+  if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
+  let sessionId: string;
     try {
       const body = await request.json();
       sessionId = body.sessionId;
@@ -96,6 +99,9 @@ export async function POST(request: NextRequest) {
 
     // Read session file
     const sessionData = await readSessionFile(sessionId);
+    if (!sessionData || (sessionData as any).userId !== user.id) {
+      return NextResponse.json({ error: 'not found' }, { status: 404 });
+    }
     if (!sessionData) {
       return NextResponse.json({ error: "Session not found" }, { status: 404 });
     }

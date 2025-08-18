@@ -5,14 +5,65 @@
 :root {
   --bg: #0b0b12;
   --bg-accent: #11111a;
+  --fg: #e5e7eb;
+  --muted: #94a3b8;
   --ring: #6d46e8;
+}
+
+/* Light theme variables on html.light */
+html.light {
+  --bg: #f8fafc;
+  --bg-accent: #ffffff;
+  --fg: #0f172a;
+  --muted: #475569;
+  --ring: #6366f1;
+  --card-border: rgba(15,23,42,0.12);
+  --card-bg: #ffffff;
+  --card-bg-soft: #f1f5f9;
 }
 
  html, body { height: 100%; }
  /* Slightly larger base font for readability */
  html { font-size: 17px; }
 
-body { background: radial-gradient(1200px 800px at 20% -10%, rgba(134,93,255,0.12), transparent), radial-gradient(1000px 700px at 120% 10%, rgba(67,43,149,0.18), transparent), var(--bg); }
+/* Cleaner, seamless background (no visible cut). We pin gradients and avoid repeats. */
+body {
+  background:
+    radial-gradient(1200px 800px at 20% -10%, rgba(134,93,255,0.12), transparent 60%),
+    radial-gradient(1000px 700px at 90% 0%, rgba(67,43,149,0.14), transparent 70%),
+    linear-gradient(180deg, var(--bg) 0%, #0d0d16 100%);
+  background-attachment: fixed, fixed, fixed;
+  background-repeat: no-repeat;
+  background-color: var(--bg);
+  transition: background-color .4s ease, color .3s ease, background .6s ease;
+}
+
+/* Text defaults adapt to theme */
+body { color: var(--fg); }
+
+/* Subtle card adaptation for light */
+.light .border-slate-800 { border-color: rgba(15, 23, 42, 0.12) !important; }
+.light .bg-slate-900\/70 { background-color: rgba(255, 255, 255, 0.82) !important; }
+.light .text-slate-400 { color: var(--muted) !important; }
+.light .text-slate-300 { color: #64748b !important; }
+.light .bg-slate-900 { background-color: #ffffff !important; }
+.light .border-slate-700 { border-color: rgba(15, 23, 42, 0.18) !important; }
+/* Additional adjustments for light mode readability */
+.light .bg-slate-800\/50 { background-color: rgba(255,255,255,0.65) !important; }
+.light .bg-slate-800\/40 { background-color: rgba(255,255,255,0.55) !important; }
+.light .bg-slate-900\/60 { background-color: rgba(255,255,255,0.88) !important; }
+.light .border-slate-800 { border-color: var(--card-border) !important; }
+.light .text-slate-200 { color: #334155 !important; }
+.light .text-slate-100 { color: #1e293b !important; }
+.light .shadow-xl { --tw-shadow-color: rgba(0,0,0,0.08); }
+html.light body {
+  background:
+    radial-gradient(1200px 800px at 20% -10%, rgba(99,102,241,0.10), transparent 60%),
+    radial-gradient(1000px 700px at 90% 0%, rgba(168,85,247,0.12), transparent 70%),
+    linear-gradient(180deg, #f1f5f9 0%, #ffffff 100%);
+  background-attachment: fixed, fixed, fixed;
+  background-color: var(--bg);
+}
 /* Retro CRT subtle overlay */
 .crt::before {
   content: "";

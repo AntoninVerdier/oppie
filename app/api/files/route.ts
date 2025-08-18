@@ -41,10 +41,13 @@ export async function GET(req: NextRequest) {
       const contains = pdfs.filter(p => !p.norm.startsWith(q) && p.norm.includes(q));
       result = [...starts, ...contains];
     }
-    return NextResponse.json(result.slice(0, limit).map(({ norm, ...rest }) => rest));
+    // drop 'norm' before returning
+    return NextResponse.json(result.slice(0, limit).map(({ norm: _norm, ...rest }) => rest));
   } catch (e: any) {
     return NextResponse.json({ error: e?.message || "Failed to list" }, { status: 500 });
   }
 }
+
+
 
 
