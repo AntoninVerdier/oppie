@@ -7,6 +7,7 @@ import {
   readFlashcardDeck,
   writeFlashcardDeck
 } from "@/lib/storage";
+import { requireAuth } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -14,15 +15,18 @@ export const runtime = "nodejs";
 // GET /api/flashcards?deckId=... -> deck details, otherwise list meta
 export async function GET(req: NextRequest) {
   try {
+    const user = requireAuth(req as any);
+    if (!user) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
     const { searchParams } = new URL(req.url);
     const deckId = searchParams.get("deckId");
     if (deckId) {
       const deck = await readFlashcardDeck(deckId);
-      if (!deck) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
+      if (!deck || (deck as any).userId && (deck as any).userId !== user.id) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
       return NextResponse.json(deck);
     }
     const list = await loadFlashcardDecksMeta();
-    return NextResponse.json({ decks: list });
+    const own = list.filter((d) => (d as any).userId === user.id);
+    return NextResponse.json({ decks: own });
   } catch (e: unknown) {
     const message = e instanceof Error ? e.message : "Unknown error";
     return NextResponse.json({ error: message }, { status: 500 });
@@ -33,6 +37,8 @@ export async function GET(req: NextRequest) {
 // Actions by "op" field
 export async function POST(req: NextRequest) {
   try {
+    const user = requireAuth(req as any);
+    if (!user) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
     const body = await req.json();
     const op = body?.op as string;
 
@@ -40,10 +46,10 @@ export async function POST(req: NextRequest) {
       const name = (body?.name as string || "").trim();
       if (!name) return NextResponse.json({ error: "Name is required" }, { status: 400 });
       const now = new Date().toISOString();
-      const deck: FlashcardDeck = { id: randomUUID(), name, createdAt: now, updatedAt: now, cards: [] };
+      const deck: FlashcardDeck = { id: randomUUID(), name, createdAt: now, updatedAt: now, userId: user.id, cards: [] } as any;
       await writeFlashcardDeck(deck);
       const list = await loadFlashcardDecksMeta();
-      const meta: FlashcardDeckMeta = { id: deck.id, name: deck.name, createdAt: deck.createdAt, updatedAt: deck.updatedAt, numCards: 0 };
+      const meta: FlashcardDeckMeta = { id: deck.id, name: deck.name, createdAt: deck.createdAt, updatedAt: deck.updatedAt, numCards: 0, userId: user.id } as any;
       await saveFlashcardDecksMeta([meta, ...list.filter(d => d.id !== deck.id)]);
       return NextResponse.json(deck);
     }
@@ -53,7 +59,7 @@ export async function POST(req: NextRequest) {
       const name = (body?.name as string || "").trim();
       if (!deckId || !name) return NextResponse.json({ error: "deckId and name are required" }, { status: 400 });
       const deck = await readFlashcardDeck(deckId);
-      if (!deck) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
+      if (!deck || (deck as any).userId !== user.id) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
       deck.name = name;
       deck.updatedAt = new Date().toISOString();
       await writeFlashcardDeck(deck);
@@ -68,6 +74,8 @@ export async function POST(req: NextRequest) {
       if (!deckId) return NextResponse.json({ error: "deckId is required" }, { status: 400 });
       // We do not physically delete deck file in dev; we mark meta removal so it's hidden
       const list = await loadFlashcardDecksMeta();
+      const deck = await readFlashcardDeck(deckId);
+      if (!deck || (deck as any).userId !== user.id) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
       await saveFlashcardDecksMeta(list.filter(d => d.id !== deckId));
       return NextResponse.json({ ok: true });
     }
@@ -78,7 +86,7 @@ export async function POST(req: NextRequest) {
       const back = (body?.back as string || "").trim();
       if (!deckId || !front || !back) return NextResponse.json({ error: "deckId, front, back required" }, { status: 400 });
       const deck = await readFlashcardDeck(deckId);
-      if (!deck) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
+      if (!deck || (deck as any).userId !== user.id) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
       const now = new Date().toISOString();
       const card: Flashcard = {
         id: randomUUID(),
@@ -108,7 +116,7 @@ export async function POST(req: NextRequest) {
       const quality = Math.max(0, Math.min(5, Number(body?.quality ?? 0)));
       if (!deckId || !cardId) return NextResponse.json({ error: "deckId, cardId required" }, { status: 400 });
       const deck = await readFlashcardDeck(deckId);
-      if (!deck) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
+      if (!deck || (deck as any).userId !== user.id) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
       const card = deck.cards.find(c => c.id === cardId);
       if (!card) return NextResponse.json({ error: "Card not found" }, { status: 404 });
       const now = new Date();
@@ -151,15 +159,15 @@ export async function POST(req: NextRequest) {
       }
       if (deckId) {
         const deck = await readFlashcardDeck(deckId);
-        if (!deck) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
+        if (!deck || (deck as any).userId !== user.id) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
         const due = deck.cards.filter(isDue).slice(0, limit);
         return NextResponse.json({ deckId, due });
       } else {
-        const metas = await loadFlashcardDecksMeta();
+        const metas = (await loadFlashcardDecksMeta()).filter((m) => (m as any).userId === user.id);
         const result: Array<{ deckId: string; name: string; due: Flashcard[] }> = [];
         for (const m of metas) {
           const d = await readFlashcardDeck(m.id);
-          if (!d) continue;
+          if (!d || (d as any).userId !== user.id) continue;
           const due = d.cards.filter(isDue).slice(0, limit);
           if (due.length > 0) result.push({ deckId: d.id, name: d.name, due });
         }
@@ -172,7 +180,7 @@ export async function POST(req: NextRequest) {
       const cardId = body?.cardId as string;
       if (!deckId || !cardId) return NextResponse.json({ error: "deckId, cardId required" }, { status: 400 });
       const deck = await readFlashcardDeck(deckId);
-      if (!deck) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
+      if (!deck || (deck as any).userId !== user.id) return NextResponse.json({ error: "Deck not found" }, { status: 404 });
       const before = deck.cards.length;
       deck.cards = deck.cards.filter(c => c.id !== cardId);
       deck.updatedAt = new Date().toISOString();

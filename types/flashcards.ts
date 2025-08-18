@@ -20,6 +20,7 @@ export type FlashcardDeck = {
   name: string;
   createdAt: string;
   updatedAt: string;
+  userId?: string;
   cards: Flashcard[];
 };
 
@@ -29,6 +30,7 @@ export type FlashcardDeckMeta = {
   createdAt: string;
   updatedAt: string;
   numCards: number;
+  userId?: string;
 };
 
 

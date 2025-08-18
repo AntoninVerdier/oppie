@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { VT323 } from "next/font/google";
+import ThemeToggle from "./components/ThemeToggle";
+import ClientUserMenu from "./components/UserMenu";
 
 export const metadata: Metadata = {
   title: "Oppie",
@@ -22,6 +24,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/quiz" className="hover:text-white">Quiz</Link>
               <Link href="/summary" className="hover:text-white">Bilan</Link>
               <Link href="/flashcards" className="hover:text-white">Flashcards</Link>
+              <ThemeToggle />
+              <ClientUserMenu />
             </nav>
           </div>
         </header>

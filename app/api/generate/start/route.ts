@@ -5,6 +5,7 @@ import path from "path";
 import { randomUUID } from "crypto";
 import { GeneratedQuestion } from "@/types/qcm";
 import { loadSessions, saveSessions, writeSessionFile } from "@/lib/storage";
+import { requireAuth } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -121,6 +122,8 @@ Style: ${tone === "concis" ? "Concis" : "Détaillé"}`;
 
 export async function POST(request: NextRequest) {
   try {
+  const user = requireAuth(request as any);
+  if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
     const formData = await request.formData();
     const filename = formData.get("filename") as string;
     const numQuestions = parseInt(formData.get("numQuestions") as string) || 8;
@@ -170,7 +173,8 @@ export async function POST(request: NextRequest) {
       createdAt: new Date().toISOString(),
       available: questions.length,
       total: numQuestions,
-      questions: questions.map(q => q.id)
+      questions: questions.map(q => q.id),
+      userId: user.id
     };
 
     // Save session file
@@ -183,7 +187,8 @@ export async function POST(request: NextRequest) {
       chunkOrder: Array.from({ length: numQuestions }, (_, i) => i % chunks.length),
       questions: questions,
       available: questions.length,
-      total: numQuestions
+      total: numQuestions,
+      userId: user.id
     });
 
     // Update sessions registry
